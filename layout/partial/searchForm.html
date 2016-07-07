@@ -1,0 +1,38 @@
+<div class="searchForm clearfix">
+  <div class="searchForm--1">
+    <select class="select2Normal" data-placeholder="Chọn (Bác sĩ, Phòng khám)">
+      <option value=""></option>
+      <option value="bacsi">Bác sĩ</option>
+      <option value="phongkham">Phòng khám</option>
+    </select>
+  </div>
+  <div class="searchForm--2">
+    <select class="select2Search" data-placeholder="Bệnh, Triệu chứng, Chuyên khoa">
+      <option value="" selected></option>
+      {{#each trieu-chung-benh.danh-sach}}
+        <option value="phongkham">{{this.ten}}</option>
+      {{/each}}
+    </select>
+  </div>
+  <div class="searchForm--3">
+    <select class="select2Search" data-placeholder="Tỉnh, Thành phố">
+      <option value="" selected></option>
+      <option value="bacsi">TP. Hồ Chí Minh</option>
+      <option value="phongkham">Hà nội</option>
+      <option value="phongkham">Khánh Hòa</option>
+      <option value="phongkham">Bình Định</option>
+      <option value="phongkham">Nha Trang</option>
+    </select>
+  </div>
+  <div class="searchForm--4">
+    <select class="select2Search" data-placeholder="Khu vực">
+      <option value="" selected></option>
+      <option value="bacsi">Quận 1</option>
+      <option value="phongkham">Quận 2</option>
+    </select>
+  </div>
+  <div class="searchForm--5">
+    <a href="search.html" class="button searchForm--button"><i class="fa fa-search"></i> Tìm kiếm</a>
+  </div>
+
+</div>
