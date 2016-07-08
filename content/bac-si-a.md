@@ -15,7 +15,8 @@
     "info": {
         "chuyen-khoa": [
             "Tai mũi họng",
-            "Đa Khoa"
+            "Đa Khoa",
+            "Da liễu"
         ],
         "giai-thuong": [
             "Phòng khám được yêu thích nhất năm 2015"

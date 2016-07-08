@@ -25,10 +25,10 @@
         <div class="article--column_2">
           <div class="article--position">BÁC SĨ</div>
           <div class="article--title">{{title}}</div>
-          <div class="article-service">Chuyên khoa Tai Mui Hong</div>
+          <div class="article-service">Chuyên khoa {{#each info.chuyen-khoa}} {{this}}, {{/each}}</div>
 
 
-          <div class="paragraph">After graduating from West Virginia University Medical School, Dr. Jonathon Alex completed a two-year fellowship in sports medicine at Akron Children’s Hospital. During his training at Akron, Dr. Jonathon Alex was team physician for the University of Akron and Walsh University.</div>
+          <div class="paragraph">{{description}}</div>
 
         </div>
 
@@ -74,8 +74,9 @@
 
           <h5 class="listIcon"><i class="fa fa-medkit"></i> Chuyên khoa</h5>
           <ul class="listCircle ml-5">
-            <li>Tai mũi họng</li>
-            <li>Đa khoa</li>
+           {{#each info.chuyen-khoa}}
+           	<li>{{this}}</li>
+           {{/each}}
           </ul>
 
 
