@@ -22,11 +22,11 @@
             "Phòng khám được yêu thích nhất năm 2015"
         ],
         "giay-phep": [
-            "Số giấy phép : 00001/SYT-GPHĐ Ngày cấp : 27-08-2012",
+            "Số giấy phép : 00001/SYT-GPHĐ <br /> Ngày cấp : 27-08-2012",
             "Phạm vi hoạt động: Phòng khám đa khoa"
         ]
     },
-    "chuyen-khoa": [
+    "chuyen-dieu-tri": [
         "Viêm họng",
         "Viêm mũi dị ứng",
         "Viêm xoang"

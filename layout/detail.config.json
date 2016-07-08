@@ -110,5 +110,12 @@
         "type": "Text",
         "validations": [],
         "required": false
+    },
+    {
+        "name": "chuyen-dieu-tri",
+        "displayName": "chuyen-dieu-tri",
+        "type": "Array",
+        "validations": [],
+        "required": false
     }
 ]
