@@ -1,0 +1,33 @@
+{
+  "title" : "Triệu Chứng Bệnh",
+  "danh-sach" : [
+    {
+       "ten" :	"Răng hàm mặt",
+       "loai" : "chuyen-khoa"
+    },
+   {
+       "ten" :	"Nha khoa",
+       "loai" : "chuyen-khoa"
+    },
+    {
+       "ten" :	"Truyền nhiễm",
+       "loai" : "benh"
+    },
+    {
+       "ten" :	"Bác Sĩ Phạm Thúy Ngà",
+       "loai" : "bac-si"
+    },
+    {
+       "ten" :	"Bác Sĩ Nguyễn Văn A",
+       "loai" : "bac-si"
+    },
+    {
+       "ten" :	"Phòng khám Nha khoa Nancy",
+       "loai" : "khong-kham"
+    },
+    {
+       "ten" :	"Phòng khám Bệnh Viện Chợ Rẫy",
+       "loai" : "khong-kham"
+    }
+  ]
+}
