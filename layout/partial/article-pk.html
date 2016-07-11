@@ -1,3 +1,4 @@
+{{#each danh-sach-phong-kham}}
 <div class="article clearfix boxShadow">
   <a href="" class="article--bookmark"><i class="fa fa-bookmark-o"></i> Lưu</a>
   <div class="article--main clearfix">
@@ -12,18 +13,19 @@
 
     <div class="article--column_2">
 
-      <div class="article--title"><a href="detail-pk.html">Phòng khám Nha khoa Nancy</a> <div class="label-bh">BH</div></div>
+      <div class="article--title"><a href="detail-pk.html">{{this.ten}}</a> <div class="label-bh">BH</div></div>
       <div class="article--column_sub">
         <div class="article--column_sub_1">
-          <div class="article-service">Dịch vụ: Tẩy trắng răng, niềng răng, trám nhổ răng</div>
+          <div class="article-service">Dịch vụ: {{this.dich-vu}}</div>
           <div class="article-address">300 Phạm Ngũ Lão, P. Nguyễn Cư Trinh,
             Q.1, TP.HCM</div>
         </div>
 
         <div class="article--column_sub_2">
-          <div class="article--price"><div class="icon"><i class="fa fa-money"></i> </div><div class="meta">520,000 đồng</div></div>
+          <div class="article--price"><div class="icon"><i class="fa fa-money"></i> </div><div class="meta">{{this.gia-tien}} đồng</div></div>
           <div class="article--date">
-            <div class="icon"><i class="fa fa-calendar"></i></div> <div class="meta">T2 - T6: 10:00AM-2:00PM <br>T7 - CN: 5:00PM-9:00PM</div></div>
+            <div class="icon"><i class="fa fa-calendar"></i></div> <div class="meta">
+            {{#each this.gio-lam-viec}} {{this}} {{/each}}</div></div>
         </div>
       </div>
 
@@ -36,11 +38,13 @@
 
     <div class="article--column_1">
       <div class="article--heart">
-        <a href=""><i class="fa fa-heart"></i> 668</a>
+        <a href=""><i class="fa fa-heart"></i> {{this.like}}</a>
       </div>
+      {{#if this.type}}
       <div class="article--sponsor">
         Nhà tài trợ
       </div>
+      {{/if}}
     </div>
 
     <div class="article--column_2">
@@ -108,3 +112,4 @@
 
 
 </div>
+{{/each}}
