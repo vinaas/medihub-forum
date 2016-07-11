@@ -32,7 +32,7 @@
     },
     "danh-sach-phong-kham": [
         {
-            "ten": "Phòng khám chuyên khoa Tai Mũi Họng",
+            "title": "Phòng khám chuyên khoa Tai Mũi Họng",
             "list-image": [
                 "http://www.diachibotui.com/Thumbnail/ExtraLarge/Upload/2015/5/22/phong-kham-mat-thu-ha-ba-trieu-635679087664809056.jpg",
                 "https://images1-fabric.practo.com/cosderma-clinic-bangalore-1456213420-56cc0dac9b1b8.jpg"
@@ -49,7 +49,7 @@
             "so-dien-thoai": "080 6608 4059"
         },
         {
-            "ten": "Phòng khám Nha Khoa",
+            "title": "Phòng khám Nha Khoa",
             "list-image": [
                 "http://www.diachibotui.com/Thumbnail/ExtraLarge/Upload/2015/5/22/phong-kham-mat-thu-ha-ba-trieu-635679087664809056.jpg",
                 "https://images1-fabric.practo.com/cosderma-clinic-bangalore-1456213420-56cc0dac9b1b8.jpg"

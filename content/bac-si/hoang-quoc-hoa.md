@@ -33,7 +33,7 @@
     },
     "danh-sach-phong-kham": [
         {
-            "ten": "Phòng khám Tim mạch PGS.TS.BS Hoàng Quốc Hòa",
+            "title": "Phòng khám Tim mạch PGS.TS.BS Hoàng Quốc Hòa",
             "list-image": [
                 "http://www.diachibotui.com/Thumbnail/ExtraLarge/Upload/2015/5/22/phong-kham-mat-thu-ha-ba-trieu-635679087664809056.jpg",
                 "https://images1-fabric.practo.com/cosderma-clinic-bangalore-1456213420-56cc0dac9b1b8.jpg"
@@ -50,7 +50,7 @@
             "so-dien-thoai": "84838991129"
         },
         {
-            "ten": "Phòng khám Nha Khoa",
+            "title": "Phòng khám Nha Khoa",
             "list-image": [
                 "http://www.diachibotui.com/Thumbnail/ExtraLarge/Upload/2015/5/22/phong-kham-mat-thu-ha-ba-trieu-635679087664809056.jpg",
                 "https://images1-fabric.practo.com/cosderma-clinic-bangalore-1456213420-56cc0dac9b1b8.jpg"
