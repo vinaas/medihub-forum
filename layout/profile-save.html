@@ -1,0 +1,64 @@
+{{#extend "default"}}
+{{#content "header"}}
+{{> header-profile}}
+{{/content}}
+
+{{#content "body"}}
+
+
+<div class="row profile">
+  <div class="small-12 columns">
+
+    <div class="profile-tab">
+      <div class="profile-tab-name icon-large"><i class="fa fa-bookmark-o"></i> Đã lưu</div>
+      <div class="profile-tab-divider"></div>
+      <div class="profile-tab-item active filter" data-filter="all">Tất cả</div>
+      <div class="profile-tab-item filter" data-filter=".bacsi">Bác sĩ</div>
+      <div class="profile-tab-item filter" data-filter=".phongkham">Phòng khám</div>
+      <div class="profile-tab-item filter" data-filter=".benhvien">Bệnh viện</div>
+    </div>
+
+  </div>
+
+  <div class="small-12 columns">
+
+    <div id="profile-mixitup" class="row">
+      <div class="mix bacsi small-4 columns" data-myorder="2">
+
+        {{> article-lite}}
+
+      </div>
+      <div class="mix bacsi small-4 columns" data-myorder="4">{{> article-lite}}</div>
+      <div class="mix phongkham small-4 columns" data-myorder="1">{{> article-lite-pk}}</div>
+      <div class="mix benhvien small-4 columns" data-myorder="8">{{> article-lite-pk}}</div>
+
+      <div class="mix bacsi small-4 columns" data-myorder="4">{{> article-lite}}</div>
+      <div class="mix phongkham small-4 columns" data-myorder="1">{{> article-lite-pk}}</div>
+      <div class="mix benhvien small-4 columns" data-myorder="8">{{> article-lite-pk}}</div>
+      <div class="mix bacsi small-4 columns" data-myorder="4">{{> article-lite}}</div>
+      <div class="mix phongkham small-4 columns" data-myorder="1">{{> article-lite-pk}}</div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+{{/content}}
+
+{{#content "scripts"}}
+
+
+
+
+{{/content}}
+
+
+
+
+{{/extend}}

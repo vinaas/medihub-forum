@@ -92,6 +92,11 @@ site.metalsmith = {
             'sortBy':  'date',
             'reverse': true,
         },
+        'bac-si':    {
+            'pattern': 'bac-si/**/*.html',
+            'sortBy':  'date',
+            'reverse': true,
+        },
         // collection theo key trong metadata `"collection": "baiviet"`
         'baiviet': {
             'sortBy':  'date',
