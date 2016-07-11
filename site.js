@@ -97,6 +97,11 @@ site.metalsmith = {
             'sortBy':  'date',
             'reverse': true,
         },
+        'phong-kham':    {
+            'pattern': 'phong-kham/**/*.html',
+            'sortBy':  'date',
+            'reverse': true,
+        },
         // collection theo key trong metadata `"collection": "baiviet"`
         'baiviet': {
             'sortBy':  'date',

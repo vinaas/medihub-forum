@@ -25,7 +25,7 @@
         <div class="article--column_2">
           <div class="article--position">BÁC SĨ</div>
           <div class="article--title">{{title}}</div>
-          <div class="article-service">Chuyên khoa {{#each info.chuyen-khoa}} {{this}}, {{/each}}</div>
+          <div class="article-service">Chuyên khoa {{#each info.chuyen-khoa}} {{#if @first}} {{this}} {{else}} {{this}} {{/if}} {{/each}}</div>
 
 
           <div class="paragraph">{{description}}</div>

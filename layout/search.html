@@ -30,7 +30,7 @@
       </div>
       <div class="article--column_2">
         <div class="article--position">BÁC SĨ</div>
-        <div class="article--title"><a href="detail.html">{{title}}</a> </div>
+        <div class="article--title"><a href="./{{path}}">{{title}}</a> </div>
         <div class="article--column_sub">
           <div class="article--column_sub_1">
             <div class="article-service">Chuyên khoa Tai mũi họng</div>
@@ -125,9 +125,121 @@
 
 
   {{/each}}
-    {{> article}}
-    {{> article}}
 
+
+  {{#each collections.phong-kham}}
+  <div class="article clearfix boxShadow">
+      <a href="" class="article--bookmark"><i class="fa fa-bookmark-o"></i> Lưu</a>
+      <div class="article--main clearfix">
+
+          <div class="article--column_1">
+              <div class="article--thumbnail">
+                  <img src="http://www.diachibotui.com/Thumbnail/ExtraLarge/Upload/2015/5/22/phong-kham-mat-thu-ha-ba-trieu-635679087664809056.jpg" alt="">
+              </div>
+          </div>
+
+
+
+          <div class="article--column_2">
+
+              <div class="article--title"><a href="./{{path}}">{{title}}</a>
+                  <div class="label-bh">BH</div>
+              </div>
+              <div class="article--column_sub">
+                  <div class="article--column_sub_1">
+                      <div class="article-service">Dịch vụ: {{dich-vu}}</div>
+                      <div class="article-address">{{dia-chi.chi-tiet}}</div>
+                  </div>
+
+                  <div class="article--column_sub_2">
+                      <div class="article--price">
+                          <div class="icon"><i class="fa fa-money"></i> </div>
+                          <div class="meta">{{gia-tien}}</div>
+                      </div>
+                      <div class="article--date">
+                          <div class="icon"><i class="fa fa-calendar"></i></div>
+                          <div class="meta">{{#each gio-lam-viec}} {{this}} {{/each}}</div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+
+
+      </div>
+
+      <div class="article--meta clearfix">
+
+          <div class="article--column_1">
+              <div class="article--heart">
+                  <a href=""><i class="fa fa-heart-o"></i><i class="fa fa-heart"></i>{{like}}</a>
+              </div>
+              <div class="article--sponsor">
+                  Nhà tài trợ
+              </div>
+          </div>
+
+          <div class="article--column_2">
+
+              <div class="article--column_sub">
+                  <div class="article--column_sub_1">
+                      <div class="article-gallery">
+
+                          <ul class="clearList listInline popup-gallery">
+                              {{#each list-image}}
+                              <li>
+                                  <a href="https://images1-fabric.practo.com/cosderma-clinic-bangalore-1456213122-56cc0c8281b6f.jpg" style="background-image: url('{{this}}')"></a>
+                              </li>
+                              {{/each}}
+
+                          </ul>
+
+                          <div class="article-gallery-popover boxShadow">
+
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <div class="article--column_sub_2">
+                      <a href="" class="button expanded article--button"><i class="fa fa-phone"></i> Xem số điện thoại</a>
+                  </div>
+              </div>
+
+          </div>
+
+
+      </div>
+
+      <div class="article--drop">
+          <div class="show-phonenumber">
+              <div class="notch"></div>
+
+              <div class="phone_and_ext">
+
+                  <h5><i class="fa fa-phone"></i> Số điện thoại : {{so-dien-thoai}}</h5>
+
+              </div>
+              <div class="help_message">
+
+                  <span>If you couldn't connect with the center,
+                                                <a href="" class="live-chat-link">Chat with us</a><span class="chat-icon-loader hide"></span>
+                  <div class="help_timing">(8 am to 7 pm, Monday to Sunday)
+                      <br>
+                  </div>
+                  </span>
+
+              </div>
+
+              <div class="help_message">
+                  Note: This call may be recorded for quality control purpose and call recording may be shared with the center you are trying to connect
+              </div>
+
+              <div>By calling this number, you agree to the <a href="" target="blank">Terms &amp; Conditions</a></div>
+          </div>
+      </div>
+  </div>
+  {{/each}}
 
     <div class="spinner">
       <div class="bounce1"></div>
