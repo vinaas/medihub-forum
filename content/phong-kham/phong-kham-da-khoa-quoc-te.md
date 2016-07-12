@@ -126,8 +126,8 @@
             ],
             "dia-chi": {
                 "tinh": "HCM",
-                "quan-huyen": "quan-1",
-                "chi-tiet": "300 Phạm Ngũ Lão, P. Nguyễn Cư Trinh, Q.1, TP.HCM"
+                "quan-huyen": "quan-2",
+                "chi-tiet": "300 Phạm Ngũ Lão, P. Nguyễn Cư Trinh, Q.2, TP.HCM"
             },
             "gia-tien": "320,000",
             "like": 968,

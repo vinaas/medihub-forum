@@ -3,7 +3,7 @@
     "title": "Search",
     "url": "/",
     "description": "Search Page",
-    "layout": "search.html",
+    "layout": "gioithieu.html",
     "permalink" : false
 }
 ---

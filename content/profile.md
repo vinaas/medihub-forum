@@ -1,9 +1,9 @@
 ---json
 {
-    "title": "Search",
+    "title": "Profile",
     "url": "/",
     "description": "Search Page",
-    "layout": "search.html",
+    "layout": "profile.html",
     "permalink" : false
 }
 ---
