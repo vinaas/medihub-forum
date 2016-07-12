@@ -1,6 +1,6 @@
 <div class="searchForm clearfix">
   <div class="searchForm--1">
-    <select class="select2Normal" data-placeholder="Chọn (Bác sĩ/ Phòng khám)" rv-value="selectedFilter.chon">
+    <select class="select2Normal" data-placeholder="Chọn (Bác sĩ/ Phòng khám)" onchange="data.selectedFilter.chon = this.value;">
       <option value=""></option>
       {{#each searchForm.bacsi-phongkham}}
        <option value="{{loai}}" >{{ten}}</option>
@@ -8,7 +8,7 @@
     </select>
   </div>
   <div class="searchForm--2">
-    <select class="select2Search" data-placeholder="Bệnh, Triệu chứng, Chuyên khoa" rv-value="selectedFilter.chon">
+    <select class="select2Search" data-placeholder="Bệnh, Triệu chứng, Chuyên khoa" onchange="data.selectedFilter.benh = this.value;">
       <option value="" selected></option>
       {{#each searchForm.trieu-chung-benh}}
         <option value="{{this.name}}" >{{this.ten}}</option>
@@ -16,7 +16,7 @@
     </select>
   </div>
   <div class="searchForm--3">
-    <select class="select2Search" data-placeholder="Tỉnh, Thành phố">
+    <select class="select2Search" data-placeholder="Tỉnh, Thành phố" onchange="data.selectedFilter.tinh = this.value;">
       <option value="" selected></option>
       <option value="bacsi">TP. Hồ Chí Minh</option>
       <option value="phongkham">Hà nội</option>
@@ -26,7 +26,7 @@
     </select>
   </div>
   <div class="searchForm--4">
-    <select class="select2Search" data-placeholder="Khu vực">
+    <select class="select2Search" data-placeholder="Khu vực" onchange="data.selectedFilter.quan = this.value;">
       <option value="" selected></option>
       <option value="bacsi">Quận 1</option>
       <option value="phongkham">Quận 2</option>
@@ -37,12 +37,18 @@
   </div>
 
 </div>
-<script>var data = {{#rivetData}}{{rivetData}}{{/rivetData}};
-  rivets.bind(document.querySelector('body'), data);
-</script>
 <script>
-function Gui() {
-  console.log('gui data', data.selectedFilter);
-  console.log('gui data', data.selectedFilter.benh);
-}
+  var data = {{#rivetData}}{{rivetData}}{{/rivetData}};
+    rivets.bind(document.querySelector('body'), window.data);
+
+  function Gui() {
+      var parts = [];
+      for (var key in window.data.selectedFilter) {
+          if (!window.data.selectedFilter.hasOwnProperty(key) || window.data.selectedFilter[key] == '')
+              continue;
+          parts.push(key + '=' + window.data.selectedFilter[key]);
+      }
+    var query = parts.join('&');
+      window.location = "search.html?" + query;
+  }
 </script>
