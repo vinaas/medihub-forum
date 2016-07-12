@@ -18,18 +18,19 @@
   <div class="searchForm--3">
     <select class="select2Search" data-placeholder="Tỉnh, Thành phố" onchange="data.selectedFilter.tinh = this.value;">
       <option value="" selected></option>
-      <option value="bacsi">TP. Hồ Chí Minh</option>
-      <option value="phongkham">Hà nội</option>
-      <option value="phongkham">Khánh Hòa</option>
-      <option value="phongkham">Bình Định</option>
-      <option value="phongkham">Nha Trang</option>
-    </select>
+      {{#each tinh-thanh-pho.danh-sach-tinh}}
+        <option value="{{name}}">{{title}}</option>
+      {{/each}}
+      </select>
   </div>
   <div class="searchForm--4">
     <select class="select2Search" data-placeholder="Khu vực" onchange="data.selectedFilter.quan = this.value;">
       <option value="" selected></option>
-      <option value="bacsi">Quận 1</option>
-      <option value="phongkham">Quận 2</option>
+      {{#each tinh-thanh-pho.danh-sach-tinh}}
+        {{#each this.danh-sach-quan}}
+          <option value="{{name}}">{{title}}</option>
+        {{/each}}
+      {{/each}}
     </select>
   </div>
   <div class="searchForm--5">

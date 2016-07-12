@@ -39,7 +39,7 @@
         "co-lay-qua-so-dien-thoai" : true
     },
     "dia-chi": {
-        "tinh": "HCM",
+        "tinh": "ho-chi-minh",
         "quan-huyen": "quan-1",
         "chi-tiet": "300 Phạm Ngũ Lão, P. Nguyễn Cư Trinh, Q.1, TP.HCM"
     },

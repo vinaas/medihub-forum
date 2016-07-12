@@ -26,7 +26,7 @@
     },
     "chuyen-khoa": [],
     "dia-chi": {
-        "tinh": "HCM",
+        "tinh": "ho-chi-minh",
         "quan-huyen": "quan-1",
         "chi-tiet": " Đường Hai bà trưng "
     },

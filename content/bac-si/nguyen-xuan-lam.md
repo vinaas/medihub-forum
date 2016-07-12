@@ -27,9 +27,9 @@
     },
     "chuyen-khoa": [],
     "dia-chi": {
-        "tinh": "HCM",
-        "quan-huyen": "quan-1",
-        "chi-tiet": " Đường Hai bà trưng "
+        "tinh": "ho-chi-minh",
+        "quan-huyen": "quan-2",
+        "chi-tiet": "300 Trần Não, Q.2, TP.HCM "
     },
     "danh-sach-phong-kham": [
         {

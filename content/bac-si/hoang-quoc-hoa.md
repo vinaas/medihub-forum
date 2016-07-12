@@ -27,9 +27,9 @@
     },
     "chuyen-khoa": [],
     "dia-chi": {
-        "tinh": "HCM",
+        "tinh": "ho-chi-minh",
         "quan-huyen": "quan-1",
-        "chi-tiet": " Đường Hai bà trưng "
+        "chi-tiet": "300 Phạm Ngũ Lão, P. Nguyễn Cư Trinh, Q.1, TP.HCM"
     },
     "danh-sach-phong-kham": [
         {
