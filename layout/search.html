@@ -19,7 +19,7 @@
 
   <div class="small-8 columns">
   {{#each collections.bac-si}}
-  <div class="article clearfix boxShadow">
+  <div class="article clearfix boxShadow data-card" data-chon="bac-si" data-tinh="{{dia-chi.tinh}}" data-quan-huyen="{{dia-chi.quan-huyen}}">
     <a href="" class="article--bookmark" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Lưu vào danh sách của bạn"><i class="fa fa-bookmark-o"></i> Lưu</a>
     <div class="article--main clearfix">
 
@@ -134,7 +134,7 @@
 
 
   {{#each collections.phong-kham}}
-  <div class="article clearfix boxShadow">
+  <div class="article clearfix boxShadow data-card" data-chon="phong-kham" data-tinh="{{dia-chi.tinh}}" data-quan-huyen="{{dia-chi.quan-huyen}}">
       <a href="" class="article--bookmark"><i class="fa fa-bookmark-o"></i> Lưu</a>
       <div class="article--main clearfix">
 
@@ -269,7 +269,26 @@
 <script src="js/infobox.js"></script>
 <script src="js/map.js"></script>
 
+<script>
+    function getJsonFromUrl() {
+        var query = location.search.substr(1);
+        var result = {};
+        query.split("&").forEach(function (part) {
+            var item = part.split("=");
+            result[item[0]] = decodeURIComponent(item[1]);
+        });
+        return result;
+    }
 
+    {{/content}}
+    var filter = getJsonFromUrl(window.location.href);
+
+    for (var term in filter) {
+        if (!filter.hasOwnProperty(term)) continue;
+        var selector = '.data-card[data-' + term + '!="' + filter[term] + '"]';
+        $(selector).hide();
+    }
+</script>
 {{/content}}
 
 
