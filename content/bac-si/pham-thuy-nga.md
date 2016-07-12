@@ -24,12 +24,21 @@
             "Phạm vi hoạt động: Phòng khám đa khoa"
         ]
     },
+    "gia-tien": "820,000",
+    "like": 661,
+    "type": "nha-tai-tro",
+    "gio-lam-viec": [
+        "T2 - T6: 10:00AM-2:00PM ",
+        "T7 - CN: 5:00PM-9:00PM"
+    ],
+    "so-dien-thoai": "84838991129",
     "chuyen-khoa": [],
     "dia-chi": {
         "tinh": "ho-chi-minh",
         "quan-huyen": "quan-1",
         "chi-tiet": " Đường Hai bà trưng "
     },
+
     "danh-sach-phong-kham": [
         {
             "title": "Phòng khám chuyên khoa Tai Mũi Họng",

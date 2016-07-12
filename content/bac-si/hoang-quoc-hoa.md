@@ -25,6 +25,14 @@
             "Phạm vi hoạt động: Phòng khám đa khoa"
         ]
     },
+    "gia-tien": "320,000",
+    "like": 608,
+    "type": "nha-tai-tro",
+    "gio-lam-viec": [
+        "T2 - T6: 10:00AM-2:00PM ",
+        "T7 - CN: 5:00PM-9:00PM"
+    ],
+    "so-dien-thoai": "84838991129",
     "chuyen-khoa": [],
     "dia-chi": {
         "tinh": "ho-chi-minh",
