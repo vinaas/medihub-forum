@@ -4,7 +4,15 @@
     "url": "/",
     "description": "Index Page",
     "layout": "index.html",
-    "permalink" : false
+    "permalink" : false,
+    "rivetData" : {
+      "selectedFilter" : {
+        "chon" : "",
+        "benh" : "",
+        "tinh" : "",
+        "quan" : ""
+      }
+    }
 }
 ---
 

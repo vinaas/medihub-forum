@@ -1,16 +1,17 @@
 <div class="searchForm clearfix">
   <div class="searchForm--1">
-    <select class="select2Normal" data-placeholder="Chọn (Bác sĩ/ Phòng khám)">
+    <select class="select2Normal" data-placeholder="Chọn (Bác sĩ/ Phòng khám)" rv-value="selectedFilter.chon">
       <option value=""></option>
-      <option value="bacsi">Bác sĩ</option>
-      <option value="phongkham">Phòng khám</option>
+      {{#each searchForm.bacsi-phongkham}}
+       <option value="{{loai}}" >{{ten}}</option>
+      {{/each}}
     </select>
   </div>
   <div class="searchForm--2">
-    <select class="select2Search" data-placeholder="Bệnh, Triệu chứng, Chuyên khoa">
+    <select class="select2Search" data-placeholder="Bệnh, Triệu chứng, Chuyên khoa" rv-value="selectedFilter.chon">
       <option value="" selected></option>
-      {{#each trieu-chung-benh.danh-sach}}
-        <option value="phongkham">{{this.ten}}</option>
+      {{#each searchForm.trieu-chung-benh}}
+        <option value="{{this.name}}" >{{this.ten}}</option>
       {{/each}}
     </select>
   </div>
@@ -32,7 +33,16 @@
     </select>
   </div>
   <div class="searchForm--5">
-    <a href="search.html" class="button searchForm--button"><i class="fa fa-search"></i> Tìm kiếm</a>
+    <a class="button searchForm--button" onclick="Gui()"><i class="fa fa-search"></i> Tìm kiếm</a>
   </div>
 
 </div>
+<script>var data = {{#rivetData}}{{rivetData}}{{/rivetData}};
+  rivets.bind(document.querySelector('body'), data);
+</script>
+<script>
+function Gui() {
+  console.log('gui data', data.selectedFilter);
+  console.log('gui data', data.selectedFilter.benh);
+}
+</script>
