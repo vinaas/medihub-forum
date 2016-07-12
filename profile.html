@@ -13,9 +13,9 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <meta name="description" content="trang blog">
+    <meta name="description" content="Search Page">
 
-    <title>Blog Page: in file blog-list.md</title>
+    <title>Profile</title>
     <script src="https://rawgit.com/mikeric/rivets/v0.8.1/dist/rivets.bundled.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic,300italic,300&subset=latin,vietnamese,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./font/font-awesome/css/font-awesome.min.css">
@@ -29,26 +29,140 @@
 <![endif]-->
 
 <header class="header boxShadowLess">
-    <div class="row align-justify align-middle">
+  <div class="row align-justify align-middle">
 
-        <div class="columns">
-            <div class="header__container">
-                <div class="header__logo">
-                    <a href="index.html" id="logo"></a>
-                </div>
-            </div>
+    <div class="columns">
+      <div class="header__container">
+        <div class="header__logo">
+          <a href="index.html" id="logo"></a>
         </div>
+      </div>
+    </div>
 
-        <div class="columns">
-            <ul class="header__link clearList listInline">
-                <li><a href="gioithieu.html" class="linkGray">Về chúng tôi</a></li>
-                <li><a href="#signin-popup" class="popup-normal linkGray">Đăng ký</a></li>
-                <li><a href="#register-popup" class="popup-normal button">Đăng nhập</a></li>
+    <div class="columns">
+      <ul class="header__link clearList listInline">
+        <li><a class="float-right linkGray header__link_drop" data-toggle="taikhoan-dropdown">Nguyễn Việt Hùng <i class="fa fa-angle-down"></i></a>
+          <div class="dropdown-pane bottom" id="taikhoan-dropdown" data-dropdown data-hover="true"
+               data-hover-pane="true">
+            <ul class="clearList header__link_dropdown">
+              <li><a href="profile.html" class="linkGray"><i class="fa fa-user"></i> Tài khoản</a></li>
+              <li><a href="profile-save.html" class="linkGray"><i class="fa fa-comments-o"></i> Trao đổi</a></li>
+              <li><a href="profile-save.html" class="linkGray"><i class="fa fa-bookmark-o"></i> Đã lưu</a></li>
+              <li><a href="profile-save.html" class="linkGray"><i class="fa fa-heart"> </i> Yêu thích</a></li>
+              <li><a href="profile-info.html" class="linkGray"><i class="fa fa-cog"></i> Cài đặt</a></li>
+              <li><a href="index.html" class="linkGray"><i class="fa fa-sign-out"></i> Đăng xuất</a></li>
             </ul>
-        </div>
+          </div>
+        </li>
+      </ul>
+
 
     </div>
+
+  </div>
 </header>
+
+
+<div class="row profile">
+
+  <div class="small-4 columns">
+
+    <div class="portlet boxShadow ">
+
+      <div class="porlet--body no-pd">
+
+        <div class="profile-avatar text-center">
+          <div class="article--thumbnail ">
+            <img src="http://nyulangone.org/images/doctors/f/fisher/1306860663/jason-c-fisher-thumb.jpg" alt="">
+        
+            <a href="" class="article--thumbnail-change"><input type="file" class="file-input">Đổi hình đại diện</a>
+          </div>
+        
+          <h4 class="profile-name"><a href="profile-info.html">Nguyen Viet Hung</a></h4>
+        
+          <a href="profile-edit.html" class="profile-edit linkGray"><i class="fa fa-edit"></i></a>
+        </div>
+        
+        <div class="profile-feature">
+          <table>
+            <tbody>
+            <tr>
+              <td>Nhóm máu</td>
+              <td>: A</td>
+            </tr>
+            <tr>
+              <td>Chiều cao</td>
+              <td>: 1,7 m</td>
+            </tr>
+            <tr>
+              <td>Cân nặng</td>
+              <td>: 78kg</td>
+            </tr>
+        
+            <tr>
+              <td><span class="label bmi secondary ">BMI</span></td>
+              <td>: 20</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="small-8 columns">
+
+    <div class="portlet boxShadow">
+
+      <div class="porlet--body">
+
+        <div class="profile-save">
+          <div class="profile-save-item">
+            <a href="profile-save.html" class="linkAbsolute"></a>
+            <div class="profile-save-icon"><i class="fa fa-comments-o"></i></div>
+            <h4 class="profile-save-title">Trao đổi</h4>
+            <ul class="profile-save-list clearList">
+              <li>6 chủ đề giao lưu</li>
+                <li>6 câu hỏi chuyên gia</li>
+            </ul>
+
+          </div>
+
+          <div class="profile-save-item">
+            <a href="profile-save.html" class="linkAbsolute"></a>
+            <div class="profile-save-icon"><i class="fa fa-heartbeat"></i></div>
+            <h4 class="profile-save-title">Yêu thích</h4>
+            <ul class="profile-save-list clearList">
+              <li>10 Bác sĩ</li>
+              <li>20 Phòng khám</li>
+            </ul>
+
+          </div>
+
+
+          <div class="profile-save-item">
+            <a href="profile-save.html" class="linkAbsolute"></a>
+            <div class="profile-save-icon"><i class="fa fa-bookmark-o"></i></div>
+            <h4 class="profile-save-title">Đã lưu</h4>
+            <ul class="profile-save-list clearList">
+              <li>5 Bác sĩ</li>
+              <li>12 Phòng khám</li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
 
 
 <footer>
@@ -181,6 +295,9 @@
 </div>
 
 <script src="./js/app.js"></script>
+
+
+
 
 
 

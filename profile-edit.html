@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!--<base href="https://easywebhub.github.io/medihub/" >-->
+    <script type="text/javascript">
+        var baseHref = 'https://easywebhub.github.io/medihub/';
+        if (baseHref) {
+            document.write("<base href='https://easywebhub.github.io/medihub/' />");
+        }
+
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="description" content="Search Page">
+
+    <title>Profile</title>
+    <script src="https://rawgit.com/mikeric/rivets/v0.8.1/dist/rivets.bundled.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic,300italic,300&subset=latin,vietnamese,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./font/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/app.css">
+
+
+</head>
+<body data-function="">
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<header class="header boxShadowLess">
+  <div class="row align-justify align-middle">
+
+    <div class="columns">
+      <div class="header__container">
+        <div class="header__logo">
+          <a href="index.html" id="logo"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns">
+      <ul class="header__link clearList listInline">
+        <li><a class="float-right linkGray header__link_drop" data-toggle="taikhoan-dropdown">Nguyễn Việt Hùng <i class="fa fa-angle-down"></i></a>
+          <div class="dropdown-pane bottom" id="taikhoan-dropdown" data-dropdown data-hover="true"
+               data-hover-pane="true">
+            <ul class="clearList header__link_dropdown">
+              <li><a href="profile.html" class="linkGray"><i class="fa fa-user"></i> Tài khoản</a></li>
+              <li><a href="profile-save.html" class="linkGray"><i class="fa fa-comments-o"></i> Trao đổi</a></li>
+              <li><a href="profile-save.html" class="linkGray"><i class="fa fa-bookmark-o"></i> Đã lưu</a></li>
+              <li><a href="profile-save.html" class="linkGray"><i class="fa fa-heart"> </i> Yêu thích</a></li>
+              <li><a href="profile-info.html" class="linkGray"><i class="fa fa-cog"></i> Cài đặt</a></li>
+              <li><a href="index.html" class="linkGray"><i class="fa fa-sign-out"></i> Đăng xuất</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+
+    </div>
+
+  </div>
+</header>
+
+
+<div class="row profile">
+
+  <div class="small-4 columns">
+
+    <div class="portlet boxShadow ">
+
+      <div class="porlet--body no-pd">
+
+          <div class="profile-avatar text-center">
+            <div class="article--thumbnail ">
+              <img src="http://nyulangone.org/images/doctors/f/fisher/1306860663/jason-c-fisher-thumb.jpg" alt="">
+          
+              <a href="" class="article--thumbnail-change"><input type="file" class="file-input">Đổi hình đại diện</a>
+            </div>
+          
+            <h4 class="profile-name"><a href="profile-info.html">Nguyen Viet Hung</a></h4>
+          
+            <a href="profile-edit.html" class="profile-edit linkGray"><i class="fa fa-edit"></i></a>
+          </div>
+          
+          <div class="profile-feature">
+            <table>
+              <tbody>
+              <tr>
+                <td>Nhóm máu</td>
+                <td>: A</td>
+              </tr>
+              <tr>
+                <td>Chiều cao</td>
+                <td>: 1,7 m</td>
+              </tr>
+              <tr>
+                <td>Cân nặng</td>
+                <td>: 78kg</td>
+              </tr>
+          
+              <tr>
+                <td><span class="label bmi secondary ">BMI</span></td>
+                <td>: 20</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="small-8 columns">
+
+    <div class="portlet boxShadow">
+      <div class="porlet--heading">
+        <h3 class="porlet--title">Đổi thông tin</h3>
+      </div>
+
+      <div class="porlet--body" >
+
+        <div class="profile-info">
+          <form>
+            <div class="row">
+              <div class="small-12 medium-6 columns">
+                <label>Họ và tên
+                  <input type="text" value="Nguyễn Việt Hùng" placeholder="Họ và tên">
+                </label>
+              </div>
+              <div class="small-12 medium-6 columns">
+                <label>Ngày sinh
+                  <input type="text" value="14 - 12 - 1991" placeholder="Ngày sinh">
+                </label>
+              </div>
+
+              <div class="small-12 medium-6 columns">
+                <label>Nơi sinh
+                  <select class="select2Search" data-placeholder="Tỉnh, Thành phố">
+                    <option value="pk" selected>TP. Hồ Chí Minh</option>
+                    <option value="pk">Hà nội</option>
+                    <option value="pk">Khánh Hòa</option>
+                    <option value="pk">Bình Định</option>
+                    <option value="pk">Nha Trang</option>
+                  </select>
+                </label>
+              </div>
+              <div class="small-12 medium-6 columns">
+                <label>Ngày sinh
+                  <input type="text" value="14 - 12 - 1991" placeholder="Ngày sinh">
+                </label>
+              </div>
+
+
+              <div class="small-12 medium-6 columns">
+                <label>Địa chỉ
+                  <input type="text" value="Chung cư Bùi Viện - Q.1 - Tp.HCM" placeholder="Địa chỉ">
+                </label>
+              </div>
+
+              <div class="small-12 medium-6 columns">
+                <label>Điện thoại
+                  <input type="text" value="01669 206 512" placeholder="Điện thoại">
+                </label>
+              </div>
+
+              <div class="small-12 medium-6 columns">
+                <label>Email
+                  <input type="text" value="gattadesmond@gmail.com" placeholder="Nhập địa chỉ Email">
+                </label>
+              </div>
+              
+              
+            </div>
+          </form>
+        </div>
+
+        <a href="" class="button primary">Cập nhập thông tin</a>
+
+      </div>
+    </div>
+
+
+
+    <div class="portlet boxShadow">
+      <div class="porlet--heading">
+        <h3 class="porlet--title">Đổi mật khẩu của bạn</h3>
+      </div>
+
+      <div class="porlet--body" >
+
+        <div class="profile-info">
+          <form>
+            <div class="row">
+
+              <div class="small-12 medium-6 columns">
+                <label>Mật khẩu hiện tại
+                  <input type="password">
+                </label>
+              </div>
+
+              <div class="small-12 medium-6 columns">
+                <label>Mật khẩu mới
+                  <input type="password" placeholder="Mật khẩu cần dài hơn 6 ký tự">
+                </label>
+              </div>
+
+              <div class="small-12 medium-6 columns">
+                <label>Nhập lại mật khẩu mới
+                  <input type="password">
+                </label>
+              </div>
+
+
+            </div>
+          </form>
+        </div>
+
+        <a href="" class="button primary">Cập nhập thông tin</a>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<footer>
+
+  <div class="row">
+    <div class="small-12 medium-3 columns">
+      <h5 class="footer__logo">Medihub</h5>
+      <p class="footer__des">
+        Cổng kết nối thông tin điện tử, ứng dụng & dịch vụ y tế
+      </p>
+      <ul class="clearList">
+        <li>Số điện thoại : <a href="" class="linkGray">+0012 345 678</a></li>
+        <li>Email : <a href="" class="linkGray">medihub@gmail.com</a></li>
+      </ul>
+
+      <ul class="clearList listInline footer__social">
+        <li><a href="" class="linkGray"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="" class="linkGray"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="" class="linkGray"><i class="fa fa-google-plus"></i></a></li>
+      </ul>
+    </div>
+
+
+    <div class="small-12 medium-8 columns medium-offset-1">
+
+      <div class="row">
+        <div class="small-12 medium-4 columns">
+          <h6 class="footer__title">Về công ty</h6>
+          <ul class="clearList">
+            <li><a href="" class="linkGray">Giới thiệu</a></li>
+            <li><a href="" class="linkGray">Liên hệ</a></li>
+            <li><a href="" class="linkGray">Báo chí</a></li>
+            <li><a href="" class="linkGray"> Tuyển dụng</a></li>
+            <li><a href="" class="linkGray">Blog medihub</a></li>
+          </ul>
+        </div>
+        <div class="small-12 medium-4 columns">
+          <h6 class="footer__title">Các dịch vụ</h6>
+          <ul class="clearList">
+            <li><a href="" class="linkGray">Tìm bác sĩ</a></li>
+            <li><a href="" class="linkGray">Tìm y tá - điều dưỡng</a></li>
+            <li><a href="" class="linkGray">Tìm phòng khám - bệnh viện</a></li>
+            <li><a href="" class="linkGray">Tư vấn sức khỏe</a></li>
+            <li><a href="" class="linkGray"> Web đời sống và sức khỏe</a></li>
+          </ul>
+        </div>
+
+
+
+        <div class="small-12 medium-4 columns">
+          <h6 class="footer__title">Thông tin chung</h6>
+          <ul class="clearList">
+            <li><a href="" class="linkGray">Hướng dẫn sử dụng</a></li>
+            <li><a href="" class="linkGray">Điều khoản & chính sách</a></li>
+            <li><a href="" class="linkGray">Chương trình ưu đãi</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="small-12 columns">
+      <div class="footer__bottom">
+        ©2016 MediHub Co., Ltd - Phiên bản thử nghiệm
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+<div id="register-popup" class="zoom-anim-dialog mfp-hide popup">
+
+  <h4 class="popup--title">Đăng nhập</h4>
+
+  <p class="popup--sub">Bạn chưa có tài khoản? <a href="">Hãy đăng ký!</a></p>
+  <div class="popup--form">
+    <input type="text" placeholder="Số điện thoại">
+  </div>
+
+  <div class="popup--form">
+    <input type="text" placeholder="Mật khẩu">
+  </div>
+
+  <div class="popup--forget"><a href="profile.html">Quên mật khẩu ?</a></div>
+
+  <div class="popup--button">
+    <a href="profile.html" class="button">Đăng nhập</a>
+  </div>
+
+  <div>Hoặc đăng nhập với</div>
+
+  <div class="popup--button__socials">
+    <a href="profile.html" class="button"><i class="fa fa-facebook"></i> Facebook</a>
+    <a href="profile.html" class="button"><i class="fa fa-google-plus"></i> Google</a>
+  </div>
+</div>
+
+
+
+<div id="signin-popup" class="zoom-anim-dialog mfp-hide popup">
+
+  <h4 class="popup--title">Đăng ký</h4>
+
+  <p class="popup--sub">Bạn đã có tài khoản? <a href="">Hãy đăng nhập!</a></p>
+  <div class="popup--form">
+    <input type="text" placeholder="Số điện thoại">
+  </div>
+
+  <div class="popup--form">
+    <input type="text" placeholder="Mật khẩu">
+  </div>
+
+  <div class="popup--forget"><a href="profile.html">Quên mật khẩu ?</a></div>
+
+  <div class="popup--button">
+    <a href="profile.html" class="button">Đăng ký</a>
+  </div>
+
+  <div>Hoặc đăng ký với</div>
+
+  <div class="popup--button__socials">
+    <a href="profile.html" class="button"><i class="fa fa-facebook"></i> Facebook</a>
+    <a href="profile.html" class="button"><i class="fa fa-google-plus"></i> Google</a>
+  </div>
+</div>
+
+
+</div>
+
+<script src="./js/app.js"></script>
+
+
+
+
+
+
+<script src="./js/main.js"></script>
+
+
+</body>
+</html>

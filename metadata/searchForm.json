@@ -1,6 +1,18 @@
 {
   "title" : "Bệnh, Triệu Chứng Bệnh, Chuyên Khoa",
-  "danh-sach" : [
+
+  "bacsi-phongkham" : [
+    {
+       "ten" :	"Bác Sĩ",
+       "loai" : "bac-si"
+    },
+   {
+       "ten" :	"Phòng Khám",
+       "loai" : "phong-kham"
+    }
+  ],
+
+  "trieu-chung-benh" : [
     {
        "ten" :	"Răng hàm mặt",
        "name" : "rang-ham-mat",
@@ -32,4 +44,6 @@
        "loai" : "chuyen-khoa"
     }
   ]
+
+
 }
