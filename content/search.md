@@ -2,11 +2,12 @@
 {
     "title": "Search",
     "url": "/",
-    "description": "Search Page for medihub",
+    "description": "Search Page",
     "layout": "search.html",
-    "permalink": false
+    "permalink" : false
 }
 ---
+
 ### Danh sách các link trong file
 - [Click Here](/blog-list.html)
 
