@@ -40,8 +40,8 @@
     },
     "dia-chi": {
         "tinh": "ho-chi-minh",
-        "quan-huyen": "quan-1",
-        "chi-tiet": "300 Phạm Ngũ Lão, P. Nguyễn Cư Trinh, Q.1, TP.HCM"
+        "quan-huyen": "quan-2",
+        "chi-tiet": "300 Trần Não, Quận 2, TP.HCM"
     },
     "danh-sach-phong-kham": [
         {
