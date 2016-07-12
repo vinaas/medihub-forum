@@ -2,7 +2,6 @@ var swiperBg;
 
 var swiperGallery;
 
-
 $(function() {
 
     swiperBg = new Swiper('.swiper-bg-slider',{
@@ -17,6 +16,7 @@ $(function() {
         preloadImages: false,
          nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
+        watchSlidesVisibility: true,
          lazyLoading: true
     });
 
@@ -92,6 +92,7 @@ $(function() {
 
     $(".article--button").click(function(e){
         e.preventDefault();
+        $(this).closest(".article--meta").next().hide();
         $(this).closest(".article--meta").next().next().slideToggle();
     });
 
@@ -99,10 +100,12 @@ $(function() {
         e.preventDefault();
 
         var index = $( ".popup-gallery" ).index( this );
-        console.log(index);
+
+         $(this).closest(".article--meta").next().next().hide();
         $(this).closest(".article--meta").next().slideToggle(function(){
             if (swiperGallery != undefined) {
                     swiperGallery[index].update();
+                    swiperGallery[index].lazy.load();
                 }
         });
 
