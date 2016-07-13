@@ -34,10 +34,8 @@
     {
         "name": "date",
         "displayName": "date",
-        "type": "Text",
-        "validations": [],
-        "viewOnly": false,
-        "required": false
+        "displayType": "Date",
+        "type": "DateTime"
     },
     {
         "name": "permalink",
@@ -60,7 +58,18 @@
         "type": "Text",
         "validations": [],
         "viewOnly": false,
-        "required": false
+        "required": false,
+        "displayType": "DropDown",
+        "predefinedData": [
+            {
+                "name": "Nam",
+                "value": "men"
+            },
+            {
+                "name": "Nữ",
+                "value": "f"
+            }
+        ]
     },
     {
         "name": "certificate_type",
@@ -119,6 +128,52 @@
         "displayName": "chuyen-dieu-tri",
         "type": "Array",
         "validations": [],
+        "required": false
+    },
+    {
+        "name": "gia-tien",
+        "displayName": "gia-tien",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "like",
+        "displayName": "like",
+        "type": "Number",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "type",
+        "displayName": "type",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "gio-lam-viec",
+        "displayName": "gio-lam-viec",
+        "type": "Array",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "so-dien-thoai",
+        "displayName": "so-dien-thoai",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "nghenghiep",
+        "displayName": "nghenghiep",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
         "required": false
     }
 ]

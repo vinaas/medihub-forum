@@ -242,23 +242,27 @@
 
                 <div class="row">
                     {{#each danh-sach-bac-si}}
-                    <div class="small-6 columns">
-                        <div class="article-lite clearfix boxShadowLess">
+                      {{#each ../collections.bac-si}}
+                        {{#ifCond this.slug ../this.slug}}
+                        <div class="small-6 columns">
+                            <div class="article-lite clearfix boxShadowLess">
 
-                            <div class="article--thumbnail">
-                                <a href="detail.html"><img src="{{list-image.[0]}}" alt=""></a>
+                                <div class="article--thumbnail">
+                                    <a href="detail.html"><img src="{{avatar}}" alt=""></a>
+                                </div>
+
+                                <div class="article--position">BÁC SĨ</div>
+                                <div class="article--title"><a href="{{slug}}">{{title}}</a> </div>
+                                <div class="article-service">Chuyên khoa {{#each info.chuyen-khoa}}{{#if @first}}{{this}}{{else}}, {{this}}{{/if}}{{/each}}</div>
+                                <div class="article--heart">
+                                    <a href=""><i class="fa fa-heart-o"></i><i class="fa fa-heart"></i>{{like}}</a>
+                                </div>
+
+                                <a class="delete-article">×</a>
                             </div>
-
-                            <div class="article--position">BÁC SĨ </div>
-                            <div class="article--title"><a href="{{slug}}">{{title}}</a> </div>
-                            <div class="article-service">Chuyên khoa {{#each chuyen-khoa}}{{#if @first}}{{this}}{{else}}, {{this}}{{/if}}{{/each}}</div>
-                            <div class="article--heart">
-                                <a href=""><i class="fa fa-heart-o"></i><i class="fa fa-heart"></i>{{like}}</a>
-                            </div>
-
-                            <a class="delete-article">×</a>
                         </div>
-                    </div>
+                        {{/ifCond}}
+                      {{/each}}
                     {{/each}}
 
                 </div>

@@ -9,7 +9,11 @@
    {
        "ten" :	"Phòng Khám",
        "loai" : "phong-kham"
-    }
+    },
+    {
+        "ten" :	"Bệnh Viện",
+        "loai" : "benh-vien"
+     }
   ],
 
   "trieu-chung-benh" : [
@@ -44,6 +48,4 @@
        "loai" : "chuyen-khoa"
     }
   ]
-
-
 }

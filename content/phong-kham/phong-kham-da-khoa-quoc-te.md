@@ -6,7 +6,10 @@
     "layout": "phong-kham.html",
     "date": "2016-07-06 22:34:45 +07:00",
     "permalink": true,
-    "avatar": "http://nyulangone.org/images/doctors/f/fisher/1306860663/jason-c-fisher-thumb.jpg",
+    "list-image": [
+        "http://www.diachibotui.com/Thumbnail/ExtraLarge/Upload/2015/5/22/phong-kham-mat-thu-ha-ba-trieu-635679087664809056.jpg",
+        "https://images1-fabric.practo.com/cosderma-clinic-bangalore-1456213420-56cc0dac9b1b8.jpg"
+    ],
     "certificate_type": "HCM-CCHN",
     "certificate_code": "000199/HCM-CCHN",
     "certificate_number": "000199",
@@ -89,54 +92,10 @@
     ],
     "danh-sach-bac-si": [
         {
-            "title": "Phạm Thúy Ngà",
-            "slug" : "pham-thuy-nga",
-            "list-image": [
-                "http://www.diachibotui.com/Thumbnail/ExtraLarge/Upload/2015/5/22/phong-kham-mat-thu-ha-ba-trieu-635679087664809056.jpg",
-                "https://images1-fabric.practo.com/cosderma-clinic-bangalore-1456213420-56cc0dac9b1b8.jpg"
-            ],
-            "chuyen-khoa": [
-                "Tai mũi họng",
-                "Đa Khoa"
-            ],
-            "dia-chi": {
-                "tinh": "HCM",
-                "quan-huyen": "quan-1",
-                "chi-tiet": "300 Phạm Ngũ Lão, P. Nguyễn Cư Trinh, Q.1, TP.HCM"
-            },
-            "gia-tien": "520,000",
-            "like": 668,
-            "type": "nha-tai-tro",
-            "gio-lam-viec": [
-                "T2 - T6: 10:00AM-2:00PM ",
-                "T7 - CN: 5:00PM-9:00PM"
-            ],
-            "so-dien-thoai": "080 6608 4059"
+            "slug" : "pham-thuy-nga"
         },
         {
-            "title": "Hoàng Quốc Hòa",
-            "slug" : "hoang-quoc-hoa",
-            "list-image": [
-                "http://www.diachibotui.com/Thumbnail/ExtraLarge/Upload/2015/5/22/phong-kham-mat-thu-ha-ba-trieu-635679087664809056.jpg",
-                "https://images1-fabric.practo.com/cosderma-clinic-bangalore-1456213420-56cc0dac9b1b8.jpg"
-            ],
-            "chuyen-khoa": [
-                "Tai mũi họng",
-                "Đa Khoa"
-            ],
-            "dia-chi": {
-                "tinh": "HCM",
-                "quan-huyen": "quan-2",
-                "chi-tiet": "300 Phạm Ngũ Lão, P. Nguyễn Cư Trinh, Q.2, TP.HCM"
-            },
-            "gia-tien": "320,000",
-            "like": 968,
-            "type": null,
-            "gio-lam-viec": [
-                "T2 - T6: 10:00AM-2:00PM ",
-                "T7 - CN: 5:00PM-9:00PM"
-            ],
-            "so-dien-thoai": "080 6608 4059"
+            "slug" : "hoang-quoc-hoa"
         }
     ],
     "chuyen-dieu-tri": [
