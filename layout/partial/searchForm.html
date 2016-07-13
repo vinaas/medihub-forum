@@ -1,6 +1,6 @@
 <div class="searchForm clearfix">
   <div class="searchForm--1">
-    <select class="select2Normal" data-placeholder="Chọn (Bác sĩ/ Phòng khám)" onchange="data.selectedFilter.chon = this.value;">
+    <select class="select2Normal" data-placeholder="Bác sĩ | Phòng khám" onchange="data.selectedFilter.chon = this.value;">
       <option value=""></option>
       {{#each searchForm.bacsi-phongkham}}
        <option value="{{loai}}" >{{ten}}</option>
@@ -24,7 +24,7 @@
       </select>
   </div>
   <div class="searchForm--4">
-    <select class="select2Search" data-placeholder="Khu vực" onchange="data.selectedFilter.quan = this.value;">
+    <select class="select2Search" data-placeholder="Quận | Huyện" onchange="data.selectedFilter.quan = this.value;">
       <option value="" selected></option>
       {{#each tinh-thanh-pho.danh-sach-tinh}}
         {{#each this.danh-sach-quan}}
