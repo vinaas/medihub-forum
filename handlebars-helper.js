@@ -7,6 +7,12 @@ module.exports = function (Handlebars) {
     Handlebars.registerHelper(HandlebarsLayouts(Handlebars));
 
     // dang ky rivetData helper block cho handlebars ở đây
+    Handlebars.registerHelper('ifCond', function(v1, v2, options) {
+        if(v1 === v2) {
+          return options.fn(this);
+        }
+        return options.inverse(this);
+      });
 
     // rivetData helper, bat buoc key trong meta data cua content phai la 'rivetData'
     Handlebars.registerHelper('rivetData', obj => {
@@ -34,4 +40,3 @@ module.exports = function (Handlebars) {
         return moment(context).format(format);
     });
 };
-
