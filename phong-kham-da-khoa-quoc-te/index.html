@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <base href="https://easywebhub.github.io/medihub/" >
-    <!-- <script type="text/javascript">
-        var baseHref = 'https://easywebhub.github.io/medihub/';
+    <!--<base href="http://localhost:3000/" >-->
+    <script type="text/javascript">
+        var baseHref = 'http://localhost:3000/';
         if (baseHref) {
-            document.write("<base href='https://easywebhub.github.io/medihub/' />");
+            document.write("<base href='http://localhost:3000/' />");
         }
 
-    </script> -->
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <meta name="description" content="After graduating from West Virginia University Medical School, Dr. Jonathon Alex completed a two-year fellowship in sports medicine at Akron Children’s Hospital. During his training at Akron, Dr. Jonathon Alex was team physician for the University of Akron and Walsh University.">
@@ -18,8 +18,8 @@
     <title>Phòng khám Đa Khoa Quốc Tế</title>
     <script src="https://rawgit.com/mikeric/rivets/v0.8.1/dist/rivets.bundled.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic,300italic,300&subset=latin,vietnamese,latin-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="./font/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/app.css">
+    <link rel="stylesheet" href="/font/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
 
 
 </head>
@@ -54,10 +54,11 @@
   <div class="searchFilter boxShadow">
     <div class="searchForm clearfix">
       <div class="searchForm--1">
-        <select class="select2Normal" data-placeholder="Chọn (Bác sĩ/ Phòng khám)" onchange="data.selectedFilter.chon = this.value;">
+        <select class="select2Normal" data-placeholder="Bác sĩ | Phòng khám" onchange="data.selectedFilter.chon = this.value;">
           <option value=""></option>
            <option value="bac-si" >Bác Sĩ</option>
            <option value="phong-kham" >Phòng Khám</option>
+           <option value="benh-vien" >Bệnh Viện</option>
         </select>
       </div>
       <div class="searchForm--2">
@@ -79,7 +80,7 @@
           </select>
       </div>
       <div class="searchForm--4">
-        <select class="select2Search" data-placeholder="Khu vực" onchange="data.selectedFilter.quan = this.value;">
+        <select class="select2Search" data-placeholder="Quận | Huyện" onchange="data.selectedFilter.quan = this.value;">
           <option value="" selected></option>
               <option value="quan-1">Quận 1</option>
               <option value="quan-2">Quận 2</option>
@@ -513,40 +514,40 @@
             <div class="porlet--body gray">
 
                 <div class="row">
-                    <div class="small-6 columns">
-                        <div class="article-lite clearfix boxShadowLess">
+                        <div class="small-6 columns">
+                            <div class="article-lite clearfix boxShadowLess">
 
-                            <div class="article--thumbnail">
-                                <a href="detail.html"><img src="http://www.diachibotui.com/Thumbnail/ExtraLarge/Upload/2015/5/22/phong-kham-mat-thu-ha-ba-trieu-635679087664809056.jpg" alt=""></a>
+                                <div class="article--thumbnail">
+                                    <a href="detail.html"><img src="http://nyulangone.org/images/doctors/f/fisher/1306860663/jason-c-fisher-thumb.jpg" alt=""></a>
+                                </div>
+
+                                <div class="article--position">BÁC SĨ</div>
+                                <div class="article--title"><a href="pham-thuy-nga">Phạm Thuý Ngà</a> </div>
+                                <div class="article-service">Chuyên khoa Tai mũi họng, Đa Khoa</div>
+                                <div class="article--heart">
+                                    <a href=""><i class="fa fa-heart-o"></i><i class="fa fa-heart"></i>661</a>
+                                </div>
+
+                                <a class="delete-article">×</a>
                             </div>
-
-                            <div class="article--position">BÁC SĨ </div>
-                            <div class="article--title"><a href="pham-thuy-nga">Phạm Thúy Ngà</a> </div>
-                            <div class="article-service">Chuyên khoa Tai mũi họng, Đa Khoa</div>
-                            <div class="article--heart">
-                                <a href=""><i class="fa fa-heart-o"></i><i class="fa fa-heart"></i>668</a>
-                            </div>
-
-                            <a class="delete-article">×</a>
                         </div>
-                    </div>
-                    <div class="small-6 columns">
-                        <div class="article-lite clearfix boxShadowLess">
+                        <div class="small-6 columns">
+                            <div class="article-lite clearfix boxShadowLess">
 
-                            <div class="article--thumbnail">
-                                <a href="detail.html"><img src="http://www.diachibotui.com/Thumbnail/ExtraLarge/Upload/2015/5/22/phong-kham-mat-thu-ha-ba-trieu-635679087664809056.jpg" alt=""></a>
+                                <div class="article--thumbnail">
+                                    <a href="detail.html"><img src="http://nyulangone.org/images/doctors/f/fisher/1306860663/jason-c-fisher-thumb.jpg" alt=""></a>
+                                </div>
+
+                                <div class="article--position">BÁC SĨ</div>
+                                <div class="article--title"><a href="hoang-quoc-hoa">Hoàng Quốc Hoà</a> </div>
+                                <div class="article-service">Chuyên khoa Tai mũi họng, Đa Khoa, Da liễu</div>
+                                <div class="article--heart">
+                                    <a href=""><i class="fa fa-heart-o"></i><i class="fa fa-heart"></i>608</a>
+                                </div>
+
+                                <a class="delete-article">×</a>
                             </div>
-
-                            <div class="article--position">BÁC SĨ </div>
-                            <div class="article--title"><a href="hoang-quoc-hoa">Hoàng Quốc Hòa</a> </div>
-                            <div class="article-service">Chuyên khoa Tai mũi họng, Đa Khoa</div>
-                            <div class="article--heart">
-                                <a href=""><i class="fa fa-heart-o"></i><i class="fa fa-heart"></i>968</a>
-                            </div>
-
-                            <a class="delete-article">×</a>
                         </div>
-                    </div>
 
                 </div>
 
@@ -693,10 +694,10 @@
 
 </div>
 
-<script src="./js/app.js"></script>
+<script src="/js/app.js"></script>
 
  
-<script src="./js/main.js"></script>
+<script src="/js/main.js"></script>
 
 
 </body>

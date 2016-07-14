@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <base href="https://easywebhub.github.io/medihub/" >
-    <!-- <script type="text/javascript">
-        var baseHref = 'https://easywebhub.github.io/medihub/';
+    <!--<base href="http://localhost:3000/" >-->
+    <script type="text/javascript">
+        var baseHref = 'http://localhost:3000/';
         if (baseHref) {
-            document.write("<base href='https://easywebhub.github.io/medihub/' />");
+            document.write("<base href='http://localhost:3000/' />");
         }
 
-    </script> -->
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <meta name="description" content="Detail Page">
@@ -18,8 +18,8 @@
     <title>Detail</title>
     <script src="https://rawgit.com/mikeric/rivets/v0.8.1/dist/rivets.bundled.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic,300italic,300&subset=latin,vietnamese,latin-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="./font/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/app.css">
+    <link rel="stylesheet" href="/font/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
 
 
 </head>
@@ -56,10 +56,11 @@
   <div class="searchFilter boxShadow">
     <div class="searchForm clearfix">
       <div class="searchForm--1">
-        <select class="select2Normal" data-placeholder="Chọn (Bác sĩ/ Phòng khám)" onchange="data.selectedFilter.chon = this.value;">
+        <select class="select2Normal" data-placeholder="Bác sĩ | Phòng khám" onchange="data.selectedFilter.chon = this.value;">
           <option value=""></option>
            <option value="bac-si" >Bác Sĩ</option>
            <option value="phong-kham" >Phòng Khám</option>
+           <option value="benh-vien" >Bệnh Viện</option>
         </select>
       </div>
       <div class="searchForm--2">
@@ -81,7 +82,7 @@
           </select>
       </div>
       <div class="searchForm--4">
-        <select class="select2Search" data-placeholder="Khu vực" onchange="data.selectedFilter.quan = this.value;">
+        <select class="select2Search" data-placeholder="Quận | Huyện" onchange="data.selectedFilter.quan = this.value;">
           <option value="" selected></option>
               <option value="quan-1">Quận 1</option>
               <option value="quan-2">Quận 2</option>
@@ -517,14 +518,14 @@
 
 </div>
 
-<script src="./js/app.js"></script>
+<script src="/js/app.js"></script>
 
 
 
 
 
 
-<script src="./js/main.js"></script>
+<script src="/js/main.js"></script>
 
 
 </body>
