@@ -34,8 +34,10 @@
     {
         "name": "date",
         "displayName": "date",
-        "displayType": "Date",
-        "type": "DateTime"
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
     },
     {
         "name": "permalink",
@@ -58,18 +60,7 @@
         "type": "Text",
         "validations": [],
         "viewOnly": false,
-        "required": false,
-        "displayType": "DropDown",
-        "predefinedData": [
-            {
-                "name": "Nam",
-                "value": "men"
-            },
-            {
-                "name": "Nữ",
-                "value": "f"
-            }
-        ]
+        "required": false
     },
     {
         "name": "certificate_type",
