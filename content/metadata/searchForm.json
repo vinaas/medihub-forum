@@ -46,6 +46,11 @@
        "ten" :	"Nhi khoa",
        "name" : "nhi-khoa",
        "loai" : "chuyen-khoa"
+    },
+       {
+       "ten" :	"BS Nguyễn Hoàng Sơn",
+       "name" : "nguyen-hoang-son",
+       "loai" : "bac-si"
     }
   ]
 }
