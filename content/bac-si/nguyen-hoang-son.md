@@ -82,13 +82,16 @@
         " Hen suyễn ",
         " Sốt cao"
     ],
-    "gia-tien": "",
+    "gia-tien": "200",
     "like": "1000",
     "type": "",
     "gio-lam-viec": [
         "08:00 g - 17 g"
     ],
     "so-dien-thoai": "73099939",
-    "nghenghiep": "Phó Giáo sư - Tiến sĩ Tai Mũi Họng"
+    "nghenghiep": "Phó Giáo sư - Tiến sĩ Tai Mũi Họng",
+    "note": {
+        "content": "If you couldn't connect with the center, Chat with us (8 am to 7 pm, Monday to Sunday) Note: This call may be recorded for quality control purpose and call recording may be shared with the center you are trying to connect By calling this number, you agree to the Terms & Conditions"
+    }
 }
 ---

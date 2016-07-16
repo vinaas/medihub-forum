@@ -164,5 +164,10 @@
         "validations": [],
         "viewOnly": false,
         "required": false
+    },
+    {
+        "name": "note",
+        "displayName": "note",
+        "type": "Object"
     }
 ]
