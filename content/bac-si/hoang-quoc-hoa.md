@@ -33,7 +33,7 @@
     },
     "danh-sach-phong-kham": [
         {
-            "slug" : "phong-kham-da-khoa-quoc-te"
+            "slug": "phong-kham-da-khoa-quoc-te"
         }
     ],
     "chuyen-dieu-tri": [
@@ -42,7 +42,7 @@
         "Viêm xoang"
     ],
     "gia-tien": "320,000",
-    "like": 608,
+    "like": "124",
     "type": "nha-tai-tro",
     "gio-lam-viec": [
         "T2 - T6: 10:00AM-2:00PM ",

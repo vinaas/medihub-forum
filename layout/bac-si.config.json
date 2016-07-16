@@ -132,9 +132,7 @@
     {
         "name": "like",
         "displayName": "like",
-        "type": "Number",
-        "validations": [],
-        "required": false
+        "type": "Text"
     },
     {
         "name": "type",
