@@ -82,7 +82,7 @@
         " Hen suyễn ",
         " Sốt cao"
     ],
-    "gia-tien": "200",
+    "gia-tien": "200,000 đ",
     "like": "1000",
     "type": "",
     "gio-lam-viec": [
