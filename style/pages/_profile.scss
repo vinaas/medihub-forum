@@ -1,0 +1,203 @@
+.profile{
+  margin-top: 20px;
+}
+
+.profile-avatar{
+  position: relative;
+  padding: 20px 10px 10px;
+  .article--thumbnail{
+    margin: 0 auto 15px;
+    position: relative;
+    &:hover{
+      .article--thumbnail-change{
+        opacity: 1;
+      }
+    }
+  }
+
+  .article--thumbnail-change{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    padding: 5px 10px;
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+    color: white;
+    font-size: 10px;
+
+    overflow: hidden;
+
+
+
+    &:hover{
+      background: rgba(0,0,0,0.6);
+    }
+
+
+    input.file-input {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      cursor: pointer;
+      opacity: 0;
+      filter: alpha(opacity=0); }
+  }
+}
+
+.profile-edit{
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  font-size: rem-calc(20px);
+  color: $light-gray;
+  &:hover{
+    color: $medium-gray;
+  }
+}
+
+.profile-name{
+  color: $primary-color;
+}
+.profile-feature{
+  background: $bg-gray-light;
+  padding: 10px 5px;
+  border-top: 1px solid darken($bg-gray-light,5%);
+  table{
+    margin-bottom: 0;
+  }
+  table tbody{
+    border: none;
+    background: transparent;
+
+    tr{
+      td:first-child{
+        white-space: nowrap;
+        width: 85px;
+        color: $secondary-color;
+        padding-right: 0;
+      }
+
+      td{
+        padding: 5px 10px;
+      }
+    }
+  }
+
+  table tbody tr:nth-child(even){
+    background: none;
+  }
+}
+.bmi{
+  letter-spacing: 1px;
+}
+
+.profile-info{
+  table tbody{
+    border: none;
+    background: transparent;
+
+    tr{
+      td:first-child{
+        white-space: nowrap;
+        width: 112px;
+        color: $secondary-color;
+
+      }
+
+      td{
+        padding: 10px 0;
+      }
+    }
+  }
+
+  table tbody tr:nth-child(even){
+    background: none;
+  }
+}
+
+.profile-save{
+  display: flex;
+  align-items: stretch;
+
+}
+
+.profile-save-item{
+  flex: 0 0 33.333%;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  &:hover{
+    color: $primary-color;
+    .profile-save-list{
+      color: $primary-color;
+    }
+  }
+}
+.profile-save-title{
+  text-transform: uppercase;
+  font-size: rem-calc(16px);
+}
+.profile-save-icon{
+  font-size: rem-calc(50px);
+}
+.profile-save-list{
+  color: $secondary-color;
+}
+
+.profile-tab{
+  @extend .boxShadow;
+  background: #fff;
+  height: 48px;
+  font-size: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  margin-bottom: $margin-box+20px;
+  >div{
+    display: inline-block;
+    vertical-align: top;
+    font-size: $global-font-size;
+  }
+  .profile-tab-name{
+    padding: 0 15px;
+    line-height: 48px;
+    @include header-size(h6);
+    font-weight: bold;
+    color: $primary-color;
+  }
+}
+
+
+.profile-tab-divider{
+  background: #d6d6d6;
+  display: inline-block;
+  height: 64%;
+  margin: 9px 5px;
+  padding: 0;
+  width: 1px;
+}
+
+.profile-tab-item{
+  height: 48px;
+  cursor: pointer;
+    display: block;
+    line-height: 48px;
+    padding: 0 15px;
+    color: $secondary-color;
+  &:hover{
+      background: $light-gray;
+  }
+  &.active{
+    border-bottom: 3px solid $primary-color;
+      font-weight: 500;
+      color: $dark-gray;;
+  }
+}
+
+#profile-mixitup .mix{
+  display: none;
+}

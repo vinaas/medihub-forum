@@ -1,0 +1,29 @@
+footer{
+  background: white;
+  color: $secondary-color;
+  padding: 40px 0;
+}
+.footer__title{
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.footer__logo{
+  color: $primary-color;
+  margin-bottom: 10px;
+}
+
+.footer__social{
+  li{
+    padding-right: 10px;
+    a{
+      font-size: rem-calc(18px);
+    }
+  }
+}
+
+.footer__bottom{
+  margin-top: 15px;
+  padding-top: 40px;
+  border-top: 1px solid $light-gray;
+}

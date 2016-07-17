@@ -1,0 +1,27 @@
+.gioithieu__heading{
+  padding: 70px 0 70px;
+  background: url("../images/gioithieu-bg.jpg") #527e2c no-repeat center center;
+  background-size: 100% auto;
+}
+
+.gioithieu__title{
+  color: white;
+  margin-bottom: 0;
+}
+
+.gioithieu__accordion{
+  margin-bottom: 50px;
+  .is-active{
+    background: $bg-gray-light;
+    .gioithieu__title-accordion{
+      color: $primary-color;
+
+    }
+  }
+}
+
+.gioithieu__title-accordion{
+  font-size: rem-calc(18px);
+  text-align: center;
+  color: $dark-gray;
+}

@@ -1,0 +1,70 @@
+#logo {
+  @include retina('../images/logo.png', 3, 186px 33px, center center no-repeat);
+  width: 186px;
+  height: 33px;
+  display: block;
+}
+
+.header{
+    padding: 0;
+    background: $white;
+  .row{
+    height: 60px;
+  }
+}
+
+.header__link{
+    margin-bottom: 0;
+    text-align: right;
+    li{
+        padding: 0 10px;
+
+        &:last-child{
+            padding-right: 0
+        }
+
+    }
+    .button{
+        margin-bottom: 0;
+    }
+
+  .dropdown-pane{
+    width: 170px;
+    padding:5px 3px;
+    @extend .boxShadow;
+    border: 1px solid $light-gray;
+    transition: all .2s ease-in-out;
+    opacity: 0;
+  }
+
+  .dropdown-pane.is-open{
+    opacity: 1;
+  }
+}
+.header__link_drop{
+  padding:22px 10px;
+}
+
+.header__link_dropdown {
+  li {
+    display: block;
+    text-align: left;
+    padding: 2px 3px;
+    a{
+      border-radius: 3px;
+      display: block;
+      padding: 3px 8px;
+      i{
+        padding-right: 3px;
+      }
+
+    }
+    &:hover,&.active{
+      a{
+        background: $primary-color;
+        color: white;
+      }
+    }
+  }
+
+}

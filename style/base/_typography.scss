@@ -1,0 +1,29 @@
+.linkGray{
+    color: map-get($foundation-palette, secondary);
+
+    &:hover{
+        color:  map-get($foundation-palette, primary);
+    }
+}
+.fontLight{
+  font-weight: 300 !important;
+}
+.fontNormal{
+  font-weight: normal !important;
+}
+.fontBold{
+  font-weight: bold !important;
+}
+
+.label-bh{
+  font-size: 10px;
+  text-transform: uppercase;
+  display: inline-block;
+  border: 1px solid $medium-gray;
+  color: $medium-gray;
+  padding: 0 3px;
+
+  position: relative;
+  top: -2px;
+  line-height: 1.1;
+}

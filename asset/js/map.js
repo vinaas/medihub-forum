@@ -121,8 +121,82 @@ var map;
             lng : -73.990078
         },
         markerIcon : markerImg
-    }
-    ];
+    }, {
+        title : 'Nguyễn Văn An',
+        link: 'detail.html',
+        job: 'bác sĩ',
+        image : 'http://nyulangone.org/images/doctors/f/fisher/1306860663/jason-c-fisher-thumb.jpg',
+        type : ' CK Tai mũi họng',
+        price : '$1,550,000',
+        address : '102 Bùi viện, Q.1, TP.HCM',
+        heart: '668',
+        time: ["T2 - T6: 8h - 15h","T7 - CN: 8h- 17h "] ,
+        position : {
+            lat : 40.703686,
+            lng : -73.982910
+        },
+        markerIcon : markerImg
+    }, {
+        title : 'Nguyễn Văn An',
+        link: 'detail.html',
+        job: 'bác sĩ',
+        image : 'http://nyulangone.org/images/doctors/f/fisher/1306860663/jason-c-fisher-thumb.jpg',
+        type : ' CK Tai mũi họng',
+        price : '$1,550,000',
+        address : '102 Bùi viện, Q.1, TP.HCM',
+        heart: '668',
+        time: ["T2 - T6: 8h - 15h","T7 - CN: 8h- 17h "] ,
+        position : {
+            lat : 40.702189,
+            lng : -73.995098
+        },
+        markerIcon : markerImg
+    }, {
+        title : 'Nguyễn Văn An',
+        link: 'detail.html',
+        job: 'bác sĩ',
+        image : 'http://nyulangone.org/images/doctors/f/fisher/1306860663/jason-c-fisher-thumb.jpg',
+        type : ' CK Tai mũi họng',
+        price : '$1,550,000',
+        address : '102 Bùi viện, Q.1, TP.HCM',
+        heart: '668',
+        time: ["T2 - T6: 8h - 15h","T7 - CN: 8h- 17h "] ,
+        position : {
+            lat : 40.687417,
+            lng : -73.982653
+        },
+        markerIcon : markerImg
+    }, {
+        title : 'Nguyễn Văn An',
+        link: 'detail.html',
+        job: 'bác sĩ',
+        image : 'http://nyulangone.org/images/doctors/f/fisher/1306860663/jason-c-fisher-thumb.jpg',
+        type : ' CK Tai mũi họng',
+        price : '$1,550,000',
+        address : '102 Bùi viện, Q.1, TP.HCM',
+        heart: '668',
+        time: ["T2 - T6: 8h - 15h","T7 - CN: 8h- 17h "] ,
+        position : {
+            lat : 40.694120,
+            lng : -73.974413
+        },
+        markerIcon : markerImg
+    }, {
+        title : 'Nguyễn Văn An',
+        link: 'detail.html',
+        job: 'bác sĩ',
+        image : 'http://nyulangone.org/images/doctors/f/fisher/1306860663/jason-c-fisher-thumb.jpg',
+        type : ' CK Tai mũi họng',
+        price : '$1,550,000',
+        address : '102 Bùi viện, Q.1, TP.HCM',
+        heart: '668',
+        time: ["T2 - T6: 8h - 15h","T7 - CN: 8h- 17h "] ,
+        position : {
+            lat : 40.682665,
+            lng : -74.000934
+        },
+        markerIcon : markerImg
+    }];
 
     // custom infowindow object
     var infobox = new InfoBox({
@@ -150,7 +224,7 @@ var map;
             var marker = new google.maps.Marker({
                 position: latlng,
                 map: map,
-                icon: new google.maps.MarkerImage(
+                icon: new google.maps.MarkerImage( 
                     'images/' + prop.markerIcon,
                     null,
                     null,

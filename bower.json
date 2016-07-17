@@ -1,18 +1,25 @@
 {
-    "name"        : "gulp-metalsmith",
-    "description" : "",
-    "main"        : "gulpfile.babel.js",
-    "authors"     : [],
-    "dependencies": {
-    },
-    "license"     : "ISC",
-    "homepage"    : "https://github.com/nemesisqp/gulp-metalsmith",
-    "private"     : true,
-    "ignore"      : [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ]
+  "name": "Medihub",
+  "description": "",
+  "main": "gulpfile.babel.js",
+  "dependencies": {
+    "foundation-sites": "^6.2.3",
+    "selectize": "^0.12.1",
+    "select2": "^4.0.3",
+    "magnific-popup": "^1.1.0",
+    "mixitup": "^2.1.11",
+    "ionrangeslider": "^2.1.4",
+    "jquery-sticky": "^1.0.3",
+    "Swiper": "swiper#^3.3.1"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/nemesisqp/gulp-metalsmith",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }

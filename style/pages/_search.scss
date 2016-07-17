@@ -1,0 +1,271 @@
+.mainSearch {
+
+  .searchForm--button {
+    font-size: rem-calc(16px);
+    white-space: nowrap;
+    padding: 1.4em 1em;
+    margin-bottom: 0;
+    i{
+      vertical-align: -14%;
+    }
+  }
+
+  .select2-container {
+    width: 100% !important;
+    .select2-selection--single {
+      font-size: rem-calc(16px);
+      border-right-color: $light-gray !important;
+      height: 64px;
+      .select2-selection__rendered {
+        line-height: 45px;
+      }
+    }
+  }
+
+  .select2-container--open {
+    @extend .boxShadow;
+  }
+
+  .searchForm--1 {
+    .select2-container .select2-selection--single {
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+    width: 210px;
+  }
+
+  .searchForm--2 {
+    width: 270px;
+  }
+
+  .searchForm--3 {
+    width: 150px;
+  }
+
+  .searchForm--4 {
+    width: 148px;
+    .select2-container .select2-selection--single {
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+  }
+
+  .searchForm--5 {
+    margin-left: 10px;
+  }
+
+  .searchForm {
+    width: 940px;
+    margin: 0 auto;
+
+    display: block;
+    .select2-container .select2-selection--single {
+      border-radius: 0;
+      border-color: transparent;
+    }
+    > div {
+      float: left;
+    }
+   
+  }
+
+  @media screen and (max-width: 600px) {
+
+  }
+
+  .searchForm {
+   
+    padding: 10px 10px 0 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    > div {
+      margin-bottom: 10px;
+    }
+  }
+
+}
+
+.searchForm--button {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.searchFilter {
+
+  background: $bg-gray-light;
+  width: 100%;
+
+  margin: 20px 0;
+  .searchForm {
+    padding: 17px 10px;
+    //margin-left: -5px;
+    //margin-right: -5px;
+    background: $bg-gray-light;
+    width: 100%;
+    position: relative;
+    z-index: 99;
+
+    > div {
+      float: left;
+      padding: 0 5px;
+    }
+    .searchForm--1 {
+      width: 20%;
+    }
+    .searchForm--2 {
+      width: 25%;
+    }
+    .searchForm--3 {
+      width: 20%;
+    }
+    .searchForm--4 {
+      width: 20%;
+    }
+    .searchForm--5 {
+      width: 15%;
+    }
+  }
+
+  .is-sticky{
+    .searchForm{
+      @extend .boxShadow;
+    }
+
+  }
+}
+
+
+.searchDetail{
+  padding: 0 7px;
+  border-top: 1px solid $light-gray;
+  font-size: rem-calc(13px);
+  >div{
+    display: inline-block;
+    padding: 15px 8px;
+    border-right: 1px solid $light-gray;
+    margin-left: 0 !important;
+    &:last-child{
+      border-right: 0;
+    }
+  }
+
+  .rangeSlider-container{
+    padding-top:0;
+    padding-bottom: 0;
+    vertical-align: top;
+  }
+
+  .rangeSlider-label{
+    float: left;
+    padding: 15px 15px 15px 0;
+  }
+
+  .rangeSlider{
+    width: 210px;
+    float: left;
+  }
+
+  .searchDetail-title{
+    color: $primary-color;
+    font-weight: bold;
+    @include header-size(h6);
+  }
+}
+
+.searchText{
+  color: $secondary-color;
+  padding: 0 14px;
+  span{
+    color: $dark-gray;
+    font-weight: bold;
+  }
+}
+
+.gen{
+  background: red;
+}
+
+
+#mapView{
+  height: 500px;
+  border: 5px solid white;
+  margin-bottom: $margin-box;
+  width: 100%;
+
+}
+
+
+
+.popupMap {
+  padding: 20px 10px 15px;
+  height: 600px;
+}
+.popupMap-col1{
+  float: left;
+  width: 65px;
+
+}
+
+.popupMap-img{
+  overflow: hidden;
+  width: 58px;
+  height: 58px;
+  border-radius: 5px;
+  text-align: center;
+  background:$light-gray;
+  img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  margin-bottom: 10px;
+}
+
+.popupMap-job{
+  font-size: 10px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.popupMap-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 3px;
+}
+.popupMap-address, .popupMap-type {
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 11px;
+  line-height: 11px;
+  text-overflow: ellipsis;
+  margin-bottom: 3px;
+}
+
+.popupMap-close{
+  position: absolute;
+  top: 14px;
+  right: 0;
+}
+
+.popupMap-time{
+  font-size: 10px;
+}
+
+.closeInfo {
+  padding: 5px 10px;
+  color: $medium-gray;
+  &:hover{
+    color: $dark-gray;
+  }
+}
+
+.mapPlaceholder {
+  text-align: center;
+  width: 100%;
+  padding-top: 100px;
+  float: left;
+  overflow: hidden;
+}

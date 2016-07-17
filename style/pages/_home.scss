@@ -1,0 +1,113 @@
+body {
+  background: $bg-body;
+}
+
+.mainSearch {
+  padding: 15% 0 10%;
+  background:  #527e2c ;
+  background-size: 100% auto;
+  position: relative;
+  @include breakpoint(large) {
+    .row {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  .searchForm{
+    position: relative;
+  z-index: 2;
+    @extend .boxShadow;
+  }
+
+
+}
+
+.mainSearch__title {
+  color: white;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+//end SEARCH SUGGEST
+.medihubApp {
+  padding: 70px 0;
+}
+
+.medihubApp_button {
+  padding-top: 50px;
+  li {
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.adv {
+  margin-bottom: $margin-box;
+}
+
+// BG SLIDER
+.bgSlider {
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+
+  }
+  .swiper-slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    &:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(82,126,44,0.3);
+    // background: rgba(0,0,0,0.5);
+  }
+  }
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: $light-gray;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  position: relative;
+  
+}
+.mainSearch__title{
+  opacity: 0
+}
+
+.swiper-txt-slider{
+  .swiper-slide{
+    text-align: center;
+    font-size: inherit;
+    background:transparent;
+  }
+  .swiper-slide-active{
+    .mainSearch__title{
+      opacity: 1;
+    }
+  }
+}

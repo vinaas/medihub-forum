@@ -1,0 +1,80 @@
+.clearList{
+    list-style: none;
+    margin-left: 0;
+}
+.listInline{
+    li{
+        display: inline-block;
+    }
+}
+
+.boxShadow{
+   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.boxShadowLess{
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+}
+
+.paragraph{
+  text-align: justify;
+}
+
+.listCircle{
+  list-style: none;
+  margin-left: 0;
+  li{
+    color: $secondary-color;
+    padding-left: 20px;
+    position: relative;
+    &:before{
+      content: ".";
+      position: absolute;
+      line-height: 0;
+      left: 0;
+      font-size: 22px;
+      top: 4px;
+      color: $secondary-color;
+    }
+  }
+
+  &.ml-5{
+    margin-left: 5px;
+  }
+  &.col3{
+    font-size: 0;
+    li{
+      font-size: $global-font-size;
+      padding-right: 10px;
+      display: inline-block;
+      width: 33.3333%;
+    }
+  }
+
+}
+.listIcon{
+ font-size: rem-calc(16px);
+  font-weight: normal;
+  margin-bottom: 3px;
+  i{
+    width: 20px;
+  }
+}
+
+
+.linkAbsolute{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  background: transparent;
+}
+
+.text-ellipsis{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

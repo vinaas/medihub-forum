@@ -1,19 +1,19 @@
-### Hướng dẫn sử dụng source EasyWeb
+### Hướng dẫn sử dụng source EasyWeb Metalsmith
+#### Cài đặt
+* clone project (mặc định là branch master)
+* npm install
+* bower install (nếu project sử dụng bower để quản lý frontend library)
 
-**Cài đặt**
-1. clone project (mặc định là branch master)
-* click ```EWH-install.bat``` or run ```npm install```
-* run ```bower install``` (nếu project sử dụng bower để quản lý frontend library như sass, less,...)
+#### Sử dụng một trong các câu lệnh dưới
+```js
+ * npm run watch      // chạy và kiểm tra website trên máy cá nhân
+ * npm run watch-prod // chạy và kiểm tra website trước khi upload lên server
+ * npm run build      // build để chạy máy cá nhân
+ * npm run build-prod // build để chạy trên server
+```
 
-**PreView Local**: Sử dụng một trong các câu lệnh dưới để chạy và kiểm tra website trên máy cá nhân
-
-  - click ```EWH-rundemo.bat``` or run ```npm run watch```      
-  - Có thể tham khảo thêm các  lệnh dưới
-     - ```npm run watch-prod``` // chạy và kiểm tra website trước khi upload lên server
-     - ```npm run build```      // build để chạy máy cá nhân
-     - ```npm run build-prod``` // build để chạy trên server
-
-#### Cấu hình mặc định của EasyWebHub framework
+Đây là base đơn giản metalsmith, mọi cấu hình đều nằm trong file site.js
+#### Cấu hình các đường dẫn
 ```js
 const site = {
     port:        8080,        // cổng server local sẻ sử dụng
@@ -32,17 +32,14 @@ const site = {
     // ở chế độ production cũng sẽ không minify
     assetRoot: './asset',
 
-    //thư mục chứa tất các các file json chứa dữ liệu dùng chung, không định nghĩa được trong file .md
-    //gồm 3 file json chính
-    //global.json chứa thông tin chung về website
-    //menu.json chứa thông tin về menu của website
-    //footer.json chứa thông tin về footer của website
-    metadataRoot : './content/metadata'
+    // global metadata của site
+    metadata: {
+        url: 'http://handy.themes.zone'
+    }
 };
 ```
-#### Cấu hình nâng cao dành cho front-end devs
-  - **build javascript**
 
+#### Cấu hình cho build javascript
 ```js
 site.script = {
     concat: true, // concat == true sẽ nhập các file script lại thành 1 file duy nhất
@@ -62,7 +59,7 @@ site.script = {
 };
 ```
 
-- **Build style css, sass**
+#### Cấu hình cho build style css, sass
 ```js
 site.style = {
     sass:         {
