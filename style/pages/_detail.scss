@@ -34,7 +34,7 @@
     .article-service{
       font-size: rem-calc(16px);
       font-weight: bold;
-      margin-bottom: 3px;
+      margin-bottom: 10px;
     }
 
     .article--bookmark{
@@ -266,6 +266,14 @@
   &:hover{
     .delete-article{
       opacity: 1;
+    }
+  }
+}
+
+.porlet .article-lite{
+  &:hover{
+    .delete-article{
+      opacity: 0;
     }
   }
 }
