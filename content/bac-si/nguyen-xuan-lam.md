@@ -2,6 +2,24 @@
 {
     "title": "Nguyễn Xuân Lam",
     "slug": "nguyen-xuan-lam",
+    "filter": [
+        {
+            "display": "Đa Khoa",
+            "value": "da-khoa"
+        },
+        {
+            "display": "Tai mũi họng",
+            "value": "tai-mui-hong"
+        },
+        {
+            "display": "Da liễu",
+            "value": "da-lieu"
+        },
+        {
+            "display": "Nguyễn Xuân Lam",
+            "value": "nguyen-xuan-lam"
+        }
+    ],
     "description": "",
     "layout": "bac-si.html",
     "date": "2016-07-08 22:14",

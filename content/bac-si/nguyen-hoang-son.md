@@ -2,6 +2,20 @@
 {
     "title": "NGUYỄN HOÀNG SƠN",
     "slug": "bac-si/nguyen-hoang-son",
+    "filter": [
+        {
+            "display": "Nhi",
+            "value": "nhi"
+        },
+        {
+            "display": "Tai mũi họng",
+            "value": "tai-mui-hong"
+        },
+        {
+            "display": "NGUYỄN HOÀNG SƠN",
+            "value": "nguyen-hoang-son"
+        }
+    ],
     "description": "Nguyên trưởng khoa Tai-Mũi-Họng trẻ em bệnh viện TMH Trung Ương_ Nguyên giảng viên cao cấp Đại học Y Hà Nội",
     "layout": "bac-si.html",
     "date": "2016-07-16 10:39:12 +07:00",
@@ -14,7 +28,7 @@
     "info": {
         "chuyen-khoa": [
             "Nhi",
-            " Tai mũi họng"
+            "Tai mũi họng"
         ],
         "giai-thuong": [
             "Phó giáo sư",
