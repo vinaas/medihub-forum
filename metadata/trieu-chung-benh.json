@@ -1,0 +1,35 @@
+{
+  "title" : "Bệnh, Triệu Chứng Bệnh, Chuyên Khoa",
+  "danh-sach" : [
+    {
+       "ten" :	"Răng hàm mặt",
+       "name" : "rang-ham-mat",
+       "loai" : "chuyen-khoa"
+    },
+   {
+       "ten" :	"Nha khoa",
+       "name" : "nha-khoa",
+       "loai" : "chuyen-khoa"
+    },
+    {
+       "ten" :	"Truyền nhiễm",
+       "name" : "truyen-nhiem",
+       "loai" : "benh"
+    },
+    {
+       "ten" :	"Da Liễu",
+       "name" : "da-lieu",
+       "loai" : "benh"
+    },
+    {
+       "ten" :	"Chấn thương chỉnh hình",
+       "name" : "chan-thuong-chinh-hinh",
+       "loai" : "chuyen-khoa"
+    },
+    {
+       "ten" :	"Nhi khoa",
+       "name" : "nhi-khoa",
+       "loai" : "chuyen-khoa"
+    }
+  ]
+}

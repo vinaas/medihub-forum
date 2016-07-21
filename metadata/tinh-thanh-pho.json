@@ -1,0 +1,37 @@
+{
+  "title" : "Danh sách tỉnh thành phố trong cả nước",
+  "danh-sach-tinh" : [
+    {
+      "title" : "TP. Hồ Chí Minh",
+      "name" : "ho-chi-minh",
+      "danh-sach-quan" : [
+        {
+          "title" : "Quận 1",
+          "name" : "quan-1"
+        },
+        {
+          "title" : "Quận 2",
+          "name" : "quan-2"
+        },
+        {
+          "title" : "Quận 10",
+          "name" : "quan-10"
+        }
+      ]
+    },
+    {
+      "title" : "Hà Nội",
+      "name" : "ha-noi",
+      "danh-sach-quan" : [
+        {
+          "title" : "Quận Ba Đình",
+          "name" : "quan-ba-dinh"
+        },
+        {
+          "title" : "Quận Hai Bà Trưng",
+          "name" : "quan-hai-ba-trung"
+        }
+      ]
+    }
+  ]
+}
