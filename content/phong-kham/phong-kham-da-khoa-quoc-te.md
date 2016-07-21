@@ -2,6 +2,16 @@
 {
     "title": "Phòng khám Đa Khoa Quốc Tế",
     "slug": "phong-kham-da-khoa-quoc-te",
+    "filter": [
+        {
+            "display": "Nội khoa",
+            "value": "noi-khoa"
+        },
+        {
+            "display": "Tim mạch",
+            "value": "tim-mach"
+        }
+    ],
     "description": "After graduating from West Virginia University Medical School, Dr. Jonathon Alex completed a two-year fellowship in sports medicine at Akron Children’s Hospital. During his training at Akron, Dr. Jonathon Alex was team physician for the University of Akron and Walsh University.",
     "layout": "phong-kham.html",
     "date": "2016-07-06 22:34:45 +07:00",

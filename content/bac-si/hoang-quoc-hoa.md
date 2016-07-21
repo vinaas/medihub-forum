@@ -2,6 +2,24 @@
 {
     "title": "Hoàng Quốc Hoà",
     "slug": "hoang-quoc-hoa",
+    "filter": [
+        {
+            "display": "Tai mũi họng",
+            "value": "tai-mui-hong"
+        },
+        {
+            "display": "Đa Khoa",
+            "value": "da-khoa"
+        },
+        {
+            "display": "Da liễu",
+            "value": "da-lieu"
+        },
+        {
+            "display": "Hoàng Quốc Hoà",
+            "value": "hoang-quoc-hoa"
+        }
+    ],
     "description": "",
     "layout": "bac-si.html",
     "date": "2016-07-08 22:14",
