@@ -84,9 +84,14 @@
     </div>
   </div>
 
+      <script>
+        window.data = {"selectedFilter":{"chon":"","benh":"","tinh":"","quan":""}};
+        if (!window.data.selectedFilter)
+          window.data.selectedFilter = {};
+      </script>
       <div class="searchForm clearfix">
         <div class="searchForm--1">
-          <select class="select2Normal" data-placeholder="Bác sĩ | Phòng khám" onchange="data.selectedFilter.chon = this.value;">
+          <select class="select2Normal" data-placeholder="Bác sĩ | Phòng khám" onchange="data.selectedFilter.loai = this.value;">
             <option value=""></option>
              <option value="bac-si" >Bác Sĩ</option>
              <option value="phong-kham" >Phòng Khám</option>
@@ -94,7 +99,7 @@
           </select>
         </div>
         <div class="searchForm--2">
-          <select class="select2Search" data-placeholder="Từ khóa" onchange="data.selectedFilter.benh = this.value;">
+          <select class="select2Search" data-placeholder="Từ khóa" onchange="data.selectedFilter.giatri = this.value;">
             <option value="" selected></option>
               <option value="rang-ham-mat" >Răng hàm mặt</option>
               <option value="nha-khoa" >Nha khoa</option>
@@ -128,7 +133,6 @@
       
       </div>
       <script>
-        var data = {"selectedFilter":{"chon":"","benh":"","tinh":"","quan":""}};
           rivets.bind(document.querySelector('body'), window.data);
       
         function Gui() {

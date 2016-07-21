@@ -53,9 +53,14 @@
 <div class="row">
 <div class="small-12 columns">
   <div class="searchFilter boxShadow">
+    <script>
+      window.data = {};
+      if (!window.data.selectedFilter)
+        window.data.selectedFilter = {};
+    </script>
     <div class="searchForm clearfix">
       <div class="searchForm--1">
-        <select class="select2Normal" data-placeholder="Bác sĩ | Phòng khám" onchange="data.selectedFilter.chon = this.value;">
+        <select class="select2Normal" data-placeholder="Bác sĩ | Phòng khám" onchange="data.selectedFilter.loai = this.value;">
           <option value=""></option>
            <option value="bac-si" >Bác Sĩ</option>
            <option value="phong-kham" >Phòng Khám</option>
@@ -63,7 +68,7 @@
         </select>
       </div>
       <div class="searchForm--2">
-        <select class="select2Search" data-placeholder="Từ khóa" onchange="data.selectedFilter.benh = this.value;">
+        <select class="select2Search" data-placeholder="Từ khóa" onchange="data.selectedFilter.giatri = this.value;">
           <option value="" selected></option>
             <option value="rang-ham-mat" >Răng hàm mặt</option>
             <option value="nha-khoa" >Nha khoa</option>
@@ -97,7 +102,6 @@
     
     </div>
     <script>
-      var data = {};
         rivets.bind(document.querySelector('body'), window.data);
     
       function Gui() {
@@ -183,7 +187,7 @@
 
 
   <div class="small-8 columns">
-  <div class="article clearfix boxShadow data-card" data-chon="bac-si" data-tinh="ha-noi" data-quan="thanh-xuan">
+  <div style="display:none;" class="article clearfix boxShadow data-card nhi tai-mui-hong nguyen-hoang-son " data-loai="bac-si" data-tinh="ha-noi" data-quan="thanh-xuan">
     <a href="" class="article--bookmark" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Lưu vào danh sách của bạn"><i class="fa fa-bookmark-o"></i> Lưu</a>
     <div class="article--main clearfix">
 
@@ -197,7 +201,7 @@
         <div class="article--title"><a href="./bac-si-nguyen-hoang-son">NGUYỄN HOÀNG SƠN</a> </div>
         <div class="article--column_sub">
           <div class="article--column_sub_1">
-            <div class="article-service">Chuyên khoa Nhi,  Tai mũi họng</div>
+            <div class="article-service">Chuyên khoa Nhi, Tai mũi họng</div>
             <div class="article-address">1E Trường Chinh, Quận Thanh Xuân, TP Hà Nội</div>
           </div>
 
@@ -249,7 +253,7 @@
         </div>
 
         </div>
-        
+
 
 
     </div>
@@ -290,7 +294,7 @@
   </div>
 
 
-  <div class="article clearfix boxShadow data-card" data-chon="bac-si" data-tinh="ho-chi-minh" data-quan="quan-7">
+  <div style="display:none;" class="article clearfix boxShadow data-card noi-khoa tim-mach ho-thanh-hung " data-loai="bac-si" data-tinh="ho-chi-minh" data-quan="quan-7">
     <a href="" class="article--bookmark" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Lưu vào danh sách của bạn"><i class="fa fa-bookmark-o"></i> Lưu</a>
     <div class="article--main clearfix">
 
@@ -304,7 +308,7 @@
         <div class="article--title"><a href="./bac-si-ho-thanh-hung">Hồ Thanh Hưng</a> </div>
         <div class="article--column_sub">
           <div class="article--column_sub_1">
-            <div class="article-service">Chuyên khoa Nội khoa,  Tim mạch</div>
+            <div class="article-service">Chuyên khoa Nội khoa, Tim mạch</div>
             <div class="article-address">04 Nguyễn Lương Bằng Q.7 HCM</div>
           </div>
 
@@ -356,7 +360,7 @@
         </div>
 
         </div>
-        
+
 
 
     </div>
@@ -397,7 +401,7 @@
   </div>
 
 
-  <div class="article clearfix boxShadow data-card" data-chon="bac-si" data-tinh="ho-chi-minh" data-quan="quan-2">
+  <div style="display:none;" class="article clearfix boxShadow data-card da-khoa tai-mui-hong da-lieu nguyen-xuan-lam " data-loai="bac-si" data-tinh="ho-chi-minh" data-quan="quan-2">
     <a href="" class="article--bookmark" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Lưu vào danh sách của bạn"><i class="fa fa-bookmark-o"></i> Lưu</a>
     <div class="article--main clearfix">
 
@@ -463,7 +467,7 @@
         </div>
 
         </div>
-        
+
 
 
     </div>
@@ -504,7 +508,7 @@
   </div>
 
 
-  <div class="article clearfix boxShadow data-card" data-chon="bac-si" data-tinh="ho-chi-minh" data-quan="quan-1">
+  <div style="display:none;" class="article clearfix boxShadow data-card tai-mui-hong da-khoa da-lieu hoang-quoc-hoa " data-loai="bac-si" data-tinh="ho-chi-minh" data-quan="quan-1">
     <a href="" class="article--bookmark" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Lưu vào danh sách của bạn"><i class="fa fa-bookmark-o"></i> Lưu</a>
     <div class="article--main clearfix">
 
@@ -570,7 +574,7 @@
         </div>
 
         </div>
-        
+
 
 
     </div>
@@ -611,7 +615,7 @@
   </div>
 
 
-  <div class="article clearfix boxShadow data-card" data-chon="bac-si" data-tinh="ho-chi-minh" data-quan="quan-1">
+  <div style="display:none;" class="article clearfix boxShadow data-card tai-mui-hong da-khoa pham-thuy-nga " data-loai="bac-si" data-tinh="ho-chi-minh" data-quan="quan-1">
     <a href="" class="article--bookmark" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Lưu vào danh sách của bạn"><i class="fa fa-bookmark-o"></i> Lưu</a>
     <div class="article--main clearfix">
 
@@ -677,7 +681,7 @@
         </div>
 
         </div>
-        
+
 
 
     </div>
@@ -720,7 +724,7 @@
 
 
 
-  <div class="article clearfix boxShadow data-card" data-chon="phong-kham" data-tinh="ho-chi-minh" data-quan="quan-2">
+  <div style="display:none;" class="article clearfix boxShadow data-card noi-khoa tim-mach " data-loai="phong-kham" data-tinh="ho-chi-minh" data-quan="quan-2">
       <a href="" class="article--bookmark"><i class="fa fa-bookmark-o"></i> Lưu</a>
       <div class="article--main clearfix">
 
@@ -850,7 +854,7 @@
           </div>
       </div>
   </div>
-  <div class="article clearfix boxShadow data-card" data-chon="phong-kham" data-tinh="ho-chi-minh" data-quan="quan-1">
+  <div style="display:none;" class="article clearfix boxShadow data-card noi-khoa tim-mach " data-loai="phong-kham" data-tinh="ho-chi-minh" data-quan="quan-1">
       <a href="" class="article--bookmark"><i class="fa fa-bookmark-o"></i> Lưu</a>
       <div class="article--main clearfix">
 
@@ -1139,11 +1143,40 @@
 
     var filter = getJsonFromUrl(window.location.href);
 
-    for (var term in filter) {
-        if (!filter.hasOwnProperty(term)) continue;
-        var selector = '.data-card[data-' + term + '!="' + filter[term] + '"]';
-        console.log("term" + term + " selector" + selector);
-        $(selector).hide();
+
+    if (filter.length == 0) {
+        console.log('show all');
+    } else {
+
+        $('.data-card').hide();
+        var selectors = [];
+        for (var term in filter) {
+            if (!filter.hasOwnProperty(term)) continue;
+
+            if (term === 'giatri') {
+                selectors.push('.data-card.' + filter[term] + '');
+            } else {
+                selectors.push('.data-card[data-' + term + '="' + filter[term] + '"]');
+            }
+
+            // select in filter bar
+            switch(term) {
+                case 'loai':
+                    $('.searchForm--1>select').select2().val(filter[term]).trigger('change');
+                    break;
+                case 'giatri':
+                    $('.searchForm--2>select').select2().val(filter[term]).trigger('change');
+                    break;
+                case 'tinh':
+                    $('.searchForm--3>select').select2().val(filter[term]).trigger('change');
+                    break;
+                case 'quan':
+                    $('.searchForm--4>select').select2().val(filter[term]).trigger('change');
+                    break;
+            }
+        }
+        console.log('selectors', selectors.join(''));
+        $(selectors.join('')).show();
     }
 </script>
 

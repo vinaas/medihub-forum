@@ -53,9 +53,14 @@
 <div class="row">
 <div class="small-12 columns">
   <div class="searchFilter boxShadow">
+    <script>
+      window.data = {};
+      if (!window.data.selectedFilter)
+        window.data.selectedFilter = {};
+    </script>
     <div class="searchForm clearfix">
       <div class="searchForm--1">
-        <select class="select2Normal" data-placeholder="Bác sĩ | Phòng khám" onchange="data.selectedFilter.chon = this.value;">
+        <select class="select2Normal" data-placeholder="Bác sĩ | Phòng khám" onchange="data.selectedFilter.loai = this.value;">
           <option value=""></option>
            <option value="bac-si" >Bác Sĩ</option>
            <option value="phong-kham" >Phòng Khám</option>
@@ -63,7 +68,7 @@
         </select>
       </div>
       <div class="searchForm--2">
-        <select class="select2Search" data-placeholder="Từ khóa" onchange="data.selectedFilter.benh = this.value;">
+        <select class="select2Search" data-placeholder="Từ khóa" onchange="data.selectedFilter.giatri = this.value;">
           <option value="" selected></option>
             <option value="rang-ham-mat" >Răng hàm mặt</option>
             <option value="nha-khoa" >Nha khoa</option>
@@ -97,7 +102,6 @@
     
     </div>
     <script>
-      var data = {};
         rivets.bind(document.querySelector('body'), window.data);
     
       function Gui() {
@@ -190,7 +194,7 @@
         <div class="article--column_2">
           <div class="article--position">BÁC SĨ</div>
           <div class="article--title">NGUYỄN HOÀNG SƠN</div>
-          <div class="article-service">Chuyên khoa Nhi,  Tai mũi họng</div>
+          <div class="article-service">Chuyên khoa Nhi, Tai mũi họng</div>
 
 
           <div class="paragraph">Nguyên trưởng khoa Tai-Mũi-Họng trẻ em bệnh viện TMH Trung Ương_ Nguyên giảng viên cao cấp Đại học Y Hà Nội</div>
@@ -240,7 +244,7 @@
           <h5 class="listIcon"><i class="fa fa-medkit"></i> Chuyên khoa</h5>
           <ul class="listCircle ml-5">
            	<li>Nhi</li>
-           	<li> Tai mũi họng</li>
+           	<li>Tai mũi họng</li>
           </ul>
 
 
