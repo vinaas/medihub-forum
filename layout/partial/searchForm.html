@@ -8,7 +8,7 @@
     </select>
   </div>
   <div class="searchForm--2">
-    <select class="select2Search" data-placeholder="Bệnh, Triệu chứng, Chuyên khoa" onchange="data.selectedFilter.benh = this.value;">
+    <select class="select2Search" data-placeholder="Từ khóa" onchange="data.selectedFilter.benh = this.value;">
       <option value="" selected></option>
       {{#each searchForm.trieu-chung-benh}}
         <option value="{{this.name}}" >{{this.ten}}</option>
@@ -16,7 +16,7 @@
     </select>
   </div>
   <div class="searchForm--3">
-    <select class="select2Search" data-placeholder="Tỉnh, Thành phố" onchange="data.selectedFilter.tinh = this.value;">
+    <select class="select2Search" data-placeholder="Tỉnh | Thành" onchange="data.selectedFilter.tinh = this.value;">
       <option value="" selected></option>
       {{#each tinh-thanh-pho.danh-sach-tinh}}
         <option value="{{name}}">{{title}}</option>
