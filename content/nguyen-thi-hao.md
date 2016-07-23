@@ -26,7 +26,11 @@
         "quan-huyen": "quan-1",
         "chi-tiet": "62 Đặng Dung, P. Tân Định, Q. 1, TP.HCM "
     },
-    "danh-sach-phong-kham": [],
+    "danh-sach-phong-kham": [
+        {
+            "slug": "phong-kham-nha-khoa-ky-thuat-so"
+        }
+    ],
     "chuyen-dieu-tri": [],
     "gia-tien": "",
     "like": "",
