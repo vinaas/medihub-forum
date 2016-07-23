@@ -49,7 +49,21 @@
         "chi-tiet": "62 Đặng Dung, P. Tân Định, Q. 1, TP.HCM "
     },
     "danh-sach-phong-kham": [],
-    "danh-sach-bac-si": [],
-    "chuyen-dieu-tri": []
+    "danh-sach-bac-si": [
+        {
+            "slug": "nguyen-thi-hao"
+        }
+    ],
+    "chuyen-dieu-tri": [
+        "Niềng răng, Nhổ răng",
+        "Tiểu phẩu răng khôn",
+        " Trám răng",
+        " Tẩy trằng răng bằng thuốc",
+        "Tẩy trằng răng cấp tốc",
+        " Đánh bóng răng",
+        "Trồng răng implant",
+        " Viêm nha chu",
+        "Viêm tủy răng"
+    ]
 }
 ---
