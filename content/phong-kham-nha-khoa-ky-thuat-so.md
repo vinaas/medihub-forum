@@ -37,7 +37,12 @@
         "T2 - CN: 8g30 - 21g"
     ],
     "so-dien-thoai": "73099939",
-    "loc-tim-kiem": {},
+    "loc-tim-kiem": {
+        "trong-gio": true,
+        "ngoai-gio": true,
+        "co-bao-hiem": true,
+        "co-lay-qua-so-dien-thoai": true
+    },
     "dia-chi": {},
     "danh-sach-phong-kham": [],
     "danh-sach-bac-si": [],
