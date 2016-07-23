@@ -48,7 +48,30 @@
         "quan-huyen": "quan-1",
         "chi-tiet": "62 Đặng Dung, P. Tân Định, Q. 1, TP.HCM "
     },
-    "danh-sach-phong-kham": [],
+    "danh-sach-phong-kham": [
+        {
+            "title": "Phòng khám  Nha khoa Kỹ Thuật Số",
+            "list-image": [
+                "http://nhakhoakythuatso.com/wp-content/uploads/2016/06/banner1.jpg",
+                "http://nhakhoakythuatso.com/wp-content/uploads/2016/06/banner2.jpg",
+                "http://nhakhoakythuatso.com/wp-content/uploads/2016/06/banner3.jpg",
+                "http://nhakhoakythuatso.com/wp-content/uploads/2016/06/banner4.jpg"
+            ],
+            "dich-vu": "Niềng răng, Nhổ răng, Trám răng, Tẩy trằng răng bằng thuốc, Tẩy trằng răng cấp tốc, Đánh bóng răng, Trồng răng implant, Viêm nha chu, Viêm tủy răng ",
+            "dia-chi": {
+                "tinh": "HCM",
+                "quan-huyen": "quan-1",
+                "chi-tiet": "300 Phạm Ngũ Lão, P. Nguyễn Cư Trinh, Q.1, TP.HCM"
+            },
+            "gia-tien": "100.000-1.000.000",
+            "like": 100,
+            "type": "nha-tai-tro",
+            "gio-lam-viec": [
+                "T2 - CN: 8g30 - 21g"
+            ],
+            "so-dien-thoai": "73099939"
+        }
+    ],
     "danh-sach-bac-si": [
         {
             "slug": "nguyen-thi-hao"
