@@ -1,0 +1,51 @@
+[
+    {
+        "name": "0",
+        "displayName": "0",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "1",
+        "displayName": "1",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "2",
+        "displayName": "2",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "3",
+        "displayName": "3",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "4",
+        "displayName": "4",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "5",
+        "displayName": "5",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "6",
+        "displayName": "6",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    }
+]

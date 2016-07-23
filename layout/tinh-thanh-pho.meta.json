@@ -1,0 +1,17 @@
+[
+    {
+        "name": "title",
+        "displayName": "title",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "danh-sach-tinh",
+        "displayName": "danh-sach-tinh",
+        "type": "Array",
+        "validations": [],
+        "required": false
+    }
+]
