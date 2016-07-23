@@ -42,10 +42,12 @@
         " Viêm nha chu",
         "Viêm tủy răng"
     ],
-    "gia-tien": "",
-    "like": "",
+    "gia-tien": "100.000-1.000.000",
+    "like": "1000",
     "type": "",
-    "gio-lam-viec": [],
+    "gio-lam-viec": [
+        "T2 - CN: 8g30 - 21g"
+    ],
     "so-dien-thoai": "",
     "nghenghiep": "",
     "note": {},
