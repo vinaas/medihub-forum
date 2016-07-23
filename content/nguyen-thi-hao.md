@@ -11,7 +11,15 @@
     "certificate_type": "SYTGPHĐ",
     "certificate_code": "00016/SYTGPHĐ",
     "certificate_number": "00016",
-    "info": {},
+    "info": {
+        "chuyen-khoa": [
+            "Răng hàm mặt"
+        ],
+        "giay-phep": [
+            "Chứng chỉ hành nghề số 00016/SYTGPHĐ",
+            "Phạm vi hoạt động: Phòng khám  Nha Khoa Kỹ thuật Số"
+        ]
+    },
     "chuyen-khoa": [],
     "dia-chi": {},
     "danh-sach-phong-kham": [],
