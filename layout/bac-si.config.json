@@ -169,5 +169,12 @@
         "name": "note",
         "displayName": "note",
         "type": "Object"
+    },
+    {
+        "name": "filter",
+        "displayName": "filter",
+        "type": "Array",
+        "validations": [],
+        "required": false
     }
 ]
