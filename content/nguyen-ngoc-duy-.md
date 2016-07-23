@@ -31,11 +31,23 @@
             "slug": "phong-kham-nha-khoa-ky-thuat-so"
         }
     ],
-    "chuyen-dieu-tri": [],
-    "gia-tien": "",
-    "like": "",
+    "chuyen-dieu-tri": [
+        "Niềng răng",
+        " Nhổ răng",
+        " Trám răng",
+        " Tẩy trằng răng bằng thuốc",
+        " Tẩy trằng răng cấp tốc",
+        " Đánh bóng răng",
+        " Trồng răng implant",
+        " Viêm nha chu",
+        " Viêm tủy răng"
+    ],
+    "gia-tien": "100.000-1.000.000",
+    "like": "212",
     "type": "",
-    "gio-lam-viec": [],
+    "gio-lam-viec": [
+        "T2 - CN: 17g30 - 20g30 "
+    ],
     "so-dien-thoai": "",
     "nghenghiep": "",
     "note": {},
