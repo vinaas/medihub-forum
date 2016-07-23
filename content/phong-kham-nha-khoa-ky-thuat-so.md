@@ -18,7 +18,7 @@
         "http://nhakhoakythuatso.com/wp-content/uploads/2016/06/banner3.jpg",
         "http://nhakhoakythuatso.com/wp-content/uploads/2016/06/banner4.jpg"
     ],
-    "certificate_type": "",
+    "certificate_type": "SYTGPHĐ",
     "certificate_code": "",
     "certificate_number": "",
     "info": {
