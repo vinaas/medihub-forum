@@ -31,7 +31,17 @@
             "slug": "phong-kham-nha-khoa-ky-thuat-so"
         }
     ],
-    "chuyen-dieu-tri": [],
+    "chuyen-dieu-tri": [
+        "Niềng răng, Nhổ răng",
+        "Tiểu phẩu răng khôn",
+        " Trám răng",
+        " Tẩy trằng răng bằng thuốc",
+        "Tẩy trằng răng cấp tốc",
+        " Đánh bóng răng",
+        "Trồng răng implant",
+        " Viêm nha chu",
+        "Viêm tủy răng"
+    ],
     "gia-tien": "",
     "like": "",
     "type": "",
