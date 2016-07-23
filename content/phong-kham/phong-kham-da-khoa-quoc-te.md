@@ -2,6 +2,16 @@
 {
     "title": "Phòng khám Đa Khoa Quốc Tế",
     "slug": "phong-kham-da-khoa-quoc-te",
+    "filter": [
+        {
+            "display": "Nội khoa",
+            "value": "noi-khoa"
+        },
+        {
+            "display": "Tim mạch",
+            "value": "tim-mach"
+        }
+    ],
     "description": "After graduating from West Virginia University Medical School, Dr. Jonathon Alex completed a two-year fellowship in sports medicine at Akron Children’s Hospital. During his training at Akron, Dr. Jonathon Alex was team physician for the University of Akron and Walsh University.",
     "layout": "phong-kham.html",
     "date": "2016-07-06 22:34:45 +07:00",
@@ -15,15 +25,10 @@
     "certificate_number": "000199",
     "info": {
         "chuyen-khoa": [
-            "Tai mũi họng",
-            "Đa Khoa"
-        ],
-        "giai-thuong": [
-            "Phòng khám được yêu thích nhất năm 2016"
+            "Răng hàm mặt"
         ],
         "giay-phep": [
-            "Số giấy phép : 00001/SYT-GPHĐ <br /> Ngày cấp : 27-08-2012",
-            "Phạm vi hoạt động: Phòng khám đa khoa"
+            "Số giấy phép : 00016/SYTGPHĐ <br /> Ngày cấp : 11.01.2013"
         ]
     },
     "dich-vu": "Tẩy trắng răng, niềng răng, trám nhổ răng",
@@ -35,11 +40,11 @@
         "T7 - CN: 5:00PM-9:00PM"
     ],
     "so-dien-thoai": "080 6608 4059",
-    "loc-tim-kiem" : {
-        "trong-gio" : true,
-        "ngoai-gio" : true,
-        "co-bao-hiem" : true,
-        "co-lay-qua-so-dien-thoai" : true
+    "loc-tim-kiem": {
+        "trong-gio": true,
+        "ngoai-gio": true,
+        "co-bao-hiem": true,
+        "co-lay-qua-so-dien-thoai": true
     },
     "dia-chi": {
         "tinh": "ho-chi-minh",
@@ -92,10 +97,10 @@
     ],
     "danh-sach-bac-si": [
         {
-            "slug" : "pham-thuy-nga"
+            "slug": "pham-thuy-nga"
         },
         {
-            "slug" : "hoang-quoc-hoa"
+            "slug": "hoang-quoc-hoa"
         }
     ],
     "chuyen-dieu-tri": [

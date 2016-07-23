@@ -1,9 +1,8 @@
 [
     {
-        "type": "Text",
-        "displayType": "ShortText",
         "name": "title",
-        "displayName": "Tiêu Đề",
+        "displayName": "title",
+        "type": "Text",
         "validations": [],
         "viewOnly": false,
         "required": false
@@ -14,6 +13,13 @@
         "type": "Text",
         "validations": [],
         "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "filter",
+        "displayName": "filter",
+        "type": "Array",
+        "validations": [],
         "required": false
     },
     {
@@ -48,19 +54,10 @@
         "required": false
     },
     {
-        "name": "avatar",
-        "displayName": "avatar",
-        "type": "Text",
+        "name": "list-image",
+        "displayName": "list-image",
+        "type": "Array",
         "validations": [],
-        "viewOnly": false,
-        "required": false
-    },
-    {
-        "name": "sex",
-        "displayName": "sex",
-        "type": "Text",
-        "validations": [],
-        "viewOnly": false,
         "required": false
     },
     {
@@ -95,31 +92,11 @@
         "required": false
     },
     {
-        "name": "chuyen-khoa",
-        "displayName": "chuyen-khoa",
-        "type": "Array",
+        "name": "dich-vu",
+        "displayName": "dich-vu",
+        "type": "Text",
         "validations": [],
-        "required": false
-    },
-    {
-        "name": "dia-chi",
-        "displayName": "dia-chi",
-        "type": "Object",
-        "validations": [],
-        "required": false
-    },
-    {
-        "name": "danh-sach-phong-kham",
-        "displayName": "danh-sach-phong-kham",
-        "type": "Array",
-        "validations": [],
-        "required": false
-    },
-    {
-        "name": "chuyen-dieu-tri",
-        "displayName": "chuyen-dieu-tri",
-        "type": "Array",
-        "validations": [],
+        "viewOnly": false,
         "required": false
     },
     {
@@ -133,7 +110,9 @@
     {
         "name": "like",
         "displayName": "like",
-        "type": "Text"
+        "type": "Number",
+        "validations": [],
+        "required": false
     },
     {
         "name": "type",
@@ -159,21 +138,36 @@
         "required": false
     },
     {
-        "name": "nghenghiep",
-        "displayName": "nghenghiep",
-        "type": "Text",
+        "name": "loc-tim-kiem",
+        "displayName": "loc-tim-kiem",
+        "type": "Object",
         "validations": [],
-        "viewOnly": false,
         "required": false
     },
     {
-        "name": "note",
-        "displayName": "note",
-        "type": "Object"
+        "name": "dia-chi",
+        "displayName": "dia-chi",
+        "type": "Object",
+        "validations": [],
+        "required": false
     },
     {
-        "name": "filter",
-        "displayName": "filter",
+        "name": "danh-sach-phong-kham",
+        "displayName": "danh-sach-phong-kham",
+        "type": "Array",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "danh-sach-bac-si",
+        "displayName": "danh-sach-bac-si",
+        "type": "Array",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "chuyen-dieu-tri",
+        "displayName": "chuyen-dieu-tri",
         "type": "Array",
         "validations": [],
         "required": false

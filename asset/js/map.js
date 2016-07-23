@@ -224,8 +224,8 @@ var map;
             var marker = new google.maps.Marker({
                 position: latlng,
                 map: map,
-                icon: new google.maps.MarkerImage( 
-                    'images/' + prop.markerIcon,
+                icon: new google.maps.MarkerImage(
+                    'https://easywebhub.github.io/medihub/images/' + prop.markerIcon,
                     null,
                     null,
                     null,

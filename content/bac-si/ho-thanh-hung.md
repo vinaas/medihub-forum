@@ -2,6 +2,20 @@
 {
     "title": "Hồ Thanh Hưng",
     "slug": "bac-si/ho-thanh-hung",
+    "filter": [
+        {
+            "display": "Nội khoa",
+            "value": "noi-khoa"
+        },
+        {
+            "display": "Tim mạch",
+            "value": "tim-mach"
+        },
+        {
+            "display": "Hồ Thanh Hưng",
+            "value": "ho-thanh-hung"
+        }
+    ],
     "description": "Bác sĩ có nhiều năm kinh nghiệm tại ĐHYK Phạm Ngọc Thạch, BV Nguyễn Tri Phương, BV tim Tâm Đức",
     "layout": "bac-si.html",
     "date": "2016-07-16 10:05:10 +07:00",
@@ -14,7 +28,7 @@
     "info": {
         "chuyen-khoa": [
             "Nội khoa",
-            " Tim mạch"
+            "Tim mạch"
         ],
         "giai-thuong": [
             "Thạc sĩ Y khoa"

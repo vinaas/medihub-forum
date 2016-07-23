@@ -1,6 +1,11 @@
+<script>
+  window.data = {{#rivetData}}{{rivetData}}{{/rivetData}};
+  if (!window.data.selectedFilter)
+    window.data.selectedFilter = {};
+</script>
 <div class="searchForm clearfix">
   <div class="searchForm--1">
-    <select class="select2Normal" data-placeholder="Bác sĩ | Phòng khám" onchange="data.selectedFilter.chon = this.value;">
+    <select class="select2Normal" data-placeholder="Bác sĩ | Phòng khám" onchange="data.selectedFilter.loai = this.value;">
       <option value=""></option>
       {{#each searchForm.bacsi-phongkham}}
        <option value="{{loai}}" >{{ten}}</option>
@@ -8,7 +13,7 @@
     </select>
   </div>
   <div class="searchForm--2">
-    <select class="select2Search" data-placeholder="Bệnh, Triệu chứng, Chuyên khoa" onchange="data.selectedFilter.benh = this.value;">
+    <select class="select2Search" data-placeholder="Từ khóa" onchange="data.selectedFilter.giatri = this.value;">
       <option value="" selected></option>
       {{#each searchForm.trieu-chung-benh}}
         <option value="{{this.name}}" >{{this.ten}}</option>
@@ -16,7 +21,7 @@
     </select>
   </div>
   <div class="searchForm--3">
-    <select class="select2Search" data-placeholder="Tỉnh, Thành phố" onchange="data.selectedFilter.tinh = this.value;">
+    <select class="select2Search" data-placeholder="Tỉnh | Thành" onchange="data.selectedFilter.tinh = this.value;">
       <option value="" selected></option>
       {{#each tinh-thanh-pho.danh-sach-tinh}}
         <option value="{{name}}">{{title}}</option>
@@ -39,7 +44,6 @@
 
 </div>
 <script>
-  var data = {{#rivetData}}{{rivetData}}{{/rivetData}};
     rivets.bind(document.querySelector('body'), window.data);
 
   function Gui() {
