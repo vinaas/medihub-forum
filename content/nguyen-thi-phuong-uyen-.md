@@ -53,6 +53,19 @@
     "note": {
         "content": "If you couldn't connect with the center, Chat with us (8 am to 7 pm, Monday to Sunday) Note: This call may be recorded for quality control purpose and call recording may be shared with the center you are trying to connect By calling this number, you agree to the Terms & Conditions"
     },
-    "filter": []
+    "filter": [
+        {
+            "display": "Răng hàm mặt",
+            "value": "rang-ham-mat"
+        },
+        {
+            "display": "Nha khoa",
+            "value": "nha-khoa"
+        },
+        {
+            "display": "Nguyễn Thị Phương Uyên ",
+            "value": "nguyen-thi-phuong-uyen"
+        }
+    ]
 }
 ---
