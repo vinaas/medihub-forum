@@ -48,8 +48,8 @@
     "gio-lam-viec": [
         "T2 - CN: 8g30 - 20g30 "
     ],
-    "so-dien-thoai": "",
-    "nghenghiep": "",
+    "so-dien-thoai": "73099939",
+    "nghenghiep": "Bác sĩ",
     "note": {},
     "filter": []
 }
