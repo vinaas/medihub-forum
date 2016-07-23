@@ -12,7 +12,12 @@
     "layout": "phong-kham.html",
     "date": "2016-07-23 10:46:39 +07:00",
     "permalink": true,
-    "list-image": [],
+    "list-image": [
+        "http://nhakhoakythuatso.com/wp-content/uploads/2016/06/banner1.jpg",
+        "http://nhakhoakythuatso.com/wp-content/uploads/2016/06/banner2.jpg",
+        "http://nhakhoakythuatso.com/wp-content/uploads/2016/06/banner3.jpg",
+        "http://nhakhoakythuatso.com/wp-content/uploads/2016/06/banner4.jpg"
+    ],
     "certificate_type": "",
     "certificate_code": "",
     "certificate_number": "",
