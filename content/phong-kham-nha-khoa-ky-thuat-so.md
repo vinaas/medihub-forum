@@ -36,7 +36,7 @@
     "gio-lam-viec": [
         "T2 - CN: 8g30 - 21g"
     ],
-    "so-dien-thoai": "",
+    "so-dien-thoai": "73099939",
     "loc-tim-kiem": {},
     "dia-chi": {},
     "danh-sach-phong-kham": [],
