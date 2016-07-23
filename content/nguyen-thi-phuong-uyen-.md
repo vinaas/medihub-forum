@@ -21,7 +21,11 @@
         ]
     },
     "chuyen-khoa": [],
-    "dia-chi": {},
+    "dia-chi": {
+        "tinh": "ho-chi-minh",
+        "quan-huyen": "quan-1",
+        "chi-tiet": "215 Đinh Tiên Hoàng, P. Tân Định, Q. 1, TP.HCM "
+    },
     "danh-sach-phong-kham": [],
     "chuyen-dieu-tri": [],
     "gia-tien": "",
