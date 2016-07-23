@@ -21,7 +21,14 @@
     "certificate_type": "",
     "certificate_code": "",
     "certificate_number": "",
-    "info": {},
+    "info": {
+        "chuyen-khoa": [
+            "Răng hàm mặt"
+        ],
+        "giay-phep": [
+            "Số giấy phép : 00016/SYTGPHĐ <br /> Ngày cấp : 11.01.2013"
+        ]
+    },
     "dich-vu": "",
     "gia-tien": "",
     "like": "",
