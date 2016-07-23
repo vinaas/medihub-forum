@@ -1,8 +1,9 @@
 [
     {
-        "name": "title",
-        "displayName": "title",
         "type": "Text",
+        "displayType": "ShortText",
+        "name": "title",
+        "displayName": "Tiêu Đề",
         "validations": [],
         "viewOnly": false,
         "required": false
