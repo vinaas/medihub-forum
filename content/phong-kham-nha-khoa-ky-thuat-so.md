@@ -19,8 +19,8 @@
         "http://nhakhoakythuatso.com/wp-content/uploads/2016/06/banner4.jpg"
     ],
     "certificate_type": "SYTGPHĐ",
-    "certificate_code": "",
-    "certificate_number": "",
+    "certificate_code": "00016/SYTGPHĐ",
+    "certificate_number": "00016",
     "info": {
         "chuyen-khoa": [
             "Răng hàm mặt"
