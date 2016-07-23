@@ -16,8 +16,8 @@
             "Răng hàm mặt"
         ],
         "giay-phep": [
-            "Chứng chỉ hành nghề số 00053/SYTGPHĐ",
-            "Phạm vi hoạt động: Phòng khám  Nha Khoa Kỹ thuật Số"
+            "Chứng chỉ hành nghề số 00053/SYTGPHĐ <br /> Ngày cấp : 14.03.2013",
+            "Phạm vi hoạt động: Phòng nha BS. Nguyễn Ngọc Duy"
         ]
     },
     "chuyen-khoa": [],
