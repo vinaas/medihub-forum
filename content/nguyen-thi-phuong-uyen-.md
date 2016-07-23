@@ -11,7 +11,15 @@
     "certificate_type": "",
     "certificate_code": "",
     "certificate_number": "",
-    "info": {},
+    "info": {
+        "chuyen-khoa": [
+            "Răng hàm mặt"
+        ],
+        "giay-phep": [
+            "Chứng chỉ hành nghề số 00017/SYTGPHĐ ",
+            "Phạm vi hoạt động: Phòng nha BS. Nguyễn Thị Phương Uyên"
+        ]
+    },
     "chuyen-khoa": [],
     "dia-chi": {},
     "danh-sach-phong-kham": [],
