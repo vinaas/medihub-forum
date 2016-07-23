@@ -1,0 +1,175 @@
+[
+    {
+        "name": "title",
+        "displayName": "title",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "slug",
+        "displayName": "slug",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "filter",
+        "displayName": "filter",
+        "type": "Array",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "description",
+        "displayName": "description",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "layout",
+        "displayName": "layout",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": true,
+        "required": false
+    },
+    {
+        "name": "date",
+        "displayName": "date",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "permalink",
+        "displayName": "permalink",
+        "type": "Boolean",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "list-image",
+        "displayName": "list-image",
+        "type": "Array",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "certificate_type",
+        "displayName": "certificate_type",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "certificate_code",
+        "displayName": "certificate_code",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "certificate_number",
+        "displayName": "certificate_number",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "info",
+        "displayName": "info",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "dich-vu",
+        "displayName": "dich-vu",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "gia-tien",
+        "displayName": "gia-tien",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "like",
+        "displayName": "like",
+        "type": "Number",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "type",
+        "displayName": "type",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "gio-lam-viec",
+        "displayName": "gio-lam-viec",
+        "type": "Array",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "so-dien-thoai",
+        "displayName": "so-dien-thoai",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "loc-tim-kiem",
+        "displayName": "loc-tim-kiem",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "dia-chi",
+        "displayName": "dia-chi",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "danh-sach-phong-kham",
+        "displayName": "danh-sach-phong-kham",
+        "type": "Array",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "danh-sach-bac-si",
+        "displayName": "danh-sach-bac-si",
+        "type": "Array",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "chuyen-dieu-tri",
+        "displayName": "chuyen-dieu-tri",
+        "type": "Array",
+        "validations": [],
+        "required": false
+    }
+]
