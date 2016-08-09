@@ -9,3 +9,7 @@ select{
     outline: none;
   }
 }
+
+.bgGray{
+  background: lighten($light-gray,2%);
+}

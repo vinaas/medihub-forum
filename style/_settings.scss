@@ -45,7 +45,7 @@
 // 1. Global
 // ---------
 
-$margin-box: 15px;
+$margin-box: 20px;
 
 $global-font-size: 14px;
 $global-width: rem-calc(1000);
@@ -366,7 +366,7 @@ $input-background-disabled: $light-gray;
 $input-border: 1px solid $medium-gray;
 $input-border-focus: 1px solid $medium-gray;
 $input-shadow: none;
-$input-shadow-focus: 0 0 5px $medium-gray;
+$input-shadow-focus: none;
 $input-cursor-disabled: not-allowed;
 $input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 $input-number-spinners: true;

@@ -2,7 +2,7 @@
 .forumHome__nav{
     height: 60px;
     background: white;
-    margin-bottom: 20px;
+    margin-bottom: $margin-box;
 }
 .forumHome__nav--logo{
     margin-bottom: 0;
@@ -12,7 +12,7 @@
 .newsRun{
     overflow: hidden;
     white-space: nowrap;
-    padding-bottom: 10px;
+    padding-bottom: $margin-box;
 }
 .newsRun__item{
     width: 300px;
@@ -47,6 +47,8 @@
 }
 
 .newsMoz{
+    @extend .clearfix;
+    margin-bottom: $margin-box;
     &:first-child{
         padding-left: 0;
     }
@@ -173,6 +175,93 @@
 }
 
 
+.mb0{
+    margin-bottom: 0
+}
+
+.mb10{
+    margin-bottom: 10px;
+}
+
+.mb20{
+    margin-bottom: 20px;
+}
+
+.forum__number{
+    text-align: center;
+    display: inline-block;
+    padding-right: 60px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    &.last{
+        padding-right: 0;
+    }
+    .txt{
+        font-size: rem-calc(13px);
+        color: $medium-gray;
+    }
+    .num{
+        @include header-size(h4);
+        font-weight: bold;
+        line-height: 1.1;
+        &.dangxem{
+            color:$primary-color;
+        }
+        &.hoi{
+            color:$success-color;
+        }
+        &.giaoluu{
+            color:$alert-color;
+        }
+        i{
+            vertical-align: 15%;
+            font-weight: normal;
+            color: $secondary-color;
+            font-size: rem-calc(16px);
+        }
+    }
+}
+
+.porlet--relative{
+        position: relative;
+        padding-bottom: 53px;
+    .button-absolute{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+    }
+}
 
 
 // end FORUM HOMEPAGE
+
+//FOR USER
+.user{
+    @extend .clearfix;
+    &:hover{
+        .user__name{
+            color: $primary-color;
+        }
+    }
+}
+.user--small{
+    margin-bottom: 10px;
+}
+.user__pic{
+    float: left;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.user__name{
+    font-size: rem-calc(12px);
+    margin-bottom: 1px;
+    padding-top: 1px;
+    color: $secondary-color;
+}
+.user__comment{
+     font-size: rem-calc(12px);
+     color: $medium-gray;
+}
+//end FOR USER

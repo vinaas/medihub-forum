@@ -325,11 +325,21 @@
   padding: 10px 15px;
 
   border-bottom: 1px solid $light-gray;
+
+  &.primary{
+    border-bottom: none;
+    padding-bottom: 0;
+    .porlet--title{
+      color: $primary-color;
+    }
+    
+  }
 }
 .porlet--title{
   font-weight: bold;
   margin-bottom: 0;
   @include header-size(h5);
+  
 }
 .porlet--body{
   padding: 10px 15px;
@@ -338,6 +348,15 @@
   }
   &.no-pd{
     padding: 0 0;
+  }
+  &.bottom{
+    padding-bottom: 0;
+  }
+  &.bottom-5{
+    padding-bottom: 5px;
+  }
+  &.top{
+    padding-top: 0;
   }
 }
 .porlet-loadmore{
