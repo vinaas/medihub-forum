@@ -137,6 +137,16 @@ $(function() {
 
     $("#mapView").sticky({topSpacing:80, bottomSpacing: 415});
     $(".searchFilter .searchForm").sticky({topSpacing:0});
+
+
+    var swiperNews = new Swiper('.newsRun', {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false,
+        loop: true,
+        speed: 2000
+    });
 });
 
 

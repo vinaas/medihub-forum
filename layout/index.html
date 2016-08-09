@@ -69,28 +69,28 @@
 
 <div class="row">
   <div class="small-12 column">
-    <div class="newsRun">
+    <div class="newsRun swiper-container">
+      <div class="swiper-wrapper">
 
-
-      {{#each (first news 10)}}
-
-      <div class="newsRun__item boxShadowLess clearfix">
-        <a href="{{this.link}}">
-          <div class="newsRun__img">
-            <img
-                src="{{this.img}}"
-                alt="{{this.title}}">
+        {{#each (first news 10)}}
+        <div class="swiper-slide">
+          <div class=" newsRun__item boxShadowLess clearfix">
+            <a href="{{this.link}}">
+              <div class="newsRun__img">
+                <img
+                    src="{{this.img}}"
+                    alt="{{this.title}}">
+              </div>
+              <div class="newsRun__txt">
+                {{this.title}}
+              </div>
+            </a>
           </div>
-          <div class="newsRun__txt">
-            {{this.title}}
-          </div>
-        </a>
+        </div>
+
+
+        {{/each}}
       </div>
-
-      {{/each}}
-
-
-
     </div>
 
     {{> news-moz}}

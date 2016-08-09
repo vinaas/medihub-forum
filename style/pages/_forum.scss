@@ -10,9 +10,15 @@
 }
 
 .newsRun{
-    overflow: hidden;
-    white-space: nowrap;
+    //overflow: hidden;
+    //white-space: nowrap;
     padding-bottom: $margin-box;
+    //.newsRun__item:first-child{
+    //  margin-left: 0;
+    //}
+  .swiper-slide{
+    width: 300px;
+  }
 }
 .newsRun__item{
     width: 300px;
@@ -20,7 +26,7 @@
     padding: 10px;
     position: relative;
     background: white;
-    margin: 0 5px;
+    //margin: 0 5px;
     &:hover{
         .newsRun__txt{
             margin-left: 80px;
@@ -318,6 +324,10 @@
     margin: 0 15px;
     border-bottom: 1px solid $light-gray;
   }
+
+  &.normal.space{
+    padding: 20px 0;
+  }
 }
 
 .forum__table--title{
@@ -347,4 +357,12 @@
 }
 .forum__table--date{
   flex: 0 0 80px;
+}
+
+.forum__head{
+  .title{
+    color: $primary-color;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
 }
