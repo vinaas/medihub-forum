@@ -1,0 +1,19 @@
+.breadcrumbs li:not(:last-child)::after{
+  color: #9e9e9e;
+  content: "|";
+  margin: 0 0.3rem;
+  position: relative;
+  top: 0px;
+  opacity: 1;
+}
+.breadcrumbs li{
+  text-transform: inherit;
+}
+.breadcrumbs a{
+  color: $medium-gray;
+
+  &:hover{
+    color: $dark-gray;
+    text-decoration: none;
+  }
+}

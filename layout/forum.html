@@ -69,266 +69,155 @@
         </ul>
       </div>
 
+      <div class="portlet boxShadow">
+        <div class="porlet--heading primary">
+          <h3 class="porlet--title ">Thành viên năng động</h3>
+        </div>
+
+        <div class="porlet--body bottom-5">
+          <div class="row small-up-1 medium-up-2 large-up-2">
+
+            {{#each (first users 12)}}
+            <div class="column">
+              <div class="user user--small">
+                <a href="{{this.link}}">
+                  <div class="user__pic">
+                    <img alt="{{this.name}}" width="30" height="30" src="{{this.img}}">
+                  </div>
+                  <h5 class="user__name text-ellipsis">{{this.name}}</h5>
+                  <div class="user__comment"><i class="fa fa-comment-o"></i> {{this.comments}}</div>
+                </a>
+              </div>
+            </div>
+            {{/each}}
+
+          </div>
+        </div>
+      </div>
+
+
+      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
 
 
 
     </div>
   </div>
   <div class="small-12 medium-8 column">
+
     <div class="portlet boxShadow">
       <div class="porlet--body">
         <h4 class="color-primary">Diễn đàn</h4>
         <p>Diễn đàn là nơi dành riêng cho các thành viên Medihub đặt câu hỏi cho các bác sĩ và trao đổi, chia sẻ thông tin với các thành viên khác. </p>
 
         <div class="text-right">
-          <a href="" class="button">Viết lên diễn đàn</a>
+          <a href="" class="button mb0">Viết lên diễn đàn</a>
         </div>
       </div>
     </div>
 
+    {{> news-moz-small}}
 
-
-
-  </div>
-</div>
-
-<div class="row">
-  <div class="small-12 column">
     <div class="newsRun">
+      {{#each (first news 10)}}
 
       <div class="newsRun__item boxShadowLess clearfix">
-        <a href="">
+        <a href="{{this.link}}">
           <div class="newsRun__img">
             <img
-                src="http://static.thememaha.com/curated/wp-content/uploads/2016/07/photo-1463936575829-25148e1db1b8-83x63.jpg"
-                alt="">
+                src="{{this.img}}"
+                alt="{{this.title}}">
           </div>
           <div class="newsRun__txt">
-            The Workout That Burns More Calories Than Running
+            {{this.title}}
           </div>
         </a>
       </div>
 
-      <div class="newsRun__item boxShadowLess clearfix">
-        <a href="">
-          <div class="newsRun__img">
-            <img
-                src="http://static.thememaha.com/curated/wp-content/uploads/2016/07/photo-1463936575829-25148e1db1b8-83x63.jpg"
-                alt="">
-          </div>
-          <div class="newsRun__txt">
-            The Workout That Burns More Calories Than Running
-          </div>
-        </a>
-      </div>
-
-      <div class="newsRun__item boxShadowLess clearfix">
-        <a href="">
-          <div class="newsRun__img">
-            <img
-                src="http://static.thememaha.com/curated/wp-content/uploads/2016/07/photo-1463936575829-25148e1db1b8-83x63.jpg"
-                alt="">
-          </div>
-          <div class="newsRun__txt">
-            The Workout That Burns More Calories Than Running
-          </div>
-        </a>
-      </div>
-
-      <div class="newsRun__item boxShadowLess clearfix">
-        <a href="">
-          <div class="newsRun__img">
-            <img
-                src="http://static.thememaha.com/curated/wp-content/uploads/2016/07/photo-1463936575829-25148e1db1b8-83x63.jpg"
-                alt="">
-          </div>
-          <div class="newsRun__txt">
-            The Workout That Burns More Calories Than Running
-          </div>
-        </a>
-      </div>
-
+      {{/each}}
 
     </div>
 
-    <div class="newsMoz">
-      <div class="newsMoz__item big">
-        <div class="newsMoz__wrap">
-          <div class="newsMoz__img"
-               style="background-image: url(http://demo.tagdiv.com/newspaper_animals/wp-content/uploads/2015/11/371-534x462.jpg)">
-            <a href="" class="newsMoz__url"></a>
-          </div>
-          <div class="newsMoz__title">
-            <a href="" class="link"></a>
-            <span class="label">MẮT</span>
-            <h3 class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-            <div class="date"><i class="fa fa-clock-o"></i> 1 tháng 5, 2017</div>
 
-          </div>
-        </div>
-      </div>
+    <ul class="forum__table boxShadow">
 
-      <div class="newsMoz__item medium">
-        <div class="newsMoz__wrap">
-          <div class="newsMoz__img"
-               style="background-image: url(http://demo.tagdiv.com/newspaper_magazine/wp-content/uploads/2015/09/15-534x462.jpg)">
-            <a href="" class="newsMoz__url"></a>
-          </div>
-          <div class="newsMoz__title">
-            <a href="" class="link"></a>
-            <span class="label">MẮT</span>
-            <h3 class="txt">Eurobike Gallery: Canyon’s full-suspension road bike</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="small2">
-        <div class="newsMoz__item small">
-          <div class="newsMoz__wrap">
-            <div class="newsMoz__img"
-                 style="background-image: url(http://demo.tagdiv.com/newspaper_magazine/wp-content/uploads/2015/09/9-265x198.jpg)">
-              <a href="" class="newsMoz__url"></a>
-            </div>
-
-            <div class="newsMoz__title">
-              <a href="" class="link"></a>
-              <span class="label">MẮT</span>
-              <h3 class="txt">Skipper again boosted for first England goal after win</h3>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="newsMoz__item small">
-          <div class="newsMoz__wrap">
-            <div class="newsMoz__img"
-                 style="background-image: url(http://demo.tagdiv.com/newspaper_magazine/wp-content/uploads/2015/09/61-265x198.jpg)">
-              <a href="" class="newsMoz__url"></a>
-            </div>
-
-            <div class="newsMoz__title">
-              <a href="" class="link"></a>
-              <span class="label">THỂ THAO</span>
-              <h3 class="txt">Three players Arsenal almost signed this summer</h3>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="medium-4 small-12 column">
-    <div class="portlet boxShadow">
-      <div class="porlet--heading primary">
-        <h3 class="porlet--title ">Thành viên năng động</h3>
-      </div>
-
-      <div class="porlet--body bottom-5">
-        <div class="row small-up-1 medium-up-2 large-up-2">
-
-          {{#each (first users 12)}}
-          <div class="column">
-            <div class="user user--small">
-              <a href="{{this.link}}">
-                <div class="user__pic">
-                  <img alt="{{this.name}}" width="30" height="30" src="{{this.img}}">
-                </div>
-                <h5 class="user__name text-ellipsis">{{this.name}}</h5>
-                <div class="user__comment"><i class="fa fa-comment-o"></i> {{this.comments}}</div>
-              </a>
-            </div>
-          </div>
-          {{/each}}
+      <li class="forum__table--row heading">
+        <div class="forum__table--content">
+          <h3 class="forum__table--title "><i class="fa fa-newspaper-o"></i> Chủ đề mới nhất</h3>
 
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="small-12 medium-8 column">
-    <div class="portlet boxShadow">
-      <div class="porlet--body">
-
-        <div class="row">
-          <div class="medium-8 small-12 column align-self-middle">
-
-            <div class="forum__number">
-              <div class="txt">Đang xem</div>
-              <div class="num dangxem">256 <i class="fa fa-users"></i></div>
-            </div>
-
-            <div class="forum__number">
-              <div class="txt">Hỏi</div>
-              <div class="num hoi">8735 <i class="fa fa-question-circle"></i></div>
-            </div>
-
-            <div class="forum__number last">
-              <div class="txt">Giao lưu</div>
-              <div class="num giaoluu">915 <i class="fa fa-users"></i></div>
-            </div>
-
-          </div>
-          <div class="medium-4 small-12 column align-self-middle">
-
-            <a href="" class="button expanded mb0">Vào xem diễn đàn &nbsp; <i class="fa fa-angle-right "></i></a>
-
-          </div>
+        <div class="forum__table--view">
+          Lượt xem
         </div>
-      </div>
+        <div class="forum__table--date">
+          Ngày đăng
+        </div>
+      </li>
+
+      {{#each (first news 5)}}
+      <li class="forum__table--row normal">
+        <div class="forum__table--content">
+          <a href="{{this.link}}" class="title">{{this.title}}</a>
+
+          <ul class="breadcrumbs">
+            <li><a href="#">Giao lưu</a></li>
+            <li><a href="#">Mẹo vặt kinh nghiệm</a></li>
+          </ul>
+
+        </div>
+        <div class="forum__table--view">
+          {{this.view}}
+        </div>
+        <div class="forum__table--date">
+          {{this.date}}
+        </div>
+      </li>
+      {{/each}}
+
+    </ul>
+
+    <div class="adv">
+      <img src="http://placehold.it/700x120" alt="">
     </div>
 
-    <div class="row" data-equalizer data-equalize-on="medium">
-      <div class="column small-12 medium-6">
+    <ul class="forum__table boxShadow">
 
-        <div class="portlet boxShadow porlet--relative" data-equalizer-watch>
-          <div class="porlet--heading primary">
-            <h3 class="porlet--title ">Viết lên diễn đàn</h3>
-          </div>
+      <li class="forum__table--row heading">
+        <div class="forum__table--content">
+          <h3 class="forum__table--title "><i class="fa fa-newspaper-o"></i> Chủ đề sôi nổi</h3>
 
-          <div class="porlet--body">
-            <div class="row">
-              <div class="shrink columns">
-                <img src="images/paper-note.png" width="50" alt="" style="margin-top: 5px;">
-              </div>
-              <div class="columns">
-                <p>Bạn có thể đặt câu hỏi với các bác sĩ và trao đổi thông tin với các thành viên khác trên diễn
-                  đàn.</p>
-
-              </div>
-            </div>
-
-          </div>
-
-          <div class="text-center button-absolute">
-            <a href="" class="button mb20">Viết lên diễn đàn</a>
-          </div>
         </div>
-      </div>
-
-      <div class="column small-12 medium-6">
-
-        <div class="portlet boxShadow porlet--relative" data-equalizer-watch>
-          <div class="porlet--heading primary">
-            <h3 class="porlet--title ">Tìm trên diễn đàn</h3>
-          </div>
-
-          <div class="porlet--body">
-            <p>Bạn có thể tìm thấy thông tin cần thiết trong các bài viết trên diễn đàn.</p>
-            <input type="text" placeholder="Bạn muốn tìm" class="bgGray">
-          </div>
-
-          <div class="text-center button-absolute">
-            <a href="" class="button mb20">Tìm trên diễn đàn</a>
-          </div>
+        <div class="forum__table--view">
+          Lượt xem
         </div>
-      </div>
+        <div class="forum__table--date">
+          Ngày đăng
+        </div>
+      </li>
 
-    </div>
+      {{#each (first news 5)}}
+      <li class="forum__table--row normal">
+        <div class="forum__table--content">
+          <a href="{{this.link}}" class="title">{{this.title}}</a>
+
+          <ul class="breadcrumbs">
+            <li><a href="#">Giao lưu</a></li>
+            <li><a href="#">Mẹo vặt kinh nghiệm</a></li>
+          </ul>
+
+        </div>
+        <div class="forum__table--view">
+          {{this.view}}
+        </div>
+        <div class="forum__table--date">
+          {{this.date}}
+        </div>
+      </li>
+      {{/each}}
+
+    </ul>
+
+
 
   </div>
 </div>
