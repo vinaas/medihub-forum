@@ -68,11 +68,12 @@
 }
 .newsMoz__item{
     padding: 2px;
-   
+    
     &.big{
         width: 50%;
         height: 388px;
         float: left;
+        padding-left: 0;
 
         .newsMoz__title{
             .txt{
@@ -265,3 +266,22 @@
      color: $medium-gray;
 }
 //end FOR USER
+
+
+.forum{
+    margin-top: $margin-box;
+}
+
+.forum__sidebar{
+
+}
+.forum__logo{
+  background: white;
+  padding: 10px 15px;
+  border-bottom: 1px solid $light-gray;
+  .forumHome__nav--logo{
+    line-height: normal;
+    color: $primary-color;
+    @include header-size(h5)
+  }
+}

@@ -13,3 +13,26 @@ select{
 .bgGray{
   background: lighten($light-gray,2%);
 }
+
+
+.searchBox{
+  position: relative;
+  input{
+    padding-right: 30px;
+    margin-bottom: 0;
+  }
+  a{
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    right: 0;
+    top: 0;
+    color: $medium-gray;
+    &:hover{
+      color: $secondary-color;
+    }
+  }
+}
