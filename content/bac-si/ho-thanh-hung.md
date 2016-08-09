@@ -2,20 +2,6 @@
 {
     "title": "Hồ Thanh Hưng",
     "slug": "bac-si/ho-thanh-hung",
-    "filter": [
-        {
-            "display": "Nội khoa",
-            "value": "noi-khoa"
-        },
-        {
-            "display": "Tim mạch",
-            "value": "tim-mach"
-        },
-        {
-            "display": "Hồ Thanh Hưng",
-            "value": "ho-thanh-hung"
-        }
-    ],
     "description": "Bác sĩ có nhiều năm kinh nghiệm tại ĐHYK Phạm Ngọc Thạch, BV Nguyễn Tri Phương, BV tim Tâm Đức",
     "layout": "bac-si.html",
     "date": "2016-07-16 10:05:10 +07:00",
@@ -34,8 +20,7 @@
             "Thạc sĩ Y khoa"
         ],
         "giay-phep": [
-            "Chứng chỉ hành nghề số 003818/ĐNAI-CCHN, KBCB Nội Khoa",
-            "Phạm vi hoạt động: Tại bệnh viện"
+            "Chứng chỉ hành nghề số 003818/ĐNAI-CCHN, KBCB Nội Khoa"
         ]
     },
     "chuyen-khoa": [],
@@ -59,6 +44,21 @@
         " 07:30 g - 16:00 g"
     ],
     "so-dien-thoai": "73099939",
-    "nghenghiep": ""
+    "nghenghiep": "",
+    "note": {},
+    "filter": [
+        {
+            "display": "Nội khoa",
+            "value": "noi-khoa"
+        },
+        {
+            "display": "Tim mạch",
+            "value": "tim-mach"
+        },
+        {
+            "display": "Hồ Thanh Hưng",
+            "value": "ho-thanh-hung"
+        }
+    ]
 }
 ---

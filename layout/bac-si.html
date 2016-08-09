@@ -80,12 +80,7 @@
           </ul>
 
 
-          <h5 class="listIcon"><i class="fa fa-trophy"></i> Giải thưởng</h5>
-          <ul class="listCircle ml-5">
-          	{{#each info.giai-thuong}}
-           	<li>{{this}}</li>
-           {{/each}}
-          </ul>
+        
 
 
           <h5 class="listIcon"><i class="fa fa-list-alt"></i> Giấy phép</h5>
@@ -117,17 +112,17 @@
 
             <div class="article--column_2">
 
-              <div class="article--title"><a href="detail-pk.html">{{title}}</a> <div class="label-bh">BH</div></div>
+              <div class="article--title"><a href="{{slug}}">{{title}}</a> <div class="label-bh">BH</div></div>
               <div class="article--column_sub">
                 <div class="article--column_sub_1">
-                  <div class="article-service">Dịch vụ: {{dich-vu}}</div>
+             
                   <div class="article-address">{{dia-chi.chi-tiet}}</div>
                 </div>
 
                 <div class="article--column_sub_2">
                   <div class="article--price"><div class="icon"><i class="fa fa-money"></i> </div><div class="meta">{{gia-tien}} đồng</div></div>
                   <div class="article--date">
-                    <div class="icon"><i class="fa fa-calendar"></i></div> <div class="meta">T2 - T6: 10:00AM-2:00PM <br>T7 - CN: 5:00PM-9:00PM</div></div>
+                    <div class="icon"><i class="fa fa-calendar"></i></div> <div class="meta">{{gio-lam-viec}}</div></div>
                 </div>
               </div>
 

@@ -2,24 +2,6 @@
 {
     "title": "Hoàng Quốc Hoà",
     "slug": "hoang-quoc-hoa",
-    "filter": [
-        {
-            "display": "Tai mũi họng",
-            "value": "tai-mui-hong"
-        },
-        {
-            "display": "Đa Khoa",
-            "value": "da-khoa"
-        },
-        {
-            "display": "Da liễu",
-            "value": "da-lieu"
-        },
-        {
-            "display": "Hoàng Quốc Hoà",
-            "value": "hoang-quoc-hoa"
-        }
-    ],
     "description": "",
     "layout": "bac-si.html",
     "date": "2016-07-08 22:14",
@@ -39,8 +21,7 @@
             "Phòng khám được yêu thích nhất năm 2015"
         ],
         "giay-phep": [
-            "Số giấy phép : 00001/SYT-GPHĐ <br /> Ngày cấp : 27-08-2012",
-            "Phạm vi hoạt động: Phòng khám đa khoa"
+            "Số giấy phép : 00001/SYT-GPHĐ, ngày cấp : 27-08-2012"
         ]
     },
     "chuyen-khoa": [],
@@ -68,6 +49,24 @@
     ],
     "so-dien-thoai": "73099939",
     "nghenghiep": "bac-si",
-    "note": {}
+    "note": {},
+    "filter": [
+        {
+            "display": "Tai mũi họng",
+            "value": "tai-mui-hong"
+        },
+        {
+            "display": "Đa Khoa",
+            "value": "da-khoa"
+        },
+        {
+            "display": "Da liễu",
+            "value": "da-lieu"
+        },
+        {
+            "display": "Hoàng Quốc Hoà",
+            "value": "hoang-quoc-hoa"
+        }
+    ]
 }
 ---

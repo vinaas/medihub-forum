@@ -2,20 +2,6 @@
 {
     "title": "Phạm Thuý Ngà",
     "slug": "pham-thuy-nga",
-    "filter": [
-        {
-            "display": "Tai mũi họng",
-            "value": "tai-mui-hong"
-        },
-        {
-            "display": "Đa Khoa",
-            "value": "da-khoa"
-        },
-        {
-            "display": "Phạm Thuý Ngà",
-            "value": "pham-thuy-nga"
-        }
-    ],
     "description": "After graduating from West Virginia University Medical School, Dr. Jonathon Alex completed a two-year fellowship in sports medicine at Akron Children’s Hospital. During his training at Akron, Dr. Jonathon Alex was team physician for the University of Akron and Walsh University.",
     "layout": "bac-si.html",
     "date": "2016-07-06 22:34:45 +07:00",
@@ -34,10 +20,25 @@
             "Phòng khám được yêu thích nhất năm 2016"
         ],
         "giay-phep": [
-            "Số giấy phép : 00001/SYT-GPHĐ <br /> Ngày cấp : 27-08-2012",
-            "Phạm vi hoạt động: Phòng khám đa khoa"
+            "Số giấy phép : 00001/SYT-GPHĐ, ngày cấp : 27-08-2012"
         ]
     },
+    "chuyen-khoa": [],
+    "dia-chi": {
+        "tinh": "ho-chi-minh",
+        "quan-huyen": "quan-1",
+        "chi-tiet": " Đường Hai bà trưng "
+    },
+    "danh-sach-phong-kham": [
+        {
+            "slug": "phong-kham-da-lieu-bs-pham-thuy-nga"
+        }
+    ],
+    "chuyen-dieu-tri": [
+        "Viêm họng",
+        "Viêm mũi dị ứng",
+        "Viêm xoang"
+    ],
     "gia-tien": "820,000",
     "like": 661,
     "type": "nha-tai-tro",
@@ -46,22 +47,21 @@
         "T7 - CN: 5:00PM-9:00PM"
     ],
     "so-dien-thoai": "84838991129",
-    "chuyen-khoa": [],
-    "dia-chi": {
-        "tinh": "ho-chi-minh",
-        "quan-huyen": "quan-1",
-        "chi-tiet": " Đường Hai bà trưng "
-    },
-
-    "danh-sach-phong-kham": [
+    "nghenghiep": "",
+    "note": {},
+    "filter": [
         {
-          "slug": "phong-kham-da-lieu-bs-pham-thuy-nga"
+            "display": "Tai mũi họng",
+            "value": "tai-mui-hong"
+        },
+        {
+            "display": "Đa Khoa",
+            "value": "da-khoa"
+        },
+        {
+            "display": "Phạm Thuý Ngà",
+            "value": "pham-thuy-nga"
         }
-    ],
-    "chuyen-dieu-tri": [
-        "Viêm họng",
-        "Viêm mũi dị ứng",
-        "Viêm xoang"
     ]
 }
 ---

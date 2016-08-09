@@ -10,6 +10,10 @@
         {
             "display": "Tim mạch",
             "value": "tim-mach"
+        },
+        {
+            "display": "phong-kham-da-khoa-quoc-te",
+            "value": "phong-kham-da-khoa-quoc-te"
         }
     ],
     "description": "After graduating from West Virginia University Medical School, Dr. Jonathon Alex completed a two-year fellowship in sports medicine at Akron Children’s Hospital. During his training at Akron, Dr. Jonathon Alex was team physician for the University of Akron and Walsh University.",
@@ -28,7 +32,7 @@
             "Răng hàm mặt"
         ],
         "giay-phep": [
-            "Số giấy phép : 00016/SYTGPHĐ <br /> Ngày cấp : 11.01.2013"
+            "Số giấy phép : 00016/SYTGPHĐ, ngày cấp : 11.01.2013"
         ]
     },
     "dich-vu": "Tẩy trắng răng, niềng răng, trám nhổ răng",

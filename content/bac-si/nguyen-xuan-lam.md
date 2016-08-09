@@ -2,24 +2,6 @@
 {
     "title": "Nguyễn Xuân Lam",
     "slug": "nguyen-xuan-lam",
-    "filter": [
-        {
-            "display": "Đa Khoa",
-            "value": "da-khoa"
-        },
-        {
-            "display": "Tai mũi họng",
-            "value": "tai-mui-hong"
-        },
-        {
-            "display": "Da liễu",
-            "value": "da-lieu"
-        },
-        {
-            "display": "Nguyễn Xuân Lam",
-            "value": "nguyen-xuan-lam"
-        }
-    ],
     "description": "",
     "layout": "bac-si.html",
     "date": "2016-07-08 22:14",
@@ -39,18 +21,9 @@
             "Phòng khám được yêu thích nhất năm 2015"
         ],
         "giay-phep": [
-            "Số giấy phép : 00001/SYT-GPHĐ <br /> Ngày cấp : 27-08-2012",
-            "Phạm vi hoạt động: Phòng khám đa khoa"
+            "Số giấy phép : 00001/SYT-GPHĐ, ngày cấp : 27-08-2012"
         ]
     },
-    "gia-tien": "450,000",
-    "like": 268,
-    "type": "nha-tai-tro",
-    "gio-lam-viec": [
-        "T2 - T6: 10:00AM-2:00PM ",
-        "T7 - CN: 5:00PM-9:00PM"
-    ],
-    "so-dien-thoai": "84838991129",
     "chuyen-khoa": [],
     "dia-chi": {
         "tinh": "ho-chi-minh",
@@ -66,6 +39,34 @@
         "Viêm họng",
         "Viêm mũi dị ứng",
         "Viêm xoang"
+    ],
+    "gia-tien": "450,000",
+    "like": 268,
+    "type": "nha-tai-tro",
+    "gio-lam-viec": [
+        "T2 - T6: 10:00AM-2:00PM ",
+        "T7 - CN: 5:00PM-9:00PM"
+    ],
+    "so-dien-thoai": "84838991129",
+    "nghenghiep": "",
+    "note": {},
+    "filter": [
+        {
+            "display": "Đa Khoa",
+            "value": "da-khoa"
+        },
+        {
+            "display": "Tai mũi họng",
+            "value": "tai-mui-hong"
+        },
+        {
+            "display": "Da liễu",
+            "value": "da-lieu"
+        },
+        {
+            "display": "Nguyễn Xuân Lam",
+            "value": "nguyen-xuan-lam"
+        }
     ]
 }
 ---

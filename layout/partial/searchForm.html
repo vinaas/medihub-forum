@@ -7,6 +7,7 @@
   <div class="searchForm--1">
     <select class="select2Normal" data-placeholder="Bác sĩ | Phòng khám" onchange="data.selectedFilter.loai = this.value;">
       <option value=""></option>
+      <option value=" ">&nbsp</option>
       {{#each searchForm.bacsi-phongkham}}
        <option value="{{loai}}" >{{ten}}</option>
       {{/each}}
@@ -14,7 +15,8 @@
   </div>
   <div class="searchForm--2">
     <select class="select2Search" data-placeholder="Từ khóa" onchange="data.selectedFilter.giatri = this.value;">
-      <option value="" selected></option>
+      <option value=""></option>
+      <option value=" ">&nbsp</option>
       {{#each searchForm.trieu-chung-benh}}
         <option value="{{this.name}}" >{{this.ten}}</option>
       {{/each}}
@@ -22,7 +24,8 @@
   </div>
   <div class="searchForm--3">
     <select class="select2Search" data-placeholder="Tỉnh | Thành" onchange="data.selectedFilter.tinh = this.value;">
-      <option value="" selected></option>
+      <option value=""></option>
+      <option value=" ">&nbsp</option>
       {{#each tinh-thanh-pho.danh-sach-tinh}}
         <option value="{{name}}">{{title}}</option>
       {{/each}}
@@ -30,7 +33,8 @@
   </div>
   <div class="searchForm--4">
     <select class="select2Search" data-placeholder="Quận | Huyện" onchange="data.selectedFilter.quan = this.value;">
-      <option value="" selected></option>
+      <option value=""></option>
+      <option value=" ">&nbsp</option>
       {{#each tinh-thanh-pho.danh-sach-tinh}}
         {{#each this.danh-sach-quan}}
           <option value="{{name}}">{{title}}</option>
@@ -48,10 +52,12 @@
 
   function Gui() {
       var parts = [];
+      var value;
       for (var key in window.data.selectedFilter) {
-          if (!window.data.selectedFilter.hasOwnProperty(key) || window.data.selectedFilter[key] == '')
-              continue;
-          parts.push(key + '=' + window.data.selectedFilter[key]);
+          if (!window.data.selectedFilter.hasOwnProperty(key)) continue;
+          value = window.data.selectedFilter[key].trim();
+          if (value === '') continue;
+          parts.push(key + '=' + value);
       }
     var query = parts.join('&');
       window.location = "search.html?" + query;

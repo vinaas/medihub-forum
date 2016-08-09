@@ -2,20 +2,6 @@
 {
     "title": "NGUYỄN HOÀNG SƠN",
     "slug": "bac-si/nguyen-hoang-son",
-    "filter": [
-        {
-            "display": "Nhi",
-            "value": "nhi"
-        },
-        {
-            "display": "Tai mũi họng",
-            "value": "tai-mui-hong"
-        },
-        {
-            "display": "NGUYỄN HOÀNG SƠN",
-            "value": "nguyen-hoang-son"
-        }
-    ],
     "description": "Nguyên trưởng khoa Tai-Mũi-Họng trẻ em bệnh viện TMH Trung Ương_ Nguyên giảng viên cao cấp Đại học Y Hà Nội",
     "layout": "bac-si.html",
     "date": "2016-07-16 10:39:12 +07:00",
@@ -35,8 +21,7 @@
             "Tiến sĩ"
         ],
         "giay-phep": [
-            "Phó Giáo sư - Tiến sĩ Tai Mũi Họng",
-            "Phạm vi hoạt động: Bệnh viện An Việt ,Giám đốc chuyên môn Bệnh viện Đa khoa tư nhân Hà Nội <br>Nguyên giảng viên cao cấp Đại học Y Hà Nội.<br>Nguyên Trưởng khoa Tai Mũi Họng Nhi Bệnh viện Nhi Trung Ương"
+            "Phó Giáo sư - Tiến sĩ Tai Mũi Họng"
         ]
     },
     "chuyen-khoa": [
@@ -106,6 +91,20 @@
     "nghenghiep": "Phó Giáo sư - Tiến sĩ Tai Mũi Họng",
     "note": {
         "content": "If you couldn't connect with the center, Chat with us (8 am to 7 pm, Monday to Sunday) Note: This call may be recorded for quality control purpose and call recording may be shared with the center you are trying to connect By calling this number, you agree to the Terms & Conditions"
-    }
+    },
+    "filter": [
+        {
+            "display": "Nhi",
+            "value": "nhi"
+        },
+        {
+            "display": "Tai mũi họng",
+            "value": "tai-mui-hong"
+        },
+        {
+            "display": "NGUYỄN HOÀNG SƠN",
+            "value": "nguyen-hoang-son"
+        }
+    ]
 }
 ---

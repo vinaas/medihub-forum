@@ -1,0 +1,178 @@
+// FORUM HOMEPAGE
+.forumHome__nav{
+    height: 60px;
+    background: white;
+    margin-bottom: 20px;
+}
+.forumHome__nav--logo{
+    margin-bottom: 0;
+    line-height: 60px;
+}
+
+.newsRun{
+    overflow: hidden;
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
+.newsRun__item{
+    width: 300px;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    background: white;
+    margin: 0 5px;
+    &:hover{
+        .newsRun__txt{
+            margin-left: 80px;
+            margin-top: 7px;
+            height: 44px;
+            overflow: hidden;
+            color: $primary-color;
+        }
+    }
+}
+
+.newsRun__img{
+    max-width: 70px;
+    float: left;
+}
+
+.newsRun__txt{
+    margin-left: 80px;
+    margin-top: 7px;
+    height: 44px;
+    white-space: initial;
+    overflow: hidden;
+    color: $secondary-color;
+}
+
+.newsMoz{
+    &:first-child{
+        padding-left: 0;
+    }
+    // &:last-child{
+    //     padding-right: 0;
+    // }
+
+
+    .small2{
+        width: 25%;
+        height: 388px;
+        float: left;
+        .newsMoz__item{
+            padding-right: 0;
+        }
+    }
+}
+.newsMoz__item{
+    padding: 2px;
+   
+    &.big{
+        width: 50%;
+        height: 388px;
+        float: left;
+
+        .newsMoz__title{
+            .txt{
+                margin-top: 5px;
+                font-size: rem-calc(24px);
+                line-height: 1.1;
+            }
+        }
+    }
+    &.medium{
+        width: 25%;
+        height: 388px;
+        float: left;
+    }
+    
+    &.small{
+        width: 100%;
+        height: 194px;
+    }
+
+    &:hover{
+        .newsMoz__url{
+            background: rgba(0,0,0,0.2);
+        }
+        .newsMoz__title .label{
+            background: rgba($primary-color,0.7);
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.newsMoz__wrap{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+    &:after{
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 40%,rgba(0,0,0,.7) 100%);
+    }
+}
+
+.newsMoz__img{
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-color: #cacaca;
+    
+}
+
+.newsMoz__url{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    position: relative;
+    transition: all 0.2s ease-in;
+}
+
+.newsMoz__title{
+    line-height: 21px;
+    color: white;
+    position: absolute;
+    display: block;
+    z-index: 100;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 17px 18px;
+    .txt{
+        margin-top: 5px;
+        font-size: rem-calc(16px);
+        line-height: 1.1;
+        margin-bottom: 0;
+    }
+    .label{
+        background: rgba(0,0,0,0.7);
+        margin-bottom: 5px;
+        transition: all 0.2s ease-in;
+    }
+    .date{
+        margin-top: 5px;
+    }
+    .link{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+
+// end FORUM HOMEPAGE
