@@ -7,13 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <meta name="description" content="">
-    <base href="https://easywebhub.github.io/medihub/" />
-    <!-- <script type="text/javascript">
-         	var baseHref = document.location.protocol + '//' + document.location.host;
-        	var parts = document.location.href.split(/\//);
-              	if (parts.length > 4) baseHref += '/' + parts[3];
-        	document.write('<base href="' + baseHref + '" />');
-    </script> -->
+    <base href="/" />
     <title>Hoàng Quốc Hoà</title>
     <script src="https://rawgit.com/mikeric/rivets/v0.8.1/dist/rivets.bundled.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic,300italic,300&subset=latin,vietnamese,latin-ext' rel='stylesheet' type='text/css'>
@@ -62,6 +56,7 @@
       <div class="searchForm--1">
         <select class="select2Normal" data-placeholder="Bác sĩ | Phòng khám" onchange="data.selectedFilter.loai = this.value;">
           <option value=""></option>
+          <option value=" ">&nbsp</option>
            <option value="bac-si" >Bác Sĩ</option>
            <option value="phong-kham" >Phòng Khám</option>
            <option value="benh-vien" >Bệnh Viện</option>
@@ -69,7 +64,8 @@
       </div>
       <div class="searchForm--2">
         <select class="select2Search" data-placeholder="Từ khóa" onchange="data.selectedFilter.giatri = this.value;">
-          <option value="" selected></option>
+          <option value=""></option>
+          <option value=" ">&nbsp</option>
             <option value="rang-ham-mat" >Răng hàm mặt</option>
             <option value="nha-khoa" >Nha khoa</option>
             <option value="truyen-nhiem" >Truyền nhiễm</option>
@@ -77,18 +73,35 @@
             <option value="chan-thuong-chinh-hinh" >Chấn thương chỉnh hình</option>
             <option value="nhi-khoa" >Nhi khoa</option>
             <option value="nguyen-hoang-son" >BS Nguyễn Hoàng Sơn</option>
+            <option value="nguyen-thi-hao" >BS Nguyễn Thị Hảo</option>
+            <option value="nguyen-thi-phuong-uyen" >BS Nguyễn Thị Phương Uyên</option>
+            <option value="nguyen-ngoc-duy" >BS Nguyễn Ngoc Duy</option>
+            <option value="vo-van-tu-hien" >BS Võ Văn Tự Hiến </option>
+            <option value="la-thanh-hung" > BS La Thành Hưng  </option>
+            <option value="truong-hoang-bao" >BS Trương Hoàng Bảo  </option>
+            <option value="nguyen-duy-dang" >BS  Nguyễn Duy Đăng  </option>
+            <option value="phong-kham-nha-khoa-ky-thuat-so" >Phòng khám Nha khoa Kỹ Thuật Số</option>
+            <option value="nha-khoa-the-ky" >Nha khoa Thế Kỷ</option>
+            <option value="nha-khoa-la-thanh-hung" >Phòng nha BS. La Thành Hưng</option>
+            <option value="nha-khoa-ko-se-i-kai" > Nha khoa KO.SE.I.KAI </option>
+            <option value="tran-nguyen-thi-thuy-nga" > BS Trần Nguyễn Thị Thúy Nga </option>
+            <option value="truong-thi-thuy-trinh" > BS Trương Thị Thùy Trinh </option>
+            <option value="nha-khoa-hoa-hong" > Nha Khoa Hoa Hồng </option>
+            <option value="nha-khoa-tham-my-ava" > Nha khoa Thẩm mỹ Ava </option>
         </select>
       </div>
       <div class="searchForm--3">
         <select class="select2Search" data-placeholder="Tỉnh | Thành" onchange="data.selectedFilter.tinh = this.value;">
-          <option value="" selected></option>
+          <option value=""></option>
+          <option value=" ">&nbsp</option>
             <option value="ho-chi-minh">TP. Hồ Chí Minh</option>
             <option value="ha-noi">Hà Nội</option>
           </select>
       </div>
       <div class="searchForm--4">
         <select class="select2Search" data-placeholder="Quận | Huyện" onchange="data.selectedFilter.quan = this.value;">
-          <option value="" selected></option>
+          <option value=""></option>
+          <option value=" ">&nbsp</option>
               <option value="quan-1">Quận 1</option>
               <option value="quan-2">Quận 2</option>
               <option value="quan-10">Quận 10</option>
@@ -106,10 +119,12 @@
     
       function Gui() {
           var parts = [];
+          var value;
           for (var key in window.data.selectedFilter) {
-              if (!window.data.selectedFilter.hasOwnProperty(key) || window.data.selectedFilter[key] == '')
-                  continue;
-              parts.push(key + '=' + window.data.selectedFilter[key]);
+              if (!window.data.selectedFilter.hasOwnProperty(key)) continue;
+              value = window.data.selectedFilter[key].trim();
+              if (value === '') continue;
+              parts.push(key + '=' + value);
           }
         var query = parts.join('&');
           window.location = "search.html?" + query;
@@ -249,16 +264,12 @@
           </ul>
 
 
-          <h5 class="listIcon"><i class="fa fa-trophy"></i> Giải thưởng</h5>
-          <ul class="listCircle ml-5">
-           	<li>Phòng khám được yêu thích nhất năm 2015</li>
-          </ul>
+        
 
 
           <h5 class="listIcon"><i class="fa fa-list-alt"></i> Giấy phép</h5>
           <ul class="listCircle ml-5">
-                <li>Số giấy phép : 00001/SYT-GPHĐ <br /> Ngày cấp : 27-08-2012</li>
-                <li>Phạm vi hoạt động: Phòng khám đa khoa</li>
+                <li>Số giấy phép : 00001/SYT-GPHĐ, ngày cấp : 27-08-2012</li>
           </ul>
       </div>
     </div>
@@ -280,17 +291,17 @@
 
             <div class="article--column_2">
 
-              <div class="article--title"><a href="detail-pk.html">Phòng khám Đa Khoa Quốc Tế</a> <div class="label-bh">BH</div></div>
+              <div class="article--title"><a href="phong-kham-da-khoa-quoc-te">Phòng khám Đa Khoa Quốc Tế</a> <div class="label-bh">BH</div></div>
               <div class="article--column_sub">
                 <div class="article--column_sub_1">
-                  <div class="article-service">Dịch vụ: Tẩy trắng răng, niềng răng, trám nhổ răng</div>
+             
                   <div class="article-address">300 Phạm Ngũ Lão, P. Nguyễn Cư Trinh, Q.1, TP.HCM</div>
                 </div>
 
                 <div class="article--column_sub_2">
                   <div class="article--price"><div class="icon"><i class="fa fa-money"></i> </div><div class="meta">520,000 đồng</div></div>
                   <div class="article--date">
-                    <div class="icon"><i class="fa fa-calendar"></i></div> <div class="meta">T2 - T6: 10:00AM-2:00PM <br>T7 - CN: 5:00PM-9:00PM</div></div>
+                    <div class="icon"><i class="fa fa-calendar"></i></div> <div class="meta">T2 - T6: 10:00AM-2:00PM ,T7 - CN: 5:00PM-9:00PM</div></div>
                 </div>
               </div>
 
