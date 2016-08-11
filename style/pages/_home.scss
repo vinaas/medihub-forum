@@ -1,5 +1,21 @@
 body {
   background: $bg-body;
+
+  &.index.fixed{
+    .header{
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top:0;
+    }
+    .mainSearch{
+      top: $headerHeight;
+        position: fixed;
+        width: 100%;
+        left: 0;
+    }
+    
+  }
 }
 
 .mainSearch {
@@ -19,6 +35,11 @@ body {
     @extend .boxShadow;
   }
 
+  &.fixed{
+    position: fixed;
+    width: 100%;
+    left: 0;
+  }
 
 }
 

@@ -1,3 +1,30 @@
+(function($){
+    "use strict"; // Start of use strict
+    $(window).load(function(){
+        
+    });
+    
+    $(document).ready(function(){
+        init_fixed_bg(60);
+    });
+    
+    $(window).resize(function(){
+        init_fixed_bg(60);
+    });
+})(jQuery); // End of use strict
+
+function init_fixed_bg(headerHeight){
+     if ($(window).width() > 1024) {
+         var heroHeight = $(".mainSearch").outerHeight() + headerHeight; // Add header height
+        $("body").addClass("fixed");
+        $(".forumFixed").css("margin-top", heroHeight + "px");
+     } else{
+         $("body").removeClass("fixed");
+         $(".forumFixed").css("margin-top", "0px");
+     }
+}
+
+
 var swiperBg;
 
 var swiperGallery;

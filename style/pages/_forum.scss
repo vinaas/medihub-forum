@@ -366,3 +366,9 @@
     margin-bottom: 0;
   }
 }
+
+.forumFixed{
+    background: $bg-gray-light;
+    position: relative;
+    z-index: 1;
+}

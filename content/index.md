@@ -5,6 +5,7 @@
     "description": "Index Page",
     "layout": "index.html",
     "permalink" : false,
+    "isHomepage" : "index",
     "rivetData" : {
       "selectedFilter" : {
         "chon" : "",
