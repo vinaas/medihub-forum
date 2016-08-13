@@ -3,7 +3,7 @@
     "title": "Index",
     "url": "/",
     "description": "Index Page",
-    "layout": "forum-chuyentrang-design.html",
+    "layout": "forum-chuyentrang.html",
     "permalink" : false,
     "rivetData" : {
       "selectedFilter" : {
