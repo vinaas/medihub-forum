@@ -11,6 +11,15 @@
     $(window).resize(function(){
         init_fixed_bg(60);
     });
+
+
+    $(".post__write").click(function(){
+        $(this).addClass("active");
+        // $("#post__write--content").slideDown();
+        $("#post__write--content textarea").focus();
+    });
+
+
 })(jQuery); // End of use strict
 
 function init_fixed_bg(headerHeight){

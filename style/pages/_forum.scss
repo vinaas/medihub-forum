@@ -463,6 +463,8 @@
   padding: 15px 0;
   border: 1px solid $light-gray;
   border-width: 1px 0 1px 0;
+
+  margin-bottom: $margin-box;
 }
 
 .post__author--img{
@@ -477,6 +479,7 @@
 .post__auhor--content{
   margin-left: 15px;
   font-size: rem-calc(13);
+
 }
 
 .post__auhor--name{
@@ -492,5 +495,47 @@
 .post__auhor--des{
   margin-bottom: 0;
   color: $medium-gray;
+}
+
+
+.post__write{
+  border: 1px solid $medium-gray;
+  border-radius: $global-radius;
+  padding: 15px;
+  background: lighten($light-gray,2%);
+  @extend .transition;
+  textarea{
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
+
+  &.active{
+    .post__write--title{
+      padding: 0 0 10px;
+      @include header-size(h6);
+    }
+    background: white;
+    #post__write--content{
+      height: 155px;
+    }
+  }
+}
+
+#post__write--content{
+
+  height: 0;
+  overflow: hidden;
+  @extend .transition;
+}
+
+.post__write--title{
+  @include header-size(h5);
+  font-weight: normal;
+  padding: 10px 15px;
+ cursor: text;
+  color: $medium-gray;
+  @extend .user-select;
+  @extend .transition;
 }
 //end COMMENT
