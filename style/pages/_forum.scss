@@ -360,10 +360,21 @@
 }
 
 .forum__head{
+    position: relative;
+    padding-right: 180px;
   .title{
     color: $primary-color;
     font-weight: normal;
-    margin-bottom: 0;
+    //margin-bottom: 0;
+  }
+
+  .select--form{
+    width: 160px;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    .select2-selection--single{
+    }
   }
 }
 
@@ -372,3 +383,114 @@
     position: relative;
     z-index: 1;
 }
+
+
+//COMMENT
+
+.post__meta {
+  @include breadcrumbs-container;
+
+  .disabled {
+    color: $breadcrumbs-item-color-disabled;
+    cursor: not-allowed;
+  }
+}
+
+.post__meta li:not(:last-child)::after{
+  color: #9e9e9e;
+  content: "|";
+  margin: 0 0.3rem;
+  position: relative;
+  top: 0px;
+  opacity: 1;
+}
+.post__meta li{
+  text-transform: inherit;
+  color: $medium-gray;
+}
+
+.post__meta{
+
+  .fa-heart{
+    color: $alert-color;
+  }
+}
+
+.post__meta a{
+  color: $medium-gray;
+
+  &:hover{
+    color: $dark-gray;
+    text-decoration: none;
+  }
+}
+
+.porlet--comments{
+  .post:last-child{
+    border-bottom: none;
+  }
+}
+
+.post{
+  padding: 15px 0 20px;
+  border-bottom: 1px solid $light-gray;
+  color: $secondary-color;
+}
+.post__title{
+  @include header-size(h5);
+}
+
+.post__content{
+
+}
+.post__label{
+  .label{
+    background: $light-gray;
+    color: $black;
+    cursor: pointer;
+    transition : all 0.2s;
+    &:hover{
+      background: $secondary-color;
+      color: white;
+    }
+  }
+}
+
+.post__author{
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  padding: 15px 0;
+  border: 1px solid $light-gray;
+  border-width: 1px 0 1px 0;
+}
+
+.post__author--img{
+  width: 65px;
+  height: 65px;
+  border-radius: 3px;
+  overflow: hidden;
+  flex: 1 0 auto;
+
+}
+
+.post__auhor--content{
+  margin-left: 15px;
+  font-size: rem-calc(13);
+}
+
+.post__auhor--name{
+  @include header-size(h6);
+  margin-bottom: 0;
+  a{
+    color: $dark-gray;
+    &:hover{
+      color: $primary-color;
+    }
+  }
+}
+.post__auhor--des{
+  margin-bottom: 0;
+  color: $medium-gray;
+}
+//end COMMENT
