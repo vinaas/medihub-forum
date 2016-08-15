@@ -14,10 +14,37 @@
 
 
     $(".post__write").click(function(){
-        $(this).addClass("active");
-        // $("#post__write--content").slideDown();
-        $("#post__write--content textarea").focus();
+        var $this = $(this);
+        if($this.hasClass("active")){
+            return false;
+        }else{
+            $this.addClass("active");
+        }
+        
+
+        var txtarea = $("#post__write--content textarea");
+        txtarea.focus();
+
+         txtarea.focusout(function(){
+
+             if (!txtarea.val()) {
+                $this.removeClass("active");
+            }
+
+            
+        });
+
+        
     });
+
+
+    /*Reply comments*/
+    $(".reply-comment-btn").click(function (e) {
+        e.preventDefault();
+        $(this).parent().children(".comment-replay").slideToggle("fast");
+    });
+
+/*End reply comments*/
 
 
 })(jQuery); // End of use strict
