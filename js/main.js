@@ -1,3 +1,66 @@
+(function($){
+    "use strict"; // Start of use strict
+    $(window).load(function(){
+        
+    });
+    
+    $(document).ready(function(){
+        init_fixed_bg(60);
+    });
+    
+    $(window).resize(function(){
+        init_fixed_bg(60);
+    });
+
+
+    $(".post__write").click(function(){
+        var $this = $(this);
+        if($this.hasClass("active")){
+            return false;
+        }else{
+            $this.addClass("active");
+        }
+        
+
+        var txtarea = $("#post__write--content textarea");
+        txtarea.focus();
+
+         txtarea.focusout(function(){
+
+             if (!txtarea.val()) {
+                $this.removeClass("active");
+            }
+
+            
+        });
+
+        
+    });
+
+
+    /*Reply comments*/
+    $(".reply-comment-btn").click(function (e) {
+        e.preventDefault();
+        $(this).parent().children(".comment-replay").slideToggle("fast");
+    });
+
+/*End reply comments*/
+
+
+})(jQuery); // End of use strict
+
+function init_fixed_bg(headerHeight){
+     if ($(window).width() > 1024) {
+         var heroHeight = $(".mainSearch").outerHeight() + headerHeight; // Add header height
+        $("body").addClass("fixed");
+        $(".forumFixed").css("margin-top", heroHeight + "px");
+     } else{
+         $("body").removeClass("fixed");
+         $(".forumFixed").css("margin-top", "0px");
+     }
+}
+
+
 var swiperBg;
 
 var swiperGallery;
