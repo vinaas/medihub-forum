@@ -5,7 +5,7 @@
     "displayName": "Các bệnh",
     "perPage": 10,
     "noPageOne": true,
-    "layout": "4rum-chuyentrang.category.html",
+    "layout": "forum-chuyentrang.html",
     "first": ":categoryPath/index.html",
     "path": ":categoryPath/page/:num/index.html"
 }
