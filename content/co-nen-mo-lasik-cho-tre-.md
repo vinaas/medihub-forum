@@ -7,7 +7,7 @@
     "tag": [],
     "layout": "forum-cauhoi.html",
     "date": "2016-08-17 21:53:21",
-    "thoi_gian":{ "ngay": 14, "thang": 8, "nam":2016 },
+    "thoi_gian":"",
     "luot_xem":2522, 
     "phan_hoi": 56,
     "nguoi_dang":"Ngọc Trinh",
