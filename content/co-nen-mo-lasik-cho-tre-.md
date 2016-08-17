@@ -7,7 +7,7 @@
     "title": "Có nên mổ lasik cho trẻ ?",
     "description": "",
     "date": "2016-08-17 21:53:21",
-    "thoi_gian": "",
+    "thoi_gian": "28 Tháng 7, 2016",
     "luot_xem": 2522,
     "phan_hoi": 56,
     "nguoi_dang": "Ngọc Trinh",
