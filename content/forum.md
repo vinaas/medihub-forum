@@ -1,8 +1,6 @@
 ---json
 {
     "title": "Index",
-    "url": "/",
-    "slug":"forum-design",
     "description": "Index Page",
     "layout": "forum-design.html",
     "permalink" : false,

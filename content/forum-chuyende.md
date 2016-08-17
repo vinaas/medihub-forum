@@ -3,7 +3,7 @@
     "title": "Index",
     "url": "/",
     "description": "Index Page",
-    "layout": "forum-chuyende.html",
+    "layout": "forum-chuyende-deisgn.html",
     "permalink" : false,
     "rivetData" : {
       "selectedFilter" : {

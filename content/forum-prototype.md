@@ -1,10 +1,10 @@
 ---json
 {
     "title": "Index",
-    "url": "/",
+    "slug": "forum-prototype",
     "description": "Index Page",
     "layout": "forum.html",
-    "permalink" : false,
+    "permalink" : true,
     "rivetData" : {
       "selectedFilter" : {
         "chon" : "",
