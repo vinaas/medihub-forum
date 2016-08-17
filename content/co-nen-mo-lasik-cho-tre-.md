@@ -11,7 +11,8 @@
     "luot_xem":2522, 
     "phan_hoi": 56,
     "nguoi_dang":"Ngọc Trinh",
-    "yeu_thich":256
+    "yeu_thich":256,
+    "hinh_anh":""
 }
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et massa massa. Praesent efficitur semper massa ac ultricies. Pellentesque vel laoreet turpis. Proin egestas vehicula suscipit. Integer imperdiet scelerisque sapien eget posuere.
