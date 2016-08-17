@@ -5,7 +5,7 @@
     "displayName": "các bệnh.mắt.đau mắt đỏ",
     "perPage": 10,
     "noPageOne": true,
-    "layout": "default.category.html",
+    "layout": "forum-chuyenmuc.category.html",
     "first": ":categoryPath/index.html",
     "path": ":categoryPath/page/:num/index.html"
 }
