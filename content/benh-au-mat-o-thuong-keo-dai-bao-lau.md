@@ -7,7 +7,7 @@
     "title": "Bệnh đau mắt đỏ thường kéo dài bao lâu?",
     "description": "Đau mắt đỏ do vi-rút và vi khuẩn gây ra. Bệnh thường tự khỏi và rất hiếm khi dẫn đến việc hư hỏng mắt nghiêm trọng. Để cho an toàn, người bị đau mắt đỏ nên luôn luôn đến bác sĩ để được thẩm định.",
     "date": "2016-08-17 23:12:54",
-    "thoi_gian": "",
+    "thoi_gian": "28 Tháng 7, 2016",
     "luot_xem": "",
     "phan_hoi": "",
     "nguoi_dang": "Ngọc Trinh",
