@@ -2,7 +2,7 @@
 {
     "title": "Index",
     "description": "Index Page",
-    "layout": "forum-design.html",
+    "layout": "forum-cauhoi-design.html",
     "permalink" : false,
     "rivetData" : {
       "selectedFilter" : {

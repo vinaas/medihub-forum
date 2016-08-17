@@ -1,9 +1,10 @@
 ---json
 {
     "title": "Index",
+    "slug": "forum-cauhoi-prototype",
     "description": "Index Page",
-    "layout": "forum-design.html",
-    "permalink" : false,
+    "layout": "forum-cauhoi.html",
+    "permalink" : true,
     "rivetData" : {
       "selectedFilter" : {
         "chon" : "",

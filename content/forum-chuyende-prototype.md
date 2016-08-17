@@ -2,8 +2,9 @@
 {
     "title": "Index",
     "description": "Index Page",
-    "layout": "forum-design.html",
-    "permalink" : false,
+    "slug":"forum-chuyende-prototype",
+    "layout": "forum-chuyende.html",
+    "permalink" : trueư,
     "rivetData" : {
       "selectedFilter" : {
         "chon" : "",

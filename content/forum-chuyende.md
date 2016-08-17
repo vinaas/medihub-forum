@@ -2,7 +2,7 @@
 {
     "title": "Index",
     "description": "Index Page",
-    "layout": "forum-design.html",
+    "layout": "forum-chuyende-design.html",
     "permalink" : false,
     "rivetData" : {
       "selectedFilter" : {

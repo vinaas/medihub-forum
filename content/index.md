@@ -1,9 +1,8 @@
 ---json
 {
     "title": "Index",
-    "url": "/",
     "description": "Index Page",
-    "layout": "index.html",
+    "layout": "index-design.html",
     "permalink" : false,
     "isHomepage" : "index",
     "rivetData" : {

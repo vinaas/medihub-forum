@@ -114,6 +114,16 @@ site.metalsmith = {
         'gfm':         true,
         'tables':      true
     },
+       
+    'metalsmith-category': {
+		'_enable': true,
+		'directory': `${site.metadataRoot}/category`
+    },
+		
+    'metalsmith-tag': {
+		'_enable': true,
+		'directory': `${site.metadataRoot}/tag`
+    },
 
     'metalsmith-collections':   {
         '_enable': true,

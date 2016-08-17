@@ -1,9 +1,10 @@
 ---json
 {
     "title": "Index",
+    "slug": "forum-chuyenmuc-prototype",
     "description": "Index Page",
-    "layout": "forum-design.html",
-    "permalink" : false,
+    "layout": "forum-chuyenmuc.html",
+    "permalink" : true,
     "rivetData" : {
       "selectedFilter" : {
         "chon" : "",

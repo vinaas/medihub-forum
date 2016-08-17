@@ -78,3 +78,11 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
+.user-select{
+  user-select: none;
+}
+
+.transition{
+  transition: all 0.2s;
+}

@@ -372,6 +372,11 @@
     padding-top: 0;
   }
 }
+
+.porlet--comments{
+  padding: 0 15px;
+}
+
 .porlet-loadmore{
   font-style: italic;
   color: $secondary-color;
@@ -406,6 +411,27 @@
 .porlet--search{
   padding: 0 15px 15px;
   //border-top: 1px solid $light-gray;
+}
+
+.portlet--chuyenmuc{
+  border-top : 1px solid $light-gray;
+  margin-top: 15px;
+  padding : 15px 0 0;
+  a{
+    display: block;
+      margin-bottom: 7px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: $black;
+    i{
+      color: $medium-gray;
+    }
+
+    &:hover{
+      color: $primary-color;
+    }
+  }
 }
 
 #chuyendieutri{
