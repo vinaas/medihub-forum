@@ -91,8 +91,8 @@
         "required": false
     },
     {
-        "type": "Text",
-        "displayType": "ShortText",
+        "type": "Number",
+        "displayType": "Number",
         "name": "yeu_thich",
         "displayName": "Yêu thích"
     },
