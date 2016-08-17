@@ -1,7 +1,7 @@
 ---json
 {
     "title": "Index",
-    "url": "/",
+    "slug": "forum-chuyentrang-prototype",
     "description": "Index Page",
     "layout": "forum-chuyentrang.html",
     "permalink" : false,
