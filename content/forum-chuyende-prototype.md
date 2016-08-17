@@ -4,7 +4,7 @@
     "description": "Index Page",
     "slug":"forum-chuyende-prototype",
     "layout": "forum-chuyende.html",
-    "permalink" : true,
+    "permalink" : trueư,
     "rivetData" : {
       "selectedFilter" : {
         "chon" : "",

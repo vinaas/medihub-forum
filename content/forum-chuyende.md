@@ -1,7 +1,6 @@
 ---json
 {
     "title": "Index",
-    "url": "/",
     "description": "Index Page",
     "layout": "forum-chuyende-design.html",
     "permalink" : false,
