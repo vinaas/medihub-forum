@@ -93,12 +93,10 @@
         "required": false
     },
     {
-        "type": "Number",
-        "displayType": "Number",
+        "type": "Text",
+        "displayType": "ShortText",
         "name": "yeu_thich",
-        "displayName": "Yêu thích",
-        "validations": [],
-        "required": false
+        "displayName": "Yêu thích"
     },
     {
         "name": "hinh_anh",

@@ -11,7 +11,7 @@
     "luot_xem": "",
     "phan_hoi": "",
     "nguoi_dang": "Ngọc Trinh",
-    "yeu_thich": "",
+    "yeu_thich": "12",
     "hinh_anh": ""
 }
 ---
