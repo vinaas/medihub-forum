@@ -3,7 +3,7 @@
     "title": "Index",
     "url": "/",
     "description": "Index Page",
-    "layout": "forum-cauhoi-design.html",
+    "layout": "forum-chuyende.html",
     "permalink" : false,
     "rivetData" : {
       "selectedFilter" : {
