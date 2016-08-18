@@ -46,48 +46,11 @@
         "required": false
     },
     {
-        "name": "slug",
-        "displayName": "slug",
-        "type": "Text",
-        "validations": [],
-        "viewOnly": true,
-        "required": false
-    },
-    {
         "name": "isHomepage",
         "displayName": "isHomepage",
         "type": "Text",
         "validations": [],
         "viewOnly": false,
-        "required": false
-    },
-    {
-        "name": "bai_viet_noi_bat",
-        "displayName": "bai_viet_noi_bat",
-        "type": "Array",
-        "validations": [],
-        "required": false
-    },
-    {
-        "type": "Number",
-        "displayType": "Number",
-        "name": "dang_xem",
-        "displayName": "dang_xem",
-        "validations": [],
-        "required": false
-    },
-    {
-        "type": "Number",
-        "displayType": "Number",
-        "name": "hoi",
-        "displayName": "hoi"
-    },
-    {
-        "type": "Number",
-        "displayType": "Number",
-        "name": "giao_luu",
-        "displayName": "Giao lưu",
-        "validations": [],
         "required": false
     }
 ]

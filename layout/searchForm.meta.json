@@ -1,0 +1,24 @@
+[
+    {
+        "name": "title",
+        "displayName": "title",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "bacsi-phongkham",
+        "displayName": "bacsi-phongkham",
+        "type": "Array",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "trieu-chung-benh",
+        "displayName": "trieu-chung-benh",
+        "type": "Array",
+        "validations": [],
+        "required": false
+    }
+]

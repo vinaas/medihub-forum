@@ -169,7 +169,7 @@ function asset() {
 
 // tạo local server host nội dung của ${site.buildRoot}
 function server(done) {
-    console.trace('init browserSync');
+    //console.trace('init browserSync');
     browser.init({
         server: site.buildRoot,
         port:   site.port
@@ -178,7 +178,7 @@ function server(done) {
 }
 
 function serverForApp(done) {
-    console.trace('init browserSync');
+    // console.trace('init browserSync');
     browser.init({
         server: site.buildRoot,
         ui:     false,
