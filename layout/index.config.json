@@ -44,5 +44,13 @@
         "type": "Object",
         "validations": [],
         "required": false
+    },
+    {
+        "name": "isHomepage",
+        "displayName": "isHomepage",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
     }
 ]
