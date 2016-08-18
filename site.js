@@ -143,6 +143,11 @@ site.metalsmith = {
             'sortBy':  'date',
             'reverse': true,
         },
+        'thanh_vien':    {
+            'pattern': 'thanh_vien/**/*.html',
+            'sortBy':  'date',
+            'reverse': true,
+        },
         // collection theo key trong metadata `"collection": "baiviet"`
         'baiviet': {
             'sortBy':  'date',
