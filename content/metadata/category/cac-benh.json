@@ -1,7 +1,7 @@
 {
     "sortBy": "date",
     "reverse": false,
-    "metadata": {"ten":"Cac benh ","mo_ta":"Diễn đàn là nơi dành riêng cho các thành viên Medihub đặt câu hỏi cho các bác sĩ và trao đổi, chia sẻ thông tin với các thành viên khác."},
+    "metadata": {"ten":"Các bệnh ","mo_ta":"Diễn đàn là nơi dành riêng cho các thành viên Medihub đặt câu hỏi cho các bác sĩ và trao đổi, chia sẻ thông tin với các thành viên khác."},
     "displayName": "Các bệnh",
     "perPage": 10,
     "noPageOne": true,
