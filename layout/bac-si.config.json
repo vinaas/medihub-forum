@@ -177,5 +177,20 @@
         "type": "Array",
         "validations": [],
         "required": false
+    },
+    {
+        "name": "category",
+        "displayName": "category",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "tag",
+        "displayName": "tag",
+        "type": "Array",
+        "validations": [],
+        "required": false
     }
 ]
