@@ -15,4 +15,4 @@
     "hinh_anh": "img/tuyet-chieu-tri-dau-mat-do-cuc-huu-hieu-bang-khoai-tay-mat-ong.jpeg"
 }
 ---
-Tôi có một cháu 5 tháng tuổi. Mắt cháu đỏ ghèn nhiều, đi khám ở Bệnh viện Nhi Đồng bác sĩ chẩn đoán là viêm kết mạc, cho uống thuốc một tuần thì khỏi nhưng thời gian sau tái lại. Mới sáng ngủ dậy mắt cháu hay bị sưng. Xin hỏi bác sĩ cách phòng bệnh đau mắt cho trẻ như thế nào để hạn chế tình trạng đau mắt. Tôi xin cám ơn. 
+Tôi có một cháu 5 tháng tuổi. Mắt cháu đỏ ghèn nhiều, đi khám ở Bệnh viện Nhi Đồng bác sĩ chẩn đoán là viêm kết mạc, cho uống thuốc một tuần thì khỏi nhưng thời gian sau tái lại. Mới sáng ngủ dậy mắt cháu hay bị sưng. Xin hỏi bác sĩ cách phòng bệnh đau mắt cho trẻ như thế nào để hạn chế tình trạng đau mắt. Tôi xin cám ơn.
