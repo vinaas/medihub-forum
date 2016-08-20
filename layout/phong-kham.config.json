@@ -171,5 +171,14 @@
         "type": "Array",
         "validations": [],
         "required": false
+    },
+    {
+        "type": "Text",
+        "displayType": "ShortText",
+        "name": "hinhdaidien",
+        "displayName": "hinhdaidien",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
     }
 ]
