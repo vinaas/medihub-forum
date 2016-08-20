@@ -55,6 +55,7 @@
     "danh-sach-phong-kham": [
         {
             "title": "Phòng khám  Nha khoa Kỹ Thuật Số",
+            "hinhdaidien": "http://nhakhoakythuatso.com/wp-content/uploads/2016/06/banner1.jpg",
             "list-image": [
                 "http://nhakhoakythuatso.com/wp-content/uploads/2016/06/banner1.jpg",
                 "http://nhakhoakythuatso.com/wp-content/uploads/2016/06/banner2.jpg",
@@ -91,6 +92,7 @@
         "Trồng răng implant",
         " Viêm nha chu",
         "Viêm tủy răng"
-    ]
+    ],
+    "hinhdaidien": "http://nhakhoakythuatso.com/wp-content/uploads/2016/06/banner1.jpg"
 }
 ---
