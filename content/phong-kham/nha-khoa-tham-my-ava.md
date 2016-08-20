@@ -55,6 +55,7 @@
     "danh-sach-phong-kham": [
         {
             "title": "Nha khoa Thẩm mỹ Ava",
+            "hinhdaidien": "http://www.avadental.com.vn/images/stories/BV-AVA.jpg",
             "list-image": [
                 "http://www.avadental.com.vn/images/stories/BV-AVA.jpg",
                 "http://www.avadental.com.vn/images/banners/phong-mo.jpg",
