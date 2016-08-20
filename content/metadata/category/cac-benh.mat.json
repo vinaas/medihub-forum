@@ -1,11 +1,23 @@
 {
     "sortBy": "date",
     "reverse": false,
-    "metadata": {},
+    "metadata": {
+        "title":"Mắt",
+        "slug":"/cac-benh/mat",
+        "mo_ta":"Diễn đàn là nơi dành riêng cho các thành viên Medihub đặt câu hỏi cho các bác sĩ và trao đổi, chia sẻ thông tin với các thành viên khác.",
+        "breadcrumb": [
+            {
+                "ten": "Các bệnh",
+                "slug": "/cac-benh"
+            }
+            
+        ],
+        "path_obj":"cac-benh.mat"
+    },
     "displayName": "các bệnh.mắt",
     "perPage": 10,
     "noPageOne": true,
-    "layout": "default.category.html",
+    "layout": "forum-chuyenmuc.category.html",
     "first": ":categoryPath/index.html",
     "path": ":categoryPath/page/:num/index.html"
 }
