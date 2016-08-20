@@ -2,10 +2,10 @@
     "sortBy": "date",
     "reverse": false,
     "metadata": {},
-    "displayName": "các bệnh.mắt.đau mắt đỏ",
+    "displayName": "ăn uống",
     "perPage": 10,
     "noPageOne": true,
-    "layout": "forum-chuyende.category.html",
+    "layout": "default.category.html",
     "first": ":categoryPath/index.html",
     "path": ":categoryPath/page/:num/index.html"
 }
