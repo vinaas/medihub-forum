@@ -90,6 +90,7 @@
         "Trồng răng implant",
         " Viêm nha chu",
         "Viêm tủy răng"
-    ]
+    ],
+    "hinhdaidien": "http://upload2.webbnc.vn/media/163/Khuyen-mai-tai-Nha-khoa-The-Ky.jpg"
 }
 ---
