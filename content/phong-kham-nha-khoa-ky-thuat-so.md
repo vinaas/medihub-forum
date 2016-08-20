@@ -87,6 +87,7 @@
         "Trồng răng implant",
         " Viêm nha chu",
         "Viêm tủy răng"
-    ]
+    ],
+    "hinhdaidien": "http://nhakhoakythuatso.com/wp-content/uploads/2016/06/banner1.jpg"
 }
 ---
