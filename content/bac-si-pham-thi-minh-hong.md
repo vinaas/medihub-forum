@@ -22,7 +22,11 @@
         ]
     },
     "chuyen-khoa": [],
-    "dia-chi": {},
+    "dia-chi": {
+        "tinh": "ho-chi-minh",
+        "quan-huyen": "quan-11",
+        "chi-tiet": "99-109 Thuận Kiều, Phường 4, Q11,TP. Hồ Chí Minh "
+    },
     "danh-sach-phong-kham": [],
     "chuyen-dieu-tri": [],
     "gia-tien": "",
