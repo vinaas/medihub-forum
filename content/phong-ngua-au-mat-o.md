@@ -5,7 +5,7 @@
     "tag": [],
     "layout": "forum-cauhoi.html",
     "title": "phòng ngừa đau mắt đỏ",
-    "description": "",
+    "description": "Người đau mắt đỏ có thể lây bệnh cho người khác ngay cả khi chưa có triệu chứng rõ ràng. Đeo kính cũng không loại trừ hết nguy cơ lây bệnh. Vậy phải làm thế nào để phòng bệnh đau mắt đỏ hiệu quả?",
     "date": "2016-08-20 15:25:03",
     "thoi_gian": "20-08-2016",
     "luot_xem": "",
