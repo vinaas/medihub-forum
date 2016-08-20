@@ -48,9 +48,11 @@
         "Điều trị dãn phế quản"
     ],
     "gia-tien": "100.000 - 1000.0000",
-    "like": "",
+    "like": "111",
     "type": "",
-    "gio-lam-viec": [],
+    "gio-lam-viec": [
+        "T2 -  CN: 8g - 12g, 14g - 21g"
+    ],
     "so-dien-thoai": "",
     "nghenghiep": "",
     "note": {},
