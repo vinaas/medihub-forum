@@ -59,17 +59,13 @@
         "required": false
     },
     {
-        "type": "Text",
-        "displayType": "ShortText",
         "name": "thoi_gian",
         "displayName": "thời gian",
-        "validations": [],
-        "viewOnly": false,
-        "required": false
+        "type": "DateTime"
     },
     {
-        "type": "Text",
-        "displayType": "ShortText",
+        "type": "Number",
+        "displayType": "Number",
         "name": "luot_xem",
         "displayName": "lượt xem"
     },
