@@ -149,6 +149,11 @@
             "ten": " Bác sĩ Phạm Thọ Tuấn Anh ",
             "name": "bac-si-pham-tho-tuan-anh",
             "loai": "bac-si"
+        },
+        {
+            "ten": "Mắt",
+            "name": "mat",
+            "loai": "benh"
         }
     ]
 }
