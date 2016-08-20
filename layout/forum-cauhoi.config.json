@@ -43,7 +43,7 @@
         "type": "Text",
         "displayType": "LongText",
         "name": "description",
-        "displayName": "description",
+        "displayName": "Mô tả",
         "validations": [],
         "viewOnly": false,
         "required": false

@@ -5,7 +5,7 @@
     "tag": [],
     "layout": "forum-cauhoi.html",
     "title": "Bệnh đau mắt đỏ kéo dài bao lâu thì khỏi?",
-    "description": "",
+    "description": "Thời gian ủ bệnh đau mắt đỏ trung bình khoảng 8 ngày. Điều này giải thích tại sao một gia đình có 3 người, nếu lây nhiễm chéo cho nhau thì việc điều trị sẽ kết thúc sau 2 tháng cùng với chi phí thuốc men, nghỉ việc chưa kể đến việc có thể kéo theo biến chứng này nọ.",
     "date": "2016-08-20 15:07:01",
     "thoi_gian": "2016-08-20 15:07:01",
     "luot_xem": "12333",
