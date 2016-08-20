@@ -2,6 +2,7 @@
     {
         "name": "slug",
         "displayName": "slug",
+        "displayType": "Text",
         "type": "Text",
         "validations": [],
         "viewOnly": true,
@@ -10,15 +11,17 @@
     {
         "name": "layout",
         "displayName": "layout",
+        "displayType": "Text",
         "type": "Text",
         "validations": [],
         "viewOnly": true,
         "required": false
     },
     {
+        "type": "Text",
+        "displayType": "ShortText",
         "name": "category",
         "displayName": "category",
-        "type": "Text",
         "validations": [],
         "viewOnly": false,
         "required": false
@@ -26,22 +29,25 @@
     {
         "name": "tag",
         "displayName": "tag",
+        "displayType": "Text",
         "type": "Array",
         "validations": [],
         "required": false
     },
     {
+        "type": "Text",
+        "displayType": "ShortText",
         "name": "title",
         "displayName": "title",
-        "type": "Text",
         "validations": [],
         "viewOnly": false,
         "required": false
     },
     {
+        "type": "Text",
+        "displayType": "LongText",
         "name": "description",
         "displayName": "description",
-        "type": "Text",
         "validations": [],
         "viewOnly": false,
         "required": false
@@ -58,29 +64,30 @@
     {
         "name": "thoi_gian",
         "displayName": "thoi_gian",
-        "type": "Text",
-        "validations": [],
-        "viewOnly": false,
-        "required": false
+        "displayType": "DateTime",
+        "type": "DateTime"
     },
     {
+        "type": "Number",
+        "displayType": "Number",
         "name": "luot_xem",
         "displayName": "luot_xem",
-        "type": "Number",
         "validations": [],
         "required": false
     },
     {
+        "type": "Number",
+        "displayType": "Number",
         "name": "phan_hoi",
         "displayName": "phan_hoi",
-        "type": "Number",
         "validations": [],
         "required": false
     },
     {
+        "type": "Text",
+        "displayType": "ShortText",
         "name": "nguoi_dang",
         "displayName": "nguoi_dang",
-        "type": "Text",
         "validations": [],
         "viewOnly": false,
         "required": false
@@ -98,6 +105,20 @@
         "type": "Text",
         "validations": [],
         "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "permalink",
+        "displayName": "permalink",
+        "type": "Boolean",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "rivetData",
+        "displayName": "rivetData",
+        "type": "Object",
+        "validations": [],
         "required": false
     }
 ]

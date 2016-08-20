@@ -1,9 +1,9 @@
 ---json
 {
     "slug": "eo-kinh-ram-dung-nuoc-muoi-sinh-ly-a-u-bao-ve-mat-chua",
+    "layout": "forum-cauhoi.html",
     "category": "cac-benh.mat",
     "tag": [],
-    "layout": "forum-cauhoi.html",
     "title": "Đeo kính râm, dùng nước muối sinh lý đã đủ bảo vệ mắt chưa?",
     "description": "",
     "date": "2016-08-20 11:30:24",
@@ -12,6 +12,8 @@
     "phan_hoi": 34,
     "nguoi_dang": "Tùng",
     "yeu_thich": 345,
-    "hinh_anh": ""
+    "hinh_anh": "",
+    "permalink": "",
+    "rivetData": {}
 }
 ---
