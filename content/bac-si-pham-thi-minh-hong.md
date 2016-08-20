@@ -47,7 +47,7 @@
         "Điều trị hen phế quản",
         "Điều trị dãn phế quản"
     ],
-    "gia-tien": "100.000 - 1000.0000",
+    "gia-tien": "100.000 - 1.000.0000",
     "like": "111",
     "type": "",
     "gio-lam-viec": [
