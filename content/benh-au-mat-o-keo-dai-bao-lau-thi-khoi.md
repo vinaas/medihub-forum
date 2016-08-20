@@ -8,7 +8,7 @@
     "description": "",
     "date": "2016-08-20 15:07:01",
     "thoi_gian": "2016-08-20 15:07:01",
-    "luot_xem": 123,
+    "luot_xem": "1233",
     "phan_hoi": 234,
     "yeu_thich": 456,
     "nguoi_dang": "Tung",
