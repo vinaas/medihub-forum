@@ -53,8 +53,8 @@
     "gio-lam-viec": [
         "T2 -  CN: 8g - 12g, 14g - 21g"
     ],
-    "so-dien-thoai": "",
-    "nghenghiep": "",
+    "so-dien-thoai": "73099939",
+    "nghenghiep": "Bác Sĩ",
     "note": {},
     "filter": [],
     "category": "",
