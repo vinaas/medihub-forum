@@ -60,8 +60,8 @@
     },
     "filter": [
         {
-            "display": "Nhi",
-            "value": "nhi"
+            "display": "Nhi Khoa",
+            "value": "nhi-khoa"
         },
         {
             "display": "Hô hấp",
