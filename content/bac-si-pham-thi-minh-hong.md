@@ -66,8 +66,8 @@
             "value": "ho-hap"
         },
         {
-            "display": " Nguyễn Diệu Liên Khánh ",
-            "value": "nguyen-dieu-lien-khanh"
+            "display": " Bác sĩ Phạm Thị Minh Hồng",
+            "value": "bac-si-pham-thi-minh-hong"
         }
     ],
     "category": "",
