@@ -8,9 +8,10 @@
         "required": false
     },
     {
-        "name": "category",
-        "displayName": "category",
         "type": "Text",
+        "displayType": "ShortText",
+        "name": "category",
+        "displayName": "danh mục",
         "validations": [],
         "viewOnly": false,
         "required": false
@@ -39,9 +40,10 @@
         "required": false
     },
     {
+        "type": "Text",
+        "displayType": "LongText",
         "name": "description",
         "displayName": "description",
-        "type": "Text",
         "validations": [],
         "viewOnly": false,
         "required": false
@@ -54,5 +56,49 @@
         "validations": [],
         "viewOnly": false,
         "required": false
+    },
+    {
+        "name": "thoi_gian",
+        "displayName": "thoi_gian",
+        "displayType": "Date",
+        "type": "DateTime"
+    },
+    {
+        "type": "Number",
+        "displayType": "Number",
+        "name": "luot_xem",
+        "displayName": "lượt xem",
+        "validations": [],
+        "required": false
+    },
+    {
+        "type": "Number",
+        "displayType": "Number",
+        "name": "phan_hoi",
+        "displayName": "phản hồi",
+        "validations": [],
+        "required": false
+    },
+    {
+        "type": "Number",
+        "displayType": "Number",
+        "name": "yeu_thich",
+        "displayName": "yêu thích",
+        "validations": [],
+        "required": false
+    },
+    {
+        "type": "Text",
+        "displayType": "ShortText",
+        "name": "nguoi_dang",
+        "displayName": "người đăng",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "hinh_anh",
+        "displayName": "hình ảnh",
+        "type": "Media"
     }
 ]
