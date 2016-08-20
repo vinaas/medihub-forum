@@ -8,10 +8,10 @@
     "description": "",
     "date": "2016-08-20 11:30:24",
     "thoi_gian": "20-08-2016 12:00:00 AM",
-    "luot_xem": "",
-    "phan_hoi": "",
+    "luot_xem": 12,
+    "phan_hoi": 34,
     "nguoi_dang": "Tùng",
-    "yeu_thich": "",
+    "yeu_thich": 345,
     "hinh_anh": ""
 }
 ---

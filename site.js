@@ -200,12 +200,7 @@ site.metalsmith = {
         linksets:   [{
             match:   {collection: 'blog'},
             pattern: 'blog/:slug'
-        },
-        {
-            match:   {collection: 'blog'},
-            pattern: 'blog/:slug'
-        }
-        ]
+        }]
     },
 
     'metalsmith-layouts':       {
