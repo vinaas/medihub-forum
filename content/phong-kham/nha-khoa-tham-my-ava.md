@@ -99,6 +99,7 @@
         "Trồng răng implant",
         " Viêm nha chu",
         "Viêm tủy răng"
-    ]
+    ],
+    "hinhdaidien": "http://www.avadental.com.vn/images/stories/BV-AVA.jpg"
 }
 ---
