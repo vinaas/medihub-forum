@@ -11,7 +11,16 @@
     "certificate_type": "",
     "certificate_code": "",
     "certificate_number": "",
-    "info": {},
+    "info": {
+        "chuyen-khoa": [
+            "Hô hấp",
+            "Nhi"
+        ],
+        "giai-thuong": [],
+        "giay-phep": [
+            "Số giấy phép : 00001/SYT-GPHĐ, ngày cấp : 27-08-2012"
+        ]
+    },
     "chuyen-khoa": [],
     "dia-chi": {},
     "danh-sach-phong-kham": [],
