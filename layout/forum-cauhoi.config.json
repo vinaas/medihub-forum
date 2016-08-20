@@ -8,12 +8,19 @@
         "required": false
     },
     {
+        "name": "layout",
+        "displayName": "layout",
         "type": "Text",
-        "displayType": "ShortText",
-        "name": "category",
-        "displayName": "danh mục",
         "validations": [],
         "viewOnly": true,
+        "required": false
+    },
+    {
+        "name": "category",
+        "displayName": "category",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
         "required": false
     },
     {
@@ -24,27 +31,17 @@
         "required": false
     },
     {
-        "name": "layout",
-        "displayName": "layout",
-        "type": "Text",
-        "validations": [],
-        "viewOnly": true,
-        "required": false
-    },
-    {
-        "type": "Text",
-        "displayType": "ShortText",
         "name": "title",
-        "displayName": "tiêu đề",
+        "displayName": "title",
+        "type": "Text",
         "validations": [],
         "viewOnly": false,
         "required": false
     },
     {
-        "type": "Text",
-        "displayType": "LongText",
         "name": "description",
-        "displayName": "Mô tả ngắn",
+        "displayName": "description",
+        "type": "Text",
         "validations": [],
         "viewOnly": false,
         "required": false
@@ -55,46 +52,52 @@
         "displayType": "DateTime",
         "type": "DateTime",
         "validations": [],
-        "viewOnly": true,
+        "viewOnly": false,
         "required": false
     },
     {
         "name": "thoi_gian",
-        "displayName": "thời gian",
-        "type": "DateTime"
-    },
-    {
-        "type": "Number",
-        "displayType": "Number",
-        "name": "luot_xem",
-        "displayName": "lượt xem"
-    },
-    {
-        "type": "Number",
-        "displayType": "Number",
-        "name": "phan_hoi",
-        "displayName": "phản hồi",
-        "validations": [],
-        "required": false
-    },
-    {
+        "displayName": "thoi_gian",
         "type": "Text",
-        "displayType": "ShortText",
-        "name": "nguoi_dang",
-        "displayName": "người đăng",
         "validations": [],
         "viewOnly": false,
         "required": false
     },
     {
+        "name": "luot_xem",
+        "displayName": "luot_xem",
         "type": "Number",
-        "displayType": "Number",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "phan_hoi",
+        "displayName": "phan_hoi",
+        "type": "Number",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "nguoi_dang",
+        "displayName": "nguoi_dang",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
         "name": "yeu_thich",
-        "displayName": "Yêu thích"
+        "displayName": "yeu_thich",
+        "type": "Number",
+        "validations": [],
+        "required": false
     },
     {
         "name": "hinh_anh",
-        "displayName": "Hình ảnh",
-        "type": "Media"
+        "displayName": "hinh_anh",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
     }
 ]
