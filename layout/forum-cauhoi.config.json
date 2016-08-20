@@ -2,26 +2,15 @@
     {
         "name": "slug",
         "displayName": "slug",
-        "displayType": "Text",
         "type": "Text",
         "validations": [],
         "viewOnly": true,
         "required": false
     },
     {
-        "name": "layout",
-        "displayName": "layout",
-        "displayType": "Text",
-        "type": "Text",
-        "validations": [],
-        "viewOnly": true,
-        "required": false
-    },
-    {
-        "type": "Text",
-        "displayType": "ShortText",
         "name": "category",
         "displayName": "category",
+        "type": "Text",
         "validations": [],
         "viewOnly": false,
         "required": false
@@ -29,25 +18,30 @@
     {
         "name": "tag",
         "displayName": "tag",
-        "displayType": "Text",
         "type": "Array",
         "validations": [],
         "required": false
     },
     {
+        "name": "layout",
+        "displayName": "layout",
         "type": "Text",
-        "displayType": "ShortText",
+        "validations": [],
+        "viewOnly": true,
+        "required": false
+    },
+    {
         "name": "title",
         "displayName": "title",
+        "type": "Text",
         "validations": [],
         "viewOnly": false,
         "required": false
     },
     {
-        "type": "Text",
-        "displayType": "LongText",
         "name": "description",
         "displayName": "description",
+        "type": "Text",
         "validations": [],
         "viewOnly": false,
         "required": false
@@ -59,67 +53,6 @@
         "type": "DateTime",
         "validations": [],
         "viewOnly": false,
-        "required": false
-    },
-    {
-        "name": "thoi_gian",
-        "displayName": "thoi_gian",
-        "displayType": "DateTime",
-        "type": "DateTime"
-    },
-    {
-        "type": "Number",
-        "displayType": "Number",
-        "name": "luot_xem",
-        "displayName": "luot_xem",
-        "validations": [],
-        "required": false
-    },
-    {
-        "type": "Number",
-        "displayType": "Number",
-        "name": "phan_hoi",
-        "displayName": "phan_hoi",
-        "validations": [],
-        "required": false
-    },
-    {
-        "type": "Text",
-        "displayType": "ShortText",
-        "name": "nguoi_dang",
-        "displayName": "nguoi_dang",
-        "validations": [],
-        "viewOnly": false,
-        "required": false
-    },
-    {
-        "name": "yeu_thich",
-        "displayName": "yeu_thich",
-        "type": "Number",
-        "validations": [],
-        "required": false
-    },
-    {
-        "type": "Text",
-        "displayType": "ShortText",
-        "name": "hinh_anh",
-        "displayName": "hinh_anh",
-        "validations": [],
-        "viewOnly": false,
-        "required": false
-    },
-    {
-        "name": "permalink",
-        "displayName": "permalink",
-        "type": "Boolean",
-        "validations": [],
-        "required": false
-    },
-    {
-        "name": "rivetData",
-        "displayName": "rivetData",
-        "type": "Object",
-        "validations": [],
         "required": false
     }
 ]
