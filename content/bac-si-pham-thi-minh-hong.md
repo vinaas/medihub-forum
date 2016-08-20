@@ -55,7 +55,9 @@
     ],
     "so-dien-thoai": "73099939",
     "nghenghiep": "Bác Sĩ",
-    "note": {},
+    "note": {
+        "content": "If you couldn't connect with the center, Chat with us (8 am to 7 pm, Monday to Sunday) Note: This call may be recorded for quality control purpose and call recording may be shared with the center you are trying to connect By calling this number, you agree to the Terms & Conditions"
+    },
     "filter": [
         {
             "display": "Nhi",
