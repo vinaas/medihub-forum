@@ -6,19 +6,15 @@
         "mo_ta": "Diễn đàn là nơi dành riêng cho các thành viên Medihub đặt câu hỏi cho các bác sĩ và trao đổi, chia sẻ thông tin với các thành viên khác.",
         "breadcrumb": [
             {
-                "name": "",
-                "slug": ""
+                "ten": "Các bệnh",
+                "slug": "/cac-benh"
             },
             {
-                "name": "",
-                "slug": ""
-            },
-            {
-                "name": "",
-                "slug": ""
+                "ten": "Mắt",
+                "slug": "/cac-benh/mat"
             }
         ],
-        "slug":""
+        "slug":"/cac-benh/mat/đau-mat-đo"
     },
     "displayName": "các bệnh.mắt.đau mắt đỏ",
     "perPage": 10,
