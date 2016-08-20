@@ -56,7 +56,20 @@
     "so-dien-thoai": "73099939",
     "nghenghiep": "Bác Sĩ",
     "note": {},
-    "filter": [],
+    "filter": [
+        {
+            "display": "Nhi",
+            "value": "nhi"
+        },
+        {
+            "display": "Hô hấp",
+            "value": "ho-hap"
+        },
+        {
+            "display": " Nguyễn Diệu Liên Khánh ",
+            "value": "nguyen-dieu-lien-khanh"
+        }
+    ],
     "category": "",
     "tag": []
 }
