@@ -32,7 +32,21 @@
             "slug": "phong-kham-da-khoa-sai-gon"
         }
     ],
-    "chuyen-dieu-tri": [],
+    "chuyen-dieu-tri": [
+        "Điều trị bệnh về mũi cho trẻ",
+        " Điều trị bệnh về mũi cho trẻ",
+        " Điều trị bệnh về họng cho trẻ",
+        " Điều trị bệnh về thanh quản cho trẻ",
+        " Điều trị bệnh về khí phế quản cho trẻ",
+        " Điều trị bệnh về phổi cho trẻ",
+        " Điều trị bệnh về màng phổi cho trẻ",
+        "Điều trị bệnh về lồng ngực cho trẻ",
+        "Điều trị bệnh về các cơ hô hấp cho trẻ",
+        "Điều trị viêm phế quản phổi",
+        "Điều trị viêm thanh khí phế quản",
+        "Điều trị hen phế quản",
+        "Điều trị dãn phế quản"
+    ],
     "gia-tien": "",
     "like": "",
     "type": "",
