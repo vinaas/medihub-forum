@@ -64,12 +64,10 @@
         "type": "DateTime"
     },
     {
-        "type": "Number",
-        "displayType": "Number",
+        "type": "Text",
+        "displayType": "ShortText",
         "name": "luot_xem",
-        "displayName": "lượt xem",
-        "validations": [],
-        "required": false
+        "displayName": "lượt xem"
     },
     {
         "type": "Number",
