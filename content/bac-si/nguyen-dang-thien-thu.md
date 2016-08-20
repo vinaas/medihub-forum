@@ -6,7 +6,7 @@
     "layout": "bac-si.html",
     "date": "2016-07-25 21:00:05 +07:00",
     "permalink": true,
-    "avatar": "http://nyulangone.org/images/doctors/f/fisher/1306860663/jason-c-fisher-thumb.jpg",
+    "avatar": "https://vicare-prod.s3.amazonaws.com/images/24_05_2016_04_17_44_727857.jpeg",
     "sex": "Nữ",
     "certificate_type": "",
     "certificate_code": "",
@@ -65,6 +65,8 @@
             "display": "Nguyễn Đặng Thiên Thư  ",
             "value": "nguyen-dang-thien-thu"
         }
-    ]
+    ],
+    "category": "",
+    "tag": ""
 }
 ---
