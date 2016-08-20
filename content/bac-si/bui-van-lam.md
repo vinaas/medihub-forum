@@ -6,7 +6,7 @@
     "layout": "bac-si.html",
     "date": "2016-07-25 21:18:16 +07:00",
     "permalink": true,
-    "avatar": "https://vicare-prod.s3.amazonaws.com/images/12_05_2016_08_20_43_655781.jpeg.jpg",
+    "avatar": "http://nyulangone.org/images/doctors/f/fisher/1306860663/jason-c-fisher-thumb.jpg",
     "sex": "Nam",
     "certificate_type": "",
     "certificate_code": "",
