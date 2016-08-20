@@ -5,7 +5,7 @@
     "description": "Phó Giáo sư, Tiến sĩ, Bác sĩ Phạm Thị Minh Hồng là tác giả của nhiều công trình nghiên cứu về bệnh lý Nhi khoa như mô hình bệnh lý hô hấp trẻ em, viêm họng cấp, viêm thanh quản cấp, viêm tiểu phế quản, viêm phổi (viêm phổi sơ sinh, viêm phổi kéo dài, viêm phổi liên quan đến thở máy), bệnh phổi mô kẽ, bệnh phổi tăng bạch cầu ái toan, suy hô hấp cấp, hội chứng nguy kịch hô hấp cấp tính, hen, áp xe phổi, u trung thất, dị vật đường thở. Hiện tại Phó Giáo sư Phạm Thị Minh Hồng trực tiếp khám và điều trị bệnh tại Phòng khám đa khoa Sài Gòn Y Khoa",
     "layout": "bac-si.html",
     "date": "2016-08-20 12:23:26",
-    "permalink": false,
+    "permalink": true,
     "avatar": "https://vicare-prod.s3.amazonaws.com/images/2016-04-08_071237.4738640000.jpeg",
     "sex": "Nữ",
     "certificate_type": "",
