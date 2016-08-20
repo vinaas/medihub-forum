@@ -6,7 +6,7 @@
     "layout": "bac-si.html",
     "date": "2016-08-20 12:23:26",
     "permalink": "",
-    "avatar": "",
+    "avatar": "https://vicare-prod.s3.amazonaws.com/images/2016-04-08_071237.4738640000.jpeg",
     "sex": "",
     "certificate_type": "",
     "certificate_code": "",
