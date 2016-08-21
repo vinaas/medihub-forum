@@ -9,8 +9,8 @@
     "date": "2016-08-21 19:58:50",
     "thoi_gian": "21-08-2016",
     "luot_xem": "123",
-    "phan_hoi": "",
-    "yeu_thich": "",
+    "phan_hoi": 123,
+    "yeu_thich": 123,
     "nguoi_dang": "Tung",
     "hinh_anh": "img/tuyet-chieu-tri-dau-mat-do-cuc-huu-hieu-bang-khoai-tay-mat-ong.jpeg"
 }
