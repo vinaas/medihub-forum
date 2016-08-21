@@ -18,7 +18,13 @@
           </ul>
 
           <h4 class="title">{{metadata.title}}</h4>
-
+           {{#each (lookupChild AllCategory 'cac-benh') }}
+              {{#each (lookup this 'metadata')}}
+                  
+                      {{@key}}: {{json this}}
+                  
+              {{/each}}       
+           {{/each}}
 
 
           <div class="select--form">

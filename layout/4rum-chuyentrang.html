@@ -17,9 +17,7 @@
             <li>Các bệnh</li>
           </ul>
         </div>
-        {{#each (first ( lookup AllCategory 'cac-benh') 4) }}
-          <a href="/{{ this.path }}">{{ this.title }}</a>
-        {{/each}}
+         {{toString (lookupChild AllCategory 'cac-benh') }}
       
 
         <p>Diễn đàn là nơi dành riêng cho các thành viên Medihub đặt câu hỏi cho các bác sĩ và trao đổi, chia sẻ thông tin với các thành viên khác. </p>
