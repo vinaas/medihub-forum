@@ -10,7 +10,7 @@
     "thoi_gian": "2016-08-20 15:07:01",
     "luot_xem": "12333",
     "phan_hoi": 234,
-    "yeu_thich": 456,
+    "yeu_thich": 45643,
     "nguoi_dang": "Tung",
     "hinh_anh": "img/tuyet-chieu-tri-dau-mat-do-cuc-huu-hieu-bang-khoai-tay-mat-ong.jpeg"
 }
