@@ -19,12 +19,10 @@
 
           <h4 class="title">{{metadata.title}}</h4>
            {{#each (lookupChild AllCategory 'cac-benh.mat') }}
-
-              {{#each this}}
+              {{#each this.metadata}}
                 {{@key}}: {{this}}
 
               {{/each}}
-                   
            {{/each}}
 
 
@@ -57,24 +55,13 @@
          
 
           <div class="row small-up-2 medium-up-3">
-            <div class="column">
-              <a href="forum-chuyende.html">Đau mắt đỏ <i class="fa fa-angle-right "></i></a>
-            </div>
-            <div class="column">
-              <a href="forum-chuyende.html">Loạn thị <i class="fa fa-angle-right "></i></a>
-            </div>
-            <div class="column">
-              <a href="forum-chuyende.html">Đau mắt hột <i class="fa fa-angle-right "></i></a>
-            </div>
-            <div class="column">
-              <a href="forum-chuyende.html">Đục thủy tinh thể <i class="fa fa-angle-right "></i></a>
-            </div>
-            <div class="column">
-              <a href="forum-chuyende.html">Mổ lasik <i class="fa fa-angle-right "></i></a>
-            </div>
-            <div class="column">
-              <a href="forum-chuyende.html">Cườm mắt <i class="fa fa-angle-right "></i></a>
-            </div>
+             {{#each (lookupChild AllCategory 'cac-benh.mat') }}
+
+               <div class="column">
+                  <a href="{{this.metadata.slug}}">{{this.metadata.title}}<i class="fa fa-angle-right "></i></a>
+                </div>
+
+           {{/each}}
           </div>
 
         </div>
