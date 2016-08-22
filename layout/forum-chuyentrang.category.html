@@ -10,11 +10,11 @@
         <div class="portlet boxShadow">
             <div class="porlet--body">
                 <div class="forum__head">
-                    <h4 class="title">{{metadata.ten}}</h4>
+                    <h4 class="title">{{metadata.title}}</h4>
 
                     <ul class="breadcrumbs">
-                        <li><a href="#">Hỏi chuyên gia</a></li>
-                        <li>{{metadata.ten}}</li>
+                        <li><a >Hỏi chuyên gia</a></li>
+                        <li>{{metadata.title}}</li>
                     </ul>
                 </div>
                 <p>{{metadata.mo_ta}}</p>
@@ -63,83 +63,24 @@
                     Số bài viết
                 </div>
             </li>
+ {{#each (lookupChild AllCategory pagination.category) }}
+        <li class="forum__table--row normal space">
+          <div class="forum__table--content">
+            <a href="{{this.metadata.slug}}" class="title">
+              <h6 class="mb0">{{this.metadata.title}}</h6>
+              {{this.metadata.mo_ta}}
+            </a>
 
+          </div>
+          <div class="forum__table--view text-center">
 
-            <li class="forum__table--row normal space">
-                <div class="forum__table--content">
-                    <a href="" class="title">
-                        <h6 class="mb0">Mắt</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </a>
-
-                </div>
-                <div class="forum__table--view text-center">
-                    19
-                </div>
-                <div class="forum__table--date text-center">
-                    203
-                </div>
-            </li>
-
-            <li class="forum__table--row normal space">
-                <div class="forum__table--content">
-                    <a href="" class="title">
-                        <h6 class="mb0">Tai mũi họng</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </a>
-
-                </div>
-                <div class="forum__table--view text-center">
-                    19
-                </div>
-                <div class="forum__table--date text-center">
-                    203
-                </div>
-            </li>
-
-            <li class="forum__table--row normal space">
-                <div class="forum__table--content">
-                    <a href="" class="title">
-                        <h6 class="mb0">Tim mạch</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </a>
-
-                </div>
-                <div class="forum__table--view text-center">
-                    19
-                </div>
-                <div class="forum__table--date text-center">
-                    203
-                </div>
-            </li>
-
-            <li class="forum__table--row normal space">
-                <div class="forum__table--content">
-                    <a href="" class="title">
-                        <h6 class="mb0">Thần kinh</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </a>
-
-                </div>
-                <div class="forum__table--view text-center">
-                    19
-                </div>
-                <div class="forum__table--date text-center">
-                    203
-                </div>
-            </li>
-
-            <li class="forum__table--row normal space">
-                <div class="forum__table--content">
-                    <a href="" class="title">
-                        <h6 class="mb0">Dạ dày (bao tử)</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </a>
-
-                </div>
-                <div class="forum__table--view text-center">
-                    19
-                </div>
-                <div class="forum__table--date text-center">
-                    203
-                </div>
-            </li>
-
+            {{ length (lookupChild AllCategory this.category) }}
+          </div>
+          <div class="forum__table--date text-center">
+            {{this.files.length}}
+          </div>
+        </li>
+    {{/each}}
         </ul>
 
 

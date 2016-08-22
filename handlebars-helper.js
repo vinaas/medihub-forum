@@ -36,7 +36,6 @@ module.exports = function (Handlebars) {
      Handlebars.registerHelper('toString', function (obj) {
         return obj.toString();
     });
-
     Handlebars.registerHelper('removeIndex', function (url) {
         return url.replace('index.html', '');
     });
@@ -54,15 +53,19 @@ module.exports = function (Handlebars) {
 	result: { files: ['7', '7', '7'], ...}
     */
     Handlebars.registerHelper('lookupChild', function (obj, childPath) {
+        console.log('lookupChild', childPath);
+        console.log('dump', Object.keys(obj));
 		var ret = [];
 		for (var key in obj) {
 			if (!obj.hasOwnProperty(key)) continue;
 			if (key.startsWith(childPath)) {
 				var chunks = key.substr(childPath.length).split('.');
-				if (chunks.length > 1)
+                console.log('chunks', chunks);
+				if (chunks.length == 2)
 					ret.push(obj[key]);
 			}
 		}
+        console.log('lookupChild ret', ret);
 		return ret;
     });
 

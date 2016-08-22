@@ -10,9 +10,9 @@
     <div class="portlet boxShadow">
       <div class="porlet--body">
         <div class="forum__head">
-          <h4 class="title">Các bệnh</h4>         
+          <h4 class="title">{{metadata.title}}</h4>         
         </div>
-        <p>Diễn đàn là nơi dành riêng cho các thành viên Medihub đặt câu hỏi cho các bác sĩ và trao đổi, chia sẻ thông tin với các thành viên khác. </p>
+        <p>{{metadata.mo_ta}}</p>
 
         <div class="text-right">
           <a href="" class="button mb0"> <i class="fa fa-edit"></i> Đặt câu hỏi </a>
@@ -51,7 +51,7 @@
 
       <li class="forum__table--row heading">
         <div class="forum__table--content">
-          <h3 class="forum__table--title ">Các bệnh</h3>
+          <h3 class="forum__table--title ">{{metadata.title}}</h3>
 
         </div>
         <div class="forum__table--view text-center">
@@ -62,7 +62,26 @@
         </div>
       </li>
 
+      {{#each (lookupChild AllCategory metadata.path_obj) }}
 
+        <li class="forum__table--row normal space">
+          <div class="forum__table--content">
+            <a href="" class="title">
+              <h6 class="mb0">{{this.metadata.title}}</h6>
+              {{this.metadata.mo_ta}}
+            </a>
+
+          </div>
+          <div class="forum__table--view text-center">
+            {{this.files.length}}
+          </div>
+          <div class="forum__table--date text-center">
+            203
+          </div>
+        </li>
+
+      {{/each}}
+      
       <li class="forum__table--row normal space">
         <div class="forum__table--content">
           <a href="" class="title">

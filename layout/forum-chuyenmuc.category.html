@@ -18,12 +18,7 @@
           </ul>
 
           <h4 class="title">{{metadata.title}}</h4>
-           {{#each (lookupChild AllCategory 'cac-benh.mat') }}
-              {{#each this.metadata}}
-                {{@key}}: {{this}}
-
-              {{/each}}
-           {{/each}}
+           
 
 
           <div class="select--form">
@@ -55,7 +50,7 @@
          
 
           <div class="row small-up-2 medium-up-3">
-             {{#each (lookupChild AllCategory 'cac-benh.mat') }}
+             {{#each (lookupChild AllCategory metadata.path_obj) }}
 
                <div class="column">
                   <a href="{{this.metadata.slug}}">{{this.metadata.title}}<i class="fa fa-angle-right "></i></a>
@@ -96,52 +91,21 @@
 
       <div class="portlet  boxShadow" >
         <div class="porlet--comments">
-
+           {{#each pagination.files}}
           <div class="post">
-            <h3 class="post__title"><a href="forum-cauhoi.html">Có nên mổ mắt laser cho trẻ không?</a></h3>
+            <h3 class="post__title"><a href="./{{path}}">{{title}}</a></h3>
             <ul class="post__meta">
-                <li>28 Tháng 7, 2016</li>
-                <li>2522 lượt xem</li>
-                <li>56 Phản hồi</li>
-                <li>Bởi <a href="">Ngọc Trinh</a></li>
-                <li><i class="fa fa-heart"></i> 256</li>
+                <li>{{thoi_gian}}</li>
+                <li>{{luot_xem}} lượt xem</li>
+                <li>{{phan_hoi}} Phản hồi</li>
+                <li>Bởi <a href="">{{nguoi_dang}}</a></li>
+                <li><i class="fa fa-heart"></i> {{yeu_thich}}</li>
             </ul>
             <div class="post__content">
-              Aliquam id dui facilisis, rhoncus nulla at, tristique ante. Nulla tristique sem mi, a aliquet nunc volutpat consequat. Cras ut nisi ut ligula fringilla luctus a quis nisi. Sed ut nulla ut augue consequat efficitur vel eget neque. Ut a felis placerat, vehicula eros sed, vulputate tortor.
+              {{description}}
             </div>
           </div>
-
-          <div class="post">
-            <h3 class="post__title"><a href="forum-cauhoi.html">Cách chữa loạn thị ?</a></h3>
-            <ul class="post__meta">
-              <li>28 Tháng 7, 2016</li>
-              <li>2522 lượt xem</li>
-              <li>56 Phản hồi</li>
-              <li>Bởi <a href="">Ngọc Trinh</a></li>
-              <li><i class="fa fa-heart"></i> 256</li>
-            </ul>
-            <div class="post__content">
-              Aliquam id dui facilisis, rhoncus nulla at, tristique ante. Nulla tristique sem mi, a aliquet nunc volutpat consequat. Cras ut nisi ut ligula fringilla luctus a quis nisi. Sed ut nulla ut augue consequat efficitur vel eget neque. Ut a felis placerat, vehicula eros sed, vulputate tortor.
-            </div>
-          </div>
-
-
-          <div class="post">
-            <h3 class="post__title"><a href="forum-cauhoi.html">Chăm sóc hậu phẩu lasik?</a></h3>
-            <ul class="post__meta">
-              <li>28 Tháng 7, 2016</li>
-              <li>2522 lượt xem</li>
-              <li>56 Phản hồi</li>
-              <li>Bởi <a href="">Ngọc Trinh</a></li>
-              <li><i class="fa fa-heart"></i> 256</li>
-            </ul>
-            <div class="post__content">
-              Aliquam id dui facilisis, rhoncus nulla at, tristique ante. Nulla tristique sem mi, a aliquet nunc volutpat consequat. Cras ut nisi ut ligula fringilla luctus a quis nisi. Sed ut nulla ut augue consequat efficitur vel eget neque. Ut a felis placerat, vehicula eros sed, vulputate tortor.
-            </div>
-          </div>
-
-
-
+          {{/each}}
         </div>
       </div>
 
