@@ -10,17 +10,20 @@
     <div class="portlet boxShadow">
       <div class="porlet--body">
         <div class="forum__head">
+          
+
+          <h3 class="title">Mắt</h3>
+
           <ul class="breadcrumbs">
+            <li><a href="forum.html">Diễn đàn</a></li>
             <li><a href="forum-chuyentrang.html">Các bệnh</a></li>
             <li>Mắt</li>
           </ul>
 
-          <h3 class="title">Mắt</h3>
-
 
 
           <div class="select--form">
-              <select class="select2Search" data-placeholder="Tới chuyên mục" >
+              <select class="select2Search" data-placeholder="Tới chuyên mục khác" >
                 <option value="">Mắt</option>
                 <option value=" ">Tai mũi họng</option>
                 <option value=" ">Tim mạch</option>
@@ -40,7 +43,7 @@
         </div>
 
 
-        <div class="portlet--chuyenmuc">
+        <!--<div class="portlet--chuyenmuc">
 
           <h5 class="color-primary">Các chủ đề</h5>
 
@@ -65,6 +68,100 @@
             </div>
           </div>
 
+        </div>-->
+        
+        
+
+      </div>
+    </div>
+
+   
+
+
+    <div class="row">
+      <div class="small-12 column">
+        <div class="newsRun swiper-container">
+          <div class="swiper-wrapper">
+
+            {{#each (first news 10)}}
+            <div class="swiper-slide">
+              <div class=" newsRun__item boxShadowLess clearfix">
+                <a href="{{this.link}}">
+                  <div class="newsRun__img">
+                    <img
+                        src="{{this.img}}"
+                        alt="{{this.title}}">
+                  </div>
+                  <div class="newsRun__txt">
+                    {{this.title}}
+                  </div>
+                </a>
+              </div>
+            </div>
+
+
+            {{/each}}
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="adv">
+      <img src="http://placehold.it/700x120" alt="">
+    </div>
+
+
+     <div class="portlet boxShadow">
+      <div class="porlet--body">
+        <div class="portlet--chuyenmuc">
+
+          <h5 class="color-primary">Các chủ đề</h5>
+
+          <div class="row small-up-2 medium-up-3" id="list-chude" data-toggler="show">
+            <div class="column">
+              <a href="forum-chuyende.html">Đau mắt đỏ <i class="fa fa-angle-right "></i></a>
+            </div>
+            <div class="column">
+              <a href="forum-chuyende.html">Loạn thị <i class="fa fa-angle-right "></i></a>
+            </div>
+            <div class="column">
+              <a href="forum-chuyende.html">Đau mắt hột <i class="fa fa-angle-right "></i></a>
+            </div>
+            <div class="column">
+              <a href="forum-chuyende.html">Đục thủy tinh thể <i class="fa fa-angle-right "></i></a>
+            </div>
+            <div class="column">
+              <a href="forum-chuyende.html">Mổ lasik <i class="fa fa-angle-right "></i></a>
+            </div>
+            <div class="column">
+              <a href="forum-chuyende.html">Cườm mắt <i class="fa fa-angle-right "></i></a>
+            </div>
+
+            <div class="column">
+              <a href="forum-chuyende.html">Đau mắt đỏ <i class="fa fa-angle-right "></i></a>
+            </div>
+            <div class="column">
+              <a href="forum-chuyende.html">Loạn thị <i class="fa fa-angle-right "></i></a>
+            </div>
+            <div class="column">
+              <a href="forum-chuyende.html">Đau mắt hột <i class="fa fa-angle-right "></i></a>
+            </div>
+            <div class="column">
+              <a href="forum-chuyende.html">Đục thủy tinh thể <i class="fa fa-angle-right "></i></a>
+            </div>
+            <div class="column">
+              <a href="forum-chuyende.html">Mổ lasik <i class="fa fa-angle-right "></i></a>
+            </div>
+            <div class="column">
+              <a href="forum-chuyende.html">Cườm mắt <i class="fa fa-angle-right "></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="porlet-loadmore">
+          <a data-toggle="list-chude" class="linkGray" >Xem thêm »</a>
         </div>
         
         
