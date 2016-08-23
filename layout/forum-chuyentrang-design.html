@@ -10,9 +10,9 @@
     <div class="portlet boxShadow">
       <div class="porlet--body">
         <div class="forum__head">
-          <h4 class="title">Các bệnh</h4>
+          <h3 class="title">Các bệnh</h3>
         </div>
-        <p>Diễn đàn là nơi dành riêng cho các thành viên Medihub đặt câu hỏi cho các bác sĩ và trao đổi, chia sẻ thông tin với các thành viên khác. </p>
+        <p class="forum__sub">Diễn đàn là nơi dành riêng cho các thành viên Medihub đặt câu hỏi cho các bác sĩ và trao đổi, chia sẻ thông tin với các thành viên khác. </p>
 
         <div class="text-right">
           <a href="" class="button mb0"> <i class="fa fa-edit"></i> Đặt câu hỏi </a>
@@ -21,30 +21,6 @@
     </div>
 
     {{> news-moz-small}}
-
-    <div class="newsRun swiper-container">
-      <div class="swiper-wrapper">
-
-        {{#each (first news 10)}}
-        <div class="swiper-slide">
-          <div class=" newsRun__item boxShadowLess clearfix">
-            <a href="{{this.link}}">
-              <div class="newsRun__img">
-                <img
-                    src="{{this.img}}"
-                    alt="{{this.title}}">
-              </div>
-              <div class="newsRun__txt">
-                {{this.title}}
-              </div>
-            </a>
-          </div>
-        </div>
-
-
-        {{/each}}
-      </div>
-    </div>
 
 
     <ul class="forum__table boxShadow">

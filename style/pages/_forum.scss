@@ -7,12 +7,13 @@
       position: fixed;
       width: 100%;
       top: 0;
-      z-index: 9999
+      z-index: 9999;
     }
 }
 .forumHome__nav--logo{
     margin-bottom: 0;
     line-height: 60px;
+    text-align: center;
 }
 
 .newsRun{
@@ -366,6 +367,9 @@
 .forum__table--date{
   flex: 0 0 80px;
 }
+.forum__sub{
+  @include header-size(h5);
+}
 
 .forum__head{
     position: relative;
@@ -390,6 +394,11 @@
     background: $bg-gray-light;
     position: relative;
     z-index: 1;
+
+    #sticky-wrapper{
+margin-bottom: $margin-box;
+    }
+    
 }
 
 
@@ -547,3 +556,10 @@
   @extend .transition;
 }
 //end COMMENT
+
+
+.number--list{
+  color: $medium-gray;
+    font-size: 0.92857rem;
+  margin-left: 0.2em;
+}

@@ -11,7 +11,6 @@
     
     $(window).resize(function(){
         init_fixed_bg(60);
-        init_sticky();
     });
 
 
