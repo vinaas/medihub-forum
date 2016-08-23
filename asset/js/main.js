@@ -6,10 +6,12 @@
     
     $(document).ready(function(){
         init_fixed_bg(60);
+        init_sticky();
     });
     
     $(window).resize(function(){
         init_fixed_bg(60);
+        init_sticky();
     });
 
 
@@ -54,11 +56,24 @@ function init_fixed_bg(headerHeight){
          var heroHeight = $(".mainSearch").outerHeight() + headerHeight; // Add header height
         $("body").addClass("fixed");
         $(".forumFixed").css("margin-top", heroHeight + "px");
+
+         
      } else{
          $("body").removeClass("fixed");
          $(".forumFixed").css("margin-top", "0px");
      }
 }
+
+function init_sticky(){
+    if ($(window).width() > 1024) {
+        $("#mapView").sticky({topSpacing:80, bottomSpacing: 415});
+        $(".searchFilter .searchForm").sticky({topSpacing:0});
+
+        $(".forumHome__nav").sticky({topSpacing:0});
+     } 
+}
+
+
 
 
 var swiperBg;
@@ -198,8 +213,7 @@ $(function() {
 
 
 
-    $("#mapView").sticky({topSpacing:80, bottomSpacing: 415});
-    $(".searchFilter .searchForm").sticky({topSpacing:0});
+    
 
 
     var swiperNews = new Swiper('.newsRun', {

@@ -3,6 +3,12 @@
     height: 60px;
     background: white;
     margin-bottom: $margin-box;
+    .is-sticky &{
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 9999
+    }
 }
 .forumHome__nav--logo{
     margin-bottom: 0;
