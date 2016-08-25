@@ -50,9 +50,13 @@
          
 
           <div class="row small-up-2 medium-up-3">
-             {{#each (lookupChild AllCategory metadata.path_obj) }}
-
-               <div class="column">
+            {{pagination.category}}
+            {{#each AllCategory.childs }}
+              {{@key}} @@@@@@@@@ {{@index}}
+            {{/each}}
+             {{#each pagination.childs }}
+             {{@key}} <br>
+                <div class="column">
                   <a href="{{this.metadata.slug}}">{{this.metadata.title}}<i class="fa fa-angle-right "></i></a>
                 </div>
 

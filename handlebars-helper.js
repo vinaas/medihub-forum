@@ -40,42 +40,71 @@ module.exports = function (Handlebars) {
         return url.replace('index.html', '');
     });
     
-    // child path must be a fulll path e.g. 'tin-tuc.tin-van-hoa', 'tin-tuc.tin-the-thao.quoc-te'
-    /*
-    var data = {
-		'tin-tuc': { files: ['1', '2', '3'], ...},
-		'tin-tuc.tin-van-hoa': { files: ['4', '4', '4'], ...},
-		'tin-tuc.tin-the-thao': { files: ['5', '5', '5'], ...},
-		'tin-tuc.tin-the-thao.quoc-te': { files: ['7', '7', '7'], ...},
-		'tin-tuc.tin-kinh-te': { files: ['6', '6', '6'], ...},
-	}
-	(lookupChild data  'tin-tuc.tin-the-thao')
-	result: { files: ['7', '7', '7'], ...}
-    */
-    Handlebars.registerHelper('lookupChild', function (obj, childPath) {
-        console.log('lookupChild', childPath);
-        console.log('dump', Object.keys(obj));
-		var ret = [];
-		for (var key in obj) {
-			if (!obj.hasOwnProperty(key)) continue;
-			if (key.startsWith(childPath)) {
-				var chunks = key.substr(childPath.length).split('.');
-                console.log('chunks', chunks);
-				if (chunks.length == 2)
-					ret.push(obj[key]);
-			}
-		}
-        console.log('lookupChild ret', ret);
-		return ret;
+    Handlebars.registerHelper('lookupCategory', function (obj, childPath) {
+        var chunks = childPath.split('.');
+        var count = 0;
+        var node = obj;
+        chunks.some(function (name) {
+            count++;
+            var fullCategoryName = chunks.slice(0, count).join('.');
+            var found = node.children.some(function (childNode) {
+                if (childNode.category == fullCategoryName) {
+                    node = childNode;
+                    return true;
+                }
+                return false;
+            });
+
+            if (!found) {
+                node = undefined;
+                return true;
+            }
+            return false;
+        });
+
+        return node;
     });
 
-    Handlebars.registerHelper('formatDate', function (context, options) {
-        var format = options.hash.format || "YYYY-MM-DD";
-
-        if (context === "now") {
-            context = new Date();
+    /**
+     * Lookup nested object
+     */
+    Handlebars.registerHelper('lookupEx', function (obj, propertyPath) {
+        var props = propertyPath.split('.');
+        var current = obj;
+        while(props.length) {
+            if(typeof current !== 'object') return undefined;
+            current = current[props.shift()];
         }
+        return current;
+    });
 
-        return moment(context).format(format);
+    /**
+     * return array of category from root to leaf of @param {string} childPath
+     */
+    Handlebars.registerHelper('genBreadcrumb', function (obj, childPath) {
+        var chunks = childPath.split('.');
+        var count = 0;
+        var node = obj;
+        var ret = [];
+        chunks.some(function (name) {
+            count++;
+            var fullCategoryName = chunks.slice(0, count).join('.');
+            var found = node.children.some(function (childNode) {
+                if (childNode.category == fullCategoryName) {
+                    node = childNode;
+                    ret.push(childNode);
+                    return true;
+                }
+                return false;
+            });
+
+            if (!found) {
+                ret = undefined;
+                return true;
+            }
+            return false;
+        });
+
+        return ret;
     });
 };
