@@ -2,9 +2,8 @@
     "sortBy": "date",
     "reverse": false,
     "metadata": {
-        
-        "title": "Đau mắt đỏ",
-        "path_obj":"cac-benh.mat.đau-mat-đo",
+        "title": "Đau mắt hột",
+        "path_obj":"cac-benh.mat.dau-mat-hot",
         "mo_ta": "Diễn đàn là nơi dành riêng cho các thành viên Medihub đặt câu hỏi cho các bác sĩ và trao đổi, chia sẻ thông tin với các thành viên khác.",
         "breadcrumb": [
             {
@@ -16,12 +15,12 @@
                 "slug": "/cac-benh/mat"
             }
         ],
-        "slug":"/cac-benh/mat/đau-mat-đo"
+        "slug":"/cac-benh/mat/dau-mat-hot"
     },
-    "displayName": "các bệnh.mắt.đau mắt đỏ",
+    "displayName": "các bênh.mắt.đau mắt hột",
     "perPage": 10,
     "noPageOne": true,
-    "layout": "forum-chuyende.category.html",
+    "layout": "default.category.html",
     "first": ":categoryPath/index.html",
     "path": ":categoryPath/page/:num/index.html"
 }
