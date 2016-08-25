@@ -1,7 +1,7 @@
 ---json
 {
     "slug": "benh-a-hong-cau",
-    "category": "an-uong",
+    "category": "cac-benh.tim-mach",
     "tag": [],
     "layout": "forum-cauhoi.html",
     "title": "Bệnh đa hồng cầu",
