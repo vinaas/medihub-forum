@@ -50,9 +50,9 @@
          
 
           <div class="row small-up-2 medium-up-3">
-            {{pagination.category}}
-            {{#each AllCategory.childs }}
-              {{@key}} @@@@@@@@@ {{@index}}
+            {{#each (lookupCategory  AllCategory pagination.category )}}
+            <br>
+              {{@key}} @@@@@@@@@ {{this}}
             {{/each}}
              {{#each pagination.childs }}
              {{@key}} <br>
