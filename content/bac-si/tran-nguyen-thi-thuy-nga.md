@@ -6,7 +6,7 @@
     "layout": "bac-si.html",
     "date": "2016-07-25 21:00:05 +07:00",
     "permalink": true,
-    "avatar": "http://nyulangone.org/images/doctors/f/fisher/1306860663/jason-c-fisher-thumb.jpg",
+    "avatar": "https://vicare-prod.s3.amazonaws.com/images/2016-04-19_030232.0756000000.jpg",
     "sex": "Nữ",
     "certificate_type": "",
     "certificate_code": "",
@@ -65,6 +65,8 @@
             "display": "Trần Nguyên Thị Thùy Nga   ",
             "value": "tran-nguyen-thi-thuy-nga"
         }
-    ]
+    ],
+    "category": "",
+    "tag": ""
 }
 ---

@@ -55,6 +55,7 @@
     "danh-sach-phong-kham": [
         {
             "title": "Phòng khám  Nha khoa Thế Kỷ",
+            "hinhdaidien": "http://upload2.webbnc.vn/media/163/Khuyen-mai-tai-Nha-khoa-The-Ky.jpg",
             "list-image": [
                 "http://upload2.webbnc.vn/media/163/Khuyen-mai-tai-Nha-khoa-The-Ky.jpg",
                 "http://upload2.webbnc.vn/media/163/Khuyen-mai-voi-Nha-khoa-The-Ky.jpg",
@@ -90,6 +91,7 @@
         "Trồng răng implant",
         " Viêm nha chu",
         "Viêm tủy răng"
-    ]
+    ],
+    "hinhdaidien": "http://upload2.webbnc.vn/media/163/Khuyen-mai-tai-Nha-khoa-The-Ky.jpg"
 }
 ---

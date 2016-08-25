@@ -346,6 +346,17 @@
     padding-top: 0; 
     padding-bottom: 0;
   }
+
+  .pagination{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding-right:0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+
 }
 .porlet--title{
   font-weight: bold;
@@ -414,9 +425,9 @@
 }
 
 .portlet--chuyenmuc{
-  border-top : 1px solid $light-gray;
-  margin-top: 15px;
-  padding : 15px 0 0;
+  // border-top : 1px solid $light-gray;
+  // margin-top: 15px;
+  // padding : 15px 0 0;
   a{
     display: block;
       margin-bottom: 7px;

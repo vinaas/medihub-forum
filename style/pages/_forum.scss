@@ -3,10 +3,17 @@
     height: 60px;
     background: white;
     margin-bottom: $margin-box;
+    .is-sticky &{
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 9999;
+    }
 }
 .forumHome__nav--logo{
     margin-bottom: 0;
     line-height: 60px;
+    text-align: center;
 }
 
 .newsRun{
@@ -206,9 +213,11 @@
 .forum__number{
     text-align: center;
     display: inline-block;
-    padding-right: 60px;
-    padding-top: 8px;
-    padding-bottom: 7px;
+    // padding-right: 60px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+
     &.last{
         padding-right: 0;
     }
@@ -358,18 +367,21 @@
 .forum__table--date{
   flex: 0 0 80px;
 }
+.forum__sub{
+  @include header-size(h5);
+}
 
 .forum__head{
     position: relative;
-    padding-right: 180px;
+    padding-right: 190px;
   .title{
     color: $primary-color;
     font-weight: normal;
-    //margin-bottom: 0;
+    margin-bottom: 0;
   }
 
   .select--form{
-    width: 160px;
+    width: 170px;
     position: absolute;
     right: 0;
     top: 6px;
@@ -378,10 +390,22 @@
   }
 }
 
+.post__question{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+
+}
+
 .forumFixed{
     background: $bg-gray-light;
     position: relative;
     z-index: 1;
+
+    #sticky-wrapper{
+margin-bottom: $margin-box;
+    }
+    
 }
 
 
@@ -426,9 +450,7 @@
 }
 
 .porlet--comments{
-  .post:last-child{
-    border-bottom: none;
-  }
+
 }
 
 .post{
@@ -539,3 +561,21 @@
   @extend .transition;
 }
 //end COMMENT
+
+
+.number--list{
+  color: $medium-gray;
+    font-size: 0.92857rem;
+  margin-left: 0.2em;
+}
+
+
+#list-chude {
+    overflow: hidden;
+    max-height: 80px;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    &.show{
+      max-height: 100%;
+    }
+}

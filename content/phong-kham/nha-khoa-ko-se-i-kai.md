@@ -80,6 +80,7 @@
         "Trồng răng implant",
         " Viêm nha chu",
         "Viêm tủy răng"
-    ]
+    ],
+    "hinhdaidien": "http://www.diachibotui.com/Thumbnail/ExtraLarge/Upload/2015/5/22/phong-kham-mat-thu-ha-ba-trieu-635679087664809056.jpg"
 }
 ---

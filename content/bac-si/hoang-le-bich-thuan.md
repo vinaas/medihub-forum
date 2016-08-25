@@ -6,7 +6,7 @@
     "layout": "bac-si.html",
     "date": "2016-07-25 21:18:16 +07:00",
     "permalink": true,
-    "avatar": "http://nyulangone.org/images/doctors/f/fisher/1306860663/jason-c-fisher-thumb.jpg",
+    "avatar": "https://vicare-prod.s3.amazonaws.com/images/21_04_2016_09_35_23_221009.jpeg",
     "sex": "Nữ",
     "certificate_type": "",
     "certificate_code": "",
@@ -65,6 +65,8 @@
             "display": " Hoàng Lê Bích Thuận   ",
             "value": "hoang-le-bich-thuan"
         }
-    ]
+    ],
+    "category": "",
+    "tag": ""
 }
 ---

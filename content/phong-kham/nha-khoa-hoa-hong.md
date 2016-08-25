@@ -53,6 +53,7 @@
     "danh-sach-phong-kham": [
         {
             "title": " Nha khoa Hoa Hồng ",
+            "hinhdaidien": "http://nhakhoatotnhat.com/upload/image/tphcm/quan1/RoseDentalCtilic/nha-khoa-rose-dentel-clinic-1.jpg",
             "list-image": [
                 "http://nhakhoatotnhat.com/upload/image/tphcm/quan1/RoseDentalCtilic/nha-khoa-rose-dentel-clinic-1.jpg",
                 "http://nhakhoatotnhat.com/upload/image/tphcm/quan1/RoseDentalCtilic/nha-khoa-rose-dentel-clinic-2.jpg"
@@ -92,6 +93,7 @@
         "Trồng răng implant",
         " Viêm nha chu",
         "Viêm tủy răng"
-    ]
+    ],
+    "hinhdaidien": "http://nhakhoatotnhat.com/upload/image/tphcm/quan1/RoseDentalCtilic/nha-khoa-rose-dentel-clinic-1.jpg"
 }
 ---

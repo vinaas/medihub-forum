@@ -1,0 +1,66 @@
+.force-hardware{
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+
+.force-hardware-2{
+  transform: translate3d(0, 0, 0);
+}
+
+
+
+/*! Disable select */
+.none-select{
+  user-select: none;
+}
+
+
+
+/*! Typography -- Helpers */
+.type--uppercase{
+  text-transform: uppercase;
+}
+
+
+.type--bold{
+  font-weight: bold;
+}
+
+.type--unbold{
+    font-weight: normal;
+}
+
+
+.type--italic{
+  font-style: italic;
+}
+
+
+.type--linethrough{
+  text-decoration: line-through;
+}
+
+
+.type--underline{
+  text-decoration: underline;
+}
+
+.type--nowrap{
+    white-space: nowrap;
+}
+
+/*! Ellipsis text */
+.ellipsis {
+  text-overflow: ellipsis;
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.center-block{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
