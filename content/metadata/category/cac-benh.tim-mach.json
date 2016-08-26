@@ -5,7 +5,7 @@
     "displayName": "các bệnh.tim mạch",
     "perPage": 10,
     "noPageOne": true,
-    "layout": "forum-chuyentrang.category.html",
+    "layout": "forum-chuyenmuc.category.html",
     "first": ":categoryPath/index.html",
     "path": ":categoryPath/page/:num/index.html"
 }
