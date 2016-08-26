@@ -1,7 +1,7 @@
 {
     "sortBy": "date",
     "reverse": false,
-    "metadata": {},
+    "metadata": {"title":"Tim mạch", "mo_ta":"Các bênh liên quan đến tim mạch"},
     "displayName": "các bệnh.tim mạch",
     "perPage": 10,
     "noPageOne": true,
