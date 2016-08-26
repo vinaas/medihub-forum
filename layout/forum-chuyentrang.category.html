@@ -63,7 +63,7 @@
                     Số bài viết
                 </div>
             </li>
-            {{#each (lookupCategory AllCategory pagination.category) }} {{@key}} @@@@@@@@ <br/> {{this}} {{/each}} {{#each (lookup (lookupCategory AllCategory pagination.category) 'children') }}
+          {{#each (lookup (lookupCategory AllCategory pagination.category) 'children') }}
             <li class="forum__table--row normal space">
                 <div class="forum__table--content">
                     <a href="{{this.href}}" class="title">
