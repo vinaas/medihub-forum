@@ -2,171 +2,146 @@
 
 
 <div class="row forum">
-  <div class="small-12 medium-4 column">
-    {{> forum-sidebar}}
-  </div>
-  <div class="small-12 medium-8 column">
-
-    <div class="portlet boxShadow">
-      <div class="porlet--body">
-        <div class="forum__head">
-          <h4 class="title">{{metadata.title}}</h4>         
-        </div>
-        <p>{{metadata.mo_ta}}</p>
-
-        <div class="text-right">
-          <a href="" class="button mb0"> <i class="fa fa-edit"></i> Đặt câu hỏi </a>
-        </div>
-      </div>
+    <div class="small-12 medium-4 column">
+        {{> forum-sidebar}}
     </div>
+    <div class="small-12 medium-8 column">
 
-    {{> news-moz-small}}
+        <div class="portlet boxShadow">
+            <div class="porlet--body">
+                <div class="forum__head">
+                    <h4 class="title">{{metadata.title}}</h4>
+                </div>
+                <p>{{metadata.mo_ta}}</p>
 
-    <div class="newsRun swiper-container">
-      <div class="swiper-wrapper">
+                <div class="text-right">
+                    <a href="" class="button mb0"> <i class="fa fa-edit"></i> Đặt câu hỏi </a>
+                </div>
+            </div>
+        </div>
 
-        {{#each (first news 10)}}
-        <div class="swiper-slide">
-          <div class=" newsRun__item boxShadowLess clearfix">
-            <a href="{{this.link}}">
-              <div class="newsRun__img">
-                <img
-                    src="{{this.img}}"
-                    alt="{{this.title}}">
-              </div>
-              <div class="newsRun__txt">
-                {{this.title}}
-              </div>
-            </a>
-          </div>
+        {{> news-moz-small}}
+
+        <div class="newsRun swiper-container">
+            <div class="swiper-wrapper">
+
+                {{#each (first news 10)}}
+                <div class="swiper-slide">
+                    <div class=" newsRun__item boxShadowLess clearfix">
+                        <a href="{{this.link}}">
+                            <div class="newsRun__img">
+                                <img src="{{this.img}}" alt="{{this.title}}">
+                            </div>
+                            <div class="newsRun__txt">
+                                {{this.title}}
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                {{/each}}
+            </div>
         </div>
 
 
-        {{/each}}
-      </div>
+        <ul class="forum__table boxShadow">
+
+            <li class="forum__table--row heading">
+                <div class="forum__table--content">
+                    <h3 class="forum__table--title ">{{metadata.title}}</h3>
+
+                </div>
+                <div class="forum__table--view text-center">
+                    Số chủ đề
+                </div>
+                <div class="forum__table--date text-center">
+                    Số bài viết
+                </div>
+            </li>
+
+
+
+            <li class="forum__table--row normal space">
+                <div class="forum__table--content">
+                    <a href="" class="title">
+                        <h6 class="mb0">Mắt</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </a>
+
+                </div>
+                <div class="forum__table--view text-center">
+                    19
+                </div>
+                <div class="forum__table--date text-center">
+                    203
+                </div>
+            </li>
+
+            <li class="forum__table--row normal space">
+                <div class="forum__table--content">
+                    <a href="" class="title">
+                        <h6 class="mb0">Tai mũi họng</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </a>
+
+                </div>
+                <div class="forum__table--view text-center">
+                    19
+                </div>
+                <div class="forum__table--date text-center">
+                    203
+                </div>
+            </li>
+
+            <li class="forum__table--row normal space">
+                <div class="forum__table--content">
+                    <a href="" class="title">
+                        <h6 class="mb0">Tim mạch</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </a>
+
+                </div>
+                <div class="forum__table--view text-center">
+                    19
+                </div>
+                <div class="forum__table--date text-center">
+                    203
+                </div>
+            </li>
+
+            <li class="forum__table--row normal space">
+                <div class="forum__table--content">
+                    <a href="" class="title">
+                        <h6 class="mb0">Thần kinh</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </a>
+
+                </div>
+                <div class="forum__table--view text-center">
+                    19
+                </div>
+                <div class="forum__table--date text-center">
+                    203
+                </div>
+            </li>
+
+            <li class="forum__table--row normal space">
+                <div class="forum__table--content">
+                    <a href="" class="title">
+                        <h6 class="mb0">Dạ dày (bao tử)</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </a>
+
+                </div>
+                <div class="forum__table--view text-center">
+                    19
+                </div>
+                <div class="forum__table--date text-center">
+                    203
+                </div>
+            </li>
+
+        </ul>
+
+
+
     </div>
-
-
-    <ul class="forum__table boxShadow">
-
-      <li class="forum__table--row heading">
-        <div class="forum__table--content">
-          <h3 class="forum__table--title ">{{metadata.title}}</h3>
-
-        </div>
-        <div class="forum__table--view text-center">
-          Số chủ đề
-        </div>
-        <div class="forum__table--date text-center">
-          Số bài viết
-        </div>
-      </li>
-
-      {{#each (lookupCategory   AllCategory metadata.path_obj) }}
-
-        <li class="forum__table--row normal space">
-          <div class="forum__table--content">
-            <a href="" class="title">
-              <h6 class="mb0">{{this.metadata.title}}</h6>
-              {{this.metadata.mo_ta}}
-            </a>
-
-          </div>
-          <div class="forum__table--view text-center">
-            {{this.files.length}}
-          </div>
-          <div class="forum__table--date text-center">
-            203
-          </div>
-        </li>
-
-      {{/each}}
-      
-      <li class="forum__table--row normal space">
-        <div class="forum__table--content">
-          <a href="" class="title">
-            <h6 class="mb0">Mắt</h6>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </a>
-
-        </div>
-        <div class="forum__table--view text-center">
-          19
-        </div>
-        <div class="forum__table--date text-center">
-          203
-        </div>
-      </li>
-
-      <li class="forum__table--row normal space">
-        <div class="forum__table--content">
-          <a href="" class="title">
-            <h6 class="mb0">Tai mũi họng</h6>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </a>
-
-        </div>
-        <div class="forum__table--view text-center">
-          19
-        </div>
-        <div class="forum__table--date text-center">
-          203
-        </div>
-      </li>
-
-      <li class="forum__table--row normal space">
-        <div class="forum__table--content">
-          <a href="" class="title">
-            <h6 class="mb0">Tim mạch</h6>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </a>
-
-        </div>
-        <div class="forum__table--view text-center">
-          19
-        </div>
-        <div class="forum__table--date text-center">
-          203
-        </div>
-      </li>
-
-      <li class="forum__table--row normal space">
-        <div class="forum__table--content">
-          <a href="" class="title">
-            <h6 class="mb0">Thần kinh</h6>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </a>
-
-        </div>
-        <div class="forum__table--view text-center">
-          19
-        </div>
-        <div class="forum__table--date text-center">
-          203
-        </div>
-      </li>
-
-      <li class="forum__table--row normal space">
-        <div class="forum__table--content">
-          <a href="" class="title">
-            <h6 class="mb0">Dạ dày (bao tử)</h6>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </a>
-
-        </div>
-        <div class="forum__table--view text-center">
-          19
-        </div>
-        <div class="forum__table--date text-center">
-          203
-        </div>
-      </li>
-
-    </ul>
-
-
-
-  </div>
 </div>
 
 <!--end FORUM HOMEPAGE-->
