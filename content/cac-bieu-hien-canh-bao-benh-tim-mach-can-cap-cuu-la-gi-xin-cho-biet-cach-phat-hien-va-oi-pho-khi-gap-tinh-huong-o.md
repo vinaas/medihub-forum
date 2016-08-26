@@ -1,7 +1,7 @@
 ---json
 {
     "slug": "cac-bieu-hien-canh-bao-benh-tim-mach-can-cap-cuu-la-gi-xin-cho-biet-cach-phat-hien-va-oi-pho-khi-gap-tinh-huong-o",
-    "category": "cac-benh.tim-mach",
+    "category": "cac-benh.tim-mach.tim",
     "tag": [],
     "layout": "forum-cauhoi.html",
     "title": "Các biểu hiện cảnh báo bệnh tim mạch cần cấp cứu là gì? Xin cho biết cách phát hiện và đối phó khi gặp tình huống đó?",
