@@ -66,7 +66,7 @@
             {{#each (lookupCategory AllCategory pagination.category) }} {{@key}} @@@@@@@@ <br/> {{this}} {{/each}} {{#each (lookup (lookupCategory AllCategory pagination.category) 'children') }}
             <li class="forum__table--row normal space">
                 <div class="forum__table--content">
-                    <a href="{{this.metadata.slug}}" class="title">
+                    <a href="{{this.href}}" class="title">
                         <h6 class="mb0">{{this.metadata.title}}</h6> {{this.metadata.mo_ta}}
                     </a>
 

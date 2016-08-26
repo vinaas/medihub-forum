@@ -50,10 +50,10 @@
 
 
                     <div class="row small-up-2 medium-up-3">
-                        {{#each (lookupCategory AllCategory pagination.category )}}
-                        <br> {{@key}} @@@@@@@@@ {{this}}
+                        {{#each (lookup (lookupCategory AllCategory pagination.category ) 'children')}}
+                        <br>
                         <div class="column">
-                            <a href="{{this.metadata.slug}}">tieu de<i class="fa fa-angle-right "></i></a>
+                            <a href="{{this.href}}">{{metadata.title}}<i class="fa fa-angle-right "></i></a>
                         </div>
 
                         {{/each}}
