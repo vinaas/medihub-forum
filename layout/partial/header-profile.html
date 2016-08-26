@@ -1,33 +1,41 @@
 <header class="header boxShadowLess">
-  <div class="row align-justify align-middle">
+    <div class="row ">
 
-    <div class="columns">
-      <div class="header__container">
-        <div class="header__logo">
-          <a href="index.html" id="logo"></a>
+        <div class="columns">
+
+            <div class="top-bar">
+                <div class="top-bar-title">
+
+                    <div class="header__logo">
+                        <a href="index.html" id="logo"></a>
+                    </div>
+                </div>
+                <div id="responsive-menu">
+                    <div class="top-bar-right">
+                        <ul class="header__link clearList listInline">
+                            <li><a class="float-right linkGray header__link_drop" data-toggle="taikhoan-dropdown">Nguyễn Việt Hùng <i class="fa fa-angle-down"></i></a>
+                                <div class="dropdown-pane bottom" id="taikhoan-dropdown" data-dropdown data-hover="true"
+                                     data-hover-pane="true">
+                                    <ul class="clearList header__link_dropdown">
+                                        <li><a href="profile.html" class="linkGray"><i class="fa fa-user"></i> Tài khoản</a></li>
+                                        <li><a href="profile-save.html" class="linkGray"><i class="fa fa-comments-o"></i> Trao đổi</a></li>
+                                        <li><a href="profile-save.html" class="linkGray"><i class="fa fa-bookmark-o"></i> Đã lưu</a></li>
+                                        <li><a href="profile-save.html" class="linkGray"><i class="fa fa-heart"> </i> Yêu thích</a></li>
+                                        <li><a href="profile-info.html" class="linkGray"><i class="fa fa-cog"></i> Cài đặt</a></li>
+                                        <li><a href="index.html" class="linkGray"><i class="fa fa-sign-out"></i> Đăng xuất</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <span data-responsive-toggle="responsive-menu" class="show-for-small-only menu--toggle">
+                  <button class="menu-icon dark" type="button" data-toggle></button>
+                </span>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <div class="columns">
-      <ul class="header__link clearList listInline">
-        <li><a class="float-right linkGray header__link_drop" data-toggle="taikhoan-dropdown">Nguyễn Việt Hùng <i class="fa fa-angle-down"></i></a>
-          <div class="dropdown-pane bottom" id="taikhoan-dropdown" data-dropdown data-hover="true"
-               data-hover-pane="true">
-            <ul class="clearList header__link_dropdown">
-              <li><a href="profile.html" class="linkGray"><i class="fa fa-user"></i> Tài khoản</a></li>
-              <li><a href="profile-save.html" class="linkGray"><i class="fa fa-comments-o"></i> Trao đổi</a></li>
-              <li><a href="profile-save.html" class="linkGray"><i class="fa fa-bookmark-o"></i> Đã lưu</a></li>
-              <li><a href="profile-save.html" class="linkGray"><i class="fa fa-heart"> </i> Yêu thích</a></li>
-              <li><a href="profile-info.html" class="linkGray"><i class="fa fa-cog"></i> Cài đặt</a></li>
-              <li><a href="index.html" class="linkGray"><i class="fa fa-sign-out"></i> Đăng xuất</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-
 
     </div>
-
-  </div>
 </header>
+

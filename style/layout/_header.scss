@@ -1,5 +1,7 @@
 #logo {
-  @include retina('../images/logo.png', 3, 186px 33px, center center no-repeat);
+  //@include retina('../images/logo.png', 3, 186px 33px, center center no-repeat);
+  background: url('../images/logo.png') center center no-repeat;
+  background-size:186px 33px;
   width: 186px;
   height: 33px;
   display: block;
@@ -8,9 +10,7 @@
 .header{
     padding: 0;
     background: $white;
-  .row{
-    height: 60px;
-  }
+
 }
 
 .header__link{
@@ -40,9 +40,24 @@
   .dropdown-pane.is-open{
     opacity: 1;
   }
+
+  @include breakpoint(small down){
+    border-top: 1px solid $light-gray;
+    margin-top: 15px;
+    padding: 10px 0 0;
+    li{
+      display: block;
+      text-align: left;
+      padding: 10px 0;
+      a{
+        display: block;
+
+      }
+    }
+  }
 }
 .header__link_drop{
-  padding:22px 10px;
+  padding:2px 10px;
 }
 
 .header__link_dropdown {
@@ -67,4 +82,13 @@
     }
   }
 
+}
+#responsive-menu{
+  display: none;
+}
+.menu--toggle{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding: 15px;
 }

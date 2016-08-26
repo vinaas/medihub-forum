@@ -48,6 +48,7 @@ body {
   margin-bottom: 40px;
   position: relative;
   z-index: 2;
+  @include header-size(h1);
 }
 
 //end SEARCH SUGGEST

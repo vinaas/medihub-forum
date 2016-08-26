@@ -75,6 +75,10 @@
   color: $dark-gray;
   font-size: rem-calc(12);
   margin-bottom: 5px;
+  .label{
+    padding: 0.3rem 0.3rem;
+    font-size: 0.7rem;
+  }
 }
 .comment-meta{
   margin-bottom: 10px;

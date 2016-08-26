@@ -61,7 +61,8 @@ site.script = {
 
         // muốn concat đúng thứ tự thì phải define path
         // "bower_components/typeahead.js/dist/typeahead.jquery.min.js",
-        "bower_components/select2/dist/js/select2.min.js",
+        "asset/js/select2.js",
+        // "bower_components/select2/dist/js/select2.js",
         "bower_components/select2/dist/js/i18n/vi.js",
         "bower_components/ionrangeslider/js/ion.rangeSlider.min.js",
         "bower_components/magnific-popup/dist/jquery.magnific-popup.min.js",

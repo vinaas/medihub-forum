@@ -5,12 +5,12 @@
     });
     
     $(document).ready(function(){
-        init_fixed_bg(60);
+        // init_fixed_bg(60);
         init_sticky();
     });
     
     $(window).resize(function(){
-        init_fixed_bg(60);
+        // init_fixed_bg(60);
     });
 
 
@@ -117,8 +117,9 @@ $(function() {
 
     $(".select2Search").select2({
         placeholder: $(this).data('placeholder'),
+        allowDropup: false,
         language: "vi"
-    });
+    })
 
     $("#range_2").ionRangeSlider({
         type: "double",
@@ -212,8 +213,6 @@ $(function() {
 
 
 
-    
-
 
     var swiperNews = new Swiper('.newsRun', {
         slidesPerView: 'auto',
@@ -224,5 +223,4 @@ $(function() {
         speed: 2000
     });
 });
-
 
