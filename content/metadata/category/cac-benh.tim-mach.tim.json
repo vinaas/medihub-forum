@@ -1,0 +1,11 @@
+{
+    "sortBy": "date",
+    "reverse": false,
+    "metadata": {"title":"Tim", "mo_ta":"các câu hỏi bệnh tim"},
+    "displayName": "Các bệnh.tim mạch.tim",
+    "perPage": 10,
+    "noPageOne": true,
+    "layout": "forum-chuyende.category.html",
+    "first": ":categoryPath/index.html",
+    "path": ":categoryPath/page/:num/index.html"
+}

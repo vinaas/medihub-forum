@@ -73,8 +73,8 @@
   <div class="small-12 column">
     <div class="newsRun swiper-container">
       <div class="swiper-wrapper">
-
-        {{#each (first news 10)}}
+        {{#each AllCategory.root }} {{@key}} {{this}} {{/each}}
+        {{#each (lookup ( lookupCategory AllCategory 'root') 'files')}}
         <div class="swiper-slide">
           <div class=" newsRun__item boxShadowLess clearfix">
             <a href="{{this.link}}">
