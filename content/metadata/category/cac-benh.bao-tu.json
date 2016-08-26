@@ -1,7 +1,7 @@
 {
     "sortBy": "date",
     "reverse": false,
-    "metadata": {"mo_ta":"Bao tử"},
+    "metadata": {"title":"Bao tử", "mo_ta":"Các câu hỏi liên quan đến bao tử"},
     "displayName": "các bệnh.bao tử",
     "perPage": 10,
     "noPageOne": true,
