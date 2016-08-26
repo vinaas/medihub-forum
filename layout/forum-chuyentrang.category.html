@@ -13,7 +13,7 @@
                     <h4 class="title">{{metadata.title}}</h4>
 
                     <ul class="breadcrumbs">
-                        <li><a >Hỏi chuyên gia</a></li>
+                        <li><a>Hỏi chuyên gia</a></li>
                         <li>{{metadata.title}}</li>
                     </ul>
                 </div>
@@ -63,24 +63,23 @@
                     Số bài viết
                 </div>
             </li>
- {{#each (lookupCategory  AllCategory pagination.category) }}
-        <li class="forum__table--row normal space">
-          <div class="forum__table--content">
-            <a href="{{this.metadata.slug}}" class="title">
-              <h6 class="mb0">{{this.metadata.title}}</h6>
-              {{this.metadata.mo_ta}}
-            </a>
+            {{#each (lookupCategory AllCategory pagination.category) }} {{@key}} @@@@@@@@ <br/> {{this}} {{/each}} {{#each (lookup (lookupCategory AllCategory pagination.category) 'children') }}
+            <li class="forum__table--row normal space">
+                <div class="forum__table--content">
+                    <a href="{{this.metadata.slug}}" class="title">
+                        <h6 class="mb0">{{this.metadata.title}}</h6> {{this.metadata.mo_ta}}
+                    </a>
 
-          </div>
-          <div class="forum__table--view text-center">
+                </div>
+                <div class="forum__table--view text-center">
 
-            {{ length (lookup AllCategory this.category) }}
-          </div>
-          <div class="forum__table--date text-center">
-            {{this.files.length}}
-          </div>
-        </li>
-    {{/each}}
+                    {{ length (lookup AllCategory this.category) }}
+                </div>
+                <div class="forum__table--date text-center">
+                    {{this.files.length}}
+                </div>
+            </li>
+            {{/each}}
         </ul>
 
 

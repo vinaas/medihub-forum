@@ -1,7 +1,7 @@
 {
     "sortBy": "date",
     "reverse": false,
-    "metadata": {},
+    "metadata": {"mo_ta":"Bao tử"},
     "displayName": "các bệnh.bao tử",
     "perPage": 10,
     "noPageOne": true,
