@@ -1,7 +1,7 @@
 {
     "sortBy": "date",
     "reverse": false,
-    "metadata": {},
+    "metadata": {"title":"Thần kinh", "mo_ta":"Các bênh liên quan đến hệ thần kinh"},
     "displayName": "các bệnh.thần kinh",
     "perPage": 10,
     "noPageOne": true,
