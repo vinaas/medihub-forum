@@ -12,7 +12,7 @@
     "phan_hoi": 345,
     "yeu_thich": 3,
     "nguoi_dang": "quangdj",
-    "hinh_anh": ""
+    "hinh_anh": "img/hinh1.jpg"
 }
 ---
 Hôm nay đưa con mình đi bệnh viện Nhi khám,bác sĩ chẩn đoán bị bệnh đa hồng cầu.Bệnh này theo mình tìm hiểu khá nguy hiểm,các cha mẹ có ai biết về bệnh này vào đây chia sẻ thông tin nhé.
