@@ -10,7 +10,11 @@
   position: relative;
   text-align: center;
   color: $secondary-color;
+  @include breakpoint(small down){
+    padding: 30px 15px;
+  }
 }
+
 
 .popup--title{
   color: $dark-gray;

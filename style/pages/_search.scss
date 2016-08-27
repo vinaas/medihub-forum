@@ -66,12 +66,137 @@
     > div {
       float: left;
     }
-   
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1000px) {
+    .searchForm{
+      width: 800px;
+    }
+    .searchForm--1 {
 
+      width: 135px;
+    }
+
+    .searchForm--2 {
+      width: 240px;
+    }
+
+    .searchForm--3 {
+      width: 140px;
+    }
+
+    .searchForm--4 {
+      width: 140px;
+
+    }
+
+    .searchForm--5 {
+      margin-left: 10px;
+    }
+
+    .searchForm--button {
+      font-size: rem-calc(14px);
+      padding: 1em 1em;
+      i{
+        vertical-align: -14%;
+      }
+    }
+
+    .select2-container {
+      width: 100% !important;
+      .select2-selection--single {
+        font-size: rem-calc(14px);
+        border-right-color: $light-gray !important;
+        height: 45px;
+        .select2-selection__rendered {
+          line-height: 28px;
+        }
+      }
+    }
   }
+
+
+  @media screen and (max-width: 850px) {
+    .searchForm{
+      width: 600px;
+    }
+    .searchForm--1 {
+
+      width: 50%;
+    }
+
+    .searchForm--2 {
+      width: 50%;
+    }
+
+    .searchForm--3 {
+      width: 40%;
+    }
+
+    .searchForm--4 {
+      width: 40%;
+
+    }
+    .searchForm--5 {
+      margin-left: 0;
+      width: 20%;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .searchForm{
+      width: 500px;
+    }
+    .searchForm--1 {
+
+      width: 50%;
+    }
+
+    .searchForm--2 {
+      width: 50%;
+    }
+
+    .searchForm--3 {
+      width: 35%;
+    }
+
+    .searchForm--4 {
+      width: 35%;
+
+    }
+    .searchForm--5 {
+      margin-left: 0;
+      width: 30%;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .searchForm{
+      width: 300px;
+    }
+    .searchForm--1 {
+
+      width: 100%;
+    }
+
+    .searchForm--2 {
+      width: 100%;
+    }
+
+    .searchForm--3 {
+      width: 50%;
+    }
+
+    .searchForm--4 {
+      width: 50%;
+
+    }
+    .searchForm--5 {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+
 
   .searchForm {
    
