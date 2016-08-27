@@ -52,5 +52,13 @@
         "type": "Object",
         "validations": [],
         "required": false
+    },
+    {
+        "name": "slug",
+        "displayName": "slug",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": true,
+        "required": false
     }
 ]

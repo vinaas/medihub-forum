@@ -28,7 +28,7 @@
         "slug1": "-ong-mach-vanh-la-gi-chuc-nang-cua-no-ra-sao",
         "slug2": "bai-tap-mat-cho-benh-nhan-loan-thi",
         "slug3": "benh-tim-co-di-truyen-khong",
-        "slug4": "-ong-mach-vanh-la-gi-chuc-nang-cua-no-ra-sao"
+        "slug4": "bai-tap-mat-cho-benh-nhan-loan-thi"
     }
 }
 ---
