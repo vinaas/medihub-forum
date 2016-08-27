@@ -6,10 +6,10 @@ var moment = require('moment');
 
 module.exports = function (Handlebars) {
     Handlebars.registerHelper(HandlebarsLayouts(Handlebars));
-  //  Helpers({handlebars: Handlebars});
-    ['array', 'code', 'collection', 'comparison', 'date', 'fs', 'html', 'i18n', 'inflection', 'logging', 'markdown', 'match', 'math', 'misc', 'number', 'path', 'string', 'url'].forEach(function(name) {
+    //  Helpers({handlebars: Handlebars});
+    ['array', 'code', 'collection', 'comparison', 'date', 'fs', 'html', 'i18n', 'inflection', 'logging', 'markdown', 'match', 'math', 'misc', 'number', 'path', 'string', 'url'].forEach(function (name) {
         Helpers[name]({
-        handlebars: Handlebars
+            handlebars: Handlebars
         });
     });
 
@@ -22,24 +22,24 @@ module.exports = function (Handlebars) {
         else
             return '{}';
     });
-    Handlebars.registerHelper('ifCond', function(v1, v2, options) {
-        if(v1 === v2) {
-          return options.fn(this);
+    Handlebars.registerHelper('ifCond', function (v1, v2, options) {
+        if (v1 === v2) {
+            return options.fn(this);
         }
         return options.inverse(this);
-      });
+    });
 
     Handlebars.registerHelper('json', function (obj) {
         return JSON.stringify(obj);
     });
-    
-     Handlebars.registerHelper('toString', function (obj) {
+
+    Handlebars.registerHelper('toString', function (obj) {
         return obj.toString();
     });
     Handlebars.registerHelper('removeIndex', function (url) {
         return url.replace('index.html', '');
     });
-    
+
     Handlebars.registerHelper('lookupCategory', function (obj, childPath) {
         var chunks = childPath.split('.');
         var count = 0;
@@ -65,14 +65,18 @@ module.exports = function (Handlebars) {
         return node;
     });
 
+    Handlebars.registerHelper('indexOfFiles', function (files, slug) {
+        return files.filter(x => x.slug == slug)[0] || null;
+    });
+
     /**
      * Lookup nested object
      */
     Handlebars.registerHelper('lookupEx', function (obj, propertyPath) {
         var props = propertyPath.split('.');
         var current = obj;
-        while(props.length) {
-            if(typeof current !== 'object') return undefined;
+        while (props.length) {
+            if (typeof current !== 'object') return undefined;
             current = current[props.shift()];
         }
         return current;
