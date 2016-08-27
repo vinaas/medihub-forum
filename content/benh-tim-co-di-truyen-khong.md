@@ -12,7 +12,7 @@
     "phan_hoi": 22,
     "yeu_thich": 12,
     "nguoi_dang": "khanh",
-    "hinh_anh": ""
+    "hinh_anh": "img/hinh3.jpg"
 }
 ---
 Bệnh tim có di truyền không? Chồng mới cưới của em gái tôi bị bệnh hở van hai lá do thấp tim, vậy cháu tôi có thể bị bệnh tim không?
