@@ -12,7 +12,7 @@
     "phan_hoi": "",
     "yeu_thich": "",
     "nguoi_dang": "Tung",
-    "hinh_anh": "img/download (2).jpg"
+    "hinh_anh": "img/hinh2.jpg"
 }
 ---
 Tôi có một cháu 5 tháng tuổi. Mắt cháu đỏ ghèn nhiều, đi khám ở Bệnh viện Nhi Đồng bác sĩ chẩn đoán là viêm kết mạc, cho uống thuốc một tuần thì khỏi nhưng thời gian sau tái lại. Mới sáng ngủ dậy mắt cháu hay bị sưng. Xin hỏi bác sĩ cách phòng bệnh đau mắt cho trẻ như thế nào để hạn chế tình trạng đau mắt. Tôi xin cám ơn.
