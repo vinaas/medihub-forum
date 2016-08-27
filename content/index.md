@@ -27,7 +27,7 @@
     "slideShow": {
         "slug1": "-ong-mach-vanh-la-gi-chuc-nang-cua-no-ra-sao",
         "slug2": "bai-tap-mat-cho-benh-nhan-loan-thi",
-        "slug3": "-ong-mach-vanh-la-gi-chuc-nang-cua-no-ra-sao",
+        "slug3": "phong-ngua-au-mat-o",
         "slug4": "-ong-mach-vanh-la-gi-chuc-nang-cua-no-ra-sao"
     }
 }
