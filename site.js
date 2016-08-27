@@ -172,8 +172,8 @@ site.metalsmith = {
          'collections.thanh_vien':    {
             'perPage':   12,
             'layout':    'users.layout.html',
-            'first':     'blog/index.html',
-            'path':      'blog/:num/index.html',
+            'first':     'thanh_vien/index.html',
+            'path':      'thanh_vien/:num/index.html',
             'noPageOne': true,
             'pageMetadata': {
               'title': 'Title of metalsmith-pagination file site.js'
