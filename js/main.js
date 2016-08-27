@@ -5,12 +5,20 @@
     });
     
     $(document).ready(function(){
+<<<<<<< HEAD
         // init_fixed_bg(60);
+=======
+        init_fixed_bg(60);
+>>>>>>> 954d059f7553c34cdaa5408d824b1f77a8758814
         init_sticky();
     });
     
     $(window).resize(function(){
+<<<<<<< HEAD
         // init_fixed_bg(60);
+=======
+        init_fixed_bg(60);
+>>>>>>> 954d059f7553c34cdaa5408d824b1f77a8758814
     });
 
 
@@ -213,6 +221,11 @@ $(function() {
 
 
 
+<<<<<<< HEAD
+=======
+    
+
+>>>>>>> 954d059f7553c34cdaa5408d824b1f77a8758814
 
     var swiperNews = new Swiper('.newsRun', {
         slidesPerView: 'auto',
