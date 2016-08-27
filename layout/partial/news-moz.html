@@ -16,7 +16,7 @@
   </div>
    {{/each}}
   
- {{#each (last  (lookup ( lookupCategory AllCategory 'cac-benh.mat') 'files') 1 )}}
+ {{#each (last  (lookup ( lookupCategory AllCategory 'cac-benh') 'files') 1 )}}
   <div class="newsMoz__item medium">
     <div class="newsMoz__wrap">
       <div class="newsMoz__img" style="background-image: url({{hinh_anh}})">
@@ -33,7 +33,7 @@
 
 
   <div class="small2">
-    {{#each (first (lookup ( lookupCategory AllCategory 'cac-benh.mat') 'files') 2 )}}
+    {{#each (last (lookup ( lookupCategory AllCategory 'cac-benh.mat') 'files') 2 )}}
     <div class="newsMoz__item small">
       <div class="newsMoz__wrap">
         <div class="newsMoz__img" style="background-image: url({{hinh_anh}})">
