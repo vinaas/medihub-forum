@@ -12,7 +12,7 @@
     "phan_hoi": 234,
     "yeu_thich": 3456,
     "nguoi_dang": "Tung",
-    "hinh_anh": "img/tuyet-chieu-tri-dau-mat-do-cuc-huu-hieu-bang-khoai-tay-mat-ong.jpeg"
+    "hinh_anh": "img/download (3).jpg"
 }
 ---
 nôi dung đau mắt hội.

@@ -1,63 +1,58 @@
 <div class="newsMoz">
-  <div class="newsMoz__item big">
+   {{#each (first (lookup ( lookupCategory AllCategory 'cac-benh') 'files') 1 )}}
+   <div class="newsMoz__item big">
     <div class="newsMoz__wrap">
-      <div class="newsMoz__img" style="background-image: url(http://demo.tagdiv.com/newspaper_animals/wp-content/uploads/2015/11/371-534x462.jpg)">
+      <div class="newsMoz__img" style="background-image: url({{hinh_anh}})">
         <a href="" class="newsMoz__url"></a>
       </div>
       <div class="newsMoz__title">
         <a href="" class="link"></a>
-        <span class="label">MẮT</span>
-        <h3 class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        <span class="label"> {{ category }}</span>
+        <h3 class="txt">{{title}}</h3>
         <div class="date"><i class="fa fa-clock-o"></i> 1 tháng 5, 2017</div>
 
       </div>
     </div>
   </div>
-
+   {{/each}}
+  
+ {{#each (last  (lookup ( lookupCategory AllCategory 'cac-benh.mat') 'files') 1 )}}
   <div class="newsMoz__item medium">
     <div class="newsMoz__wrap">
-      <div class="newsMoz__img" style="background-image: url(http://demo.tagdiv.com/newspaper_magazine/wp-content/uploads/2015/09/15-534x462.jpg)">
+      <div class="newsMoz__img" style="background-image: url({{hinh_anh}})">
         <a href="" class="newsMoz__url"></a>
       </div>
       <div class="newsMoz__title">
         <a href="" class="link"></a>
         <span class="label">MẮT</span>
-        <h3 class="txt">Eurobike Gallery: Canyon’s full-suspension road bike</h3>
+        <h3 class="txt">{{title}}</h3>
       </div>
     </div>
   </div>
+{{/each}}
+
 
   <div class="small2">
+    {{#each (first (lookup ( lookupCategory AllCategory 'cac-benh.mat') 'files') 2 )}}
     <div class="newsMoz__item small">
       <div class="newsMoz__wrap">
-        <div class="newsMoz__img" style="background-image: url(http://demo.tagdiv.com/newspaper_magazine/wp-content/uploads/2015/09/9-265x198.jpg)">
+        <div class="newsMoz__img" style="background-image: url({{hinh_anh}})">
           <a href="" class="newsMoz__url"></a>
         </div>
 
         <div class="newsMoz__title">
           <a href="" class="link"></a>
           <span class="label">MẮT</span>
-          <h3 class="txt">Skipper again boosted for first England goal after win</h3>
+          <h3 class="txt">{{title}}</h3>
         </div>
 
       </div>
     </div>
 
-    <div class="newsMoz__item small">
-      <div class="newsMoz__wrap">
-        <div class="newsMoz__img" style="background-image: url(http://demo.tagdiv.com/newspaper_magazine/wp-content/uploads/2015/09/61-265x198.jpg)">
-          <a href="" class="newsMoz__url"></a>
-        </div>
-
-        <div class="newsMoz__title">
-          <a href="" class="link"></a>
-          <span class="label">THỂ THAO</span>
-          <h3 class="txt">Three players Arsenal almost signed this summer</h3>
-        </div>
-      </div>
-    </div>
-
+    
+{{/each}}
   </div>
+  
 
 
 </div>
