@@ -1,8 +1,9 @@
 ---json
 {
     "title": "Index",
+    "slug": "index",
     "description": "Index Page",
-    "layout": "index-design.html",
+    "layout": "index.html",
     "permalink" : false,
     "isHomepage" : "index",
     "rivetData" : {
@@ -12,7 +13,14 @@
         "tinh" : "",
         "quan" : ""
       }
-    }
+    },
+    "bai_viet_noi_bat":[
+      "slug1","slug2","slug3","slug4"
+    ],
+    "dang_xem":1000,
+    "hoi":1000,
+    "giao_luu":200,
+    "slideShow":{"hinh_to":"-ong-mach-vanh-la-gi-chuc-nang-cua-no-ra-sao", "hinh_vua":"-ong-mach-vanh-la-gi-chuc-nang-cua-no-ra-sao", "hinh_nho":["-ong-mach-vanh-la-gi-chuc-nang-cua-no-ra-sao","-ong-mach-vanh-la-gi-chuc-nang-cua-no-ra-sao"] }
 }
 ---
 
