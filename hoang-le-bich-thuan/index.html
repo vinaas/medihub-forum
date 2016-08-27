@@ -16,32 +16,43 @@
 
 
 </head>
-<body data-function="">
+<body data-function="" class="">
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <header class="header boxShadowLess">
-    <div class="row align-justify align-middle">
+    <div class="row ">
 
         <div class="columns">
-            <div class="header__container">
-                <div class="header__logo">
-                    <a href="index.html" id="logo"></a>
+
+            <div class="top-bar">
+                <div class="top-bar-title">
+
+                    <div class="header__logo">
+                        <a href="index.html" id="logo"></a>
+                    </div>
                 </div>
-            </div>
-        </div>
+                <div id="responsive-menu">
+                    <div class="top-bar-right">
+                        <ul class="header__link clearList listInline">
+                            <li><a href="gioithieu.html" class="linkGray">Về chúng tôi</a></li>
+                            <li><a href="#signin-popup" class="popup-normal linkGray">Đăng ký</a></li>
+                            <li><a href="#register-popup" class="popup-normal button">Đăng nhập</a></li>
+                        </ul>
+                    </div>
 
-        <div class="columns">
-            <ul class="header__link clearList listInline">
-                <li><a href="gioithieu.html" class="linkGray">Về chúng tôi</a></li>
-                <li><a href="#signin-popup" class="popup-normal linkGray">Đăng ký</a></li>
-                <li><a href="#register-popup" class="popup-normal button">Đăng nhập</a></li>
-            </ul>
+                </div>
+                <span data-responsive-toggle="responsive-menu" class="show-for-small-only menu--toggle">
+                  <button class="menu-icon dark" type="button" data-toggle></button>
+                </span>
+            </div>
         </div>
 
     </div>
 </header>
+
+
 
 
 <div class="row">
@@ -88,6 +99,12 @@
             <option value="truong-thi-thuy-trinh" > BS Trương Thị Thùy Trinh </option>
             <option value="nha-khoa-hoa-hong" > Nha Khoa Hoa Hồng </option>
             <option value="nha-khoa-tham-my-ava" > Nha khoa Thẩm mỹ Ava </option>
+            <option value="bac-si-pham-thi-minh-hong" > Bác sĩ Phạm Thị Minh Hồng </option>
+            <option value="phong-kham-hoan-my-sai-gon" > Phòng khám Hoàn Mỹ Sài Gòn </option>
+            <option value="le-duc-tho" > Bác sĩ  Lê Đức Thọ </option>
+            <option value="bui-thi-van-huong" > Bác sĩ Bùi Thị Vân Hương </option>
+            <option value="bac-si-pham-tho-tuan-anh" > Bác sĩ Phạm Thọ Tuấn Anh </option>
+            <option value="mat" >Mắt</option>
         </select>
       </div>
       <div class="searchForm--3">
@@ -105,6 +122,8 @@
               <option value="quan-1">Quận 1</option>
               <option value="quan-2">Quận 2</option>
               <option value="quan-10">Quận 10</option>
+              <option value="quan-11">Quận 11</option>
+              <option value="quan-tan-binh">Quận Tân Bình</option>
               <option value="quan-ba-dinh">Quận Ba Đình</option>
               <option value="quan-hai-ba-trung">Quận Hai Bà Trưng</option>
         </select>
@@ -200,7 +219,7 @@
 
         <div class="article--column_1">
           <div class="article--thumbnail">
-            <img src="http://nyulangone.org/images/doctors/f/fisher/1306860663/jason-c-fisher-thumb.jpg" alt="">
+            <img src="https://vicare-prod.s3.amazonaws.com/images/21_04_2016_09_35_23_221009.jpeg" alt="">
           </div>
         </div>
 

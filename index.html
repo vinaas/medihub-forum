@@ -16,32 +16,43 @@
 
 
 </head>
-<body data-function="">
+<body data-function="" class="index">
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <header class="header boxShadowLess">
-    <div class="row align-justify align-middle">
+    <div class="row ">
 
         <div class="columns">
-            <div class="header__container">
-                <div class="header__logo">
-                    <a href="index.html" id="logo"></a>
+
+            <div class="top-bar">
+                <div class="top-bar-title">
+
+                    <div class="header__logo">
+                        <a href="index.html" id="logo"></a>
+                    </div>
                 </div>
-            </div>
-        </div>
+                <div id="responsive-menu">
+                    <div class="top-bar-right">
+                        <ul class="header__link clearList listInline">
+                            <li><a href="gioithieu.html" class="linkGray">Về chúng tôi</a></li>
+                            <li><a href="#signin-popup" class="popup-normal linkGray">Đăng ký</a></li>
+                            <li><a href="#register-popup" class="popup-normal button">Đăng nhập</a></li>
+                        </ul>
+                    </div>
 
-        <div class="columns">
-            <ul class="header__link clearList listInline">
-                <li><a href="gioithieu.html" class="linkGray">Về chúng tôi</a></li>
-                <li><a href="#signin-popup" class="popup-normal linkGray">Đăng ký</a></li>
-                <li><a href="#register-popup" class="popup-normal button">Đăng nhập</a></li>
-            </ul>
+                </div>
+                <span data-responsive-toggle="responsive-menu" class="show-for-small-only menu--toggle">
+                  <button class="menu-icon dark" type="button" data-toggle></button>
+                </span>
+            </div>
         </div>
 
     </div>
 </header>
+
+
 
 
 
@@ -119,6 +130,12 @@
               <option value="truong-thi-thuy-trinh" > BS Trương Thị Thùy Trinh </option>
               <option value="nha-khoa-hoa-hong" > Nha Khoa Hoa Hồng </option>
               <option value="nha-khoa-tham-my-ava" > Nha khoa Thẩm mỹ Ava </option>
+              <option value="bac-si-pham-thi-minh-hong" > Bác sĩ Phạm Thị Minh Hồng </option>
+              <option value="phong-kham-hoan-my-sai-gon" > Phòng khám Hoàn Mỹ Sài Gòn </option>
+              <option value="le-duc-tho" > Bác sĩ  Lê Đức Thọ </option>
+              <option value="bui-thi-van-huong" > Bác sĩ Bùi Thị Vân Hương </option>
+              <option value="bac-si-pham-tho-tuan-anh" > Bác sĩ Phạm Thọ Tuấn Anh </option>
+              <option value="mat" >Mắt</option>
           </select>
         </div>
         <div class="searchForm--3">
@@ -136,6 +153,8 @@
                 <option value="quan-1">Quận 1</option>
                 <option value="quan-2">Quận 2</option>
                 <option value="quan-10">Quận 10</option>
+                <option value="quan-11">Quận 11</option>
+                <option value="quan-tan-binh">Quận Tân Bình</option>
                 <option value="quan-ba-dinh">Quận Ba Đình</option>
                 <option value="quan-hai-ba-trung">Quận Hai Bà Trưng</option>
           </select>
@@ -168,27 +187,12 @@
 
 </div>
 
-<!--<div class="medihubApp">
 
-  <div class="row">
-    <div class="small-12 columns text-center">
-      <h3>Tìm mọi lúc mọi nơi với Medihub App</h3>
-
-      <h5 class="fontLight">Hơn 20 ngàn người đã và đang sử dụng medihub app</h5>
-
-      <ul class="listInline clearList medihubApp_button">
-        <li><a href=""><img src="images/icon-appStore.png" alt=""></a></li>
-        <li><a href=""><img src="images/icon-googlePlay.png" alt=""></a></li>
-      </ul>
-
-    </div>
-  </div>
-</div>-->
 
 
 <!--FORUM HOMEPAGE-->
-
-<nav class="forumHome__nav boxShadowLess">
+<div class="forumFixed">
+  <nav class="forumHome__nav boxShadowLess">
   <h4 class="text-center forumHome__nav--logo"><a href="forum.html"><i class="fa fa-comments-o"></i> DIỄN ĐÀN</a></h4>
 </nav>  
 
@@ -362,65 +366,70 @@
     </div>
 
     <div class="newsMoz">
-      <div class="newsMoz__item big">
+       <div class="newsMoz__item big">
         <div class="newsMoz__wrap">
-          <div class="newsMoz__img" style="background-image: url(http://demo.tagdiv.com/newspaper_animals/wp-content/uploads/2015/11/371-534x462.jpg)">
+          <div class="newsMoz__img" style="background-image: url(img/hinh3.jpg)">
             <a href="" class="newsMoz__url"></a>
           </div>
           <div class="newsMoz__title">
             <a href="" class="link"></a>
-            <span class="label">MẮT</span>
-            <h3 class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+            <span class="label"> cac-benh.mat.đau-mat-đo</span>
+            <h3 class="txt">Bệnh đau mắt đỏ kéo dài bao lâu thì khỏi?</h3>
             <div class="date"><i class="fa fa-clock-o"></i> 1 tháng 5, 2017</div>
     
           </div>
         </div>
       </div>
-    
+      
       <div class="newsMoz__item medium">
         <div class="newsMoz__wrap">
-          <div class="newsMoz__img" style="background-image: url(http://demo.tagdiv.com/newspaper_magazine/wp-content/uploads/2015/09/15-534x462.jpg)">
+          <div class="newsMoz__img" style="background-image: url(img/hinh4.jpg)">
             <a href="" class="newsMoz__url"></a>
           </div>
           <div class="newsMoz__title">
             <a href="" class="link"></a>
             <span class="label">MẮT</span>
-            <h3 class="txt">Eurobike Gallery: Canyon’s full-suspension road bike</h3>
+            <h3 class="txt"> Động mạch vành là gì? Chức năng của nó ra sao?</h3>
           </div>
         </div>
       </div>
     
+    
       <div class="small2">
         <div class="newsMoz__item small">
           <div class="newsMoz__wrap">
-            <div class="newsMoz__img" style="background-image: url(http://demo.tagdiv.com/newspaper_magazine/wp-content/uploads/2015/09/9-265x198.jpg)">
+            <div class="newsMoz__img" style="background-image: url(img/download.jpg)">
               <a href="" class="newsMoz__url"></a>
             </div>
     
             <div class="newsMoz__title">
               <a href="" class="link"></a>
               <span class="label">MẮT</span>
-              <h3 class="txt">Skipper again boosted for first England goal after win</h3>
+              <h3 class="txt">Bài tập mắt cho bệnh nhân loạn thị</h3>
             </div>
     
           </div>
         </div>
     
+        
         <div class="newsMoz__item small">
           <div class="newsMoz__wrap">
-            <div class="newsMoz__img" style="background-image: url(http://demo.tagdiv.com/newspaper_magazine/wp-content/uploads/2015/09/61-265x198.jpg)">
+            <div class="newsMoz__img" style="background-image: url(img/hinh1.jpg)">
               <a href="" class="newsMoz__url"></a>
             </div>
     
             <div class="newsMoz__title">
               <a href="" class="link"></a>
-              <span class="label">THỂ THAO</span>
-              <h3 class="txt">Three players Arsenal almost signed this summer</h3>
+              <span class="label">MẮT</span>
+              <h3 class="txt">câu hỏi đau mắt hột ?</h3>
             </div>
+    
           </div>
         </div>
     
+        
       </div>
+      
     
     
     </div>
@@ -579,7 +588,53 @@
       <div class="portlet boxShadow">
         <div class="porlet--body">
 
-          <div class="row">
+          <div class="row align-justify align-middle">
+            
+            <div class="column small-12 large-8 text-center">
+
+              <div class="row align-justify align-middle">
+
+                  <div class="column small-4 text-center">
+
+                      <div class="forum__number">
+                        <div class="txt">Đang xem</div>
+                        <div class="num dangxem">256 <i class="fa fa-users"></i></div>
+                    </div>
+                      
+                  </div>
+
+                  <div class="column small-4 text-center">
+
+                    <div class="forum__number">
+                          <div class="txt">Hỏi</div>
+                          <div class="num hoi">8735 <i class="fa fa-question-circle"></i></div>
+                      </div>
+                    
+                  </div>
+                  <div class="column small-4 text-center">
+
+                    <div class="forum__number last">
+                        <div class="txt">Trao đổi</div>
+                        <div class="num giaoluu">915 <i class="fa fa-comments-o"></i></div>
+                    </div>
+                    
+                  </div>
+
+              </div>
+              
+            </div>
+          
+
+
+
+            <div class="column small-12 medium-12 large-4 text-center">
+
+               <a href="forum.html" class="button mb0 ">Vào xem diễn đàn &nbsp; <i class="fa fa-angle-right"></i></a>
+              
+            </div>
+          </div>
+
+          <!--<div class="row">
             <div class="medium-8 small-12 column align-self-middle">
 
                     <div class="forum__number">
@@ -593,8 +648,8 @@
                     </div>
 
                     <div class="forum__number last">
-                        <div class="txt">Giao lưu</div>
-                        <div class="num giaoluu">915 <i class="fa fa-users"></i></div>
+                        <div class="txt">Trao đổi</div>
+                        <div class="num giaoluu">915 <i class="fa fa-comments-o"></i></div>
                     </div>
 
             </div>
@@ -603,7 +658,7 @@
               <a href="forum.html" class="button expanded mb0">Vào xem diễn đàn &nbsp;  <i class="fa fa-angle-right "></i></a>
 
             </div>
-          </div>
+          </div>-->
         </div>
     </div>
 
@@ -616,12 +671,12 @@
             </div>
 
             <div class="porlet--body">
-              <div class="row">
+              <div class="row collapse ">
                 <div class="shrink columns">
-                  <img src="images/paper-note.png" width="50" alt="" style="margin-top: 5px;">
+                  <img src="images/paper-note.png" width="55" alt="" style=" margin: 5px 9px 0 15px">
                   </div>
                 <div class="columns">
-                  <p>Bạn có thể đặt câu hỏi với các bác sĩ và trao đổi thông tin với các thành viên khác trên diễn đàn.</p>
+                  <p>Bạn có thể đặt câu hỏi với các chuyên gia, các bác sĩ, và trao đổi thông tin với các thành viên khác trên diễn đàn.</p>
                   
                 </div>
               </div>
@@ -629,7 +684,7 @@
             </div>
 
             <div class="text-center button-absolute">
-              <a href="forum.html" class="button mb20">Viết lên diễn đàn</a>
+              <a href="forum.html" class="button mb20"><i class="fa fa-edit"></i> Viết lên diễn đàn </a>
             </div>
         </div>
       </div>
@@ -647,7 +702,7 @@
             </div>
 
             <div class="text-center button-absolute">
-              <a href="forum.html" class="button mb20">Tìm trên diễn đàn</a>
+              <a href="forum.html" class="button mb20"><i class="fa fa-search"></i> Tìm trên diễn đàn</a>
             </div>
         </div>
       </div>
@@ -656,6 +711,27 @@
 
   </div>
 </div>
+
+
+<div class="medihubApp">
+
+  <div class="row">
+    <div class="small-12 columns text-center">
+      <h3>Tìm mọi lúc mọi nơi với Medihub App</h3>
+
+      <h5 class="fontLight">Hơn 20 ngàn người đã và đang sử dụng medihub app</h5>
+
+      <ul class="listInline clearList medihubApp_button">
+        <li><a href=""><img src="images/icon-appStore.png" alt=""></a></li>
+        <li><a href=""><img src="images/icon-googlePlay.png" alt=""></a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+  
+</div>
+
 
 <!--end FORUM HOMEPAGE-->
 

@@ -1,3 +1,80 @@
+(function($){
+    "use strict"; // Start of use strict
+    $(window).load(function(){
+        
+    });
+    
+    $(document).ready(function(){
+        // init_fixed_bg(60);
+        init_sticky();
+    });
+    
+    $(window).resize(function(){
+        // init_fixed_bg(60);
+    });
+
+
+    $(".post__write").click(function(){
+        var $this = $(this);
+        if($this.hasClass("active")){
+            return false;
+        }else{
+            $this.addClass("active");
+        }
+        
+
+        var txtarea = $("#post__write--content textarea");
+        txtarea.focus();
+
+         txtarea.focusout(function(){
+
+             if (!txtarea.val()) {
+                $this.removeClass("active");
+            }
+
+            
+        });
+
+        
+    });
+
+
+    /*Reply comments*/
+    $(".reply-comment-btn").click(function (e) {
+        e.preventDefault();
+        $(this).parent().children(".comment-replay").slideToggle("fast");
+    });
+
+/*End reply comments*/
+
+
+})(jQuery); // End of use strict
+
+function init_fixed_bg(headerHeight){
+     if ($(window).width() > 1024) {
+         var heroHeight = $(".mainSearch").outerHeight() + headerHeight; // Add header height
+        $("body").addClass("fixed");
+        $(".forumFixed").css("margin-top", heroHeight + "px");
+
+         
+     } else{
+         $("body").removeClass("fixed");
+         $(".forumFixed").css("margin-top", "0px");
+     }
+}
+
+function init_sticky(){
+    if ($(window).width() > 1024) {
+        $("#mapView").sticky({topSpacing:80, bottomSpacing: 415});
+        $(".searchFilter .searchForm").sticky({topSpacing:0});
+
+        $(".forumHome__nav").sticky({topSpacing:0});
+     } 
+}
+
+
+
+
 var swiperBg;
 
 var swiperGallery;
@@ -40,8 +117,9 @@ $(function() {
 
     $(".select2Search").select2({
         placeholder: $(this).data('placeholder'),
+        allowDropup: false,
         language: "vi"
-    });
+    })
 
     $("#range_2").ionRangeSlider({
         type: "double",
@@ -135,9 +213,6 @@ $(function() {
 
 
 
-    $("#mapView").sticky({topSpacing:80, bottomSpacing: 415});
-    $(".searchFilter .searchForm").sticky({topSpacing:0});
-
 
     var swiperNews = new Swiper('.newsRun', {
         slidesPerView: 'auto',
@@ -148,5 +223,4 @@ $(function() {
         speed: 2000
     });
 });
-
 

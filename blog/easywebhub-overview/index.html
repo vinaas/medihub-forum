@@ -16,32 +16,43 @@
 
 
 </head>
-<body data-function="">
+<body data-function="" class="">
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <header class="header boxShadowLess">
-    <div class="row align-justify align-middle">
+    <div class="row ">
 
         <div class="columns">
-            <div class="header__container">
-                <div class="header__logo">
-                    <a href="index.html" id="logo"></a>
+
+            <div class="top-bar">
+                <div class="top-bar-title">
+
+                    <div class="header__logo">
+                        <a href="index.html" id="logo"></a>
+                    </div>
                 </div>
-            </div>
-        </div>
+                <div id="responsive-menu">
+                    <div class="top-bar-right">
+                        <ul class="header__link clearList listInline">
+                            <li><a href="gioithieu.html" class="linkGray">Về chúng tôi</a></li>
+                            <li><a href="#signin-popup" class="popup-normal linkGray">Đăng ký</a></li>
+                            <li><a href="#register-popup" class="popup-normal button">Đăng nhập</a></li>
+                        </ul>
+                    </div>
 
-        <div class="columns">
-            <ul class="header__link clearList listInline">
-                <li><a href="gioithieu.html" class="linkGray">Về chúng tôi</a></li>
-                <li><a href="#signin-popup" class="popup-normal linkGray">Đăng ký</a></li>
-                <li><a href="#register-popup" class="popup-normal button">Đăng nhập</a></li>
-            </ul>
+                </div>
+                <span data-responsive-toggle="responsive-menu" class="show-for-small-only menu--toggle">
+                  <button class="menu-icon dark" type="button" data-toggle></button>
+                </span>
+            </div>
         </div>
 
     </div>
 </header>
+
+
 <h1 id="t-ng-quan-easywebhub">Tổng quan EasyWebHub</h1>
 <p>EasyWebHub là framework xây dựng website dựa trên nguyên lý web tĩnh phối hợp với API cung cấp từ server. EasyWebHub gồm các phần cơ bản như sau</p>
 

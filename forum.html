@@ -16,32 +16,43 @@
 
 
 </head>
-<body data-function="">
+<body data-function="" class="">
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <header class="header boxShadowLess">
-    <div class="row align-justify align-middle">
+    <div class="row ">
 
         <div class="columns">
-            <div class="header__container">
-                <div class="header__logo">
-                    <a href="index.html" id="logo"></a>
+
+            <div class="top-bar">
+                <div class="top-bar-title">
+
+                    <div class="header__logo">
+                        <a href="index.html" id="logo"></a>
+                    </div>
                 </div>
-            </div>
-        </div>
+                <div id="responsive-menu">
+                    <div class="top-bar-right">
+                        <ul class="header__link clearList listInline">
+                            <li><a href="gioithieu.html" class="linkGray">Về chúng tôi</a></li>
+                            <li><a href="#signin-popup" class="popup-normal linkGray">Đăng ký</a></li>
+                            <li><a href="#register-popup" class="popup-normal button">Đăng nhập</a></li>
+                        </ul>
+                    </div>
 
-        <div class="columns">
-            <ul class="header__link clearList listInline">
-                <li><a href="gioithieu.html" class="linkGray">Về chúng tôi</a></li>
-                <li><a href="#signin-popup" class="popup-normal linkGray">Đăng ký</a></li>
-                <li><a href="#register-popup" class="popup-normal button">Đăng nhập</a></li>
-            </ul>
+                </div>
+                <span data-responsive-toggle="responsive-menu" class="show-for-small-only menu--toggle">
+                  <button class="menu-icon dark" type="button" data-toggle></button>
+                </span>
+            </div>
         </div>
 
     </div>
 </header>
+
+
 
 
 
@@ -50,21 +61,20 @@
     <div class="forum__sidebar">
     
       <div class="forum__logo boxShadow clearfix">
-        <h4 class="forumHome__nav--logo"><i class="fa fa-comments-o"></i> DIỄN ĐÀN</h4>
+        <h4 class="forumHome__nav--logo"><a href="forum.html"><i class="fa fa-comments-o"></i> DIỄN ĐÀN</a></h4>
       </div>
     
       <div class="portlet boxShadow">
         <div class="porlet--heading">
           <h3 class="porlet--title ">Hoạt động</h3>
     
-          <div class="forum__number">
-            <div class="num dangxem">256 <i class="fa fa-users"></i></div>
-          </div>
+         
         </div>
     
         <ul class="porlet--menu">
           <li class="active"><a href="">Thông báo</a></li>
           <li><a href="">Góp ý</a></li>
+          <li><a href="">Tin tức</a></li>
         </ul>
     
         <div class="porlet--search">
@@ -83,23 +93,23 @@
           <h3 class="porlet--title ">Hỏi chuyên gia</h3>
     
           <div class="forum__number">
-            <div class="num hoi">8735 <i class="fa fa-question-circle"></i></div>
+            <div class="num hoi">  <i class="fa fa-question-circle"></i></div>
           </div>
         </div>
     
         <ul class="porlet--menu">
-          <li><a href="forum-chuyentrang.html">Các bệnh</a></li>
-          <li><a href="forum-chuyentrang.html">Mẹ và bé</a></li>
-          <li><a href="forum-chuyentrang.html">Ăn uống</a></li>
-          <li><a href="forum-chuyentrang.html">Luyện tập</a></li>
-          <li><a href="forum-chuyentrang.html">Sắc đẹp</a></li>
+          <li><a href="forum-chuyentrang.html">Các bệnh <span class="number--list">(592)</span></a></li>
+          <li><a href="forum-chuyentrang.html">Mẹ và bé <span class="number--list">(125)</span></a></li>
+          <li><a href="forum-chuyentrang.html">Ăn uống <span class="number--list">(44)</span></a></li>
+          <li><a href="forum-chuyentrang.html">Luyện tập <span class="number--list">(89)</span></a></li>
+          <li><a href="forum-chuyentrang.html">Sắc đẹp <span class="number--list">(123)</span></a></li>
         </ul>
       </div>
     
     
       <div class="portlet boxShadow">
         <div class="porlet--heading">
-          <h3 class="porlet--title ">Giao lưu & Chia sẻ</h3>
+          <h3 class="porlet--title ">Trao đổi & Chia sẻ</h3>
     
           <div class="forum__number">
             <div class="num giaoluu">915 <i class="fa fa-users"></i></div>
@@ -107,9 +117,9 @@
         </div>
     
         <ul class="porlet--menu">
-          <li><a href="forum-chuyentrang.html">Chăm sóc sức khỏe</a></li>
-          <li><a href="forum-chuyentrang.html">Mẹo vặt & Kinh nghiệm</a></li>
-          <li><a href="forum-chuyentrang.html">Mua sắm & Dịch vụ</a></li>
+          <li><a href="forum-chuyentrang.html">Chăm sóc sức khỏe <span class="number--list">(45)</span></a></li>
+          <li><a href="forum-chuyentrang.html">Mẹo vặt & Kinh nghiệm <span class="number--list">(23)</span></a></li>
+          <li><a href="forum-chuyentrang.html">Mua sắm & Dịch vụ <span class="number--list">(12)</span></a></li>
         </ul>
       </div>
     
@@ -261,20 +271,20 @@
     
       <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
     
+      <br>
+      <br>
+    
     </div>  </div>
   <div class="small-12 medium-8 column">
 
     <div class="portlet boxShadow">
       <div class="porlet--body">
         <div class="forum__head">
-          <h4 class="title">Diễn đàn</h4>
+          <h3 class="title">Diễn đàn</h3>
 
-          <ul class="breadcrumbs">
-
-          </ul>
         </div>
 
-        <p>Diễn đàn là nơi dành riêng cho các thành viên Medihub đặt câu hỏi cho các bác sĩ và trao đổi, chia sẻ thông tin với các thành viên khác. </p>
+        <p class="forum__sub">Diễn đàn là nơi dành riêng cho các thành viên Medihub đặt câu hỏi cho các bác sĩ và trao đổi, chia sẻ thông tin với các thành viên khác. </p>
 
         <div class="text-right">
           <a href="" class="button mb0">Viết lên diễn đàn</a>
@@ -282,22 +292,24 @@
       </div>
     </div>
 
+    
     <div class="newsMoz">
-      <div class="newsMoz__item big">
+        <div class="newsMoz__item big">
         <div class="newsMoz__wrap">
-          <div class="newsMoz__img" style="background-image: url(http://demo.tagdiv.com/newspaper_animals/wp-content/uploads/2015/11/371-534x462.jpg)">
+          <div class="newsMoz__img" style="background-image: url(img/hinh3.jpg)">
             <a href="" class="newsMoz__url"></a>
           </div>
           <div class="newsMoz__title">
             <a href="" class="link"></a>
             <span class="label">MẮT</span>
-            <h3 class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+            <h3 class="txt">Bệnh đau mắt đỏ kéo dài bao lâu thì khỏi?</h3>
             <div class="date"><i class="fa fa-clock-o"></i> 1 tháng 5, 2017</div>
     
           </div>
         </div>
       </div>
     
+     
     
       <div class="small2-more">
         <div class="newsMoz__item small">
@@ -333,178 +345,16 @@
     
     
     </div>
-    <div class="newsRun swiper-container">
-      <div class="swiper-wrapper">
 
-        <div class="swiper-slide">
-          <div class=" newsRun__item boxShadowLess clearfix">
-            <a href="">
-              <div class="newsRun__img">
-                <img
-                    src="images/gallery/1.jpg"
-                    alt="Litora dui turpis labore lobortis proiden turpis">
-              </div>
-              <div class="newsRun__txt">
-                Litora dui turpis labore lobortis proiden turpis
-              </div>
-            </a>
-          </div>
-        </div>
-
-
-        <div class="swiper-slide">
-          <div class=" newsRun__item boxShadowLess clearfix">
-            <a href="">
-              <div class="newsRun__img">
-                <img
-                    src="images/gallery/2.jpg"
-                    alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
-              </div>
-              <div class="newsRun__txt">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </div>
-            </a>
-          </div>
-        </div>
-
-
-        <div class="swiper-slide">
-          <div class=" newsRun__item boxShadowLess clearfix">
-            <a href="">
-              <div class="newsRun__img">
-                <img
-                    src="images/gallery/3.jpg"
-                    alt="Curabitur pharetra luctus sapien, et maximus ex hendrerit sed">
-              </div>
-              <div class="newsRun__txt">
-                Curabitur pharetra luctus sapien, et maximus ex hendrerit sed
-              </div>
-            </a>
-          </div>
-        </div>
-
-
-        <div class="swiper-slide">
-          <div class=" newsRun__item boxShadowLess clearfix">
-            <a href="">
-              <div class="newsRun__img">
-                <img
-                    src="images/gallery/4.jpg"
-                    alt="Aenean blandit, turpis a porttitor ornare, arcu elit pharetra est">
-              </div>
-              <div class="newsRun__txt">
-                Aenean blandit, turpis a porttitor ornare, arcu elit pharetra est
-              </div>
-            </a>
-          </div>
-        </div>
-
-
-        <div class="swiper-slide">
-          <div class=" newsRun__item boxShadowLess clearfix">
-            <a href="">
-              <div class="newsRun__img">
-                <img
-                    src="images/gallery/5.jpg"
-                    alt="Mauris rutrum varius elementum.">
-              </div>
-              <div class="newsRun__txt">
-                Mauris rutrum varius elementum.
-              </div>
-            </a>
-          </div>
-        </div>
-
-
-        <div class="swiper-slide">
-          <div class=" newsRun__item boxShadowLess clearfix">
-            <a href="">
-              <div class="newsRun__img">
-                <img
-                    src="images/gallery/6.jpg"
-                    alt="Vestibulum aliquet velit neque, eu maximus massa mollis ut.">
-              </div>
-              <div class="newsRun__txt">
-                Vestibulum aliquet velit neque, eu maximus massa mollis ut.
-              </div>
-            </a>
-          </div>
-        </div>
-
-
-        <div class="swiper-slide">
-          <div class=" newsRun__item boxShadowLess clearfix">
-            <a href="">
-              <div class="newsRun__img">
-                <img
-                    src="images/gallery/7.jpg"
-                    alt="Litora dui turpis labore lobortis proiden turpis">
-              </div>
-              <div class="newsRun__txt">
-                Litora dui turpis labore lobortis proiden turpis
-              </div>
-            </a>
-          </div>
-        </div>
-
-
-        <div class="swiper-slide">
-          <div class=" newsRun__item boxShadowLess clearfix">
-            <a href="">
-              <div class="newsRun__img">
-                <img
-                    src="images/gallery/8.jpg"
-                    alt="Litora dui turpis labore lobortis proiden turpis">
-              </div>
-              <div class="newsRun__txt">
-                Litora dui turpis labore lobortis proiden turpis
-              </div>
-            </a>
-          </div>
-        </div>
-
-
-        <div class="swiper-slide">
-          <div class=" newsRun__item boxShadowLess clearfix">
-            <a href="">
-              <div class="newsRun__img">
-                <img
-                    src="images/gallery/9.jpg"
-                    alt="Litora dui turpis labore lobortis proiden turpis">
-              </div>
-              <div class="newsRun__txt">
-                Litora dui turpis labore lobortis proiden turpis
-              </div>
-            </a>
-          </div>
-        </div>
-
-
-        <div class="swiper-slide">
-          <div class=" newsRun__item boxShadowLess clearfix">
-            <a href="">
-              <div class="newsRun__img">
-                <img
-                    src="images/gallery/10.jpg"
-                    alt="Litora dui turpis labore lobortis proiden turpis">
-              </div>
-              <div class="newsRun__txt">
-                Litora dui turpis labore lobortis proiden turpis
-              </div>
-            </a>
-          </div>
-        </div>
-
-
-      </div>
+<div class="adv">
+      <img src="http://placehold.it/700x120" alt="">
     </div>
-
 
     <ul class="forum__table boxShadow">
 
       <li class="forum__table--row heading">
         <div class="forum__table--content">
-          <h3 class="forum__table--title "><i class="fa fa-newspaper-o"></i> Chủ đề mới nhất</h3>
+          <h3 class="forum__table--title ">Mới nhất</h3>
 
         </div>
         <div class="forum__table--view">
@@ -611,7 +461,7 @@
 
       <li class="forum__table--row heading">
         <div class="forum__table--content">
-          <h3 class="forum__table--title "><i class="fa fa-newspaper-o"></i> Chủ đề sôi nổi</h3>
+          <h3 class="forum__table--title ">Đang sôi nổi</h3>
 
         </div>
         <div class="forum__table--view">
