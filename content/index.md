@@ -20,7 +20,7 @@
     "dang_xem":1000,
     "hoi":1000,
     "giao_luu":200,
-    "slideShow":["-ong-mach-vanh-la-gi-chuc-nang-cua-no-ra-sao", "-ong-mach-vanh-la-gi-chuc-nang-cua-no-ra-sao","-ong-mach-vanh-la-gi-chuc-nang-cua-no-ra-sao","-ong-mach-vanh-la-gi-chuc-nang-cua-no-ra-sao"]
+    "slideShow":{"slug1": "-ong-mach-vanh-la-gi-chuc-nang-cua-no-ra-sao","slug2": "-ong-mach-vanh-la-gi-chuc-nang-cua-no-ra-sao","slug3": "-ong-mach-vanh-la-gi-chuc-nang-cua-no-ra-sao","slug4": "-ong-mach-vanh-la-gi-chuc-nang-cua-no-ra-sao",}
 }
 ---
 
