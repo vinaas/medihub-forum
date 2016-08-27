@@ -4,7 +4,7 @@
     "url": "",
     "description": "Index Page",
     "layout": "index.html",
-    "permalink": "",
+    "permalink": false,
     "rivetData": {
         "selectedFilter": {
             "chon": "",
