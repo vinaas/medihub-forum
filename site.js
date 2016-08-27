@@ -201,6 +201,10 @@ site.metalsmith = {
         linksets:   [{
             match:   {collection: 'blog'},
             pattern: 'blog/:slug'
+        },
+        {
+            match:   {collection: 'thanh_vien'},
+            pattern: 'blog/:slug'
         }]
     },
 
