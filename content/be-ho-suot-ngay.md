@@ -12,7 +12,7 @@
     "phan_hoi": 32,
     "yeu_thich": 23,
     "nguoi_dang": "tad1991",
-    "hinh_anh": ""
+    "hinh_anh": "img/download (4).jpg"
 }
 ---
 bé nhà em được 2 tuổi rồi mà ho suốt thôi. dùng bao nhiêu là kháng sinh với siro này nọ mà không hết. con ho mà mẹ nẫu hết cả ruôt, nhiều đêm mất ngủ trông con .
