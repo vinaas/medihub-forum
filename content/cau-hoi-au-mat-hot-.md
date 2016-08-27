@@ -12,7 +12,7 @@
     "phan_hoi": 234,
     "yeu_thich": 3456,
     "nguoi_dang": "Tung",
-    "hinh_anh": "img/download (3).jpg"
+    "hinh_anh": "img/hinh1.jpg"
 }
 ---
 nôi dung đau mắt hội.
