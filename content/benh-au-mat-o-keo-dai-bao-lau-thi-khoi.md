@@ -12,7 +12,7 @@
     "phan_hoi": 2341,
     "yeu_thich": 45643,
     "nguoi_dang": "Tung",
-    "hinh_anh": "img/tuyet-chieu-tri-dau-mat-do-cuc-huu-hieu-bang-khoai-tay-mat-ong.jpeg"
+    "hinh_anh": "img/hinh3.jpg"
 }
 ---
 Bệnh cảnh lâm sàng của thể bệnh phổ biến - thể nhẹ: Các cụ thường nói: “thứ nhất đau mắt , thứ nhì nhức răng”. Ai trong đời đã trải qua một lần đau mắt đỏ đều thấm thía câu nói này. Cái cảm giác: cộm rát như có cát ở trong mắt, dỉ mắt bám chặt mi buổi sáng, lèm nhèm suốt cả ngày, nặng hơn có thể có nhìn mờ và sợ ánh sáng thật là khó quên. 
