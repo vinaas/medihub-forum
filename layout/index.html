@@ -74,13 +74,13 @@
     <div class="newsRun swiper-container">
       <div class="swiper-wrapper">
        
-        {{#each (lookup ( lookupCategory AllCategory 'cac-benh') 'files')}}
+        {{#each (first (lookup ( lookupCategory AllCategory 'cac-benh') 'files') 10 )}}
         <div class="swiper-slide">
           <div class=" newsRun__item boxShadowLess clearfix">
-            <a href="{{this.link}}">
+            <a href="{{this.slug}}">
               <div class="newsRun__img">
                 <img
-                    src="{{this.img}}"
+                    src="{{this.hinh_anh}}"
                     alt="{{this.title}}">
               </div>
               <div class="newsRun__txt">

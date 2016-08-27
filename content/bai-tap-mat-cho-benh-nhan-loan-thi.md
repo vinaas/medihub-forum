@@ -12,7 +12,7 @@
     "phan_hoi": 123,
     "yeu_thich": 123,
     "nguoi_dang": "Tung",
-    "hinh_anh": "img/tuyet-chieu-tri-dau-mat-do-cuc-huu-hieu-bang-khoai-tay-mat-ong.jpeg"
+    "hinh_anh": "img/download (1).jpg"
 }
 ---
 Các bài tập mắt không chỉ giúp bệnh nhân loạn thị cải thiện thị lực của mình, nó còn giúp cho những người thường xuyên phải đọc tài liệu hoặc sử dụng máy tính có một đôi mắt khỏe đẹp như mong muốn.
