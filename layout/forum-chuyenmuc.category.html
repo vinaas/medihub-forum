@@ -11,10 +11,15 @@
             <div class="porlet--body">
                 <div class="forum__head">
                     <ul class="breadcrumbs">
-                        {{#each metadata.breadcrumb}}
-                        <li><a href="{{slug}}">{{ten}}</a></li>
+
+                        {{#each (genBreadcrumb AllCategory pagination.category ) }}
+                        {{#if @last }}
+                            <li>{{this.metadata.title}}</li>
+                        {{else}}
+                            <li><a href="{{this.href}}">{{this.metadata.title}}</a></li>
+                        {{/if}}
                         {{/each}}
-                        <li>{{metadata.title}}</li>
+
                     </ul>
 
                     <h4 class="title">{{metadata.title}}</h4>
@@ -55,7 +60,7 @@
                         <div class="column">
                             <a href="{{this.href}}">{{metadata.title}}<i class="fa fa-angle-right "></i></a>
                         </div>
-                        
+
 
                         {{/each}}
                     </div>
