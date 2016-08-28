@@ -21,9 +21,9 @@
         "slug3",
         "slug4"
     ],
-    "dang_xem": 1000,
-    "hoi": 1000,
-    "giao_luu": 200,
+    "dang_xem": 256,
+    "hoi": 8735,
+    "trao_doi": 915,
     "slideShow": {
         "slug1": "-ong-mach-vanh-la-gi-chuc-nang-cua-no-ra-sao",
         "slug2": "bai-tap-mat-cho-benh-nhan-loan-thi",
