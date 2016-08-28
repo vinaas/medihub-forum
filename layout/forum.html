@@ -14,8 +14,7 @@
 
                 </div>
 
-                <p class="forum__sub">Diễn đàn là nơi dành riêng cho các thành viên Medihub đặt câu hỏi cho các bác sĩ
-                    và trao đổi, chia sẻ thông tin với các thành viên khác. </p>
+                <p class="forum__sub">{{gioi_thieu}} </p>
 
                 <div class="text-right">
                     <a href="" class="button mb0">Viết lên diễn đàn</a>
@@ -47,7 +46,7 @@
             </li>
 
 
-            {{#each (first news 5)}}
+            {{#each (first  AllCategory.files 5)}}
             <li class="forum__table--row normal">
                 <div class="forum__table--content">
                     <a href="{{this.link}}" class="title">{{this.title}}</a>
