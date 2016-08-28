@@ -416,6 +416,11 @@
 .forum__head{
     position: relative;
     padding-right: 190px;
+
+  &.baiviet{
+    padding-right: 110px;
+  }
+
   .title{
     color: $primary-color;
     font-weight: normal;
