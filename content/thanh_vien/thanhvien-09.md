@@ -8,7 +8,7 @@
     "description": "",
     "date": "2016-08-19 00:06:06",
     "ten": "Đỗ Bá Tiến",
-    "hinh_anh": "img/9x.jpg",
-    "binh_luan": "123"
+    "hinh_anh": "images/profiles/bc.jpg",
+    "binh_luan": "15"
 }
 ---
