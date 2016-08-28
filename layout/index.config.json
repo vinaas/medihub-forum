@@ -95,5 +95,12 @@
         "type": "Object",
         "validations": [],
         "required": false
+    },
+    {
+        "name": "trao_doi",
+        "displayName": "trao_doi",
+        "type": "Number",
+        "validations": [],
+        "required": false
     }
 ]
