@@ -10,64 +10,45 @@
         <div class="portlet boxShadow">
             <div class="porlet--body">
                 <div class="forum__head">
-                    <h4 class="title">{{metadata.title}}</h4>
-
-                    <ul class="breadcrumbs">
-                        <li><a>Hỏi chuyên gia</a></li>
-                        <li>{{metadata.title}}</li>
-                    </ul>
+                    <h3 class="title">{{metadata.title}}</h3>
                 </div>
-                <p>{{metadata.mo_ta}}</p>
+
+                <ul class="breadcrumbs">
+                    <li><a href="forum.html">Diễn đàn</a></li>
+                    <li>{{metadata.title}}</li>
+                </ul>
+
+                <p class="forum__sub">{{metadata.mo_ta}}</p>
 
                 <div class="text-right">
-                    <a href="" class="button mb0"> <i class="fa fa-edit"></i> Đặt câu hỏi </a>
+                    <a href="forum-datcauhoi.html" class="button mb0"> <i class="fa fa-edit"></i> Đặt câu hỏi </a>
                 </div>
             </div>
         </div>
         {{> news-moz-small}}
 
-        <div class="newsRun swiper-container">
-            <div class="swiper-wrapper">
-
-                {{#each (first news 10)}}
-                <div class="swiper-slide">
-                    <div class=" newsRun__item boxShadowLess clearfix">
-                        <a href="{{this.link}}">
-                            <div class="newsRun__img">
-                                <img src="{{this.img}}" alt="{{this.title}}">
-                            </div>
-                            <div class="newsRun__txt">
-                                {{this.title}}
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-
-                {{/each}}
-            </div>
-        </div>
 
 
         <ul class="forum__table boxShadow">
 
             <li class="forum__table--row heading">
                 <div class="forum__table--content">
-                    <h3 class="forum__table--title ">{{metadata.ten}}</h3>
+                    <h3 class="forum__table--title ">{{metadata.title}}</h3>
 
                 </div>
                 <div class="forum__table--view text-center">
-                    Số chủ đềe
+                    Số chủ đề
                 </div>
                 <div class="forum__table--date text-center">
                     Số bài viết
                 </div>
             </li>
-          {{#each (lookup (lookupCategory AllCategory pagination.category) 'children') }}
+            {{#each (lookup (lookupCategory AllCategory pagination.category) 'children') }}
             <li class="forum__table--row normal space">
                 <div class="forum__table--content">
                     <a href="{{this.href}}" class="title">
-                        <h6 class="mb0">{{this.metadata.title}}</h6> {{this.metadata.mo_ta}}
+                        <h6 class="mb0">{{this.metadata.title}}</h6>
+                        <small>{{this.metadata.mo_ta}}</small>
                     </a>
 
                 </div>
@@ -81,7 +62,6 @@
             </li>
             {{/each}}
         </ul>
-
 
 
     </div>
