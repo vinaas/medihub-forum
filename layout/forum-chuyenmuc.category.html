@@ -10,57 +10,40 @@
         <div class="portlet boxShadow">
             <div class="porlet--body">
                 <div class="forum__head">
+
+
+                    <h3 class="title">{{metadata.title}}</h3>
+
                     <ul class="breadcrumbs">
+                        <li><a href="forum.html">Diễn đàn</a></li>
                         {{#each metadata.breadcrumb}}
                         <li><a href="{{slug}}">{{ten}}</a></li>
                         {{/each}}
                         <li>{{metadata.title}}</li>
                     </ul>
 
-                    <h4 class="title">{{metadata.title}}</h4>
-
-
 
                     <div class="select--form">
-                        <select class="select2Search" data-placeholder="Tới chuyên mục">
-                <option value="">Mắt</option>
-                <option value=" ">Tai mũi họng</option>
-                <option value=" ">Tim mạch</option>
-                <option value=" ">Thần kinh</option>
-                <option value=" ">Dạ dày</option>
-                <option value=" ">Tóc</option>
-              </select>
+                        <select class="select2Search" data-placeholder="Tới chuyên mục khác">
+                            <option value="">Mắt</option>
+                            <option value=" ">Tai mũi họng</option>
+                            <option value=" ">Tim mạch</option>
+                            <option value=" ">Thần kinh</option>
+                            <option value=" ">Dạ dày</option>
+                            <option value=" ">Tóc</option>
+                        </select>
                     </div>
 
 
-
                 </div>
-                <p>{{metadata.mo_ta}} </p>
-
+                <p class="forum__sub">{{metadata.mo_ta}} </p>
 
 
                 <div class="text-right">
-                    <a href="" class="button mb0"> <i class="fa fa-edit"></i> Đặt câu hỏi </a>
+                    <a href="forum-datcauhoi.html" class="button mb0"> <i class="fa fa-edit"></i> Đặt câu hỏi </a>
                 </div>
 
 
-                <div class="portlet--chuyenmuc">
-
-                    <h5 class="color-primary">Các chủ đề</h5>
-
-
-                    <div class="row small-up-2 medium-up-3">
-                        {{#each (lookup (lookupCategory AllCategory pagination.category ) 'children')}}
-                        <br>
-                        <div class="column">
-                            <a href="{{this.href}}">{{metadata.title}}<i class="fa fa-angle-right "></i></a>
-                        </div>
-                        
-
-                        {{/each}}
-                    </div>
-
-                </div>
 
 
 
@@ -69,37 +52,92 @@
 
 
         <div class="row">
-            <div class="small-12 medium-6 column">
-                <h4><i class="fa fa-comments-o"></i> Câu hỏi mới nhất</h4>
-            </div>
-            <div class="small-12 medium-6 column text-right">
+            <div class="small-12 column">
+                <div class="newsRun swiper-container">
+                    <div class="swiper-wrapper">
 
-                <ul class="pagination" role="navigation" aria-label="Pagination">
-                    <li class="pagination-previous disabled"> <i class="fa fa-angle-left"></i> <span class="show-for-small-only">Trang trước</span> <span class="show-for-sr">page</span></li>
-                    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-                    <li><a href="#" aria-label="Page 2">2</a></li>
-                    <li><a href="#" aria-label="Page 3">3</a></li>
-                    <li><a href="#" aria-label="Page 4">4</a></li>
-                    <li class="ellipsis" aria-hidden="true"></li>
-                    <li><a href="#" aria-label="Page 13">13</a></li>
-                    <li class="pagination-next"><a href="#" aria-label="Next page"><span class="show-for-small-only">Trang sau</span> <i class="fa fa-angle-right"></i>  <span class="show-for-sr">page</span></a></li>
-                </ul>
+                        {{#each (first (lookup ( lookupCategory AllCategory 'cac-benh') 'files') 6 )}}
+                        <div class="swiper-slide">
+                            <div class=" newsRun__item boxShadowLess clearfix">
+                                <a href="{{this.slug}}">
+                                    <div class="newsRun__img">
+                                        <img src="{{this.hinh_anh}}" alt="{{this.title}}">
+                                    </div>
+                                    <div class="newsRun__txt">
+                                        {{this.title}}
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="adv">
+            <img src="http://placehold.it/700x120" alt="">
+        </div>
+
+        <div class="portlet boxShadow">
+            <div class="porlet--body">
+                <div class="portlet--chuyenmuc">
+
+                    <h5 class="color-primary">Các chủ đề</h5>
+
+                    <div class="row small-up-2 medium-up-3" id="list-chude" data-toggler="show">
+                        {{#each (lookup (lookupCategory AllCategory pagination.category ) 'children')}}
+                        <div class="column">
+                            <a href="{{this.href}}">{{metadata.title}} <i class="fa fa-angle-right "></i></a>
+                        </div>
+                        {{/each}}
+
+                    </div>
+
+                </div>
+
+                <div class="porlet-loadmore">
+                    <a data-toggle="list-chude" class="linkGray">Xem thêm »</a>
+                </div>
 
 
             </div>
         </div>
 
 
+
         <div class="portlet  boxShadow">
+            <div class="porlet--heading">
+                <h3 class="porlet--title "><i class="fa fa-comments-o"></i> Câu hỏi mới nhất</h3>
+
+
+                <ul class="pagination" role="navigation" aria-label="Pagination">
+                    <li class="pagination-previous disabled"><i class="fa fa-angle-left"></i> <span
+                            class="show-for-small-only">Trang trước</span> <span class="show-for-sr">page</span></li>
+                    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+                    <li><a href="#" aria-label="Page 2">2</a></li>
+                    <li><a href="#" aria-label="Page 3">3</a></li>
+                    <li><a href="#" aria-label="Page 4">4</a></li>
+                    <li class="ellipsis" aria-hidden="true"></li>
+                    <li><a href="#" aria-label="Page 13">13</a></li>
+                    <li class="pagination-next"><a href="#" aria-label="Next page"><span class="show-for-small-only">Trang sau</span>
+                        <i class="fa fa-angle-right"></i> <span class="show-for-sr">page</span></a></li>
+                </ul>
+
+
+            </div>
             <div class="porlet--comments">
                 {{#each pagination.files}}
                 <div class="post">
                     <h3 class="post__title"><a href="./{{path}}">{{title}}</a></h3>
                     <ul class="post__meta">
+                        <li>Đăng bởi  <a href="">{{nguoi_dang}}</a></li>
                         <li>{{thoi_gian}}</li>
                         <li>{{luot_xem}} lượt xem</li>
                         <li>{{phan_hoi}} Phản hồi</li>
-                        <li>Bởi <a href="">{{nguoi_dang}}</a></li>
+
                         <li><i class="fa fa-heart"></i> {{yeu_thich}}</li>
                     </ul>
                     <div class="post__content">
@@ -108,25 +146,27 @@
                 </div>
                 {{/each}}
             </div>
+            <div class="porlet--body">
+
+                <div class="text-right">
+                    <ul class="pagination mb0" role="navigation" aria-label="Pagination">
+                        <li class="pagination-previous disabled"><i class="fa fa-angle-left"></i> <span
+                                class="show-for-small-only">Trang trước</span> <span class="show-for-sr">page</span>
+                        </li>
+                        <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+                        <li><a href="#" aria-label="Page 2">2</a></li>
+                        <li><a href="#" aria-label="Page 3">3</a></li>
+                        <li><a href="#" aria-label="Page 4">4</a></li>
+                        <li class="ellipsis" aria-hidden="true"></li>
+                        <li><a href="#" aria-label="Page 13">13</a></li>
+                        <li class="pagination-next"><a href="#" aria-label="Next page"><span
+                                class="show-for-small-only">Trang sau</span> <i class="fa fa-angle-right"></i> <span
+                                class="show-for-sr">page</span></a></li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
-
-        <div class="text-center pa">
-            <ul class="pagination" role="navigation" aria-label="Pagination">
-                <li class="pagination-previous disabled"> <i class="fa fa-angle-left"></i> <span class="show-for-small-only">Trang trước</span> <span class="show-for-sr">page</span></li>
-                <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-                <li><a href="#" aria-label="Page 2">2</a></li>
-                <li><a href="#" aria-label="Page 3">3</a></li>
-                <li><a href="#" aria-label="Page 4">4</a></li>
-                <li class="ellipsis" aria-hidden="true"></li>
-                <li><a href="#" aria-label="Page 13">13</a></li>
-                <li class="pagination-next"><a href="#" aria-label="Next page"><span class="show-for-small-only">Trang sau</span> <i class="fa fa-angle-right"></i>  <span class="show-for-sr">page</span></a></li>
-            </ul>
-        </div>
-
-
-
-
-
 
     </div>
 </div>
