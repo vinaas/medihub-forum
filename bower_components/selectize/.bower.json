@@ -46,12 +46,12 @@
     "bootstrap3": "bootstrap#3.2"
   },
   "homepage": "https://github.com/selectize/selectize.js",
-  "version": "0.12.2",
-  "_release": "0.12.2",
+  "version": "0.12.3",
+  "_release": "0.12.3",
   "_resolution": {
     "type": "version",
-    "tag": "v0.12.2",
-    "commit": "3ac684ba5eb8d8b9c788901258c8a77202abf263"
+    "tag": "v0.12.3",
+    "commit": "abc8a560a8335a017790c2a799925cc123670bfc"
   },
   "_source": "https://github.com/selectize/selectize.js.git",
   "_target": "^0.12.1",
