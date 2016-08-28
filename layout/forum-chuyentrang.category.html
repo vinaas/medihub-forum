@@ -26,29 +26,7 @@
             </div>
         </div>
         {{> news-moz-small}}
-        <div class="newsRun swiper-container">
-            <div class="swiper-wrapper">
-
-                {{#each ( first (lookup ( lookupCategory AllCategory pagination.category )  'files') 6)}}
-                <div class="swiper-slide">
-                    <div class=" newsRun__item boxShadowLess clearfix">
-                        <a href="{{this.slug}}">
-                            <div class="newsRun__img">
-                                <img src="{{this.hinh_anh}}" alt="{{this.title}}">
-                            </div>
-                            <div class="newsRun__txt">
-                                {{this.title}}
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-
-                {{/each}}
-            </div>
-        </div>
-
-
+   
         <ul class="forum__table boxShadow">
 
             <li class="forum__table--row heading">
