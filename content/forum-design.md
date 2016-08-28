@@ -2,7 +2,7 @@
 {
     "title": "Index",
     "description": "Index Page",
-    "layout": "forum.html",
+    "layout": "forum-design.html",
     "permalink" : false,
     "rivetData" : {
       "selectedFilter" : {
