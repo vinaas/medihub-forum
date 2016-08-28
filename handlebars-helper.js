@@ -81,7 +81,7 @@ module.exports = function (Handlebars) {
         }
         return current;
     });
-
+    
     /**
      * return array of category from root to leaf of @param {string} childPath
      */

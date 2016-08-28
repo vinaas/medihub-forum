@@ -17,10 +17,13 @@
 
             <ul class="breadcrumbs">
                 <li><a href="forum.html">Diễn đàn</a></li>
-                {{#each metadata.breadcrumb}}
-                <li><a href="{{slug}}">{{ten}}</a></li>
-                {{/each}}
-                <li>{{metadata.title}}</li>
+                 {{#each (genBreadcrumb AllCategory pagination.category ) }}
+                        {{#if @last }}
+                            <li>{{this.metadata.title}}</li>
+                        {{else}}
+                            <li><a href="{{this.href}}">{{this.metadata.title}}</a></li>
+                        {{/if}}
+                        {{/each}}
             </ul>
           
           <div class="select--form">
