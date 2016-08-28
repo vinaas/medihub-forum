@@ -25,16 +25,15 @@
             </div>
         </div>
         {{> news-moz-small}}
-
         <div class="newsRun swiper-container">
             <div class="swiper-wrapper">
 
-                {{#each (first news 10)}}
+                {{#each ( first (lookup ( lookupCategory AllCategory pagination.category )  'files') 6)}}
                 <div class="swiper-slide">
                     <div class=" newsRun__item boxShadowLess clearfix">
-                        <a href="{{this.link}}">
+                        <a href="{{this.slug}}">
                             <div class="newsRun__img">
-                                <img src="{{this.img}}" alt="{{this.title}}">
+                                <img src="{{this.hinh_anh}}" alt="{{this.title}}">
                             </div>
                             <div class="newsRun__txt">
                                 {{this.title}}
@@ -57,7 +56,7 @@
 
                 </div>
                 <div class="forum__table--view text-center">
-                    Số chủ đềe
+                    Số chủ đề
                 </div>
                 <div class="forum__table--date text-center">
                     Số bài viết
@@ -73,7 +72,7 @@
                 </div>
                 <div class="forum__table--view text-center">
 
-                    {{ length (lookup AllCategory this.category) }}
+                    {{ length (lookup (lookupCategory AllCategory this.category ) 'children' ) }}
                 </div>
                 <div class="forum__table--date text-center">
                     {{this.files.length}}
