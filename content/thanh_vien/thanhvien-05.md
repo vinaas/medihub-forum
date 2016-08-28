@@ -8,7 +8,7 @@
     "description": "",
     "date": "2016-08-19 00:10:57",
     "ten": "Nguyễn Duy",
-    "hinh_anh": "img/9x.jpg",
-    "binh_luan": "23"
+    "hinh_anh": "images/profiles/9x.jpg",
+    "binh_luan": "138"
 }
 ---

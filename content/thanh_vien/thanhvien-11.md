@@ -8,7 +8,7 @@
     "description": "",
     "date": "2016-08-19 00:10:57",
     "ten": "Nguyễn Toàn Thắng",
-    "hinh_anh": "img/2.png",
-    "binh_luan": "23"
+    "hinh_anh": "images/profiles/e.jpg",
+    "binh_luan": "249"
 }
 ---
