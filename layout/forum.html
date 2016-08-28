@@ -2,137 +2,116 @@
 
 
 <div class="row forum">
-  <div class="small-12 medium-4 column">
-    {{> forum-sidebar}}
-  </div>
-  <div class="small-12 medium-8 column">
-
-    <div class="portlet boxShadow">
-      <div class="porlet--body">
-        <div class="forum__head">
-          <h4 class="title">Diễn đàn</h4>
-
-          <ul class="breadcrumbs">
-
-          </ul>
-        </div>
-
-        <p>Diễn đàn là nơi dành riêng cho các thành viên Medihub đặt câu hỏi cho các bác sĩ và trao đổi, chia sẻ thông tin với các thành viên khác. </p>
-
-        <div class="text-right">
-          <a href="" class="button mb0">Viết lên diễn đàn</a>
-        </div>
-      </div>
+    <div class="small-12 medium-4 column">
+        {{> forum-sidebar}}
     </div>
+    <div class="small-12 medium-8 column">
 
-    {{> news-moz-small}}
+        <div class="portlet boxShadow">
+            <div class="porlet--body">
+                <div class="forum__head">
+                    <h3 class="title">Diễn đàn</h3>
 
-    <div class="newsRun swiper-container">
-      <div class="swiper-wrapper">
+                </div>
 
-        {{#each (first news 10)}}
-        <div class="swiper-slide">
-          <div class=" newsRun__item boxShadowLess clearfix">
-            <a href="{{this.link}}">
-              <div class="newsRun__img">
-                <img
-                    src="{{this.img}}"
-                    alt="{{this.title}}">
-              </div>
-              <div class="newsRun__txt">
-                {{this.title}}
-              </div>
-            </a>
-          </div>
+                <p class="forum__sub">Diễn đàn là nơi dành riêng cho các thành viên Medihub đặt câu hỏi cho các bác sĩ
+                    và trao đổi, chia sẻ thông tin với các thành viên khác. </p>
+
+                <div class="text-right">
+                    <a href="" class="button mb0">Viết lên diễn đàn</a>
+                </div>
+            </div>
+        </div>
+
+        {{> news-moz-small}}
+
+
+        <div class="adv">
+            <img src="http://placehold.it/700x120" alt="">
         </div>
 
 
-        {{/each}}
-      </div>
+        <ul class="forum__table boxShadow">
+
+            <li class="forum__table--row heading">
+                <div class="forum__table--content">
+                    <h3 class="forum__table--title ">Mới nhất</h3>
+
+                </div>
+                <div class="forum__table--view">
+                    Lượt xem
+                </div>
+                <div class="forum__table--date">
+                    Ngày đăng
+                </div>
+            </li>
+
+
+            {{#each (first news 5)}}
+            <li class="forum__table--row normal">
+                <div class="forum__table--content">
+                    <a href="{{this.link}}" class="title">{{this.title}}</a>
+
+                    <ul class="breadcrumbs">
+                        <li><a href="#">Giao lưu</a></li>
+                        <li><a href="#">Mẹo vặt kinh nghiệm</a></li>
+                    </ul>
+
+                </div>
+                <div class="forum__table--view">
+                    {{this.view}}
+                </div>
+                <div class="forum__table--date">
+                    {{this.date}}
+                </div>
+            </li>
+            {{/each}}
+
+        </ul>
+
+        <div class="adv">
+            <img src="http://placehold.it/700x120" alt="">
+        </div>
+
+        <ul class="forum__table boxShadow">
+
+            <li class="forum__table--row heading">
+                <div class="forum__table--content">
+                    <h3 class="forum__table--title ">Đang sôi nổi</h3>
+
+                </div>
+                <div class="forum__table--view">
+                    Lượt xem
+                </div>
+                <div class="forum__table--date">
+                    Ngày đăng
+                </div>
+            </li>
+
+            {{#each (first news 5)}}
+            <li class="forum__table--row normal">
+                <div class="forum__table--content">
+                    <a href="{{this.link}}" class="title">{{this.title}}</a>
+
+                    <ul class="breadcrumbs">
+                        <li><a href="#">Giao lưu</a></li>
+                        <li><a href="#">Mẹo vặt kinh nghiệm</a></li>
+                    </ul>
+
+                </div>
+                <div class="forum__table--view">
+                    {{this.view}}
+                </div>
+                <div class="forum__table--date">
+                    {{this.date}}
+                </div>
+            </li>
+            {{/each}}
+
+        </ul>
+
+
     </div>
-
-
-    <ul class="forum__table boxShadow">
-
-      <li class="forum__table--row heading">
-        <div class="forum__table--content">
-          <h3 class="forum__table--title "><i class="fa fa-newspaper-o"></i> Chủ đề mới nhất</h3>
-
-        </div>
-        <div class="forum__table--view">
-          Lượt xem
-        </div>
-        <div class="forum__table--date">
-          Ngày đăng
-        </div>
-      </li>
-
-      {{#each (first news 5)}}
-      <li class="forum__table--row normal">
-        <div class="forum__table--content">
-          <a href="{{this.link}}" class="title">{{this.title}}</a>
-
-          <ul class="breadcrumbs">
-            <li><a href="#">Giao lưu</a></li>
-            <li><a href="#">Mẹo vặt kinh nghiệm</a></li>
-          </ul>
-
-        </div>
-        <div class="forum__table--view">
-          {{this.view}}
-        </div>
-        <div class="forum__table--date">
-          {{this.date}}
-        </div>
-      </li>
-      {{/each}}
-
-    </ul>
-
-    <div class="adv">
-      <img src="http://placehold.it/700x120" alt="">
-    </div>
-
-    <ul class="forum__table boxShadow">
-
-      <li class="forum__table--row heading">
-        <div class="forum__table--content">
-          <h3 class="forum__table--title "><i class="fa fa-newspaper-o"></i> Chủ đề sôi nổi</h3>
-
-        </div>
-        <div class="forum__table--view">
-          Lượt xem
-        </div>
-        <div class="forum__table--date">
-          Ngày đăng
-        </div>
-      </li>
-
-      {{#each (first news 5)}}
-      <li class="forum__table--row normal">
-        <div class="forum__table--content">
-          <a href="{{this.link}}" class="title">{{this.title}}</a>
-
-          <ul class="breadcrumbs">
-            <li><a href="#">Giao lưu</a></li>
-            <li><a href="#">Mẹo vặt kinh nghiệm</a></li>
-          </ul>
-
-        </div>
-        <div class="forum__table--view">
-          {{this.view}}
-        </div>
-        <div class="forum__table--date">
-          {{this.date}}
-        </div>
-      </li>
-      {{/each}}
-
-    </ul>
-
-
-
-  </div>
 </div>
 
 <!--end FORUM HOMEPAGE-->

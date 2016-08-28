@@ -33,7 +33,7 @@
       <h3 class="porlet--title ">Hỏi chuyên gia</h3>
 
       <div class="forum__number">
-        <div class="num hoi"> {{length (lookup AllCategory.root 'files' )  }} <i class="fa fa-question-circle"></i></div>
+        <div class="num hoi"> 1580 <i class="fa fa-question-circle"></i></div>
       </div>
     </div>
 
@@ -63,31 +63,31 @@
     </ul>
   </div>
 
-  <div class="portlet boxShadow">
-    <div class="porlet--heading primary">
-      <h3 class="porlet--title ">Thành viên năng động</h3>
-    </div>
-
-    <div class="porlet--body bottom-5">
-      <div class="row small-up-1 medium-up-2 large-up-2">
-        {{length collections.thanh_vien}} ==>
-        {{#each (first users 12)}}
-        <div class="column">
-          <div class="user user--small">
-            <a href="{{this.link}}">
-              <div class="user__pic">
-                <img alt="{{this.name}}" width="30" height="30" src="{{this.img}}">
-              </div>
-              <h5 class="user__name text-ellipsis">{{this.name}}</h5>
-              <div class="user__comment"><i class="fa fa-comment-o"></i> {{this.comments}}</div>
-            </a>
-          </div>
+    <div class="portlet boxShadow">
+        <div class="porlet--heading primary">
+            <h3 class="porlet--title ">Thành viên năng động</h3>
         </div>
-        {{/each}}
 
-      </div>
+        <div class="porlet--body bottom-5">
+            <div class="row small-up-1 medium-up-2 large-up-2">
+
+                {{#each collections.thanh_vien }}
+                <div class="column">
+                    <div class="user user--small">
+                        <a href="{{this.link}}">
+                            <div class="user__pic">
+                                <img alt="{{this.ten}}" width="30" height="30" src="{{this.hinh_anh}}">
+                            </div>
+                            <h5 class="user__name text-ellipsis">{{this.ten}}</h5>
+                            <div class="user__comment"><i class="fa fa-comment-o"></i> {{this.binh_luan}}</div>
+                        </a>
+                    </div>
+                </div>
+                {{/each}}
+
+            </div>
+        </div>
     </div>
-  </div>
 
 
   <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
