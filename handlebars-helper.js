@@ -66,7 +66,7 @@ module.exports = function (Handlebars) {
     });
 
     Handlebars.registerHelper('indexOfFiles', function (files, slug) {
-        return files.filter(x => x.slug == slug)[0] || null;
+        return files.filter(x => x.slug == slug);
     });
 
     /**
