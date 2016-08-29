@@ -4,10 +4,10 @@ var HandlebarsLayouts = require('handlebars-layouts');
 var Helpers = require('handlebars-helpers');
 var moment = require('moment');
 
-module.exports = function (Handlebars) {
+module.exports = function(Handlebars) {
     Handlebars.registerHelper(HandlebarsLayouts(Handlebars));
     //  Helpers({handlebars: Handlebars});
-    ['array', 'code', 'collection', 'comparison', 'date', 'fs', 'html', 'i18n', 'inflection', 'logging', 'markdown', 'match', 'math', 'misc', 'number', 'path', 'string', 'url'].forEach(function (name) {
+    ['array', 'code', 'collection', 'comparison', 'date', 'fs', 'html', 'i18n', 'inflection', 'logging', 'markdown', 'match', 'math', 'misc', 'number', 'path', 'string', 'url'].forEach(function(name) {
         Helpers[name]({
             handlebars: Handlebars
         });
@@ -22,32 +22,32 @@ module.exports = function (Handlebars) {
         else
             return '{}';
     });
-    Handlebars.registerHelper('ifCond', function (v1, v2, options) {
+    Handlebars.registerHelper('ifCond', function(v1, v2, options) {
         if (v1 === v2) {
             return options.fn(this);
         }
         return options.inverse(this);
     });
 
-    Handlebars.registerHelper('json', function (obj) {
+    Handlebars.registerHelper('json', function(obj) {
         return JSON.stringify(obj);
     });
 
-    Handlebars.registerHelper('toString', function (obj) {
+    Handlebars.registerHelper('toString', function(obj) {
         return obj.toString();
     });
-    Handlebars.registerHelper('removeIndex', function (url) {
+    Handlebars.registerHelper('removeIndex', function(url) {
         return url.replace('index.html', '');
     });
 
-    Handlebars.registerHelper('lookupCategory', function (obj, childPath) {
+    Handlebars.registerHelper('lookupCategory', function(obj, childPath) {
         var chunks = childPath.split('.');
         var count = 0;
         var node = obj;
-        chunks.some(function (name) {
+        chunks.some(function(name) {
             count++;
             var fullCategoryName = chunks.slice(0, count).join('.');
-            var found = node.children.some(function (childNode) {
+            var found = node.children.some(function(childNode) {
                 if (childNode.category == fullCategoryName) {
                     node = childNode;
                     return true;
@@ -65,14 +65,14 @@ module.exports = function (Handlebars) {
         return node;
     });
 
-    Handlebars.registerHelper('indexOfFiles', function (files, slug) {
+    Handlebars.registerHelper('indexOfFiles', function(files, slug) {
         return files.filter(x => x.slug == slug);
     });
 
     /**
      * Lookup nested object
      */
-    Handlebars.registerHelper('lookupEx', function (obj, propertyPath) {
+    Handlebars.registerHelper('lookupEx', function(obj, propertyPath) {
         var props = propertyPath.split('.');
         var current = obj;
         while (props.length) {
@@ -81,19 +81,19 @@ module.exports = function (Handlebars) {
         }
         return current;
     });
-    
+
     /**
      * return array of category from root to leaf of @param {string} childPath
      */
-    Handlebars.registerHelper('genBreadcrumb', function (obj, childPath) {
-        var chunks = childPath.split('.');
+    Handlebars.registerHelper('genBreadcrumb', function(obj, childPath) {
+        var chunks = String(childPath).split('.');
         var count = 0;
         var node = obj;
         var ret = [];
-        chunks.some(function (name) {
+        chunks.some(function(name) {
             count++;
             var fullCategoryName = chunks.slice(0, count).join('.');
-            var found = node.children.some(function (childNode) {
+            var found = node.children.some(function(childNode) {
                 if (childNode.category == fullCategoryName) {
                     node = childNode;
                     ret.push(childNode);

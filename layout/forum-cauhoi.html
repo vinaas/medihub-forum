@@ -2,92 +2,91 @@
 
 
 <div class="row forum">
-  <div class="small-12 medium-4 column">
-    {{> forum-sidebar}}
-  </div>
-  <div class="small-12 medium-8 column">
+    <div class="small-12 medium-4 column">
+        {{> forum-sidebar}}
+    </div>
+    <div class="small-12 medium-8 column">
 
-    <div class="portlet boxShadow">
-      <div class="porlet--body">
-        <div class="forum__head baiviet">
-          <h3 class="title">{{title}}</h3>
+        <div class="portlet boxShadow">
+            <div class="porlet--body">
+                <div class="forum__head baiviet">
+                    <h3 class="title">{{title}}</h3>
 
-            <ul class="breadcrumbs">
+                    <ul class="breadcrumbs">
 
-                <li><a href="forum.html">Diễn đàn</a></li>
+                        <li><a href="forum.html">Diễn đàn</a></li>
 
-                <li><a href="forum-chuyentrang.html">Các bệnh</a></li>
-                <li><a href="forum-chuyenmuc.html">Mắt</a></li>
-                <li><a href="forum-chuyende.html">Mổ lasik</a></li>
-                <li>{{title}}
-
-
-                </li>
-            </ul>
-
-
-            <div class="post__question">
-                <a href="forum-datcauhoi.html" class="button">Đặt câu hỏi</a>
-            </div>
+                        {{#each (genBreadcrumb AllCategory category ) }}
+                        <li><a href="{{this.href}}">{{this.metadata.title}}</a></li>
+                        {{/each}}
+                        <li>
+                            {{title}}
+                        </li>
+                    </ul>
 
 
-        </div>
+                    <div class="post__question">
+                        <a href="forum-datcauhoi.html" class="button">Đặt câu hỏi</a>
+                    </div>
 
 
-        {{{contents}}}
+                </div>
 
-          <ul class="post__meta">
-              <li>{{thoi_gian}}</li>
-              <li>{{luot_xem}} lượt xem</li>
-              <li>56 Phản hồi</li>
-              <li>Bởi <a href="">{{nguoi_dang}}</a></li>
-              <li><i class="fa fa-heart"></i> {{yeu_thich}}</li>
-          </ul>
-        <!--Ẩn tag theo yêu cầu chị Hương-->
-        <!--<div class="post__label">
+
+                {{{contents}}}
+
+                <ul class="post__meta">
+                    <li>{{thoi_gian}}</li>
+                    <li>{{luot_xem}} lượt xem</li>
+                    <li>56 Phản hồi</li>
+                    <li>Bởi <a href="">{{nguoi_dang}}</a></li>
+                    <li><i class="fa fa-heart"></i> {{yeu_thich}}</li>
+                </ul>
+                <!--Ẩn tag theo yêu cầu chị Hương-->
+                <!--<div class="post__label">
 
           <a href=""><span class=" label">Mổ lasik</span></a>
           <a href=""><span class=" label">Đau mắt</span></a>
           <a href=""><span class=" label">Cận thị</span></a>
         </div>-->
 
-        <div class="post__author">
-          <div class="post__author--img">
-            <img src="images/profiles/8x.jpg" alt="">
-          </div>
+                <div class="post__author">
+                    <div class="post__author--img">
+                        <img src="images/profiles/8x.jpg" alt="">
+                    </div>
 
-          <div class="post__auhor--content">
-            <h3 class="post__auhor--name"><a href="">Trần Ngọc Trinh</a></h3>
-            <p class="post__auhor--des">
-                Tôi đã kết hôn và có 1 con trai hiện đang sống tại quận 4. Tôi có 4 năm kinh nghiệm về lĩnh vực marketing và đang là trưởng nhóm của công ty A.
-            </p>
-          </div>
+                    <div class="post__auhor--content">
+                        <h3 class="post__auhor--name"><a href="">Trần Ngọc Trinh</a></h3>
+                        <p class="post__auhor--des">
+                            Tôi đã kết hôn và có 1 con trai hiện đang sống tại quận 4. Tôi có 4 năm kinh nghiệm về lĩnh vực marketing và đang là trưởng nhóm của công ty A.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="post__write">
+
+                    <div class="post__write--title">Viết bình luận</div>
+                    <div id="post__write--content">
+                        <textarea name="message" placeholder="" style="height:100px"></textarea>
+
+                        <a href="" class="button mb0">Bình luận</a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            {{> comments}}
 
         </div>
 
 
-        <div class="post__write">
 
-          <div class="post__write--title">Viết bình luận</div>
-          <div id="post__write--content">
-            <textarea name="message" placeholder="" style="height:100px" ></textarea>
-
-            <a href="" class="button mb0">Bình luận</a>
-          </div>
-
-
-        </div>
-
-      </div>
-
-{{> comments}}
 
     </div>
-
-    
-
-
-  </div>
 
 
 

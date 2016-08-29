@@ -39,6 +39,7 @@
                 </div>
                 <div class="forum__table--view">
                     Lượt xem
+
                 </div>
                 <div class="forum__table--date">
                     Ngày đăng
@@ -46,10 +47,10 @@
             </li>
 
 
-            {{#each (first  AllCategory.files 5)}}
+            {{#each (first AllCategory.files 5)}}
             <li class="forum__table--row normal">
                 <div class="forum__table--content">
-                    <a href="{{this.link}}" class="title">{{this.title}}</a>
+                    <a href="{{this.slug}}" class="title">{{this.title}}</a>
 
                     <ul class="breadcrumbs">
                         <li><a href="#">Giao lưu</a></li>
@@ -87,22 +88,23 @@
                 </div>
             </li>
 
-            {{#each (first news 5)}}
+            {{#each (last AllCategory.files 5)}}
             <li class="forum__table--row normal">
                 <div class="forum__table--content">
                     <a href="{{this.link}}" class="title">{{this.title}}</a>
 
                     <ul class="breadcrumbs">
-                        <li><a href="#">Giao lưu</a></li>
-                        <li><a href="#">Mẹo vặt kinh nghiệm</a></li>
+                        {{#each (genBreadcrumb AllCategory category ) }}
+                        <li><a href="{{this.href}}">{{this.metadata.title}}</a></li>
+                        {{/each}}
                     </ul>
 
                 </div>
                 <div class="forum__table--view">
-                    {{this.view}}
+                    {{luot_xem}}
                 </div>
                 <div class="forum__table--date">
-                    {{this.date}}
+                    {{thoi_gian}}
                 </div>
             </li>
             {{/each}}
