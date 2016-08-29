@@ -1,6 +1,6 @@
 ---json
 {
-    "title": "Search",www
+    "title": "Search",
     "description": "Search Page",
     "layout": "gioithieu.html",
     "permalink" : false

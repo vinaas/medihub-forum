@@ -108,15 +108,20 @@
                             <a href="{{slug}}" class="newsMoz__url"></a>
                         </div>
                         <div class="newsMoz__title">
-                            <a href="{{ lookup (lookupCategory ../AllCategory  category ) 'href' }}" class="link"></a>
-                            <span class="label">    {{ lookup (lookup (lookupCategory ../AllCategory  category ) 'metadata' ) 'title' }} </span>
+                            {{#with (lookupCategory ../AllCategory  category )}}
+                            <a href="{{href}}" class="link"></a>
+                            <span class="label"> {{metadata.title}} </span>
+                         
+                            {{/with}}
                             <h3 class="txt">{{title}}</h3>
                             <div class="date"><i class="fa fa-clock-o"></i> {{thoi_gian}}</div>
 
                         </div>
                     </div>
                 </div>
-                {{/each}} {{#each ( indexOfFiles AllCategory.files slideShow.slug2) }}
+                {{/each}} 
+                
+                {{#each ( indexOfFiles AllCategory.files slideShow.slug2) }}
                 <div class="newsMoz__item medium">
                     <div class="newsMoz__wrap">
                         <div class="newsMoz__img" style="background-image: url({{hinh_anh}})">
