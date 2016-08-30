@@ -57,8 +57,8 @@ var map;
         heart: '668',
         time: ["T2 - T6: 8h - 15h","T7 - CN: 8h- 17h "] ,
         position : {
-            lat : 40.696047,
-            lng : -73.997159
+            lat : 10.768178,
+            lng : 106.694367
         },
         markerIcon : markerImg
     }, {
@@ -72,8 +72,8 @@ var map;
         heart: '668',
         time: ["T2 - T6: 8h - 15h","T7 - CN: 8h- 17h "] ,
         position : {
-            lat : 40.688042,
-            lng : -73.996472
+            lat : 10.788178,
+            lng : 106.684367
         },
         markerIcon : markerImg
     }, {
@@ -87,8 +87,8 @@ var map;
         heart: '668',
         time: ["T2 - T6: 8h - 15h","T7 - CN: 8h- 17h "] ,
         position : {
-            lat : 40.702620,
-            lng : -73.989682
+            lat : 10.868178,
+            lng : 106.674367
         },
         markerIcon : markerImg
     }, {
@@ -102,8 +102,8 @@ var map;
         heart: '668',
         time: ["T2 - T6: 8h - 15h","T7 - CN: 8h- 17h "] ,
         position : {
-            lat : 40.694355,
-            lng : -73.985229
+            lat : 10.668178,
+            lng : 106.664367
         },
         markerIcon : markerImg
     }, {
@@ -117,8 +117,8 @@ var map;
         heart: '668',
         time: ["T2 - T6: 8h - 15h","T7 - CN: 8h- 17h "] ,
         position : {
-            lat : 40.686838,
-            lng : -73.990078
+            lat : 10.718178,
+            lng : 106.704367
         },
         markerIcon : markerImg
     }, {
@@ -132,8 +132,8 @@ var map;
         heart: '668',
         time: ["T2 - T6: 8h - 15h","T7 - CN: 8h- 17h "] ,
         position : {
-            lat : 40.703686,
-            lng : -73.982910
+            lat : 10.168178,
+            lng : 106.724367
         },
         markerIcon : markerImg
     }, {
@@ -147,8 +147,8 @@ var map;
         heart: '668',
         time: ["T2 - T6: 8h - 15h","T7 - CN: 8h- 17h "] ,
         position : {
-            lat : 40.702189,
-            lng : -73.995098
+            lat : 10.268178,
+            lng : 106.698367
         },
         markerIcon : markerImg
     }, {
@@ -162,8 +162,8 @@ var map;
         heart: '668',
         time: ["T2 - T6: 8h - 15h","T7 - CN: 8h- 17h "] ,
         position : {
-            lat : 40.687417,
-            lng : -73.982653
+            lat : 10.488178,
+            lng : 106.699367
         },
         markerIcon : markerImg
     }, {
@@ -177,8 +177,8 @@ var map;
         heart: '668',
         time: ["T2 - T6: 8h - 15h","T7 - CN: 8h- 17h "] ,
         position : {
-            lat : 40.694120,
-            lng : -73.974413
+            lat : 10.868178,
+            lng : 106.699367
         },
         markerIcon : markerImg
     }, {
@@ -192,8 +192,8 @@ var map;
         heart: '668',
         time: ["T2 - T6: 8h - 15h","T7 - CN: 8h- 17h "] ,
         position : {
-            lat : 40.682665,
-            lng : -74.000934
+            lat : 10.688178,
+            lng : 106.634367
         },
         markerIcon : markerImg
     }];
@@ -282,12 +282,12 @@ var map;
         });
 
         map.mapTypes.set('Styled', styledMapType);
-        map.setCenter(new google.maps.LatLng(40.6984237,-73.9890044));
-        map.setZoom(14);
+        map.setCenter(new google.maps.LatLng(10.768178,106.694367));
+        map.setZoom(10);
 
         if ($('#address').length > 0) {
             newMarker = new google.maps.Marker({
-                position: new google.maps.LatLng(40.6984237,-73.9890044),
+                position: new google.maps.LatLng(10.768178,106.694367),
                 map: map,
                 icon: new google.maps.MarkerImage(
                     'images/marker-new.png',
