@@ -86,17 +86,17 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row" data-equalizer data-equalize-on="medium" >
         <div class="medium-4 small-12 column">
-            <div class="portlet boxShadow">
-                <div class="porlet--heading primary">
+            <div class="portlet boxShadow" data-equalizer-watch>
+                <div class="porlet--heading ">
                     <h3 class="porlet--title ">Thành viên năng động</h3>
                 </div>
 
                 <div class="porlet--body bottom-5">
                     <div class="row small-up-1 medium-up-2 large-up-2">
 
-                        {{#each (first users 12)}}
+                        {{#each (first users 10)}}
                         <div class="column">
                             <div class="user user--small">
                                 <a href="{{this.link}}">
@@ -116,129 +116,109 @@
         </div>
 
         <div class="small-12 medium-8 column">
-            <div class="portlet boxShadow">
-                <div class="porlet--body">
+            <div data-equalizer-watch>
 
-                    <div class="row align-justify align-middle">
+                <div class="portlet boxShadow">
+                    <div class="porlet--body">
 
-                        <div class="column small-12 large-8 text-center">
+                        <div class="row align-justify align-middle">
 
-                            <div class="row align-justify align-middle">
+                            <div class="column small-12 large-8 text-center">
 
-                                <div class="column small-4 text-center">
+                                <div class="row align-justify align-middle">
 
-                                    <div class="forum__number">
-                                        <div class="txt">Đang xem</div>
-                                        <div class="num dangxem">256 <i class="fa fa-users"></i></div>
+                                    <div class="column small-4 text-center">
+
+                                        <div class="forum__number">
+                                            <div class="txt">Đang xem</div>
+                                            <div class="num dangxem">256 <i class="fa fa-users"></i></div>
+                                        </div>
+
                                     </div>
 
-                                </div>
+                                    <div class="column small-4 text-center">
 
-                                <div class="column small-4 text-center">
+                                        <div class="forum__number">
+                                            <div class="txt">Hỏi</div>
+                                            <div class="num hoi">8735 <i class="fa fa-question-circle"></i></div>
+                                        </div>
 
-                                    <div class="forum__number">
-                                        <div class="txt">Hỏi</div>
-                                        <div class="num hoi">8735 <i class="fa fa-question-circle"></i></div>
                                     </div>
+                                    <div class="column small-4 text-center">
 
-                                </div>
-                                <div class="column small-4 text-center">
+                                        <div class="forum__number last">
+                                            <div class="txt">Trao đổi</div>
+                                            <div class="num giaoluu">915 <i class="fa fa-comments-o"></i></div>
+                                        </div>
 
-                                    <div class="forum__number last">
-                                        <div class="txt">Trao đổi</div>
-                                        <div class="num giaoluu">915 <i class="fa fa-comments-o"></i></div>
                                     </div>
 
                                 </div>
 
                             </div>
 
+
+                            <div class="column small-12 medium-12 large-4 text-center">
+
+                                <a href="forum.html" class="button mb0 ">Vào xem diễn đàn &nbsp; <i
+                                        class="fa fa-angle-right"></i></a>
+
+                            </div>
                         </div>
 
-
-                        <div class="column small-12 medium-12 large-4 text-center">
-
-                            <a href="forum.html" class="button mb0 ">Vào xem diễn đàn &nbsp; <i
-                                    class="fa fa-angle-right"></i></a>
-
-                        </div>
                     </div>
-
-                    <!--<div class="row">
-                      <div class="medium-8 small-12 column align-self-middle">
-
-                              <div class="forum__number">
-                                  <div class="txt">Đang xem</div>
-                                  <div class="num dangxem">256 <i class="fa fa-users"></i></div>
-                              </div>
-
-                              <div class="forum__number">
-                                  <div class="txt">Hỏi</div>
-                                  <div class="num hoi">8735 <i class="fa fa-question-circle"></i></div>
-                              </div>
-
-                              <div class="forum__number last">
-                                  <div class="txt">Trao đổi</div>
-                                  <div class="num giaoluu">915 <i class="fa fa-comments-o"></i></div>
-                              </div>
-
-                      </div>
-                      <div class="medium-4 small-12 column align-self-middle">
-
-                        <a href="forum.html" class="button expanded mb0">Vào xem diễn đàn &nbsp;  <i class="fa fa-angle-right "></i></a>
-
-                      </div>
-                    </div>-->
                 </div>
-            </div>
 
-            <div class="row" data-equalizer data-equalize-on="medium">
-                <div class="column small-12 medium-6">
+                <div class="row" >
+                    <div class="column small-12 medium-6">
 
-                    <div class="portlet boxShadow porlet--relative" data-equalizer-watch>
-                        <div class="porlet--heading primary">
-                            <h3 class="porlet--title ">Viết lên diễn đàn</h3>
-                        </div>
-
-                        <div class="porlet--body">
-                            <div class="row collapse ">
-                                <div class="shrink columns">
-                                    <img src="images/paper-note.png" width="55" alt="" style=" margin: 5px 9px 0 15px">
-                                </div>
-                                <div class="columns">
-                                    <p>Bạn có thể đặt câu hỏi với các chuyên gia, các bác sĩ, và trao đổi thông tin với
-                                        các thành viên khác trên diễn đàn.</p>
-
-                                </div>
+                        <div class="portlet boxShadow porlet--relative">
+                            <div class="porlet--heading primary">
+                                <h3 class="porlet--title ">Viết lên diễn đàn</h3>
                             </div>
 
-                        </div>
+                            <div class="porlet--body">
+                                <div class="row collapse ">
+                                    <div class="shrink columns">
+                                        <img src="images/paper-note.png" width="55" alt="" style=" margin: 5px 9px 0 15px">
+                                    </div>
+                                    <div class="columns">
+                                        <p>Bạn có thể đặt câu hỏi với các chuyên gia, các bác sĩ, và trao đổi thông tin với
+                                            các thành viên khác trên diễn đàn.</p>
 
-                        <div class="text-center button-absolute">
-                            <a href="forum.html" class="button mb20"><i class="fa fa-edit"></i> Viết lên diễn đàn </a>
-                        </div>
-                    </div>
-                </div>
+                                    </div>
+                                </div>
 
-                <div class="column small-12 medium-6">
+                            </div>
 
-                    <div class="portlet boxShadow porlet--relative" data-equalizer-watch>
-                        <div class="porlet--heading primary">
-                            <h3 class="porlet--title ">Tìm trên diễn đàn</h3>
-                        </div>
-
-                        <div class="porlet--body">
-                            <p>Bạn có thể tìm thấy thông tin cần thiết trong các bài viết trên diễn đàn.</p>
-                            <input type="text" placeholder="Bạn muốn tìm" class="bgGray">
-                        </div>
-
-                        <div class="text-center button-absolute">
-                            <a href="forum.html" class="button mb20"><i class="fa fa-search"></i> Tìm trên diễn đàn</a>
+                            <div class="text-center button-absolute">
+                                <a href="forum.html" class="button mb20"><i class="fa fa-edit"></i> Viết lên diễn đàn </a>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="column small-12 medium-6">
+
+                        <div class="portlet boxShadow porlet--relative">
+                            <div class="porlet--heading primary">
+                                <h3 class="porlet--title ">Tìm trên diễn đàn</h3>
+                            </div>
+
+                            <div class="porlet--body">
+                                <p>Bạn có thể tìm thấy thông tin cần thiết trong các bài viết trên diễn đàn.</p>
+                                <input type="text" placeholder="Bạn muốn tìm" class="bgGray">
+                            </div>
+
+                            <div class="text-center button-absolute">
+                                <a href="forum.html" class="button mb20"><i class="fa fa-search"></i> Tìm trên diễn đàn</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
+
 
         </div>
     </div>
