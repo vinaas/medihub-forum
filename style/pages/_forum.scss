@@ -61,6 +61,8 @@
 
 .newsMoz{
     @extend .clearfix;
+  box-sizing: border-box;
+    width: 100%;
     margin-bottom: $margin-box;
     &:first-child{
         padding-left: 0;
@@ -299,6 +301,7 @@
         width: 100%;
         left: 0;
     }
+
 }
 
 
@@ -626,4 +629,14 @@ margin-bottom: $margin-box;
     &.show{
       max-height: 100%;
     }
+}
+
+.swiper-moz-slider{
+
+}
+
+.moz-button-next{
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
