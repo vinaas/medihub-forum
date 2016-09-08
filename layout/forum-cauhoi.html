@@ -12,18 +12,6 @@
                 <div class="forum__head baiviet">
                     <h3 class="title">{{title}}</h3>
 
-                    <ul class="breadcrumbs">
-
-                        <li><a href="forum.html">Diễn đàn</a></li>
-
-                        {{#each (genBreadcrumb AllCategory category ) }}
-                        <li><a href="{{this.href}}">{{this.metadata.title}}</a></li>
-                        {{/each}}
-                        <li>
-                            {{title}}
-                        </li>
-                    </ul>
-
 
                     <div class="post__question">
                         <a href="forum-datcauhoi.html" class="button">Đặt câu hỏi</a>
@@ -32,16 +20,29 @@
 
                 </div>
 
+                <div class="clearfix" style="margin-top: 10px">
+
+                    <ul class="breadcrumbs pull-left">
+                        {{#each (genBreadcrumb AllCategory category ) }}
+                        <li><a href="{{this.href}}">{{this.metadata.title}}</a></li>
+                        {{/each}}
+                    </ul>
+
+
+                    <ul class="post__meta pull-right">
+                        <li>{{thoi_gian}}</li>
+                        <li>{{luot_xem}} lượt xem</li>
+                        <li>56 Phản hồi</li>
+                        <li>Bởi <a href="">{{nguoi_dang}}</a></li>
+                        <li><i class="fa fa-heart"></i> {{yeu_thich}}</li>
+                    </ul>
+
+                </div>
+
 
                 {{{contents}}}
 
-                <ul class="post__meta">
-                    <li>{{thoi_gian}}</li>
-                    <li>{{luot_xem}} lượt xem</li>
-                    <li>56 Phản hồi</li>
-                    <li>Bởi <a href="">{{nguoi_dang}}</a></li>
-                    <li><i class="fa fa-heart"></i> {{yeu_thich}}</li>
-                </ul>
+
                 <!--Ẩn tag theo yêu cầu chị Hương-->
                 <!--<div class="post__label">
 

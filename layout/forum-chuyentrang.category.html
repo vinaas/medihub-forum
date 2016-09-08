@@ -25,69 +25,155 @@
                 </div>
             </div>
         </div>
-        <div class="newsMoz">
-            {{#each (first (lookup ( lookupCategory AllCategory pagination.category ) 'files') 1) }}
-            <div class="newsMoz__item big">
-                <div class="newsMoz__wrap">
-                    <div class="newsMoz__img" style="background-image: url({{hinh_anh}})">
-                        <a href="{{slug}}" class="newsMoz__url"></a>
-                    </div>
-                    <div class="newsMoz__title">
-                        {{#with (lookupCategory ../AllCategory category )}}
-                        <a href="{{href}}" class="link"></a>
-                        <span class="label"> {{metadata.title}} </span> {{/with}}
-                        <h3 class="txt">{{title}}</h3>
-                        <div class="date"><i class="fa fa-clock-o"></i> {{thoi_gian}}</div>
+
+
+        <div class="swiper-moz-slider swiper-container">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+
+                    <div class="newsMoz">
+                        {{#each (first (lookup ( lookupCategory AllCategory pagination.category ) 'files') 1) }}
+                        <div class="newsMoz__item big">
+                            <div class="newsMoz__wrap">
+                                <div class="newsMoz__img" style="background-image: url({{hinh_anh}})">
+                                    <a href="{{slug}}" class="newsMoz__url"></a>
+                                </div>
+                                <div class="newsMoz__title">
+                                    {{#with (lookupCategory ../AllCategory category )}}
+                                    <a href="{{href}}" class="link"></a>
+                                    <span class="label"> {{metadata.title}} </span> {{/with}}
+                                    <h3 class="txt">{{title}}</h3>
+                                    <div class="date"><i class="fa fa-clock-o"></i> {{thoi_gian}}</div>
+
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                        <div class="small2-more">
+
+                            {{#each (last (first (lookup ( lookupCategory AllCategory pagination.category ) 'files') 2) 1)}}
+                            <div class="newsMoz__item small">
+                                <div class="newsMoz__wrap">
+                                    <div class="newsMoz__img" style="background-image: url({{hinh_anh}})">
+                                        <a href="{{slug}}" class="newsMoz__url"></a>
+                                    </div>
+
+                                    <div class="newsMoz__title">
+                                        {{#with (lookupCategory ../AllCategory category )}}
+                                        <a href="{{href}}" class="link"></a>
+                                        <span class="label">{{metadata.title}}</span> {{/with}}
+                                        <h3 class="txt">{{title}}</h3>
+                                    </div>
+
+                                </div>
+                            </div>
+                            {{/each}}
+
+                            {{#each (last (first (lookup ( lookupCategory AllCategory pagination.category ) 'files') 3) 1)}}
+                            <div class="newsMoz__item small">
+                                <div class="newsMoz__wrap">
+                                    <div class="newsMoz__img" style="background-image: url({{hinh_anh}})">
+                                        <a href="{{slug}}" class="newsMoz__url"></a>
+                                    </div>
+
+                                    <div class="newsMoz__title">
+                                        {{#with (lookupCategory ../AllCategory category )}}
+                                        <a href="{{href}}" class="link"></a>
+                                        <span class="label">{{metadata.title}}</span> {{/with}}
+                                        <h3 class="txt">{{title}}</h3>
+                                    </div>
+
+                                </div>
+                            </div>
+                            {{/each}}
+
+                        </div>
+
+
+
 
                     </div>
+
                 </div>
+
+                <div class="swiper-slide">
+
+                    <div class="newsMoz">
+                        {{#each (first (lookup ( lookupCategory AllCategory pagination.category ) 'files') 1) }}
+                        <div class="newsMoz__item big">
+                            <div class="newsMoz__wrap">
+                                <div class="newsMoz__img" style="background-image: url({{hinh_anh}})">
+                                    <a href="{{slug}}" class="newsMoz__url"></a>
+                                </div>
+                                <div class="newsMoz__title">
+                                    {{#with (lookupCategory ../AllCategory category )}}
+                                    <a href="{{href}}" class="link"></a>
+                                    <span class="label"> {{metadata.title}} </span> {{/with}}
+                                    <h3 class="txt">{{title}}</h3>
+                                    <div class="date"><i class="fa fa-clock-o"></i> {{thoi_gian}}</div>
+
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                        <div class="small2-more">
+
+                            {{#each (last (first (lookup ( lookupCategory AllCategory pagination.category ) 'files') 2) 1)}}
+                            <div class="newsMoz__item small">
+                                <div class="newsMoz__wrap">
+                                    <div class="newsMoz__img" style="background-image: url({{hinh_anh}})">
+                                        <a href="{{slug}}" class="newsMoz__url"></a>
+                                    </div>
+
+                                    <div class="newsMoz__title">
+                                        {{#with (lookupCategory ../AllCategory category )}}
+                                        <a href="{{href}}" class="link"></a>
+                                        <span class="label">{{metadata.title}}</span> {{/with}}
+                                        <h3 class="txt">{{title}}</h3>
+                                    </div>
+
+                                </div>
+                            </div>
+                            {{/each}}
+
+                            {{#each (last (first (lookup ( lookupCategory AllCategory pagination.category ) 'files') 3) 1)}}
+                            <div class="newsMoz__item small">
+                                <div class="newsMoz__wrap">
+                                    <div class="newsMoz__img" style="background-image: url({{hinh_anh}})">
+                                        <a href="{{slug}}" class="newsMoz__url"></a>
+                                    </div>
+
+                                    <div class="newsMoz__title">
+                                        {{#with (lookupCategory ../AllCategory category )}}
+                                        <a href="{{href}}" class="link"></a>
+                                        <span class="label">{{metadata.title}}</span> {{/with}}
+                                        <h3 class="txt">{{title}}</h3>
+                                    </div>
+
+                                </div>
+                            </div>
+                            {{/each}}
+
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
             </div>
-            {{/each}}
- <div class="small2-more">
 
-            {{#each (last (first (lookup ( lookupCategory AllCategory pagination.category ) 'files') 2) 1)}}
-                <div class="newsMoz__item small">
-                    <div class="newsMoz__wrap">
-                        <div class="newsMoz__img" style="background-image: url({{hinh_anh}})">
-                            <a href="{{slug}}" class="newsMoz__url"></a>
-                        </div>
-
-                        <div class="newsMoz__title">
-                            {{#with (lookupCategory ../AllCategory category )}}
-                            <a href="{{href}}" class="link"></a>
-                            <span class="label">{{metadata.title}}</span> {{/with}}
-                            <h3 class="txt">{{title}}</h3>
-                        </div>
-
-                    </div>
-                </div>
-                {{/each}} 
-                
-            {{#each (last (first (lookup ( lookupCategory AllCategory pagination.category ) 'files') 3) 1)}}
-                <div class="newsMoz__item small">
-                    <div class="newsMoz__wrap">
-                        <div class="newsMoz__img" style="background-image: url({{hinh_anh}})">
-                            <a href="{{slug}}" class="newsMoz__url"></a>
-                        </div>
-
-                        <div class="newsMoz__title">
-                            {{#with (lookupCategory ../AllCategory category )}}
-                            <a href="{{href}}" class="link"></a>
-                            <span class="label">{{metadata.title}}</span> {{/with}}
-                            <h3 class="txt">{{title}}</h3>
-                        </div>
-
-                    </div>
-                </div>
-                {{/each}}
-
-            </div>
-
-           
-
+            <!-- Add Arrows -->
+            <div class="moz-button-next"><i class="fa fa-angle-right"></i></div>
+            <div class="moz-button-prev"><i class="fa fa-angle-left"></i></div>
 
         </div>
-   
+
+
         <ul class="forum__table boxShadow">
 
             <li class="forum__table--row heading">
