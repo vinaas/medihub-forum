@@ -222,7 +222,7 @@
 
   margin: $margin-box 0;
   .searchForm {
-    padding: 17px 10px;
+    padding: 17px 10px 5px;
     //margin-left: -5px;
     //margin-right: -5px;
     background: $bg-gray-light;
@@ -233,6 +233,7 @@
     > div {
       float: left;
       padding: 0 5px;
+      margin-bottom: 10px;
     }
     .searchForm--1 {
       width: 20%;
@@ -249,6 +250,85 @@
     .searchForm--5 {
       width: 15%;
     }
+
+    @include breakpoint(medium down){
+
+      .searchForm--1 {
+            width: 50%;
+          }
+
+      .searchForm--2 {
+        width: 50%;
+      }
+
+      .searchForm--3 {
+        width: 40%;
+      }
+
+      .searchForm--4 {
+        width: 40%;
+
+      }
+      .searchForm--5 {
+        margin-left: 0;
+        width: 20%;
+      }
+
+    }
+
+    @include breakpoint(small down){
+
+      .searchForm--1 {
+
+        width: 100%;
+      }
+
+      .searchForm--2 {
+        width: 100%;
+      }
+
+      .searchForm--3 {
+        width: 50%;
+      }
+
+      .searchForm--4 {
+        width: 50%;
+
+      }
+      .searchForm--5 {
+        margin-left: 0;
+        width: 100%;
+      }
+
+    }
+
+
+    //@media screen and (max-width: 850px) {
+    //
+    //  .searchForm--1 {
+    //
+    //    width: 50%;
+    //  }
+    //
+    //  .searchForm--2 {
+    //    width: 50%;
+    //  }
+    //
+    //  .searchForm--3 {
+    //    width: 40%;
+    //  }
+    //
+    //  .searchForm--4 {
+    //    width: 40%;
+    //
+    //  }
+    //  .searchForm--5 {
+    //    margin-left: 0;
+    //    width: 20%;
+    //  }
+    //}
+
+
   }
 
   .is-sticky{
@@ -264,6 +344,14 @@
   padding: 0 7px;
   border-top: 1px solid $light-gray;
   font-size: rem-calc(13px);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  @include breakpoint(medium down){
+    justify-content: flex-start;
+  }
+
   >div{
     display: inline-block;
     padding: 15px 8px;
@@ -272,22 +360,30 @@
     &:last-child{
       border-right: 0;
     }
+
+    @include breakpoint(medium down){
+      border-right: none;
+    }
   }
 
   .rangeSlider-container{
     padding-top:0;
     padding-bottom: 0;
     vertical-align: top;
+    flex-grow: 1;
+    display: flex;
   }
 
   .rangeSlider-label{
+    white-space: nowrap;
     float: left;
     padding: 15px 15px 15px 0;
   }
 
   .rangeSlider{
-    width: 210px;
+    width: 100%;
     float: left;
+    min-width: 100px;
   }
 
   .searchDetail-title{
