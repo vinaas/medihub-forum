@@ -64,7 +64,7 @@ function init_fixed_bg(headerHeight){
 
 function init_sticky(){
     if ($(window).width() > 1024) {
-        $("#mapView").sticky({topSpacing:80, bottomSpacing: 415});
+        // $("#mapView").sticky({topSpacing:80, bottomSpacing: 415});
         $(".searchFilter .searchForm").sticky({topSpacing:0});
 
         $(".forumHome__nav").sticky({topSpacing:0});

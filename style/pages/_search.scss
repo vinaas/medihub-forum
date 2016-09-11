@@ -257,7 +257,7 @@
       width: 15%;
     }
 
-    @include breakpoint(medium down){
+    @include breakpoint(900px down){
 
       .searchForm--1 {
             width: 50%;
@@ -307,33 +307,6 @@
       }
 
     }
-
-
-    //@media screen and (max-width: 850px) {
-    //
-    //  .searchForm--1 {
-    //
-    //    width: 50%;
-    //  }
-    //
-    //  .searchForm--2 {
-    //    width: 50%;
-    //  }
-    //
-    //  .searchForm--3 {
-    //    width: 40%;
-    //  }
-    //
-    //  .searchForm--4 {
-    //    width: 40%;
-    //
-    //  }
-    //  .searchForm--5 {
-    //    margin-left: 0;
-    //    width: 20%;
-    //  }
-    //}
-
 
   }
 
@@ -444,6 +417,9 @@
     span{
       color: $primary-color;
     }
+  }
+  @include breakpoint(small down){
+    padding: 0 0;
   }
 }
 
