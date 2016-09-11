@@ -7,7 +7,7 @@
   <div class="searchForm--1">
     <select class="select2Normal" data-placeholder="Bác sĩ | Phòng khám" onchange="data.selectedFilter.loai = this.value;">
       <option value=""></option>
-      <option value=" ">&nbsp</option>
+      <option value=" ">Tất cả</option>
       {{#each searchForm.bacsi-phongkham}}
        <option value="{{loai}}" >{{ten}}</option>
       {{/each}}
@@ -16,7 +16,7 @@
   <div class="searchForm--2">
     <select class="select2Search" data-placeholder="Từ khóa" onchange="data.selectedFilter.giatri = this.value;">
       <option value=""></option>
-      <option value=" ">&nbsp</option>
+      <option value=" ">Tất cả</option>
       {{#each searchForm.trieu-chung-benh}}
         <option value="{{this.name}}" >{{this.ten}}</option>
       {{/each}}
@@ -25,7 +25,7 @@
   <div class="searchForm--3">
     <select class="select2Search" data-placeholder="Tỉnh | Thành" onchange="data.selectedFilter.tinh = this.value;">
       <option value=""></option>
-      <option value=" ">&nbsp</option>
+      <option value=" ">Tất cả</option>
       {{#each tinh-thanh-pho.danh-sach-tinh}}
         <option value="{{name}}">{{title}}</option>
       {{/each}}
@@ -34,7 +34,7 @@
   <div class="searchForm--4">
     <select class="select2Search" data-placeholder="Quận | Huyện" onchange="data.selectedFilter.quan = this.value;">
       <option value=""></option>
-      <option value=" ">&nbsp</option>
+      <option value=" ">Tất cả</option>
       {{#each tinh-thanh-pho.danh-sach-tinh}}
         {{#each this.danh-sach-quan}}
           <option value="{{name}}">{{title}}</option>

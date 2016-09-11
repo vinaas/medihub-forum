@@ -1,59 +1,65 @@
 <div class="row">
 <div class="small-12 columns">
-  <div class="searchFilter boxShadow">
-    {{> searchForm }}
 
-    <div class="searchDetail">
+  <div class="searchFilter boxShadow" data-toggler=".expanded" id="searchFilter">
 
-      <div class="searchDetail-title">Lọc tìm kiếm</div>
+    <div class="searchFilter--mobile show-for-small-only" data-toggle="searchFilterId searchFilter"><i class="fa fa-filter"></i> Lọc tìm kiếm</div>
 
-      <div class="checkbox-inline">
-        <label class="topcoat-checkbox">
-          <input type="checkbox">
-          <div class="topcoat-checkbox__checkmark"></div>
-          Trong giờ
-        </label>
-      </div>
+    <div id="searchFilterId" data-toggler data-animate="fade-in fade-out">
 
-      <div class="checkbox-inline">
-        <label class="topcoat-checkbox">
-          <input type="checkbox">
-          <div class="topcoat-checkbox__checkmark"></div>
-          Ngoài giờ
-        </label>
-      </div>
+        {{> searchForm }}
 
-      <div class="checkbox-inline">
-        <label class="topcoat-checkbox">
-          <input type="checkbox">
-          <div class="topcoat-checkbox__checkmark"></div>
-          Có bảo hiểm&nbsp;<div class="label-bh">BH</div>
-        </label>
-      </div>
+        <div class="searchDetail">
 
-      <div class="checkbox-inline">
-        <label class="topcoat-checkbox">
-          <input type="checkbox">
-          <div class="topcoat-checkbox__checkmark"></div>
-          Có lấy qua số điện thoại
-        </label>
-      </div>
+            <div class="searchDetail-title">Lọc tìm kiếm</div>
+
+            <div class="checkbox-inline">
+                <label class="topcoat-checkbox">
+                    <input type="checkbox">
+                    <div class="topcoat-checkbox__checkmark"></div>
+                    Trong giờ
+                </label>
+            </div>
+
+            <div class="checkbox-inline">
+                <label class="topcoat-checkbox">
+                    <input type="checkbox">
+                    <div class="topcoat-checkbox__checkmark"></div>
+                    Ngoài giờ
+                </label>
+            </div>
+
+            <div class="checkbox-inline">
+                <label class="topcoat-checkbox">
+                    <input type="checkbox">
+                    <div class="topcoat-checkbox__checkmark"></div>
+                    Có bảo hiểm&nbsp;<div class="label-bh">BH</div>
+                </label>
+            </div>
+
+            <div class="checkbox-inline">
+                <label class="topcoat-checkbox">
+                    <input type="checkbox">
+                    <div class="topcoat-checkbox__checkmark"></div>
+                    Có lấy qua số điện thoại
+                </label>
+            </div>
 
 
-      <div class="rangeSlider-container">
-        <div class="rangeSlider-label">Giá khám</div>
-        <div class="rangeSlider">
-          <input id="range_2" type="text" />
+            <div class="rangeSlider-container">
+                <div class="rangeSlider-label">Giá khám</div>
+                <div class="rangeSlider">
+                    <input id="range_2" type="text" />
+                </div>
+
+            </div>
+
         </div>
 
-      </div>
-
     </div>
+
 
   </div>
 </div>
 </div>
 
-
-
-</div>

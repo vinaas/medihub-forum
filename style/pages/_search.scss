@@ -216,11 +216,17 @@
 }
 
 .searchFilter {
-
+  overflow: hidden;
   background: $bg-gray-light;
   width: 100%;
 
   margin: $margin-box 0;
+
+
+
+  .select2-container{
+    width: 100% !important;
+  }
   .searchForm {
     padding: 17px 10px 5px;
     //margin-left: -5px;
@@ -340,6 +346,33 @@
 }
 
 
+.searchFilter--mobile{
+  @include header-size(h6);
+  text-transform: uppercase;
+  background: $primary-color;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+
+.searchFilter.expanded{
+  .searchFilter--mobile{
+    background: white;
+    color: black;
+    border-bottom: 1px solid $light-gray;
+  }
+}
+
+
+#searchFilterId{
+  @include breakpoint(small down){
+    display: none;
+  }
+}
+
+
 .searchDetail{
   padding: 0 7px;
   border-top: 1px solid $light-gray;
@@ -351,6 +384,8 @@
   @include breakpoint(medium down){
     justify-content: flex-start;
   }
+
+
 
   >div{
     display: inline-block;
@@ -382,6 +417,7 @@
 
   .rangeSlider{
     width: 100%;
+    max-width: 300px;
     float: left;
     min-width: 100px;
   }
@@ -396,9 +432,18 @@
 .searchText{
   color: $secondary-color;
   padding: 0 14px;
+  display: block;
+  margin-bottom: 15px;
   span{
     color: $dark-gray;
     font-weight: bold;
+  }
+
+  &:hover{
+    color: $primary-color;
+    span{
+      color: $primary-color;
+    }
   }
 }
 
