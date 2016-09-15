@@ -50,6 +50,24 @@
       display: inline-block;
       width: 33.3333%;
     }
+
+    @include breakpoint(medium down){
+      li{
+        width: 50%;
+      }
+    }
+
+
+
+    @include breakpoint(small down){
+      li{
+        width: 100%;
+      }
+    }
+
+     
+
+
   }
 
 }
