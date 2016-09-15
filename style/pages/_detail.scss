@@ -77,6 +77,10 @@
 .article--column_1{
 
   flex: 0 0 110px;
+
+  @include breakpoint(medium down){
+    flex: 0 0 70px;
+  }
 }
 
 .article--column_2{
@@ -86,14 +90,26 @@
 .article--column_sub{
   display: flex;
   justify-content: space-between;
+
+  @include breakpoint(small){
+    flex-wrap: wrap;
+  }
 }
 
 .article--column_sub_1{
   padding-right: 20px;
   flex: 2;
+  min-width: 200px;
+  margin-bottom: 5px;
+
+
 }
 .article--column_sub_2{
   flex : 0 0 180px;
+  margin-bottom: 5px;
+  @include breakpoint(small down){
+
+  }
 }
 
 
@@ -109,6 +125,11 @@
     max-height: 100%;
   }
   margin-bottom: 10px;
+
+  @include breakpoint(medium down){
+     width: 60px;
+  height: 60px;
+  }
 }
 
 .article--heart{
@@ -179,6 +200,10 @@
       margin-right: 3px;
     }
   }
+
+  @include breakpoint(small down){
+    display: none;
+  }
 }
 
 .article-gallery-popover{
@@ -227,6 +252,9 @@
   text-transform: uppercase;
   margin-bottom: -3px;
   font-weight: bold;
+  @include breakpoint(medium down){
+    margin-top: 5px;
+  }
 }
 .article--drop{
   background: $bg-gray-light;
