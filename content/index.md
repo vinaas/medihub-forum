@@ -1,9 +1,10 @@
 ---json
 {
     "title": "Index",
+    "url": "",
     "description": "Index Page",
     "layout": "index.html",
-    "permalink": false,
+    "permalink": "",
     "rivetData": {
         "selectedFilter": {
             "chon": "",
@@ -22,13 +23,14 @@
     ],
     "dang_xem": 256,
     "hoi": 8735,
-    "trao_doi": 915,
+    "giao_luu": "",
     "slideShow": {
         "slug1": "-ong-mach-vanh-la-gi-chuc-nang-cua-no-ra-sao",
         "slug2": "bai-tap-mat-cho-benh-nhan-loan-thi",
         "slug3": "benh-tim-co-di-truyen-khong",
         "slug4": "benh-a-hong-cau"
-    }
+    },
+    "trao_doi": 915
 }
 ---
 ### Danh sách các link trong file
