@@ -22,7 +22,6 @@
             $this.addClass("active");
         }
         
-
         var txtarea = $("#post__write--content textarea");
         txtarea.focus();
 
@@ -65,7 +64,7 @@ function init_fixed_bg(headerHeight){
 
 function init_sticky(){
     if ($(window).width() > 1024) {
-        $("#mapView").sticky({topSpacing:80, bottomSpacing: 415});
+        // $("#mapView").sticky({topSpacing:80, bottomSpacing: 415});
         $(".searchFilter .searchForm").sticky({topSpacing:0});
 
         $(".forumHome__nav").sticky({topSpacing:0});
@@ -78,6 +77,12 @@ function init_sticky(){
 var swiperBg;
 
 var swiperGallery;
+
+var swiperTxt;
+
+var swiperMoz;
+
+var swiperNews;
 
 $(function() {
 
@@ -107,7 +112,28 @@ $(function() {
         effect: "fade",
         simulateTouch: false
 
-    })
+    });
+
+    swiperMoz = new Swiper('.swiper-moz-slider',{
+        loop: true,
+        autoplay: 8000,
+        speed: 1000,
+        effect: "slide",
+
+        nextButton: '.moz-button-next',
+        prevButton: '.moz-button-prev',
+
+
+    });
+
+     swiperNews = new Swiper('.newsRun', {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false,
+        loop: true,
+        speed: 2000
+    });
 
     $(".select2Normal").select2({
         placeholder: $(this).data('placeholder'),
@@ -213,14 +239,5 @@ $(function() {
 
 
 
-
-    var swiperNews = new Swiper('.newsRun', {
-        slidesPerView: 'auto',
-        spaceBetween: 10,
-        autoplay: 2500,
-        autoplayDisableOnInteraction: false,
-        loop: true,
-        speed: 2000
-    });
 });
 

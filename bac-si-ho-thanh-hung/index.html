@@ -57,153 +57,159 @@
 
 <div class="row">
 <div class="small-12 columns">
-  <div class="searchFilter boxShadow">
-    <script>
-      window.data = {};
-      if (!window.data.selectedFilter)
-        window.data.selectedFilter = {};
-    </script>
-    <div class="searchForm clearfix">
-      <div class="searchForm--1">
-        <select class="select2Normal" data-placeholder="Bác sĩ | Phòng khám" onchange="data.selectedFilter.loai = this.value;">
-          <option value=""></option>
-          <option value=" ">&nbsp</option>
-           <option value="bac-si" >Bác Sĩ</option>
-           <option value="phong-kham" >Phòng Khám</option>
-           <option value="benh-vien" >Bệnh Viện</option>
-        </select>
-      </div>
-      <div class="searchForm--2">
-        <select class="select2Search" data-placeholder="Từ khóa" onchange="data.selectedFilter.giatri = this.value;">
-          <option value=""></option>
-          <option value=" ">&nbsp</option>
-            <option value="rang-ham-mat" >Răng hàm mặt</option>
-            <option value="nha-khoa" >Nha khoa</option>
-            <option value="truyen-nhiem" >Truyền nhiễm</option>
-            <option value="da-lieu" >Da Liễu</option>
-            <option value="chan-thuong-chinh-hinh" >Chấn thương chỉnh hình</option>
-            <option value="nhi-khoa" >Nhi khoa</option>
-            <option value="nguyen-hoang-son" >BS Nguyễn Hoàng Sơn</option>
-            <option value="nguyen-thi-hao" >BS Nguyễn Thị Hảo</option>
-            <option value="nguyen-thi-phuong-uyen" >BS Nguyễn Thị Phương Uyên</option>
-            <option value="nguyen-ngoc-duy" >BS Nguyễn Ngoc Duy</option>
-            <option value="vo-van-tu-hien" >BS Võ Văn Tự Hiến </option>
-            <option value="la-thanh-hung" > BS La Thành Hưng  </option>
-            <option value="truong-hoang-bao" >BS Trương Hoàng Bảo  </option>
-            <option value="nguyen-duy-dang" >BS  Nguyễn Duy Đăng  </option>
-            <option value="phong-kham-nha-khoa-ky-thuat-so" >Phòng khám Nha khoa Kỹ Thuật Số</option>
-            <option value="nha-khoa-the-ky" >Nha khoa Thế Kỷ</option>
-            <option value="nha-khoa-la-thanh-hung" >Phòng nha BS. La Thành Hưng</option>
-            <option value="nha-khoa-ko-se-i-kai" > Nha khoa KO.SE.I.KAI </option>
-            <option value="tran-nguyen-thi-thuy-nga" > BS Trần Nguyễn Thị Thúy Nga </option>
-            <option value="truong-thi-thuy-trinh" > BS Trương Thị Thùy Trinh </option>
-            <option value="nha-khoa-hoa-hong" > Nha Khoa Hoa Hồng </option>
-            <option value="nha-khoa-tham-my-ava" > Nha khoa Thẩm mỹ Ava </option>
-            <option value="bac-si-pham-thi-minh-hong" > Bác sĩ Phạm Thị Minh Hồng </option>
-            <option value="phong-kham-hoan-my-sai-gon" > Phòng khám Hoàn Mỹ Sài Gòn </option>
-            <option value="le-duc-tho" > Bác sĩ  Lê Đức Thọ </option>
-            <option value="bui-thi-van-huong" > Bác sĩ Bùi Thị Vân Hương </option>
-            <option value="bac-si-pham-tho-tuan-anh" > Bác sĩ Phạm Thọ Tuấn Anh </option>
-            <option value="mat" >Mắt</option>
-        </select>
-      </div>
-      <div class="searchForm--3">
-        <select class="select2Search" data-placeholder="Tỉnh | Thành" onchange="data.selectedFilter.tinh = this.value;">
-          <option value=""></option>
-          <option value=" ">&nbsp</option>
-            <option value="ho-chi-minh">TP. Hồ Chí Minh</option>
-            <option value="ha-noi">Hà Nội</option>
-          </select>
-      </div>
-      <div class="searchForm--4">
-        <select class="select2Search" data-placeholder="Quận | Huyện" onchange="data.selectedFilter.quan = this.value;">
-          <option value=""></option>
-          <option value=" ">&nbsp</option>
-              <option value="quan-1">Quận 1</option>
-              <option value="quan-2">Quận 2</option>
-              <option value="quan-10">Quận 10</option>
-              <option value="quan-11">Quận 11</option>
-              <option value="quan-tan-binh">Quận Tân Bình</option>
-              <option value="quan-ba-dinh">Quận Ba Đình</option>
-              <option value="quan-hai-ba-trung">Quận Hai Bà Trưng</option>
-        </select>
-      </div>
-      <div class="searchForm--5">
-        <a class="button searchForm--button" onclick="Gui()"><i class="fa fa-search"></i> Tìm kiếm</a>
-      </div>
-    
-    </div>
-    <script>
-        rivets.bind(document.querySelector('body'), window.data);
-    
-      function Gui() {
-          var parts = [];
-          var value;
-          for (var key in window.data.selectedFilter) {
-              if (!window.data.selectedFilter.hasOwnProperty(key)) continue;
-              value = window.data.selectedFilter[key].trim();
-              if (value === '') continue;
-              parts.push(key + '=' + value);
+
+  <div class="searchFilter boxShadow" data-toggler=".expanded" id="searchFilter">
+
+    <div class="searchFilter--mobile show-for-small-only" data-toggle="searchFilterId searchFilter"><i class="fa fa-filter"></i> Lọc tìm kiếm</div>
+
+    <div id="searchFilterId" data-toggler data-animate="fade-in fade-out">
+
+        <script>
+          window.data = {};
+          if (!window.data.selectedFilter)
+            window.data.selectedFilter = {};
+        </script>
+        <div class="searchForm clearfix">
+          <div class="searchForm--1">
+            <select class="select2Normal" data-placeholder="Bác sĩ | Phòng khám" onchange="data.selectedFilter.loai = this.value;">
+              <option value=""></option>
+              <option value=" ">Tất cả</option>
+               <option value="bac-si" >Bác Sĩ</option>
+               <option value="phong-kham" >Phòng Khám</option>
+               <option value="benh-vien" >Bệnh Viện</option>
+            </select>
+          </div>
+          <div class="searchForm--2">
+            <select class="select2Search" data-placeholder="Từ khóa" onchange="data.selectedFilter.giatri = this.value;">
+              <option value=""></option>
+              <option value=" ">Tất cả</option>
+                <option value="rang-ham-mat" >Răng hàm mặt</option>
+                <option value="nha-khoa" >Nha khoa</option>
+                <option value="truyen-nhiem" >Truyền nhiễm</option>
+                <option value="da-lieu" >Da Liễu</option>
+                <option value="chan-thuong-chinh-hinh" >Chấn thương chỉnh hình</option>
+                <option value="nhi-khoa" >Nhi khoa</option>
+                <option value="nguyen-hoang-son" >BS Nguyễn Hoàng Sơn</option>
+                <option value="nguyen-thi-hao" >BS Nguyễn Thị Hảo</option>
+                <option value="nguyen-thi-phuong-uyen" >BS Nguyễn Thị Phương Uyên</option>
+                <option value="nguyen-ngoc-duy" >BS Nguyễn Ngoc Duy</option>
+                <option value="vo-van-tu-hien" >BS Võ Văn Tự Hiến </option>
+                <option value="la-thanh-hung" > BS La Thành Hưng  </option>
+                <option value="truong-hoang-bao" >BS Trương Hoàng Bảo  </option>
+                <option value="nguyen-duy-dang" >BS  Nguyễn Duy Đăng  </option>
+                <option value="phong-kham-nha-khoa-ky-thuat-so" >Phòng khám Nha khoa Kỹ Thuật Số</option>
+                <option value="nha-khoa-the-ky" >Nha khoa Thế Kỷ</option>
+                <option value="nha-khoa-la-thanh-hung" >Phòng nha BS. La Thành Hưng</option>
+                <option value="nha-khoa-ko-se-i-kai" > Nha khoa KO.SE.I.KAI </option>
+                <option value="tran-nguyen-thi-thuy-nga" > BS Trần Nguyễn Thị Thúy Nga </option>
+                <option value="truong-thi-thuy-trinh" > BS Trương Thị Thùy Trinh </option>
+                <option value="nha-khoa-hoa-hong" > Nha Khoa Hoa Hồng </option>
+                <option value="nha-khoa-tham-my-ava" > Nha khoa Thẩm mỹ Ava </option>
+                <option value="bac-si-pham-thi-minh-hong" > Bác sĩ Phạm Thị Minh Hồng </option>
+                <option value="phong-kham-hoan-my-sai-gon" > Phòng khám Hoàn Mỹ Sài Gòn </option>
+                <option value="le-duc-tho" > Bác sĩ  Lê Đức Thọ </option>
+                <option value="bui-thi-van-huong" > Bác sĩ Bùi Thị Vân Hương </option>
+                <option value="bac-si-pham-tho-tuan-anh" > Bác sĩ Phạm Thọ Tuấn Anh </option>
+                <option value="mat" >Mắt</option>
+            </select>
+          </div>
+          <div class="searchForm--3">
+            <select class="select2Search" data-placeholder="Tỉnh | Thành" onchange="data.selectedFilter.tinh = this.value;">
+              <option value=""></option>
+              <option value=" ">Tất cả</option>
+                <option value="ho-chi-minh">TP. Hồ Chí Minh</option>
+                <option value="ha-noi">Hà Nội</option>
+              </select>
+          </div>
+          <div class="searchForm--4">
+            <select class="select2Search" data-placeholder="Quận | Huyện" onchange="data.selectedFilter.quan = this.value;">
+              <option value=""></option>
+              <option value=" ">Tất cả</option>
+                  <option value="quan-1">Quận 1</option>
+                  <option value="quan-2">Quận 2</option>
+                  <option value="quan-10">Quận 10</option>
+                  <option value="quan-11">Quận 11</option>
+                  <option value="quan-tan-binh">Quận Tân Bình</option>
+                  <option value="quan-ba-dinh">Quận Ba Đình</option>
+                  <option value="quan-hai-ba-trung">Quận Hai Bà Trưng</option>
+            </select>
+          </div>
+          <div class="searchForm--5">
+            <a class="button searchForm--button" onclick="Gui()"><i class="fa fa-search"></i> Tìm kiếm</a>
+          </div>
+        
+        </div>
+        <script>
+            rivets.bind(document.querySelector('body'), window.data);
+        
+          function Gui() {
+              var parts = [];
+              var value;
+              for (var key in window.data.selectedFilter) {
+                  if (!window.data.selectedFilter.hasOwnProperty(key)) continue;
+                  value = window.data.selectedFilter[key].trim();
+                  if (value === '') continue;
+                  parts.push(key + '=' + value);
+              }
+            var query = parts.join('&');
+              window.location = "search.html?" + query;
           }
-        var query = parts.join('&');
-          window.location = "search.html?" + query;
-      }
-    </script>
+        </script>
 
-    <div class="searchDetail">
+        <div class="searchDetail">
 
-      <div class="searchDetail-title">Lọc tìm kiếm</div>
+            <div class="searchDetail-title">Lọc tìm kiếm</div>
 
-      <div class="checkbox-inline">
-        <label class="topcoat-checkbox">
-          <input type="checkbox">
-          <div class="topcoat-checkbox__checkmark"></div>
-          Trong giờ
-        </label>
-      </div>
+            <div class="checkbox-inline">
+                <label class="topcoat-checkbox">
+                    <input type="checkbox">
+                    <div class="topcoat-checkbox__checkmark"></div>
+                    Trong giờ
+                </label>
+            </div>
 
-      <div class="checkbox-inline">
-        <label class="topcoat-checkbox">
-          <input type="checkbox">
-          <div class="topcoat-checkbox__checkmark"></div>
-          Ngoài giờ
-        </label>
-      </div>
+            <div class="checkbox-inline">
+                <label class="topcoat-checkbox">
+                    <input type="checkbox">
+                    <div class="topcoat-checkbox__checkmark"></div>
+                    Ngoài giờ
+                </label>
+            </div>
 
-      <div class="checkbox-inline">
-        <label class="topcoat-checkbox">
-          <input type="checkbox">
-          <div class="topcoat-checkbox__checkmark"></div>
-          Có bảo hiểm&nbsp;<div class="label-bh">BH</div>
-        </label>
-      </div>
+            <div class="checkbox-inline">
+                <label class="topcoat-checkbox">
+                    <input type="checkbox">
+                    <div class="topcoat-checkbox__checkmark"></div>
+                    Có bảo hiểm&nbsp;<div class="label-bh">BH</div>
+                </label>
+            </div>
 
-      <div class="checkbox-inline">
-        <label class="topcoat-checkbox">
-          <input type="checkbox">
-          <div class="topcoat-checkbox__checkmark"></div>
-          Có lấy qua số điện thoại
-        </label>
-      </div>
+            <div class="checkbox-inline">
+                <label class="topcoat-checkbox">
+                    <input type="checkbox">
+                    <div class="topcoat-checkbox__checkmark"></div>
+                    Có lấy qua số điện thoại
+                </label>
+            </div>
 
 
-      <div class="rangeSlider-container">
-        <div class="rangeSlider-label">Giá khám</div>
-        <div class="rangeSlider">
-          <input id="range_2" type="text" />
+            <div class="rangeSlider-container">
+                <div class="rangeSlider-label">Giá khám</div>
+                <div class="rangeSlider">
+                    <input id="range_2" type="text" />
+                </div>
+
+            </div>
+
         </div>
 
-      </div>
-
     </div>
+
 
   </div>
 </div>
 </div>
 
-
-
-</div>
 
 
 <div class="row">
@@ -214,7 +220,7 @@
   <div class="small-12 columns">
 
     <div class="article clearfix boxShadow detail">
-      <a href="" class="article--bookmark"><i class="fa fa-bookmark-o"></i> Lưu</a>
+      <a href="" class="article--bookmark"><i class="fa fa-bookmark-o"></i> <span>Lưu</span> </a>
       <div class="article--main clearfix">
 
         <div class="article--column_1">
@@ -262,7 +268,7 @@
   </div>
 
 
-  <div class="small-4 columns">
+  <div class="small-12 medium-4 columns">
 
     <div class="adv">
       <img src="http://placehold.it/700x200" alt="">
@@ -294,9 +300,9 @@
   </div>
 
 
-  <div class="small-8 columns">
+  <div class="small-12 medium-8 columns">
         <div class="article clearfix boxShadow">
-          <a href="" class="article--bookmark"><i class="fa fa-bookmark-o"></i> Lưu</a>
+          <a href="" class="article--bookmark"><i class="fa fa-bookmark-o"></i> <span>Lưu</span> </a>
           <div class="article--main clearfix">
 
             <div class="article--column_1">
