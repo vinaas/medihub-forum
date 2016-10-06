@@ -87,6 +87,7 @@
   position: absolute;
   right: 15px;
   top:12px;
+  color: $medium-gray;
 
    @include breakpoint(small down){
       span{
@@ -103,7 +104,31 @@
     padding-right: 4px;
     font-weight: bold;
   }
+
+   .fa-bookmark, .da-luu, .fa-spinner{
+    display: none;
+    }
+
+  &.is-save{
+    .fa-bookmark-o, .luu{
+      display: none;
+    }
+
+    .fa-bookmark, .da-luu{
+    display: inline-block;
+    color: $primary-color;
+    }
+  }
+  &.is-loading{
+    .fa-spinner{
+      display: inline-block;
+    }
+    .fa-bookmark-o{
+      display: none;
+    }
+  }
 }
+
 
 .article--meta{
   display: flex;
@@ -168,27 +193,62 @@
 }
 
 .article--heart{
+
+  display: inline;
+  cursor: pointer;
   
-  a{
     font-size: rem-calc(13px);
     color: $secondary-color;
     i{
       color: $alert-color;
     }
-    > .fa + .fa{
+
+    .fa{
       display: none;
     }
+    .fa-heart-o{
+      display: inherit;
+    }
+
     &:hover{
-      > .fa{
+       .fa-heart-o{
         display: none;
       }
-      color: $alert-color;
-      >.fa + .fa{
+      .fa-heart{
         display: inherit;
       }
-    }
   }
+
+  &.is-like{
+      .fa{
+        display: none;
+      }
+      .fa-heart{
+        display: inherit;
+      }
+      .num{
+        color: $alert-color;
+      }
+  }
+  &.is-loading{
+      .fa{
+        display: none;
+      }
+      .fa-spinner {
+        display: inline-block;
+      }
+  }
+
 }
+// @keyframes like {
+//   0% {
+  
+//     transform: scale(0.1);
+//   }
+//   15% {
+//     transform: scale(1.1);
+//   }
+// }
 
 .article--sponsor{
   font-size: 10px;
