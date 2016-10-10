@@ -1,11 +1,14 @@
 {
     "sortBy": "date",
     "reverse": false,
-    "metadata": {},
-    "displayName": "Làm Cha Mẹ",
+    "metadata": {
+        "title": "Làm cha mẹ",
+        "mo_ta": "Diễn đàn là nơi dành riêng cho các thành viên Medihub đặt câu hỏi cho các bác sĩ và trao đổi, chia sẻ thông tin với các thành viên khác."
+    },
+    "displayName": "Làm cha mẹ",
     "perPage": 10,
     "noPageOne": true,
-    "layout": "default.category.html",
+    "layout": "forum-chuyentrang.category.html",
     "first": ":categoryPath/index.html",
     "path": ":categoryPath/page/:num/index.html"
 }
