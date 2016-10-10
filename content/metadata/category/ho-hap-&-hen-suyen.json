@@ -2,10 +2,10 @@
     "sortBy": "date",
     "reverse": false,
     "metadata": {
-        "title": "Ăn uống",
+        "title": "Hô hấp & hen xuyễn",
         "mo_ta": "Diễn đàn là nơi dành riêng cho các thành viên Medihub đặt câu hỏi cho các bác sĩ và trao đổi, chia sẻ thông tin với các thành viên khác."
     },
-    "displayName": "ăn uống",
+    "displayName": "Hô hấp & hen xuyễn",
     "perPage": 10,
     "noPageOne": true,
     "layout": "forum-chuyentrang.category.html",

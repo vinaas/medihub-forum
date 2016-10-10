@@ -3,15 +3,7 @@
     "reverse": false,
     "metadata": {
         "title": "Các bệnh",
-        "path_obj":"cac-benh",
-        "mo_ta": "Diễn đàn là nơi dành riêng cho các thành viên Medihub đặt câu hỏi cho các bác sĩ và trao đổi, chia sẻ thông tin với các thành viên khác.",
-        "breadcrumb": [
-            {
-                "ten": "Các bệnh",
-                "slug": "/cac-benh"
-            }
-        ],
-        "slug":"/cac-benh"
+        "mo_ta": "Diễn đàn là nơi dành riêng cho các thành viên Medihub đặt câu hỏi cho các bác sĩ và trao đổi, chia sẻ thông tin với các thành viên khác."
     },
     "displayName": "Các bệnh",
     "perPage": 10,
