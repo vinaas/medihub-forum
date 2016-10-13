@@ -27,4 +27,3 @@ Bác sĩ cũng khuyên, mọi người nên đảm bảo vệ sinh cơ thể, th
 Chuyên gia Đài khí tượng thủy văn TP HCM Lê Thị Xuân Lan dự báo sương mù xuất hiện kéo dài tại thành phố từ nay đến cuối năm, 3-4 ngày sẽ có một đợt sương mù đậm đặc. Trong khi đó mức độ ô nhiễm TP HCM cao, những chất ô nhiễm trong không khí tạo ra hạt ngưng kết ở tầng thấp. Trong sương mù vì vậy luôn ẩn chứa nhiều chất dơ, ô nhiễm, người đi đường hít vào dễ bị ảnh hưởng đến sức khỏe.
 
 *Theo vnexpress*
-
