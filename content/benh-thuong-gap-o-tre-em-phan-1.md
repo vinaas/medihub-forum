@@ -1,7 +1,7 @@
 ---json
 {
     "slug": "benh-thuong-gap-o-tre-em-phan-1",
-    "category": "so-cap-cuu",
+    "category": "nhi-khoa",
     "tag": [],
     "layout": "forum-cauhoi.html",
     "title": "Bệnh thường gặp ở trẻ em (phần 1)",
