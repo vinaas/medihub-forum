@@ -12,7 +12,7 @@
     "phan_hoi": "",
     "yeu_thich": "",
     "nguoi_dang": "",
-    "hinh_anh": ""
+    "hinh_anh": "img/8878-sot-1.jpg"
 }
 ---
 Dưới đây là dấu hiệu nhận biết, cách sơ cứu và phòng tránh sốt cao, co giật ở trẻ, các mẹ nên biết.
