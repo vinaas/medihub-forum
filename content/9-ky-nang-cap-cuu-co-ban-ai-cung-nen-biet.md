@@ -1,7 +1,7 @@
 ---json
 {
     "slug": "9-ky-nang-cap-cuu-co-ban-ai-cung-nen-biet",
-    "category": "",
+    "category": "so-cap-cuu",
     "tag": [],
     "layout": "forum-cauhoi.html",
     "title": "9 kỹ năng cấp cứu cơ bản ai cũng nên biết",
