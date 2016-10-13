@@ -68,7 +68,7 @@
             <div class="porlet--heading">
               <h3 class="porlet--title ">Hoạt động</h3>
         
-             
+        
             </div>
         
             <ul class="porlet--menu">
@@ -90,187 +90,233 @@
         
           <div class="portlet boxShadow">
             <div class="porlet--heading">
-              <h3 class="porlet--title ">Hỏi chuyên gia</h3>
+              <h3 class="porlet--title ">Hỏi bác sĩ</h3>
         
               <div class="forum__number">
                 <div class="num hoi"> 1580 <i class="fa fa-question-circle"></i></div>
               </div>
             </div>
         
-            <ul class="porlet--menu">
-              <li><a href="/cac-benh">Các bệnh <span class="number--list">(13)</span></a></li>
-              <li><a href="forum-chuyentrang.html">Mẹ và bé <span class="number--list">(125)</span></a></li>
-              <li><a href="forum-chuyentrang.html">Ăn uống <span class="number--list">(44)</span></a></li>
-              <li><a href="forum-chuyentrang.html">Luyện tập <span class="number--list">(89)</span></a></li>
-              <li><a href="forum-chuyentrang.html">Sắc đẹp <span class="number--list">(123)</span></a></li>
+            <ul class="porlet--menu scroll" style="max-height: 190px">
+              <!--<li><a href="/cac-benh">Các bệnh <span class="number--list">(13)</span></a></li>-->
+              <li><a href="/so-cap-cuu">Sơ cấp cứu <span class="number--list">(3)</span></a></li>
+              <li><a href="/nhi-khoa">Nhi khoa<span class="number--list">(3)</span></a></li>
+              <li><a href="/ho-hap-&-hen-suyen">Hô hấp & hen xuyễn <span class="number--list">(2)</span></a></li>
+              <li><a href="/co-xuong-khop">Cơ xương khớp <span class="number--list">()</span></a></li>
+              <li><a href="/phu-khoa-&-suc-khoe-sinh-san">Phụ khoa &amp; Sức khỏe sinh sản <span class="number--list">()</span></a></li>
+              <li><a href="/nha-khoa">Nha Khoa <span class="number--list">()</span></a></li>
+              <li><a href="/tim-mach">Tim Mạch <span class="number--list">()</span></a></li>
+              <li><a href="/tieu-duong">Tiểu Đường <span class="number--list">()</span></a></li>
+              <li><a href="/viem-gan">Viêm Gan <span class="number--list">()</span></a></li>
+              <li><a href="/tham-my-&-da-lieu">Thẩm Mỹ & Da Liễu <span class="number--list">()</span></a></li>
+              <li><a href="/dinh-duong">Dinh Dưỡng <span class="number--list">()</span></a></li>
+              <li><a href="/tam-ly-&-than-kinh">Tâm Lý &amp; Thần Kinh <span class="number--list">()</span></a></li>
+              <li><a href="/chuyen-tham-kin">Chuyện thầm kín <span class="number--list">()</span></a></li>
             </ul>
           </div>
         
         
           <div class="portlet boxShadow">
             <div class="porlet--heading">
-              <h3 class="porlet--title ">Trao đổi & Chia sẻ</h3>
+              <h3 class="porlet--title ">Diễn đàn sức khỏe</h3>
+        
+              <div class="forum__number">
+                <div class="num giaoluu">345 <i class="fa fa-users"></i></div>
+              </div>
+            </div>
+        
+            <ul class="porlet--menu scroll" style="max-height: 120px">
+              <li><a href="/song-khoe-moi-ngay">Sống khỏe mỗi ngày <span class="number--list">()</span></a></li>
+              <li><a href="/lam-cha-me">Làm Cha Mẹ <span class="number--list">()</span></a></li>
+              <li><a href="/dinh-duong-cho-moi-nguoi">Dinh dưỡng cho mọi người <span class="number--list">()</span></a></li>
+              <li><a href="/dich-vu-y-te">Dịch vụ y tế <span class="number--list">()</span></a></li>
+              <li><a href="/kinh-nghiem-kham-chua-benh">Kinh nghiệm khám chữa bệnh <span class="number--list">()</span></a></li>
+              <li><a href="/cuoc-song-lua-doi">Cuộc sống lứa đôi <span class="number--list">()</span></a></li>
+            </ul>
+          </div>
+        
+          <div class="portlet boxShadow">
+            <div class="porlet--heading">
+              <h3 class="porlet--title ">Tủ thuốc online</h3>
         
               <div class="forum__number">
                 <div class="num giaoluu">915 <i class="fa fa-users"></i></div>
               </div>
             </div>
         
-            <ul class="porlet--menu">
-              <li><a href="forum-chuyentrang.html">Chăm sóc sức khỏe <span class="number--list">(45)</span></a></li>
+            <ul class="porlet--menu scroll" style="max-height: 120px">
+              <li><a href="/thiet-bi-y-te-gia-dinh">Thiết bị y tế gia đình<span class="number--list">()</span></a></li>
+              <li><a href="/thuc-pham-chuc-nang">Thực phẩm chức năng <span class="number--list">()</span></a></li>
+              <li><a href="/y-hoc-co-truyen">Y học cổ truyền<span class="number--list">()</span></a></li>
+              <li><a href="/thuoc-tay">Thuốc tây <span class="number--list">()</span></a></li>
+              <li><a href="/my-pham">Mỹ phẩm<span class="number--list">()</span></a></li>
+            </ul>
+          </div>
+          <div class="portlet boxShadow">
+            <div class="porlet--heading">
+              <h3 class="porlet--title ">Tư vấn trực tuyến</h3>
+        
+              <div class="forum__number">
+                <div class="num giaoluu">982 <i class="fa fa-users"></i></div>
+              </div>
+            </div>
+        
+            <ul class="porlet--menu scroll" style="max-height: 120px">
+              <!--<li><a href="forum-chuyentrang.html">Chăm sóc sức khỏe <span class="number--list">(45)</span></a></li>
               <li><a href="forum-chuyentrang.html">Mẹo vặt & Kinh nghiệm <span class="number--list">(23)</span></a></li>
-              <li><a href="forum-chuyentrang.html">Mua sắm & Dịch vụ <span class="number--list">(12)</span></a></li>
+              <li><a href="forum-chuyentrang.html">Mua sắm & Dịch vụ <span class="number--list">(12)</span></a></li>-->
             </ul>
           </div>
         
-            <div class="portlet boxShadow">
-                <div class="porlet--heading">
-                    <h3 class="porlet--title ">Thành viên năng động</h3>
-                </div>
         
-                <div class="porlet--body bottom-5">
-                    <div class="row small-up-1 medium-up-2 large-up-2">
-        
-                        <div class="column">
-                            <div class="user user--small">
-                                <a href="">
-                                    <div class="user__pic">
-                                        <img alt="Nguyễn Thế Khánh" width="30" height="30" src="images/profiles/1.png">
-                                    </div>
-                                    <h5 class="user__name text-ellipsis">Nguyễn Thế Khánh</h5>
-                                    <div class="user__comment"><i class="fa fa-comment-o"></i> 23</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="user user--small">
-                                <a href="">
-                                    <div class="user__pic">
-                                        <img alt="Trần Khoa" width="30" height="30" src="images/profiles/avatar.jpg">
-                                    </div>
-                                    <h5 class="user__name text-ellipsis">Trần Khoa</h5>
-                                    <div class="user__comment"><i class="fa fa-comment-o"></i> 34</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="user user--small">
-                                <a href="">
-                                    <div class="user__pic">
-                                        <img alt="Nguyễn Toàn Thắng" width="30" height="30" src="images/profiles/e.jpg">
-                                    </div>
-                                    <h5 class="user__name text-ellipsis">Nguyễn Toàn Thắng</h5>
-                                    <div class="user__comment"><i class="fa fa-comment-o"></i> 249</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="user user--small">
-                                <a href="">
-                                    <div class="user__pic">
-                                        <img alt="Nguyễn Duy" width="30" height="30" src="images/profiles/9x.jpg">
-                                    </div>
-                                    <h5 class="user__name text-ellipsis">Nguyễn Duy</h5>
-                                    <div class="user__comment"><i class="fa fa-comment-o"></i> 138</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="user user--small">
-                                <a href="">
-                                    <div class="user__pic">
-                                        <img alt="Nguyễn Minh Hải" width="30" height="30" src="images/profiles/bd.jpg">
-                                    </div>
-                                    <h5 class="user__name text-ellipsis">Nguyễn Minh Hải</h5>
-                                    <div class="user__comment"><i class="fa fa-comment-o"></i> 186</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="user user--small">
-                                <a href="">
-                                    <div class="user__pic">
-                                        <img alt="Phạm Tùng" width="30" height="30" src="images/profiles/8x.jpg">
-                                    </div>
-                                    <h5 class="user__name text-ellipsis">Phạm Tùng</h5>
-                                    <div class="user__comment"><i class="fa fa-comment-o"></i> 38</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="user user--small">
-                                <a href="">
-                                    <div class="user__pic">
-                                        <img alt="Đỗ Bá Tiến" width="30" height="30" src="images/profiles/bc.jpg">
-                                    </div>
-                                    <h5 class="user__name text-ellipsis">Đỗ Bá Tiến</h5>
-                                    <div class="user__comment"><i class="fa fa-comment-o"></i> 15</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="user user--small">
-                                <a href="">
-                                    <div class="user__pic">
-                                        <img alt="Lê Thanh Cảnh" width="30" height="30" src="images/profiles/3.png">
-                                    </div>
-                                    <h5 class="user__name text-ellipsis">Lê Thanh Cảnh</h5>
-                                    <div class="user__comment"><i class="fa fa-comment-o"></i> 23</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="user user--small">
-                                <a href="">
-                                    <div class="user__pic">
-                                        <img alt="Nguyễn Văn Hậu" width="30" height="30" src="images/profiles/bb.jpg">
-                                    </div>
-                                    <h5 class="user__name text-ellipsis">Nguyễn Văn Hậu</h5>
-                                    <div class="user__comment"><i class="fa fa-comment-o"></i> 89</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="user user--small">
-                                <a href="">
-                                    <div class="user__pic">
-                                        <img alt="Đỗ Đức Nam" width="30" height="30" src="images/profiles/2.png">
-                                    </div>
-                                    <h5 class="user__name text-ellipsis">Đỗ Đức Nam</h5>
-                                    <div class="user__comment"><i class="fa fa-comment-o"></i> 56</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="user user--small">
-                                <a href="">
-                                    <div class="user__pic">
-                                        <img alt="Nguyễn Văn Thanh" width="30" height="30" src="images/profiles/1.png">
-                                    </div>
-                                    <h5 class="user__name text-ellipsis">Nguyễn Văn Thanh</h5>
-                                    <div class="user__comment"><i class="fa fa-comment-o"></i> 360</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="user user--small">
-                                <a href="">
-                                    <div class="user__pic">
-                                        <img alt="Lý Trung Tín" width="30" height="30" src="images/profiles/ba.jpg">
-                                    </div>
-                                    <h5 class="user__name text-ellipsis">Lý Trung Tín</h5>
-                                    <div class="user__comment"><i class="fa fa-comment-o"></i> 55</div>
-                                </a>
-                            </div>
-                        </div>
-        
-                    </div>
-                </div>
+          <div class="portlet boxShadow">
+            <div class="porlet--heading">
+              <h3 class="porlet--title ">Thành viên năng động</h3>
             </div>
         
+            <div class="porlet--body bottom-5">
+              <div class="row small-up-1 medium-up-2 large-up-2">
         
-          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400" 
-          style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                <div class="column">
+                  <div class="user user--small">
+                    <a href="">
+                      <div class="user__pic">
+                        <img alt="Nguyễn Thế Khánh" width="30" height="30" src="images/profiles/1.png">
+                      </div>
+                      <h5 class="user__name text-ellipsis">Nguyễn Thế Khánh</h5>
+                      <div class="user__comment"><i class="fa fa-comment-o"></i> 23</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="user user--small">
+                    <a href="">
+                      <div class="user__pic">
+                        <img alt="Trần Khoa" width="30" height="30" src="images/profiles/avatar.jpg">
+                      </div>
+                      <h5 class="user__name text-ellipsis">Trần Khoa</h5>
+                      <div class="user__comment"><i class="fa fa-comment-o"></i> 34</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="user user--small">
+                    <a href="">
+                      <div class="user__pic">
+                        <img alt="Nguyễn Toàn Thắng" width="30" height="30" src="images/profiles/e.jpg">
+                      </div>
+                      <h5 class="user__name text-ellipsis">Nguyễn Toàn Thắng</h5>
+                      <div class="user__comment"><i class="fa fa-comment-o"></i> 249</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="user user--small">
+                    <a href="">
+                      <div class="user__pic">
+                        <img alt="Nguyễn Duy" width="30" height="30" src="images/profiles/9x.jpg">
+                      </div>
+                      <h5 class="user__name text-ellipsis">Nguyễn Duy</h5>
+                      <div class="user__comment"><i class="fa fa-comment-o"></i> 138</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="user user--small">
+                    <a href="">
+                      <div class="user__pic">
+                        <img alt="Nguyễn Minh Hải" width="30" height="30" src="images/profiles/bd.jpg">
+                      </div>
+                      <h5 class="user__name text-ellipsis">Nguyễn Minh Hải</h5>
+                      <div class="user__comment"><i class="fa fa-comment-o"></i> 186</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="user user--small">
+                    <a href="">
+                      <div class="user__pic">
+                        <img alt="Phạm Tùng" width="30" height="30" src="images/profiles/8x.jpg">
+                      </div>
+                      <h5 class="user__name text-ellipsis">Phạm Tùng</h5>
+                      <div class="user__comment"><i class="fa fa-comment-o"></i> 38</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="user user--small">
+                    <a href="">
+                      <div class="user__pic">
+                        <img alt="Đỗ Bá Tiến" width="30" height="30" src="images/profiles/bc.jpg">
+                      </div>
+                      <h5 class="user__name text-ellipsis">Đỗ Bá Tiến</h5>
+                      <div class="user__comment"><i class="fa fa-comment-o"></i> 15</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="user user--small">
+                    <a href="">
+                      <div class="user__pic">
+                        <img alt="Lê Thanh Cảnh" width="30" height="30" src="images/profiles/3.png">
+                      </div>
+                      <h5 class="user__name text-ellipsis">Lê Thanh Cảnh</h5>
+                      <div class="user__comment"><i class="fa fa-comment-o"></i> 23</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="user user--small">
+                    <a href="">
+                      <div class="user__pic">
+                        <img alt="Đỗ Đức Nam" width="30" height="30" src="images/profiles/2.png">
+                      </div>
+                      <h5 class="user__name text-ellipsis">Đỗ Đức Nam</h5>
+                      <div class="user__comment"><i class="fa fa-comment-o"></i> 56</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="user user--small">
+                    <a href="">
+                      <div class="user__pic">
+                        <img alt="Nguyễn Văn Hậu" width="30" height="30" src="images/profiles/bb.jpg">
+                      </div>
+                      <h5 class="user__name text-ellipsis">Nguyễn Văn Hậu</h5>
+                      <div class="user__comment"><i class="fa fa-comment-o"></i> 89</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="user user--small">
+                    <a href="">
+                      <div class="user__pic">
+                        <img alt="Nguyễn Văn Thanh" width="30" height="30" src="images/profiles/1.png">
+                      </div>
+                      <h5 class="user__name text-ellipsis">Nguyễn Văn Thanh</h5>
+                      <div class="user__comment"><i class="fa fa-comment-o"></i> 360</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="user user--small">
+                    <a href="">
+                      <div class="user__pic">
+                        <img alt="Lý Trung Tín" width="30" height="30" src="images/profiles/ba.jpg">
+                      </div>
+                      <h5 class="user__name text-ellipsis">Lý Trung Tín</h5>
+                      <div class="user__comment"><i class="fa fa-comment-o"></i> 55</div>
+                    </a>
+                  </div>
+                </div>
+        
+              </div>
+            </div>
+          </div>
+        
+        
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMediHubVN&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+            width="100%" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
           <br>
           <br>
         
