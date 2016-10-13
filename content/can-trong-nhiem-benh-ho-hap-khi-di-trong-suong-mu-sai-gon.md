@@ -1,7 +1,7 @@
 ---json
 {
     "slug": "can-trong-nhiem-benh-ho-hap-khi-di-trong-suong-mu-sai-gon",
-    "category": "ho-hap-&-hen-suyen",
+    "category": "nhi-khoa",
     "tag": [],
     "layout": "forum-cauhoi.html",
     "title": "Cẩn trọng nhiễm bệnh hô hấp khi đi trong sương mù Sài Gòn",
