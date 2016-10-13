@@ -1,0 +1,14 @@
+{
+    "sortBy": "date",
+    "reverse": false,
+    "metadata": {
+        "title": "Thẩm mỹ & da liễu",
+        "mo_ta": "Diễn đàn là nơi dành riêng cho các thành viên Medihub đặt câu hỏi cho các bác sĩ và trao đổi, chia sẻ thông tin với các thành viên khác."
+    },
+    "displayName": "Thẩm mỹ & da liễu",
+    "perPage": 10,
+    "noPageOne": true,
+    "layout": "forum-chuyentrang.category.html",
+    "first": ":categoryPath/index.html",
+    "path": ":categoryPath/page/:num/index.html"
+}

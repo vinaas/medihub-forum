@@ -7,6 +7,8 @@
     $(document).ready(function() {
         // init_fixed_bg(60);
         init_sticky();
+
+        handlePerfectscroll();
     });
 
     $(window).resize(function() {
@@ -309,6 +311,19 @@ $(".article--bookmark").on("click", function(e){
     $this.prop("disabled", false);
     $this.removeClass("is-loading");
 });
+
+//Init perfect scroll
+
+function handlePerfectscroll() {
+  $('.scroll').each(function() {
+    $(this).perfectScrollbar({
+      suppressScrollX: true,
+      wheelSpeed: 0.5
+    });
+  });
+}
+
+
 
 
 //  $(".article--heart2").on("click", function(e){
