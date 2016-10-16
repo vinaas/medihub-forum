@@ -1,22 +1,22 @@
-(function($) {
+(function ($) {
     "use strict"; // Start of use strict
-    $(window).load(function() {
+    $(window).load(function () {
 
     });
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         // init_fixed_bg(60);
         init_sticky();
 
         handlePerfectscroll();
     });
 
-    $(window).resize(function() {
+    $(window).resize(function () {
         // init_fixed_bg(60);
     });
 
 
-    $(".post__write").click(function() {
+    $(".post__write").click(function () {
         var $this = $(this);
         if ($this.hasClass("active")) {
             return false;
@@ -27,7 +27,7 @@
         var txtarea = $("#post__write--content textarea");
         txtarea.focus();
 
-        txtarea.focusout(function() {
+        txtarea.focusout(function () {
 
             if (!txtarea.val()) {
                 $this.removeClass("active");
@@ -41,7 +41,7 @@
 
 
     /*Reply comments*/
-    $(".reply-comment-btn").click(function(e) {
+    $(".reply-comment-btn").click(function (e) {
         e.preventDefault();
         $(this).parent().children(".comment-replay").slideToggle("fast");
     });
@@ -90,7 +90,7 @@ var swiperMoz;
 
 var swiperNews;
 
-$(function() {
+$(function () {
 
     swiperBg = new Swiper('.swiper-bg-slider', {
         loop: true,
@@ -163,7 +163,7 @@ $(function() {
         postfix: " K",
         grid: false,
         hide_min_max: true,
-        onChange: function(data) {
+        onChange: function (data) {
             if (data.from == 0) {
                 $(".irs-from").html("Miễn phí");
             }
@@ -186,12 +186,12 @@ $(function() {
 
     $(".popup-gallery a").hover(
 
-        function() {
+        function () {
             var $img = $(this).attr('href');
             var $popup = $(this).closest(".popup-gallery").next();
             $popup.css('background-image', 'url(' + $img + ')');
         },
-        function() {
+        function () {
 
         }
     );
@@ -213,19 +213,19 @@ $(function() {
     });
 
 
-    $(".article--button").click(function(e) {
+    $(".article--button").click(function (e) {
         e.preventDefault();
         $(this).closest(".article--meta").next().hide();
         $(this).closest(".article--meta").next().next().slideToggle();
     });
 
-    $('.popup-gallery').click(function(e) {
+    $('.popup-gallery').click(function (e) {
         e.preventDefault();
 
         var index = $(".popup-gallery").index(this);
 
         $(this).closest(".article--meta").next().next().hide();
-        $(this).closest(".article--meta").next().slideToggle(function() {
+        $(this).closest(".article--meta").next().slideToggle(function () {
             if (swiperGallery != undefined) {
                 swiperGallery[index].update();
                 swiperGallery[index].lazy.load();
@@ -244,7 +244,7 @@ $(function() {
         }
     });
 
-    $('body').on('click', 'a.delete-article', function(e) {
+    $('body').on('click', 'a.delete-article', function (e) {
         e.preventDefault();
         var portlet = $(this).closest(".mix");
 
@@ -252,26 +252,24 @@ $(function() {
 
     });
 
-   
-
 });
 
 
-$(".article--heart").on("click", function(e){
+$(".article--heart").on("click", function (e) {
     var $this = $(this),
-    $likeIcon = $this.hasClass("is-like"),
-    $loadingIcon = $this.hasClass("is-loading"),
-    $num= $this.find(".num");
+        $likeIcon = $this.hasClass("is-like"),
+        $loadingIcon = $this.hasClass("is-loading"),
+        $num = $this.find(".num");
     $numText = $num.text();
 
     $this.addClass("is-loading");
-   $this.prop("disabled", true);
+    $this.prop("disabled", true);
 
     //Neu ajax ok
-    if($likeIcon){
+    if ($likeIcon) {
         $numText--;
         $this.removeClass("is-like");
-    } else{
+    } else {
         $numText++;
         $this.addClass("is-like");
     }
@@ -288,19 +286,19 @@ $(".article--heart").on("click", function(e){
 });
 
 
-$(".article--bookmark").on("click", function(e){
+$(".article--bookmark").on("click", function (e) {
     var $this = $(this),
 
-    $likeIcon = $this.hasClass("is-save"),
-    $loadingIcon = $this.hasClass("is-loading");
+        $likeIcon = $this.hasClass("is-save"),
+        $loadingIcon = $this.hasClass("is-loading");
 
     $this.addClass("is-loading");
-   $this.prop("disabled", true);
+    $this.prop("disabled", true);
 
     //Neu ajax ok
-    if($likeIcon){
+    if ($likeIcon) {
         $this.removeClass("is-save");
-    } else{
+    } else {
         $this.addClass("is-save");
     }
 
@@ -315,82 +313,29 @@ $(".article--bookmark").on("click", function(e){
 //Init perfect scroll
 
 function handlePerfectscroll() {
-  $('.scroll').each(function() {
-    $(this).perfectScrollbar({
-      suppressScrollX: true,
-      wheelSpeed: 0.5
+    $('.scroll').each(function () {
+        $(this).perfectScrollbar({
+            suppressScrollX: true,
+            wheelSpeed: 0.5
+        });
     });
-  });
 }
 
 
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        var tmppath = URL.createObjectURL(event.target.files[0]);
 
+        reader.onload = function (e) {
+            $('#img-uploaded').attr('src', e.target.result);
+        }
 
-//  $(".article--heart2").on("click", function(e){
+        reader.readAsDataURL(input.files[0]);
+    }
+}
 
-//     var $thisButton = $(this);
-//     var button = {
-//         $loveIcon: $thisButton,
-//         $loveIconOn: $thisButton.hasClass("is-like"),
-//         $loadingIcon: $thisButton.hasClass("is-loading"),
-//         $number: $thisButton.find(".num"),
-//     };
-//     likeOrUnlikeSequence(button);
-// });
-
-// var likeOrUnlikeSequence = function(button) {
-//     var sendLikeRequest = likeRequest(button);
-//     button.$loveIcon.addClass("is-loading");
-//     button.$loveIcon.prop("disabled", true);
-//     return sendLikeRequest
-//       .then(postLikeSucceeded)
-//       .catch(postLikeFailed);
-//   }
-
-//   var likeRequest = function(button) {
-//     return new Promise(function(resolve, reject) {
-//       fake_ajax_response()
-//         .done(function likePostAjaxDone() {
-//           resolve(button);
-//         })
-//         .fail(function likePostAjaxFail() {
-//           reject(button)
-//         });
-//     });
-//   };
-
-// var postLikeSucceeded = function(responses){
-//     var button = responses;
-//     var $likesDisplay = button.$number;
-//     var numberOfLikes = $likesDisplay.text();
-
-//     if(button.$loveIconOn){
-//         numberOfLikes--;
-//         button.$loveIcon.removeClass("is-like");
-//     } else{
-//         numberOfLikes++;
-//         button.$loveIcon.addClass("is-like");
-//     }
-
-//     $likesDisplay.text(numberOfLikes);
-//     button.$loveIcon.prop("disabled", false);
-//     button.$loveIcon.removeClass("is-loading");
-// }
-
-//   var postLikeFailed = function(button) {
-//       button.$loveIcon.prop("disabled", false);
-//     button.$loveIcon.removeClass("is-loading");
-//   };
-
-
-// // TODO: remove this function when ajax call added
-//   function fake_ajax_response(response) {
-//     var deferred = $.Deferred();
-//     setTimeout(function() {
-//       deferred.resolve(response);
-//     }, Math.floor(400 + Math.random() * 2000));
-//     return deferred.promise();
-//   }
-
-
+$(".file-input").change(function () {
+    readURL(this);
+});
 

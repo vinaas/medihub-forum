@@ -32,11 +32,19 @@
       <div class="porlet--body" >
 
         <div class="profile-info">
-          <form>
+            <form data-abide novalidate>
+
+            <div data-abide-error class="alert callout" style="display: none;">
+                <p><i class="fi-alert"></i> Thông tin sai</p>
+            </div>
+
             <div class="row">
               <div class="small-12 medium-6 columns">
                 <label>Họ và tên
-                  <input type="text" value="Nguyễn Việt Hùng" placeholder="Họ và tên">
+                  <input type="text" value="Nguyễn Việt Hùng" placeholder="Họ và tên" required pattern="text">
+                    <span class="form-error">
+                     Bạn nhập không đúng tên
+                    </span>
                 </label>
               </div>
               <div class="small-12 medium-6 columns">
@@ -56,81 +64,79 @@
                   </select>
                 </label>
               </div>
-              <div class="small-12 medium-6 columns">
-                <label>Ngày sinh
-                  <input type="text" value="14 - 12 - 1991" placeholder="Ngày sinh">
-                </label>
-              </div>
+                <div class="small-12 medium-6 columns">
+                    <label>Email
+                        <input type="text" value="gattadesmond@gmail.com" placeholder="Nhập địa chỉ Email" required pattern="email">
+                        <span class="form-error">
+                            Bạn nhập không đúng email
+                        </span>
+                    </label>
+                </div>
 
 
               <div class="small-12 medium-6 columns">
                 <label>Địa chỉ
-                  <input type="text" value="Chung cư Bùi Viện - Q.1 - Tp.HCM" placeholder="Địa chỉ">
+                  <input type="text" value="Chung cư Bùi Viện - Q.1 - Tp.HCM" placeholder="Địa chỉ"  pattern="text">
+
+                <span class="form-error">
+                        Địa chỉ không hợp lệ
+                    </span>
                 </label>
               </div>
 
               <div class="small-12 medium-6 columns">
                 <label>Điện thoại
-                  <input type="text" value="01669 206 512" placeholder="Điện thoại">
+                  <input type="text" value="01669 206 512" placeholder="Điện thoại"  pattern="text">
+
+                    <span class="form-error">
+                        Sai số điện thoại
+                    </span>
                 </label>
               </div>
 
-              <div class="small-12 medium-6 columns">
-                <label>Email
-                  <input type="text" value="gattadesmond@gmail.com" placeholder="Nhập địa chỉ Email">
-                </label>
-              </div>
-              
-              
+
+               <div class="small-12 columns">
+                   <h5>Đổi mật khẩu</h5>
+               </div>
+
+                <div class="small-12 medium-6 columns">
+                    <label>Mật khẩu hiện tại
+                        <input type="password">
+                    </label>
+                </div>
+
+                <div class="small-12 medium-6 columns">
+                    <label>Mật khẩu mới
+                        <input type="password" placeholder="Mật khẩu cần dài hơn 6 ký tự"  id="password">
+                        <span class="form-error">
+                          I'm required!
+                        </span>
+                    </label>
+                </div>
+
+                <div class="small-12 medium-6 columns">
+                    <label>Nhập lại mật khẩu mới
+                        <input type="password"  pattern="alpha_numeric" data-equalto="password" >
+                        <span class="form-error">
+                          Không trùng mật khẩu
+                        </span>
+                    </label>
+                </div>
+
+
+
             </div>
+
+                <button class="button primary" type="submit" value="Submit">Cập nhập thông tin</button>
           </form>
         </div>
 
-        <a href="" class="button primary">Cập nhập thông tin</a>
+
 
       </div>
     </div>
 
 
-
-    <div class="portlet boxShadow">
-      <div class="porlet--heading">
-        <h3 class="porlet--title">Đổi mật khẩu của bạn</h3>
-      </div>
-
-      <div class="porlet--body" >
-
-        <div class="profile-info">
-          <form>
-            <div class="row">
-
-              <div class="small-12 medium-6 columns">
-                <label>Mật khẩu hiện tại
-                  <input type="password">
-                </label>
-              </div>
-
-              <div class="small-12 medium-6 columns">
-                <label>Mật khẩu mới
-                  <input type="password" placeholder="Mật khẩu cần dài hơn 6 ký tự">
-                </label>
-              </div>
-
-              <div class="small-12 medium-6 columns">
-                <label>Nhập lại mật khẩu mới
-                  <input type="password">
-                </label>
-              </div>
-
-
-            </div>
-          </form>
-        </div>
-
-        <a href="" class="button primary">Cập nhập thông tin</a>
-
-      </div>
-    </div>
 
   </div>
 </div>
