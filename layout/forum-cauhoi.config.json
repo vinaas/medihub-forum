@@ -98,5 +98,19 @@
         "name": "hinh_anh",
         "displayName": "hình ảnh",
         "type": "Media"
+    },
+    {
+        "name": "permalink",
+        "displayName": "permalink",
+        "type": "Boolean",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "rivetData",
+        "displayName": "rivetData",
+        "type": "Object",
+        "validations": [],
+        "required": false
     }
 ]

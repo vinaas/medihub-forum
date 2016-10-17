@@ -12,7 +12,9 @@
     "phan_hoi": "",
     "yeu_thich": "",
     "nguoi_dang": "",
-    "hinh_anh": "img/so-cuu-bong.jpg"
+    "hinh_anh": "img/so-cuu-bong.jpg",
+    "permalink": "",
+    "rivetData": {}
 }
 ---
 Đầu tiên, cần xác định mức độ bỏng trước khi sơ cứu, ở mỗi độ bỏng sẽ có cách sơ cứu khác nhau:
@@ -23,7 +25,7 @@
 
 *Không dùng đá đặt trực tiếp lên vết bỏng vì có thể gây tê cóng và làm da tổn thương thêm. Không làm vỡ bọng nước vì rất dễ nhiễm trùng. Không dùng aspirin cho trẻ em hoặc vị thành niên*
 
-
+![](http://medihub-forum.vinaas.com/img/so-cuu-bong.jpg)
 
 **Trường hợp bỏng nặng:** Vết thương có đường kính lớn hơn 5-8cm hoặc bỏng ở các vị trí như bàn tay, bàn chân, mặt, bẹn, mông, khớp lớn... Những vết bỏng nặng nhất thường không đau và có thể tổn thương ở tất cả các lớp da, mỡ, cơ và thậm chí vào xương. Vùng bị thương có thể cháy đen hoặc khô và trắng, bệnh nhân khó hít thở. Cần thực hiện các bước sơ cứu như sau:
 
