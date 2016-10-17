@@ -4,7 +4,7 @@
     "category": "nhi-khoa",
     "tag": [],
     "layout": "forum-cauhoi.html",
-    "title": "Dấu hiệu nhận biết bệnh chân tay miệng ở trẻ em",
+    "title": "Dấu hiệu nhận biết bệnh chân tay miệng ở trẻ em?",
     "description": "Theo các chuyên gia y tế, bệnh tay chân miệng thường gặp ở trẻ dưới 5 tuổi. Bệnh thường do siêu vi trùng đường ruột Coxsackieviruses A16 và enterovirus 71 gây ra.",
     "date": "17-10-2016 15:41:07",
     "thoi_gian": "",
