@@ -28,4 +28,5 @@ Các bước sơ cứu khi bị điện giật như sau:
 - Gọi cấp cứu ngay nếu thấy nạn nhân bị giật điện có triệu chứng loạn nhịp tim hoặc tim ngừng đập, suy hô hấp, tím tái hoặc ngừng thở, đau và co rút cơ, co giật, tê bì và ù tai, bất tỉnh...
 
 ![](http://medihub-forum.vinaas.com/img/so-cuu-dien-giat.jpg)
+
 *Để đề phòng điện giật, không nên thiết kế ổ cắm điện nằm trong tầm với của trẻ.*
