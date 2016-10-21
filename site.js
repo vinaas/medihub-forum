@@ -69,6 +69,7 @@ site.script = {
         "bower_components/mixitup/build/jquery.mixitup.min.js",
         "bower_components/jquery-sticky/jquery.sticky.js",
         "bower_components/Swiper/dist/js/swiper.min.js",
+        "bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js",
 
         `${site.scriptRoot}/!(app).js`, // các file có tên khác 'app.js'
         `${site.scriptRoot}/app.js`
