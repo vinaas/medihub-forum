@@ -1,16 +1,12 @@
 @charset 'utf-8';
-
 @import 'settings';
 @import 'foundation';
-
-
 @include foundation-global-styles;
 // @include foundation-grid;
 @include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-button;
 //@include foundation-forms;
-
 @include foundation-form-text;
 //@include foundation-form-checkbox;
 @include foundation-form-label;
@@ -19,9 +15,6 @@
 @include foundation-form-fieldset;
 @include foundation-form-select;
 @include foundation-form-error;
-
-
-
 // @include foundation-range-input;
 @include foundation-accordion;
 @include foundation-accordion-menu;
@@ -57,27 +50,18 @@
 @include foundation-visibility-classes;
 @include foundation-float-classes;
 @include foundation-flex-classes;
-
-
-
 //@import 'motion-ui';
 //
-
-
 @import "vendors/motion-ui/motion-ui";
 @include motion-ui-transitions;
 @include motion-ui-animations;
-
-
 @import "abstracts/variables";
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/placeholders";
-
 @import "base/reset";
 @import "base/typography";
 @import "base/helpers";
-
 @import "components/buttons";
 @import "components/carousel";
 @import "components/cover";
@@ -85,16 +69,12 @@
 @import "components/checkbox";
 @import "components/popup";
 @import "components/breadcrumbs";
-
-
 @import "layout/forms";
 @import "layout/grid";
 @import "layout/navigation";
 @import "layout/sidebar";
 @import "layout/header";
 @import "layout/footer";
-
-
 @import "pages/home";
 @import "pages/contact";
 @import "pages/search";
@@ -103,10 +83,10 @@
 @import "pages/gioithieu";
 @import "pages/forum";
 @import "pages/comments";
-
-
 @import "vendors/select2/core";
 @import "vendors/ionrangeslider";
 @import "vendors/magnific-popup";
 @import "vendors/swiper.scss";
 @import "vendors/perfect-scroll/main";
+@import "vendors/sweetalert/sweetalert";
+@import "vendors/sweetalert/loader-animation";

@@ -9,12 +9,13 @@
         init_sticky();
 
         handlePerfectscroll();
+
+        // handleDatePicker();
     });
 
     $(window).resize(function () {
         // init_fixed_bg(60);
     });
-
 
     $(".post__write").click(function () {
         var $this = $(this);
@@ -328,7 +329,7 @@ function readURL(input) {
         var tmppath = URL.createObjectURL(event.target.files[0]);
 
         reader.onload = function (e) {
-            $('#img-uploaded').attr('src', e.target.result);
+            $('#img-uploaded img').attr('src', e.target.result);
         }
 
         reader.readAsDataURL(input.files[0]);
@@ -336,6 +337,33 @@ function readURL(input) {
 }
 
 $(".file-input").change(function () {
+
+    $(".article--thumbnail-apply").show();
     readURL(this);
 });
 
+
+// function handleDatePicker(){
+//     $('.datepicker').pickadate({
+//         monthsFull: ["Tháng Một", "Tháng Hai", "Tháng Ba", "Tháng Tư", "Tháng Năm", "Tháng Sáu", "Tháng Bảy", "Tháng Tám", "Tháng Chín", "Tháng Mười", "Tháng Mười Một", "Tháng Mười Hai"],
+//         monthsShort: ["Một", "Hai", "Ba", "Tư", "Năm", "Sáu", "Bảy", "Tám", "Chín", "Mưới", "Mười Một", "Mười Hai"],
+//         weekdaysFull: ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"],
+//         weekdaysShort: ["C.Nhật", "T.Hai", "T.Ba", "T.Tư", "T.Năm", "T.Sáu", "T.Bảy"],
+//         today: "Hôm Nay",
+//         clear: "Xoá",
+//         firstDay: 1,
+//         formatSubmit: 'yyyy/mm/dd',
+//         format: 'dd/mm/yyyy'
+//     })
+// }
+//
+
+
+if (!$(".cleave-date").length == 0) {
+
+    var cleave = new Cleave('.cleave-date', {
+        date: true,
+        datePattern: ['d', 'm', 'Y']
+    })
+
+}

@@ -1,48 +1,29 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
     <meta name="description" content="{{ description }}">
     <base href="/" />
     <title>{{title}}</title>
     <script src="https://rawgit.com/mikeric/rivets/v0.8.1/dist/rivets.bundled.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic,300italic,300&subset=latin,vietnamese,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic,300italic,300&subset=latin,vietnamese,latin-ext'
+        rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/app.css">
-    {{#block "head"}}
-    {{/block}}
-
-
+    <link rel="stylesheet" type="text/css" href="css/app.css"> {{#block "head"}} {{/block}}
 </head>
+
 <body data-function="{{function}}" class="{{this.isHomepage}}">
-<!--[if lt IE 8]>
+    <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-
-{{#block "header"}}
-{{> header}}
-{{/block}}
-
-{{#block "body"}}
-{{{contents}}}
-{{/block}}
-
-{{#block "footer"}}
-{{> footer}}
-{{/block}}
-
-<script src="js/app.js"></script>
-
-{{#block "scripts"}}
-
-{{/block}}
-
-<script src="js/main.js"></script>
-
-
+    {{#block "header"}} {{> header}} {{/block}} {{#block "body"}} {{{contents}}} {{/block}} {{#block "footer"}} {{> footer}}
+    {{/block}}
+    <script src="js/app.js"></script>
+    <script src="js/cleave.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
