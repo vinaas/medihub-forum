@@ -5,7 +5,9 @@
         "type": "Text",
         "validations": [],
         "viewOnly": false,
-        "required": false
+        "required": false,
+        "displayType": "ShortText",
+        "defaultValue": ""
     },
     {
         "name": "url",
@@ -13,7 +15,9 @@
         "type": "Text",
         "validations": [],
         "viewOnly": false,
-        "required": false
+        "required": false,
+        "displayType": "ShortText",
+        "defaultValue": ""
     },
     {
         "name": "description",
@@ -21,7 +25,9 @@
         "type": "Text",
         "validations": [],
         "viewOnly": false,
-        "required": false
+        "required": false,
+        "displayType": "ShortText",
+        "defaultValue": ""
     },
     {
         "name": "layout",
@@ -29,21 +35,77 @@
         "type": "Text",
         "validations": [],
         "viewOnly": true,
-        "required": false
+        "required": false,
+        "displayType": "ShortText",
+        "defaultValue": ""
     },
     {
         "name": "permalink",
         "displayName": "permalink",
         "type": "Boolean",
         "validations": [],
-        "required": false
+        "required": false,
+        "defaultValue": "",
+        "displayType": "ShortText",
+        "viewOnly": false
     },
     {
         "name": "rivetData",
         "displayName": "rivetData",
         "type": "Object",
         "validations": [],
-        "required": false
+        "required": false,
+        "children": [
+            {
+                "name": "selectedFilter",
+                "displayName": "selectedFilter",
+                "type": "Object",
+                "validations": [],
+                "required": false,
+                "children": [
+                    {
+                        "name": "chon",
+                        "displayName": "chon",
+                        "type": "Text",
+                        "displayType": "ShortText",
+                        "defaultValue": "",
+                        "validations": [],
+                        "viewOnly": false,
+                        "required": false
+                    },
+                    {
+                        "name": "benh",
+                        "displayName": "benh",
+                        "type": "Text",
+                        "displayType": "ShortText",
+                        "defaultValue": "",
+                        "validations": [],
+                        "viewOnly": false,
+                        "required": false
+                    },
+                    {
+                        "name": "tinh",
+                        "displayName": "tinh",
+                        "type": "Text",
+                        "displayType": "ShortText",
+                        "defaultValue": "",
+                        "validations": [],
+                        "viewOnly": false,
+                        "required": false
+                    },
+                    {
+                        "name": "quan",
+                        "displayName": "quan",
+                        "type": "Text",
+                        "displayType": "ShortText",
+                        "defaultValue": "",
+                        "validations": [],
+                        "viewOnly": false,
+                        "required": false
+                    }
+                ]
+            }
+        ]
     },
     {
         "name": "isHomepage",
@@ -51,7 +113,9 @@
         "type": "Text",
         "validations": [],
         "viewOnly": false,
-        "required": false
+        "required": false,
+        "displayType": "ShortText",
+        "defaultValue": ""
     },
     {
         "name": "slug",
@@ -59,48 +123,113 @@
         "type": "Text",
         "validations": [],
         "viewOnly": true,
-        "required": false
+        "required": false,
+        "displayType": "ShortText",
+        "defaultValue": ""
     },
     {
         "name": "bai_viet_noi_bat",
         "displayName": "bai_viet_noi_bat",
         "type": "Array",
         "validations": [],
-        "required": false
+        "required": false,
+        "children": []
     },
     {
         "name": "dang_xem",
         "displayName": "dang_xem",
         "type": "Number",
         "validations": [],
-        "required": false
+        "required": false,
+        "displayType": "Number",
+        "defaultValue": 0
     },
     {
         "name": "hoi",
         "displayName": "hoi",
         "type": "Number",
         "validations": [],
-        "required": false
+        "required": false,
+        "displayType": "Number",
+        "defaultValue": 0
     },
     {
         "name": "giao_luu",
         "displayName": "giao_luu",
         "type": "Number",
         "validations": [],
-        "required": false
+        "required": false,
+        "displayType": "ShortText",
+        "defaultValue": "",
+        "viewOnly": false
     },
     {
         "name": "slideShow",
         "displayName": "slideShow",
         "type": "Object",
         "validations": [],
-        "required": false
+        "required": false,
+        "children": [
+            {
+                "name": "slug1",
+                "displayName": "slug1",
+                "type": "Text",
+                "displayType": "ShortText",
+                "defaultValue": "",
+                "validations": [],
+                "viewOnly": false,
+                "required": false
+            },
+            {
+                "name": "slug2",
+                "displayName": "slug2",
+                "type": "Text",
+                "displayType": "ShortText",
+                "defaultValue": "",
+                "validations": [],
+                "viewOnly": false,
+                "required": false
+            },
+            {
+                "name": "slug3",
+                "displayName": "slug3",
+                "type": "Text",
+                "displayType": "ShortText",
+                "defaultValue": "",
+                "validations": [],
+                "viewOnly": false,
+                "required": false
+            },
+            {
+                "name": "slug4",
+                "displayName": "slug4",
+                "type": "Text",
+                "displayType": "ShortText",
+                "defaultValue": "",
+                "validations": [],
+                "viewOnly": false,
+                "required": false
+            }
+        ]
     },
     {
         "name": "trao_doi",
         "displayName": "trao_doi",
         "type": "Number",
         "validations": [],
+        "required": false,
+        "displayType": "Number",
+        "defaultValue": 0
+    },
+    {
+        "name": "__content__",
+        "displayName": "[Content]",
+        "type": "Text",
+        "displayType": "MarkDown",
+        "defaultValue": "",
+        "validations": [],
+        "hidden": false,
+        "viewOnly": false,
         "required": false
     }
 ]
