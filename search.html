@@ -1,27 +1,25 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
     <meta name="description" content="Search Page">
     <base href="/" />
     <title>Search</title>
     <script src="https://rawgit.com/mikeric/rivets/v0.8.1/dist/rivets.bundled.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic,300italic,300&subset=latin,vietnamese,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic,300italic,300&subset=latin,vietnamese,latin-ext'
+        rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/app.css">
-
-
+    <link rel="stylesheet" type="text/css" href="css/app.css">  
 </head>
+
 <body data-function="" class="">
-<!--[if lt IE 8]>
+    <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-
-<header class="header boxShadowLess">
+     <header class="header boxShadowLess">
     <div class="row ">
 
         <div class="columns">
@@ -52,8 +50,7 @@
     </div>
 </header>
 
-
- <div class="row">
+   <div class="row">
 <div class="small-12 columns">
 
   <div class="searchFilter boxShadow" data-toggler=".expanded" id="searchFilter">
@@ -5324,8 +5321,7 @@
     </div> -->
 	</div>
 </div>
-
-<footer>
+  <footer>
 
   <div class="row">
     <div class="small-12 medium-3 columns">
@@ -5453,70 +5449,9 @@
 
 </div>
 
-<script src="js/app.js"></script>
-
-
-
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv-VJuonOOmaXpJLsqenv0bUTskGAeBWQ&amp;libraries=geometry&amp;libraries=places"
-	type="text/javascript"></script>
-<script src="js/infobox.js"></script>
-<script src="js/map.js"></script>
-
-<script>
-
-
-    function getJsonFromUrl() {
-        var query = location.search.substr(1);
-        var result = {};
-        query.split("&").forEach(function (part) {
-            var item = part.split("=");
-            if (!item[0]) return;
-            result[item[0]] = decodeURIComponent(item[1]);
-        });
-        return result;
-    }
-
-    var filter = getJsonFromUrl(window.location.href);
-
-
-    if (filter.length == 0) {
-        console.log('show all');
-    } else {
-
-        $('.data-card').hide();
-        var selectors = [];
-        for (var term in filter) {
-            if (!filter.hasOwnProperty(term)) continue;
-
-            if (term === 'giatri') {
-                selectors.push('.data-card.' + filter[term] + '');
-            } else {
-                selectors.push('.data-card[data-' + term + '="' + filter[term] + '"]');
-            }
-
-            // select in filter bar
-            switch(term) {
-                case 'loai':
-                    $('.searchForm--1>select').select2().val(filter[term]).trigger('change');
-                    break;
-                case 'giatri':
-                    $('.searchForm--2>select').select2().val(filter[term]).trigger('change');
-                    break;
-                case 'tinh':
-                    $('.searchForm--3>select').select2().val(filter[term]).trigger('change');
-                    break;
-                case 'quan':
-                    $('.searchForm--4>select').select2().val(filter[term]).trigger('change');
-                    break;
-            }
-        }
-        console.log('selectors', selectors.join(''));
-        $(selectors.join('')).show();
-    }
-</script> 
-<script src="js/main.js"></script>
-
-
+    <script src="js/app.js"></script>
+    <script src="js/cleave.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
