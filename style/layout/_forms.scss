@@ -21,7 +21,7 @@ select{
     padding-right: 30px;
     margin-bottom: 0;
   }
-  a{
+  a,button{
     position: absolute;
     display: block;
     width: 35px;
@@ -36,6 +36,7 @@ select{
     }
   }
 }
+
 
 //.form-inline{
 //  display: inline-block;

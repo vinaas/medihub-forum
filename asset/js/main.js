@@ -367,3 +367,13 @@ if (!$(".cleave-date").length == 0) {
     })
 
 }
+
+
+if (!$(".cleave-number").length == 0) {
+
+    var cleave = new Cleave('.cleave-number', {
+        numeral: true,
+        numeralThousandsGroupStyle: 'thousand'
+    });
+
+}
