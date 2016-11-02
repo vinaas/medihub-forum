@@ -844,3 +844,22 @@ margin-bottom: $margin-box;
   font-size: 1.25rem;
   
 }
+
+.pagination {
+  .active {
+    @include pagination-item-current;
+  }
+
+
+  .current,.active{
+
+    a{
+      padding: 0;
+      color: white;
+      &:hover{
+        background: $primary-color;
+      }
+    }
+  }
+}
+

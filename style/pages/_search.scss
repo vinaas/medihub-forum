@@ -516,3 +516,57 @@
   float: left;
   overflow: hidden;
 }
+
+.searchPage{
+  margin-bottom: $margin-box;
+  background: white;
+  padding: 10px 15px;
+  h2{
+    @include header-size(h4);
+    font-weight: normal;
+    border-bottom: 1px solid $light-gray;
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  .rowcreater{
+    float: left;
+    width: 60px;
+    text-align: center;
+
+    @include breakpoint(small down){
+      display: none;
+    }
+    img{
+      border-radius: $global-radius;
+      max-width: 50px;
+    }
+  }
+
+  .rowdetails {
+    margin-left: 70px;
+  }
+  .topiccategory{
+    //font-weight: normal;
+  }
+  .short_intro{
+    font-weight: normal;
+  }
+
+  .postuploadedfilesholder{
+    display: none;
+  }
+  .post{
+    padding: 15px 0 15px;
+  }
+  .postsocial{
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+  }
+}
+
+.txt_666{
+  max-width: none  !important;
+  width: auto  !important;
+}
