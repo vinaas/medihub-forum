@@ -141,3 +141,43 @@ body {
     height: 100%;
     padding-right: 10px;
 }
+
+.single-file-preview{
+    border: 1px solid $light-gray;
+  max-width: 300px;
+
+  margin-bottom: 15px;
+
+  .file-image{
+    background: $medium-gray;
+    margin-bottom: 10px;
+    min-height: 100px;
+  }
+
+
+  .file-button{
+    position: relative;
+  }
+  input[type=file]{
+    -moz-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    width: 100%;
+    padding-top: 40px;
+    height: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    overflow: hidden;
+  }
+  span{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 13px;
+    font-size: 12px;
+    z-index: -1;
+  }
+
+
+
+}
